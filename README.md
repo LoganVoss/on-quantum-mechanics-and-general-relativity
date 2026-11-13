@@ -16,15 +16,15 @@ Within the local model studied here, that question has an exact answer. Four unk
 
 Space is described by a Lorentzian base metric $h$, a positive area $\rho$, and a positive symmetric shape matrix $M$ with $\det M=1$:
 
-$$
-ds^2=h_{ab}\,dx^a dx^b+\rho M_{IJ}\,dy^I dy^J.
-$$
+```math
+ds^2=h_{ab} dx^a dx^b+\rho M_{IJ} dy^I dy^J.
+```
 
 In the stated invariant, local action class with total derivative order at most two, full stationarity of one flat reference chart selects
 
-$$
+```math
 \boxed{F(\rho)=a\rho+b,\qquad U(\rho)=\frac{a}{2\rho},\qquad W(\rho)=a\rho,\qquad V(\rho)=0.}
-$$
+```
 
 Positive, nondegenerate shape energy gives $a>0$. A permitted parity-odd coupling becomes constant and contributes only at the boundary under the stated conditions. The magnitude of $a$ and the bulk-inert constants remain free.
 
@@ -34,17 +34,17 @@ Here **stationarity** means that the first variation vanishes for every compactl
 
 A centered canonical state saturating the Robertson–Schrödinger covariance uncertainty bound is a pure Gaussian. Its covariance $\Sigma$ determines
 
-$$
+```math
 M=2\Sigma=\frac1v
 \begin{pmatrix}1&u\\u&u^2+v^2\end{pmatrix},\qquad v>0,
-$$
+```
 
 in calibrated dimensionless units with $[\widehat Q,\widehat P]=i$. With the specified common frame representation, this is exactly the gravitational orbit-shape matrix. Its geometry obeys
 
-$$
-\boxed{ds_G^2=\frac12\operatorname{Tr}\!\left[(M^{-1}dM)^2\right]
-=\frac{du^2+dv^2}{v^2}=2\,ds_{\mathrm{QFI}}^2.}
-$$
+```math
+\boxed{ds_G^2=\frac12\mathrm{Tr}\left[(M^{-1}dM)^2\right]
+=\frac{du^2+dv^2}{v^2}=2 ds_{\mathrm{QFI}}^2.}
+```
 
 This identifies the shape geometry exactly. The Lorentzian base, field content, and physical identification of probe frames with orbit frames are explicit inputs.
 
@@ -52,17 +52,17 @@ This identifies the shape geometry exactly. The Lorentzian base, field content, 
 
 **Distance becomes quantum overlap.** For any two states in the centered saturated family, their squared overlap is fixed by the intrinsic hyperbolic shape distance:
 
-$$
+```math
 \boxed{\left|\langle\psi_M\mid\psi_N\rangle\right|^2
-=\operatorname{sech}\!\left(\frac{d_G(M,N)}2\right).}
-$$
+=\mathrm{sech}\left(\frac{d_G(M,N)}2\right).}
+```
 
 **The boundary term has a geometric-phase interpretation.** The real and imaginary parts of the same quantum geometric tensor supply the shape metric and its area form. With $\mathcal A=i\langle\psi|d\psi\rangle$,
 
-$$
+```math
 \boxed{\mathcal F_{\mathrm B}=d\mathcal A=-\frac14\Omega,
 \qquad S_{\mathrm{odd}}=-8k\oint_{\partial B}q^*\mathcal A.}
-$$
+```
 
 Here $q$ maps the base into the shape space. Both results are proved in [Quantum geometry](docs/QUANTUM_GEOMETRY.md), with the established Gaussian-state literature credited.
 

@@ -4,7 +4,7 @@ The exact bridge is useful because it narrows the next questions. Each route bel
 
 ## 1. Test the quantum geometry with prepared states
 
-Prepare centered squeezed one-mode Gaussian states with measured covariance and purity. Compare transition probabilities to $\operatorname{sech}(d_G/2)$ and closed-path geometric phases to minus one quarter of the oriented hyperbolic area. Account for displacement, mixedness, loss, phase reference, and covariance uncertainty. This tests the quantum-state geometry and calibration. It does not by itself test the identification of that shape with a spacetime orbit metric.
+Prepare centered squeezed one-mode Gaussian states with measured covariance and purity. Compare transition probabilities to $\mathrm{sech}(d_G/2)$ and closed-path geometric phases to minus one quarter of the oriented hyperbolic area. Account for displacement, mixedness, loss, phase reference, and covariance uncertainty. This tests the quantum-state geometry and calibration. It does not by itself test the identification of that shape with a spacetime orbit metric.
 
 The oscillator vacuum/first-excited-state counterexample in this bundle is the essential negative control: equal normalized covariance shape is insufficient outside the saturated family.
 

@@ -12,18 +12,18 @@ Let $I\subset(0,\infty)$ be a connected interval. Take $F\in C^2(I)$ and the coe
 
 On the flat calibration
 
-$$
+```math
 h=-dt^2+dr^2,
 \qquad
 \rho=tr,
 \qquad
 M=\begin{pmatrix}t/r&0\\0&r/t\end{pmatrix},
 \qquad t,r>0,
-$$
+```
 
 the unrestricted metric variation gives
 
-$$
+```math
 \begin{aligned}
 E_{tt}
 &=-F''t^2+\frac U2(t^2+r^2)
@@ -34,7 +34,7 @@ E_{rr}
 E_{tr}
 &=-\rho F''-F'+\rho U+\frac W{2\rho}.
 \end{aligned}
-$$
+```
 
 Every coefficient on the right is evaluated at the same $\rho=tr$. These are the unscaled Euler components. An error tolerance for equations multiplied by $4\rho^2$, or for a different coordinate normalization, is a different tolerance and must be converted before using the bounds below.
 
@@ -42,25 +42,25 @@ Every coefficient on the right is evaluated at the same $\rho=tr$. These are the
 
 For any fixed $\rho\in I$, choose the swapped calibration points
 
-$$
+```math
 A_\rho=\left(2\sqrt\rho,\frac{\sqrt\rho}{2}\right),
 \qquad
 B_\rho=\left(\frac{\sqrt\rho}{2},2\sqrt\rho\right).
-$$
+```
 
 Both have area $\rho$. Define
 
-$$
+```math
 \begin{aligned}
 e_1&=E_{tt}(A_\rho),& e_2&=E_{rr}(A_\rho),\\
 e_3&=E_{tt}(B_\rho),& e_4&=E_{rr}(B_\rho),\\
 e_5&=E_{tr}(A_\rho)=E_{tr}(B_\rho).
 \end{aligned}
-$$
+```
 
 With $f_1=F'(\rho)$ and $f_2=F''(\rho)$, substitution gives
 
-$$
+```math
 \begin{aligned}
 e_1&=-4\rho f_2+\frac{17\rho U}{8}-\frac{17W}{16\rho}+\frac V2,\\
 e_2&=-\frac{\rho f_2}{4}+\frac{17\rho U}{8}-\frac{17W}{16\rho}-\frac V2,\\
@@ -68,27 +68,27 @@ e_3&=-\frac{\rho f_2}{4}+\frac{17\rho U}{8}-\frac{17W}{16\rho}+\frac V2,\\
 e_4&=-4\rho f_2+\frac{17\rho U}{8}-\frac{17W}{16\rho}-\frac V2,\\
 e_5&=-\rho f_2-f_1+\rho U+\frac W{2\rho}.
 \end{aligned}
-$$
+```
 
 They satisfy $e_1+e_2=e_3+e_4$. Elementary linear combinations produce four exact recovery identities:
 
-$$
+```math
 \boxed{V=\frac{e_1-e_2+e_3-e_4}{2},}
-$$
+```
 
-$$
+```math
 \boxed{\rho F''=\frac2{15}(-e_1+e_2+e_3-e_4),}
-$$
+```
 
-$$
+```math
 \boxed{\frac W\rho-F'
 =e_5-\frac2{17}(e_1+e_2+e_3+e_4),}
-$$
+```
 
-$$
+```math
 \boxed{2\rho U-F'
 =e_5+\frac{-38e_1+98e_2+98e_3-38e_4}{255}.}
-$$
+```
 
 No fit or limiting approximation enters these identities. They hold at each positive area value.
 
@@ -96,27 +96,27 @@ No fit or limiting approximation enters these identities. They hold at each posi
 
 Suppose the five residuals obey $|e_j|\le\epsilon$ for a common $\epsilon\ge0$. Apply the triangle inequality to each exact recovery formula:
 
-$$
+```math
 \boxed{
 |V|\le2\epsilon,
 \qquad
 |F''|\le\frac{8\epsilon}{15\rho}.}
-$$
+```
 
-$$
+```math
 \boxed{
 |W-\rho F'|\le\frac{25}{17}\rho\epsilon,
 \qquad
 \left|U-\frac{F'}{2\rho}\right|
 \le\frac{31\epsilon}{30\rho}.}
-$$
+```
 
 For example, the sum of the absolute coefficients in the last recovery formula is
 
-$$
+```math
 1+\frac{38+98+98+38}{255}
 =1+\frac{16}{15}=\frac{31}{15}.
-$$
+```
 
 Division by $2\rho>0$ gives the stated $U$ bound.
 
@@ -131,22 +131,22 @@ Each pointwise constant is attained in the algebraic inference problem. For $\ep
 
 To see that these are actual coefficient witnesses, rather than arbitrary residual assignments, take any compatible $e_1,\ldots,e_4$ and set
 
-$$
+```math
 D=\frac2{17}(e_1+e_2+e_3+e_4),
 \qquad f_1=0,
-$$
+```
 
-$$
+```math
 f_2=\frac2{15\rho}(-e_1+e_2+e_3-e_4),
 \qquad
 V=\frac{e_1-e_2+e_3-e_4}{2},
-$$
+```
 
-$$
+```math
 W=\rho(e_5-D),
 \qquad
 U=\frac{e_5+D+2\rho f_2}{2\rho}.
-$$
+```
 
 Substitution recovers all five residuals. Each table row obeys the required compatibility condition. The checker verifies every substituted residual and the attained bound exactly.
 
@@ -156,60 +156,60 @@ Sharpness here concerns pointwise coefficient jets with these residual constrain
 
 Assume the same residual envelope holds at every $\rho\in I$. Fix a reference area $\rho_0\in I$ and define
 
-$$
+```math
 a=F'(\rho_0),
 \qquad
 b=F(\rho_0)-a\rho_0,
-$$
+```
 
-$$
+```math
 L(\rho,\rho_0)=\left|\log\frac\rho{\rho_0}\right|,
 \qquad
 H(\rho,\rho_0)=\rho\log\frac\rho{\rho_0}-\rho+\rho_0.
-$$
+```
 
 The function $H$ is nonnegative: it and its first derivative vanish at $\rho_0$, while $\partial_\rho^2H=1/\rho>0$.
 
 Integrating $|F''(s)|\le8\epsilon/(15s)$ along the segment between $\rho_0$ and $\rho$ gives
 
-$$
+```math
 \boxed{|F'(\rho)-a|
 \le\frac{8\epsilon}{15}L(\rho,\rho_0).}
-$$
+```
 
 Taylor's integral remainder yields
 
-$$
+```math
 F(\rho)-(a\rho+b)
-=\int_{\rho_0}^{\rho}(\rho-s)F''(s)\,ds.
-$$
+=\int_{\rho_0}^{\rho}(\rho-s)F''(s) ds.
+```
 
-For $\rho\ge\rho_0$, the error is bounded by $(8\epsilon/15)\int_{\rho_0}^{\rho}(\rho-s)/s\,ds$. For $\rho\le\rho_0$, it is bounded by $(8\epsilon/15)\int_{\rho}^{\rho_0}(s-\rho)/s\,ds$. Both integrals equal $H(\rho,\rho_0)$, so
+For $\rho\ge\rho_0$, the error is bounded by $(8\epsilon/15)\int_{\rho_0}^{\rho}(\rho-s)/s ds$. For $\rho\le\rho_0$, it is bounded by $(8\epsilon/15)\int_{\rho}^{\rho_0}(s-\rho)/s ds$. Both integrals equal $H(\rho,\rho_0)$, so
 
-$$
+```math
 \boxed{|F(\rho)-(a\rho+b)|
 \le\frac{8\epsilon}{15}H(\rho,\rho_0).}
-$$
+```
 
 Combining this common slope with the pointwise $W$ and $U$ estimates gives
 
-$$
+```math
 \boxed{
 |W(\rho)-a\rho|
 \le\rho\epsilon
 \left[\frac{25}{17}+\frac8{15}L(\rho,\rho_0)\right],}
-$$
+```
 
-$$
+```math
 \boxed{
 \left|U(\rho)-\frac a{2\rho}\right|
 \le\frac\epsilon\rho
 \left[\frac{31}{30}+\frac4{15}L(\rho,\rho_0)\right].}
-$$
+```
 
 Along with $|V|\le2\epsilon$, these estimates control the distance from one common selected coefficient family. At $\epsilon=0$, they recover
 
-$$
+```math
 F=a\rho+b,
 \qquad
 U=\frac a{2\rho},
@@ -217,7 +217,7 @@ U=\frac a{2\rho},
 W=a\rho,
 \qquad
 V=0
-$$
+```
 
 throughout the connected interval.
 

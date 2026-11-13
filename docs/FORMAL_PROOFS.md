@@ -14,13 +14,13 @@ The full [execution receipt](../evidence/lean/receipt.json) records the source h
 
 It proves that there are common constants $a>0$ and $b$, valid throughout the positive-area domain, such that
 
-$$
+```math
 F(\rho)=a\rho+b,\qquad F'(\rho)=a,\qquad F''(\rho)=0,
-$$
+```
 
-$$
+```math
 U(\rho)=\frac{a}{2\rho},\qquad W(\rho)=a\rho,\qquad V(\rho)=0.
-$$
+```
 
 The derivation of the chart equations from the action is supplied as a written variational proof with exact symbolic checks. Lean begins from those explicitly stated equations. It does not silently assume that arbitrary coefficient labels are derivatives: that connection is a separate, indispensable hypothesis in the formal theorem.
 
@@ -42,16 +42,16 @@ The derivation of the chart equations from the action is supplied as a written v
 
 The new module uses the five division-form residuals $e_1,\ldots,e_5$ defined explicitly in its source. If each residual satisfies $|e_i|\leq\varepsilon$, the formal proofs give
 
-$$
+```math
 |V|\leq2\varepsilon,\qquad
 |\rho F_2|\leq\frac{8}{15}\varepsilon,
-$$
+```
 
-$$
+```math
 \left|\frac{W}{\rho}-F_1\right|\leq\frac{25}{17}\varepsilon,
 \qquad
 |2\rho U-F_1|\leq\frac{31}{15}\varepsilon.
-$$
+```
 
 These are exact finite algebraic implications. Interpreting $F_1,F_2$ as derivatives requires the derivative assumptions above. Interpreting $\varepsilon$ as an experimental uncertainty requires a measurement protocol. The bounds quantify coefficient selection; they are not a proof of nonlinear dynamical stability. The intended physical use has $\rho>0$.
 

@@ -52,25 +52,25 @@ The original solver evolves the four fields $(\psi,\chi,\psi_T,\chi_T)$ using se
 
 The initial twist correction uses one continuum coefficient on every grid:
 
-$$
+```math
 \chi_T(R)\longmapsto\chi_T(R)
 +c_\star e^{-(R/1.2)^2},
 \qquad c_\star\approx0.052781957547848805.
-$$
+```
 
 Its defining integral cancels the continuum initial twist exactly. The quadrature evaluation is approximately $1.45\times10^{-18}$; discrete-grid twist remains nonzero and is reported rather than relabeled exact conservation.
 
 The finite-domain identities being tested are
 
-$$
-\frac{d}{dT}\int_0^L R e^{-2\psi}\chi_T\,dR
+```math
+\frac{d}{dT}\int_0^L R e^{-2\psi}\chi_T dR
 =\left[R e^{-2\psi}\chi_R\right]_0^L,
-$$
+```
 
-$$
+```math
 \frac{d\gamma(L)}{dT}
 =\left[R\left(\psi_T\psi_R+e^{-2\psi}\chi_T\chi_R\right)\right]_0^L.
-$$
+```
 
 The fresh results show:
 
@@ -88,23 +88,23 @@ Inspect the [full benchmark receipt](../evidence/source_suite/boundary/boundary_
 
 An analytic solution provides a stronger solver test than comparing successive grids alone. Let
 
-$$
+```math
 f(T,R)=A J_0(kR)\cos(kT),\qquad J_0(kL)=0,
-$$
+```
 
 where $J_0$ is the order-zero Bessel function. It solves the regular radial wave equation. The target-geodesic map
 
-$$
+```math
 \boxed{\psi=-\log\cosh f,\qquad\chi=\tanh f}
-$$
+```
 
 then solves both nonlinear field equations exactly. With primes denoting derivatives with respect to $f$,
 
-$$
+```math
 \psi''+e^{-2\psi}(\chi')^2=0,
 \qquad \chi''-2\psi'\chi'=0,
 \qquad (\psi')^2+e^{-2\psi}(\chi')^2=1.
-$$
+```
 
 The last identity says that the nonlinear solution has the same energy density as its generating scalar wave. It is a useful exact family within the model, obtained by a standard target-geodesic construction; no claim of historical priority is made.
 
