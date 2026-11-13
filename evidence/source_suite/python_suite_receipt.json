@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "executed_utc": "2026-11-13T17:49:31.240782+00:00",
+  "python": "3.12.13",
+  "runs": [
+    {
+      "script": "scripts/verify_variation.py",
+      "sha256": "06b5025316369c85353efcaeef15c1a0e685fc65ecc919e184e3938300aba858",
+      "exit_code": 0,
+      "log": "verify_variation.log"
+    },
+    {
+      "script": "scripts/verify_physical_premises.py",
+      "sha256": "4db38bac4d9e1b2a1ca837f27b0a0c4a106755ad19596569acf3fca679044248",
+      "exit_code": 0,
+      "log": "verify_physical_premises.log"
+    },
+    {
+      "script": "scripts/verify_integrability_complete.py",
+      "sha256": "6566729495bd66dd5513aaf8fa5fb977e0d02020b14a86c2f5ad3dc15a170d5b",
+      "exit_code": 0,
+      "log": "verify_integrability_complete.log"
+    },
+    {
+      "script": "scripts/verify_levi_civita_deformation.py",
+      "sha256": "e9a72b81125bb36cfd2caa04b9bfeaf663d4c9ff0d344aa138554e37818aa7d3",
+      "exit_code": 0,
+      "log": "verify_levi_civita_deformation.log"
+    },
+    {
+      "script": "scripts/verify_boundary_fresh.py",
+      "sha256": "f2e567b7fc55392cfde8d244c2078f07d4b9b6a4b0e7db4a169ac1e0341a1f4f",
+      "exit_code": 0,
+      "log": "verify_boundary_fresh.log"
+    }
+  ],
+  "execution": "fresh isolated temporary copy; original source files and receipts unmodified"
+}

@@ -1,0 +1,25 @@
+\begin{center}
+\begin{tabular}{@{}p{0.57\textwidth}r@{}}
+\toprule
+Fresh exact verification & Passed \\
+\midrule
+Variational and generic geometric identities & 29 \\
+Physical realization and probe identities & 276 \\
+Integrability symbolic identities & 32 \\
+Levi--Civita deformation identities & 36 \\
+\midrule
+Total exact symbolic identities & 373 \\
+Additional exact rational noncommuting current jets & 256 \\
+Compiled Lean theorems across seven modules & 40 \\
+Corrected nonlinear grid evolutions & 7 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The Lean build uses version 4.19.0, pinned mathlib commit
+\begin{center}\texttt{c44e0c8ee63ca166450922a373c7409c5d26b00b},\end{center}
+with warnings treated as errors. Every printed theorem depends only on the standard Lean foundations reported by the compiler: \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}, or a subset of these. The package contains the actual successful build log and source hashes.
+
+The main formal entry points include \texttt{complete\_selection}, \texttt{complete\_selection\_positive}, and the connected-open-domain zero-derivative lemma. The other modules certify the chart component geometry, genuine spectral-coefficient derivatives, full matrix-curvature algebra, the Frobenius implication, affine weight selection, the axis intercept, and explicit premise-obstruction examples. Exact theorem statements are in the source files; in particular, the differential-geometric first-variation proof is not silently replaced by a hypothesis about a finished Einstein equation.
+
+The independent symbolic scripts use SymPy 1.14.0. The numerical reference environment uses Python 3.12.14, NumPy 2.3.5, and SciPy 1.17.0. Reproduction instructions and logs are in the archive's README and evidence directory.

@@ -1,0 +1,52 @@
+[
+  {
+    "filename": "INTEGRABILITY_THEOREM(1).md",
+    "size_bytes": 2063,
+    "sha256": "fe61e7f5c903d46d18a3efd55982cd4bff1d2771b62a2a1f3492afb5d09a4ee7"
+  },
+  {
+    "filename": "OPENING_RECONSTRUCTION_THEOREM(1).md",
+    "size_bytes": 4579,
+    "sha256": "a540bb86b62dfb3aa2075196bc323d4d80c44413c940c3a6321f54440edd4696"
+  },
+  {
+    "filename": "OPERATIONAL_FRAME_SELECTOR(1).md",
+    "size_bytes": 2308,
+    "sha256": "661b32d113b88a683a29fa1475e4c7e051c36ac859e156e7d97fa8a3828fe6ad"
+  },
+  {
+    "filename": "ThmA.lean",
+    "size_bytes": 9415,
+    "sha256": "c0a9981c6434b394e39dacd5f7116ea5db0f46c22377d5a1408a3901e2c4106a"
+  },
+  {
+    "filename": "ThmABridge.lean",
+    "size_bytes": 2848,
+    "sha256": "10f070e07f1e0c283b89fd0ba4804199dfc0fec259b271e016c706345e8cd219"
+  },
+  {
+    "filename": "Voss_Foundations_Integrability_v2_2(1).pdf",
+    "size_bytes": 396540,
+    "sha256": "415d72e39d1b448cf82168ea6cfa7f718d027077865bbc0955632775e5fbde39"
+  },
+  {
+    "filename": "Voss_Verification_Research_v2_3_GitHub_Bundle(1).zip",
+    "size_bytes": 4685244,
+    "sha256": "d6579e52193d1307a016c53fedb65289803e68bcd795803b7c80033ea23d684f"
+  },
+  {
+    "filename": "build_receipt(1).json",
+    "size_bytes": 2013,
+    "sha256": "ca964c9dc322b27e9812985f6dc9fbd51f6a8852acba16d36d6a2afde4b594d4"
+  },
+  {
+    "filename": "claim_ledger(1).json",
+    "size_bytes": 3331,
+    "sha256": "307e7cf6e19456e1fe43d349c7c068051de47c215a01152b72ad1b42beb948f8"
+  },
+  {
+    "filename": "voss_thmA_lean.zip",
+    "size_bytes": 17368,
+    "sha256": "fb6b42cbd50261df456085d23a25ba479b4350b1cbc6502a34a7bfdfafe5fd58"
+  }
+]

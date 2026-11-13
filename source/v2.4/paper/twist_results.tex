@@ -1,0 +1,31 @@
+The fresh continuum values are
+\begin{align}
+ \mathcal T_{\rm original}(0)&=-0.013089872446886107,\\
+ c_*&=0.05278195754784881,\\
+ \mathcal T_{\rm corrected}(0)\big|_{\rm quadrature}&=3.550762114890027\times10^{-18}.
+\end{align}
+The quadrature estimate for the last integral is $1.5536197812261851\times10^{-15}$. Exact zero follows from the defining ratio in~\eqref{eq:cstar}; the displayed decimal is its numerical audit. The original and corrected charge values refer to the same fixed twist convention.
+
+The nonlinear equations were freshly evolved to $T=0.8$ at outer radius $L=8$, with four spatial grids and fourth-order Runge--Kutta time stepping. All four recorded v2.2 runs were reproduced exactly at their historical settings. The new calculation additionally integrates the outer flux and reports its separate contribution:
+\begin{center}
+\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+$N$ & Raw twist drift & Integrated flux & Balance defect & Relative energy drift \\
+\midrule
+128 & $-2.3648\times10^{-4}$ & $-1.7532\times10^{-7}$ & $-2.3631\times10^{-4}$ & $2.5285\times10^{-4}$ \\
+256 & $-5.9351\times10^{-5}$ & $-1.7868\times10^{-7}$ & $-5.9173\times10^{-5}$ & $6.2786\times10^{-5}$ \\
+512 & $-1.4979\times10^{-5}$ & $-1.7946\times10^{-7}$ & $-1.4799\times10^{-5}$ & $1.5670\times10^{-5}$ \\
+1024 & $-3.8798\times10^{-6}$ & $-1.7965\times10^{-7}$ & $-3.7002\times10^{-6}$ & $3.9158\times10^{-6}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The balance defect is $\Delta\mathcal T_L-\int_0^{0.8}[j(L)-j(0)]\dd T$, where $j=R\e^{-2\psi}\chi_R$. It converges quadratically. The finite outer twist flux at $L=8$ is real in the numerical finite-domain balance and is retained in the accounting.
+
+Three additional runs use $L=12$ with $N=384,768,1536$, matching the spacings of the corresponding $L=8$ grids. At $N=1536$, the integrated outer twist flux is $-2.1108373304\times10^{-19}$ and the raw twist drift is $-3.7000255021\times10^{-6}$. Its difference from the finest $L=8$ flux-balanced defect is about $1.51\times10^{-10}$. This identifies the finite-boundary effect separately from the spatial error.
+
+The fine-grid self-convergence orders for $(\psi,\chi,\psi_T,\chi_T)$ are
+\[
+ (2.0000787771,\ 2.0007182375,\ 1.9975683806,\ 1.9984577214).
+\]
+The finest $L=8$ relative energy drift is $3.9157870253\times10^{-6}$; its integrated outer energy flux is $-8.4584038438\times10^{-20}$. The corrected continuum charge is zero by construction and conserved under the stated infinite-domain flux conditions; the finite-grid departures are reported as numerical errors and boundary fluxes.

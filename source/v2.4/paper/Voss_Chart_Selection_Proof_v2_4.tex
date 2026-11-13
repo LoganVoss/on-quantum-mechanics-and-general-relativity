@@ -1,0 +1,590 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,longtable,array,xcolor,enumitem,fancyhdr}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!45!black,citecolor=blue!45!black]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Voss chart selection and integrability}
+\fancyhead[R]{\small Verified proof supplement v2.4}
+\fancyfoot[C]{\thepage}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\vol}{\sqrt{-h}}
+\newcommand{\MC}{\mathsf{MC}}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\e}{\mathrm e}
+\hypersetup{pdftitle={Voss Chart Selection: Variational Proof, Analytic Closure, and Integrability},pdfauthor={Logan Voss research program; AI-assisted proof and verification}}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\vspace*{10mm}
+{\small\scshape Logan Voss Research Program}\par
+\vspace{8mm}
+{\Huge\bfseries Chart Selection,\par Variational Closure,\par and Integrability}\par
+\vspace{6mm}
+{\Large Exact proofs, a simultaneous physical realization,\par compiled Lean certificates, and corrected evolution}\par
+\vspace{10mm}
+{\large Verification supplement v2.4 \quad 12 November 2026}\par
+\vspace{9mm}
+\hrule\vspace{5mm}
+\textbf{Main result.} The full compactly supported variation of the reduced action on the Milne--polar reference selects
+\[
+ F(\rho)=a\rho+b,\qquad U(\rho)=\frac{a}{2\rho},\qquad
+ W(\rho)=a\rho,\qquad V(\rho)=0,
+\]
+with a constant parity-odd coupling. Positive, nondegenerate radiative energy selects $a>0$. The analytic identification $F_1=F'$ and $F_2=F_1'$ is explicit: a connected-domain mean-value argument proves that the same constants apply at every positive area.
+
+\textbf{Independent integrability result.} A nontrivial regular scalar-current rational Lax family exists exactly when the weight is harmonic. For a harmonic area field with non-null gradient, this gives $W''=0$. Vanishing coupling at a shrinking axis and positivity give $W=c\rho$, $c>0$. Both necessity and sufficiency, including the spectral curve, are proved.
+
+\textbf{Physical contract.} The local Lorentzian $2+2$ interpretation, action class, vacuum calibration, probe coupling, and boundary sector are stated as hypotheses. Explicit local and cylindrical witnesses realize these conditions for the same selected action; the corrected evolution verifies the nontrivial cylindrical benchmark. Mathematical realizability and experimental calibration are distinct entries in the verification ledger.
+
+\textbf{Additional sharpenings.} All four-dimensional Ricci-flat reference metrics remain stationary after arbitrary constant quadratic-curvature additions. A different, explicitly defined reduced four-derivative deformation is detected by the curved Levi--Civita family. The quotient Weyl frame and asymptotic twist are both included in the ledger, and the corrected nonlinear benchmark is re-evolved.
+\vfill
+{\small Prepared from the supplied v2.0--v2.3 sources and theorem files, with fresh derivations and executions. Source code, pinned Lean configuration, build logs, symbolic receipts, and numerical data accompany this document.}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+\tableofcontents\newpage
+
+\section{The simultaneous selection theorem}
+
+Let $I=(0,\infty)$. The fields are a two-dimensional Lorentzian metric $h$ of signature $(-,+)$, an area variable $\rho:B\to I$, and a symmetric positive matrix $M$ with $\det M=1$. Define
+\begin{equation}
+ J_a=M^{-1}\partial_aM,\quad T_{ab}=\Tr(J_aJ_b),\quad
+ X=h^{ab}\rho_a\rho_b,\quad T=h^{ab}T_{ab}.
+\end{equation}
+Use the curvature convention
+\begin{equation}
+ R_{ab}=\partial_c\Gamma^c_{ab}-\partial_b\Gamma^c_{ac}
+ +\Gamma^c_{cd}\Gamma^d_{ab}-\Gamma^c_{bd}\Gamma^d_{ac}.
+\end{equation}
+Take $F\in C^2(I)$ and $U,W,V,k\in C^1(I)$, with $h,\rho,P,Q$ of class $C^2$ on each regular patch. Stationarity is defined by the first variation on every relatively compact subdomain, using smooth compactly supported variations. The target coordinates
+\begin{equation}\label{eq:M}
+ M(P,Q)=\begin{pmatrix}\e^P&\e^PQ\\\e^PQ&\e^{-P}+\e^PQ^2\end{pmatrix}
+\end{equation}
+are global, and $\tfrac12T_{ab}=P_aP_b+\e^{2P}Q_aQ_b$.
+
+The complete invariant action of total derivative order at most two, modulo divergences, is
+\begin{align}
+ S_{\rm even}&=\int_B\vol\left[F(\rho)R[h]+U(\rho)X-\frac{W(\rho)}4T+V(\rho)\right]\dd^2x,\label{eq:action}\\
+ S_{\rm odd}&=\int_B2k(\rho)\e^P(P_tQ_r-P_rQ_t)\dd t\dd r.\label{eq:odd}
+\end{align}
+The odd term uses the orientation $\epsilon^{tr}=1/\vol$. Every variation is smooth and compactly supported in a regular base patch. In particular, the metric is varied before any reference metric or conformal gauge is substituted.
+
+\begin{theorem}[Full single-chart equivalence]\label{thm:main}
+The configuration
+\begin{equation}\label{eq:chart}
+ h=-\dd t^2+\dd r^2,\quad \rho=tr,\quad
+ P=\log(t/r),\quad Q=0,\qquad t,r>0,
+\end{equation}
+is stationary under all independent compactly supported variations of $h^{ab},\rho,P,Q$ if and only if there exist constants $a,b,k_0\in\R$ such that, for every $\rho>0$,
+\begin{equation}\label{eq:selected}
+ \boxed{F=a\rho+b,\qquad U=\frac{a}{2\rho},\qquad W=a\rho,\qquad V=0,\qquad k=k_0.}
+\end{equation}
+Positive, nondegenerate shape kinetic energy is equivalent to $a>0$ in this selected family. The constants are common to the entire connected area domain.
+\end{theorem}
+
+The proof comprises the first variation in Section~\ref{sec:variation}, exact chart substitution and analytic closure in Section~\ref{sec:selection}, and the full scalar/shape converse in Section~\ref{sec:converse}. The geometric and operational premises are constructed in Section~\ref{sec:physical}.
+
+\section{First variation, including the boundary current}\label{sec:variation}
+
+Put $v^{ab}=\delta h^{ab}$, $v=h_{ab}v^{ab}$, $f=\delta\rho$, and $\eta=M^{-1}\delta M$. The metric variations are
+\begin{equation}
+ \delta\vol=-\tfrac12\vol v,\qquad
+ \delta R=R_{ab}v^{ab}+\Box v-\nabla_a\nabla_bv^{ab}.
+\end{equation}
+Twice integrating the derivative terms by parts gives
+\begin{align}
+ \delta(\vol FR)
+ &=\vol\left[\{FG_{ab}+(h_{ab}\Box-\nabla_a\nabla_b)F\}v^{ab}+F'Rf\right]
+ +\partial_a(\vol\Theta_F^a),\\
+ \Theta_F^a&=F(\nabla^av-\nabla_bv^{ab})-v\nabla^aF+v^{ab}\nabla_bF.\label{eq:thetaF}
+\end{align}
+For a two-dimensional metric, $R_{ab}=\tfrac12h_{ab}R$ and hence $G_{ab}=0$ identically. The derivative-of-$F$ terms in~\eqref{eq:thetaF} are essential.
+
+The remaining even variations are
+\begin{align}
+ \delta(\vol UX)&=\vol\left[U(\rho_a\rho_b-\tfrac12h_{ab}X)v^{ab}-(U'X+2U\Box\rho)f\right]
+ +\partial_a(\vol\,2U\nabla^a\rho f),\\
+ \delta\left(-\frac{\vol W}{4}T\right)
+ &=\vol\left[-\frac W4(T_{ab}-\tfrac12h_{ab}T)v^{ab}-\frac{W'}4Tf
+ +\frac12\Tr\{\nabla_a(WJ^a)\eta\}\right]\notag\\
+ &\hspace{8mm}-\partial_a\left[\frac{\vol W}{2}\Tr(J^a\eta)\right],\\
+ \delta(\vol V)&=\vol(-\tfrac12h_{ab}Vv^{ab}+V'f).
+\end{align}
+The current variation used here is $\delta J_a=\partial_a\eta+[J_a,\eta]$. Its commutator contraction vanishes because $h^{ab}[J_a,J_b]=0$.
+
+Thus
+\begin{equation}\label{eq:firstvar}
+ \delta S_{\rm even}=\int_B\vol\left[E_{ab}v^{ab}+E_\rho f+\tfrac12\Tr(\mathcal K\eta)\right]\dd^2x
+ +\int_B\partial_a(\vol\Theta^a)\dd^2x,
+\end{equation}
+where
+\begin{align}
+ E_{ab}&=(h_{ab}\Box-\nabla_a\nabla_b)F
+ +U(\rho_a\rho_b-\tfrac12h_{ab}X)
+ -\frac W4(T_{ab}-\tfrac12h_{ab}T)-\tfrac12h_{ab}V,\label{eq:Eab}\\
+ E_\rho&=F'R-U'X-2U\Box\rho-\tfrac14W'T+V',\label{eq:Erho}\\
+ \mathcal K&=\nabla_a(WJ^a),\qquad
+ \Theta^a=\Theta_F^a+2U\nabla^a\rho f-\tfrac W2\Tr(J^a\eta).
+\end{align}
+Compact support removes the boundary integral. The fundamental lemma of the calculus of variations then gives the field equations. For symmetric metric variations the off-diagonal contraction is $2E_{tr}v^{tr}$, which still imposes $E_{tr}=0$ independently.
+
+The matrix $\mathcal K$ is traceless and $M$-self-adjoint. To see the second property, differentiate $J_a^TM=MJ_a$ and contract; the extra commutator is $h^{ab}[J_a,J_b]=0$. Conjugation by $M^{1/2}$ identifies $\mathcal K$ and the allowed $\eta$ with symmetric traceless matrices, where $\Tr(\mathcal K\eta)$ is nondegenerate. Equivalently, use~\eqref{eq:M} and vary the unconstrained scalars:
+\begin{equation}\label{eq:shape}
+ E_P=\nabla_a(W\nabla^aP)-W\e^{2P}(\nabla Q)^2=0,
+ \qquad E_Q=\nabla_a(W\e^{2P}\nabla^aQ)=0.
+\end{equation}
+Equations~\eqref{eq:Eab}--\eqref{eq:shape} were derived without imposing a solution or a gauge. Varying only a conformal factor would retain the trace equation $\Box F-V=0$; independent metric variation supplies the other two constraints as well.
+
+\section{Chart evaluation and the real derivative bridge}\label{sec:selection}
+
+On~\eqref{eq:chart},
+\begin{gather}
+ \rho_t=r,\quad \rho_r=t,\quad \rho_{tr}=1,\quad \rho_{tt}=\rho_{rr}=0,
+ \quad \Box\rho=0,\quad X=t^2-r^2,\\
+ J_t=\operatorname{diag}(1/t,-1/t),\qquad J_r=\operatorname{diag}(-1/r,1/r),\\
+ T_{tt}=2/t^2,\quad T_{rr}=2/r^2,\quad T_{tr}=-2/\rho,
+ \quad T=2(t^2-r^2)/\rho^2.
+\end{gather}
+The chain rule gives
+\begin{equation}
+ \partial_t^2F=F''r^2,\quad \partial_r^2F=F''t^2,\quad
+ \partial_t\partial_rF=\rho F''+F',\quad \Box F=F''(t^2-r^2).
+\end{equation}
+Writing $s_0=t^2+r^2$, substitution into~\eqref{eq:Eab} yields precisely
+\begin{align}
+ E_{tt}&=-F''t^2+\frac{Us_0}{2}-\frac{Ws_0}{4\rho^2}+\frac V2,\label{eq:Ett}\\
+ E_{rr}&=-F''r^2+\frac{Us_0}{2}-\frac{Ws_0}{4\rho^2}-\frac V2,\label{eq:Err}\\
+ E_{tr}&=-(\rho F''+F')+\rho U+\frac W{2\rho}.\label{eq:Etr}
+\end{align}
+All functions in these equations are evaluated at $\rho=tr$. Multiplication by $4\rho^2,4\rho^2,2\rho$, respectively, gives exactly the polynomial equations in the supplied \texttt{ThmA.lean}. Each multiplier is nonzero on the stated domain, so this is an equivalence.
+
+\subsection{Pointwise coefficient selection}
+
+Subtract~\eqref{eq:Err} from~\eqref{eq:Ett}:
+\begin{equation}\label{eq:range}
+ V(\rho)=F''(\rho)(t^2-r^2).
+\end{equation}
+Fix any $\rho>0$. At $(t,r)=(\sqrt\rho,\sqrt\rho)$, equation~\eqref{eq:range} gives $V(\rho)=0$. At $(2\sqrt\rho,\sqrt\rho/2)$, it then gives
+\begin{equation}
+ 0=\frac{15\rho}{4}F''(\rho),\qquad\text{hence }F''(\rho)=0.
+\end{equation}
+Equation~\eqref{eq:Ett}, with $s_0>0$, now yields $2\rho^2U=W$. Equation~\eqref{eq:Etr} then yields $W=\rho F'$. These are identities for every positive area, not a fit at a finite list of areas.
+
+\subsection{Why the same derivative constant holds everywhere}
+
+\begin{lemma}[Analytic closure]\label{lem:mvt}
+Let $F,F_1,F_2:I\to\R$ satisfy $F'=F_1$ and $F_1'=F_2$ pointwise, with $F_2=0$. Then there are constants $a,b$ such that $F_1=a$ and $F=a\rho+b$ on $I$.
+\end{lemma}
+\begin{proof}
+Choose arbitrary $0<x<y$. Differentiability of $F_1$ implies continuity on $[x,y]$, and the mean-value theorem gives a point $\xi\in(x,y)$ such that
+\begin{equation}
+ F_1(y)-F_1(x)=F_2(\xi)(y-x)=0.
+\end{equation}
+Therefore $F_1$ is constant on the connected interval: take $a=F_1(1)$. Apply the same argument to $G(\rho)=F(\rho)-a\rho$, whose derivative vanishes. Then $G=b=F(1)-a$, proving the claim. Continuity of $F_2$ is not needed for this lemma.
+\end{proof}
+
+The compiled bridge uses \texttt{HasDerivAt F (F1 x) x} and \texttt{HasDerivAt F1 (F2 x) x}; it therefore identifies the formal functions with genuine derivatives. Applying Lemma~\ref{lem:mvt} to the pointwise result gives the four even identities in~\eqref{eq:selected} with one common $a,b$.
+
+\subsection{Local version}
+
+On any connected open positive chart region, its area image is an open interval. At a point on a fixed-$\rho$ hyperbola, the local variation of $t$ gives
+\begin{equation}
+ \frac{\dd}{\dd t}\left(t^2-\frac{\rho^2}{t^2}\right)=2t+\frac{2\rho^2}{t^3}>0.
+\end{equation}
+Thus two nearby points already force $F''=V=0$ on that area image. The same mean-value proof gives common constants on that connected interval. Full-quadrant calibration supplies the global domain $(0,\infty)$ used in the compiled theorem.
+
+\section{All-field converse, odd coupling, and positivity}\label{sec:converse}
+
+On the chart, the even scalar equations are
+\begin{equation}
+ E_\rho=(t^2-r^2)\left[-U'-\frac{W'}{2\rho^2}\right]+V',\qquad
+ E_P=\frac{t^2+r^2}{\rho}\left(\frac W\rho-W'\right),\qquad E_Q=0.
+\end{equation}
+For the selected coefficients, $U'=-a/(2\rho^2)$, $W'=a$, and $V'=0$. All these equations vanish, as do the three metric equations. The first-variation formula proves stationarity under all six independent field variations.
+
+The odd density~\eqref{eq:odd} is metric independent. Its area and $P$ variations vanish on $Q=0$, while its $Q$ Euler derivative is
+\begin{equation}\label{eq:k}
+ E_Q^{\rm odd}=2\e^Pk'(\rho)(\rho_tP_r-\rho_rP_t)
+ =-4\frac tr k'(tr).
+\end{equation}
+Stationarity and $t/r>0$ give $k'=0$ at every positive area. The connected-domain derivative lemma gives $k=k_0$. Conversely,
+\begin{equation}
+ 2k_0\e^P(P_tQ_r-P_rQ_t)
+ =2k_0\left[\partial_t(\e^PQ_r)-\partial_r(\e^PQ_t)\right],
+\end{equation}
+so its compactly supported variation vanishes. Reversing orientation reverses the sign in~\eqref{eq:k} and preserves its conclusion. Parity is therefore not an additional premise of Theorem~\ref{thm:main}.
+
+In a conformal quotient chart, for the nondegenerate branch $W\ne0$, the shape Hamiltonian is
+\begin{equation}\label{eq:H}
+ \mathcal H_{\rm shape}=
+ \frac{\pi_P^2+\e^{-2P}\pi_Q^2}{2W}
+ +\frac W2(P_r^2+\e^{2P}Q_r^2).
+\end{equation}
+Its kinetic and gradient quadratic forms are positive definite exactly when $W>0$. Since $W=a\rho$ and $\rho>0$, this gives $a>0$. In fact, positivity of $W$ at one positive area suffices after selection. This completes Theorem~\ref{thm:main}.
+
+\section{Physical premises and their common realization}\label{sec:physical}
+
+The hypotheses used for the physical interpretation are: a calibrated canonical probe; a Lorentzian two-dimensional quotient and two spacelike orbit directions with common frame congruence; the invariant local derivative-two action class; stationarity of the stated flat vacuum; positive radiative energy; and calibrated minimal probe coupling when identifying a conformal frame. Each mathematical consequence below is proved from those exact inputs.
+
+\subsection{Canonical saturation produces the shape matrix}
+
+Work with $\widehat q=x$ and $\widehat p=-i\partial_x$ in $L^2(\R)$, with commutator $iI$ on the Schwartz core. For a centered density operator with finite covariance
+\begin{equation}
+ C=\begin{pmatrix}q&c\\c&p\end{pmatrix}>0,\qquad qp-c^2=\tfrac14,
+\end{equation}
+set $z=(c+i/2)/q=u+iv$ and $B=\widehat p-z\widehat q$. Direct quadratic-form evaluation gives
+\begin{equation}
+ \Tr(\varrho B^\dagger B)=\frac{qp-c^2-1/4}{q}=0.
+\end{equation}
+Positivity places every occupied spectral vector of $\varrho$ in $\ker B$. The weak equation $-i\psi'-zx\psi=0$ has the one-dimensional normalizable kernel
+\begin{equation}
+ \psi_{u,v}(x)=\left(\frac v\pi\right)^{1/4}\exp\left[\frac{i(u+iv)x^2}{2}\right],\qquad v>0.
+\end{equation}
+Hence the state is rank one and
+\begin{equation}
+ M=2C=\frac1v\begin{pmatrix}1&u\\u&u^2+v^2\end{pmatrix}>0,\qquad\det M=1.
+\end{equation}
+Finite second moments justify the displayed form expectation; the kernel equation is interpreted in the weak, locally absolutely continuous sense. Every positive unimodular $M$ is obtained from $v=1/M_{11}$ and $u=M_{12}/M_{11}$.
+
+The pure-state Fisher metric, using $\langle x^2\rangle=1/(2v)$ and $\langle x^4\rangle=3/(4v^2)$, is
+\begin{equation}
+ \dd s^2_{\rm QFI}=\frac{\dd u^2+\dd v^2}{2v^2},\qquad
+ \frac12\Tr[(M^{-1}\dd M)^2]=\frac{\dd u^2+\dd v^2}{v^2}.
+\end{equation}
+Thus $P=-\log v,Q=u$ gives the normalized target metric $\dd P^2+\e^{2P}\dd Q^2$. The factor of two is retained in the normalization of the action.
+
+\subsection{The common frame representation fixes the orbit map}
+
+Suppose a positive unimodular orbit map obeys $B(AMA^T)=AB(M)A^T$ for $A\in SL(2,\R)$. At $M=I$, rotational isotropy makes $B(I)$ a scalar matrix; positivity and determinant one give $B(I)=I$. Taking $A=M^{1/2}$ then proves
+\begin{equation}
+ B(M)=B(AIA^T)=AB(I)A^T=M.
+\end{equation}
+The common congruence representation is the physical identification being calibrated.
+
+For the literal metric dictionary
+\begin{equation}\label{eq:g}
+ g=h_{ab}\dd x^a\dd x^b+\rho M_{IJ}\dd y^I\dd y^J,
+\end{equation}
+the block sizes give dimension $2+2=4$ and Sylvester inertia gives signature $(-,+,+,+)$. Moreover $\det g=\rho^2\det h$. The coefficients are independent of $y^I$, so the two orbit fields commute and are Killing; the positive orbit block makes them spacelike. The coordinate base surfaces prove orthogonal transitivity.
+
+\subsection{Why the action class has exactly these terms}
+
+At $M=I$ the target tangent is the space of traceless symmetric matrices
+\begin{equation}
+ \begin{pmatrix}x&y\\y&-x\end{pmatrix}.
+\end{equation}
+An orbit-frame rotation acts on $(x,y)$ through twice its angle. Therefore it has no invariant covector, one invariant symmetric bilinear form up to scale, and one invariant alternating form. Transitivity makes every invariant derivative-free coefficient depend only on $\rho$.
+
+Base covariance, locality, polynomial total derivative order at most two, and absence of other fields then give $F R$, $U(\nabla\rho)^2$, the unique shape kinetic term, and $V$. A term $C(\rho)\Box\rho$ integrates into $U$. The alternating form gives exactly~\eqref{eq:odd}; there is no independent mixed area--shape term because there is no invariant target one-form. This proves the classification, including the odd term. The requirement concerns total derivative order of the action, not merely order of the resulting differential equations.
+
+\subsection{A calibrated probe uniquely identifies the quotient Weyl frame}\label{sec:frame}
+
+Hold $h,\rho,M$ and the orbit normalization fixed and write
+\begin{equation}
+ g_\sigma=\e^{2\sigma}h+\rho M.
+\end{equation}
+For a minimally coupled scalar of calibrated mass $m$ and mode $\Phi(x,y)=\phi(x)\e^{ik_Iy^I}$, variation of its quadratic action gives
+\begin{equation}
+ \e^{-2\sigma}D_0\phi-V_k\phi=0,
+ \quad D_0=\frac1{\rho\vol}\partial_a(\rho\vol h^{ab}\partial_b),
+ \quad V_k=m^2+\rho^{-1}M^{IJ}k_Ik_J.
+\end{equation}
+Indeed $\sqrt{-g_\sigma}=\e^{2\sigma}\rho\vol$ and $g_\sigma^{ab}=\e^{-2\sigma}h^{ab}$, so their factors cancel in the base kinetic density. Normalize the principal part to the same $D_0$:
+\begin{equation}\label{eq:probe}
+ P_\sigma=D_0-\e^{2\sigma}V_k.
+\end{equation}
+If $V_k>0$, equality of two calibrated operators implies equality of their zero-order coefficients and hence $\sigma_1=\sigma_2$. Wherever a common homogeneous probe solution is nonzero,
+\begin{equation}
+ \e^{2\sigma}=\frac{D_0\phi}{V_k\phi}.
+\end{equation}
+For $m>0$ this denominator coefficient is positive; nonzero orbit momentum also suffices when $m=0$. Additional solutions cover nodes. Source normalization is retained if sourced, rather than homogeneous, responses are compared. Scaling the probe amplitude by $\varepsilon$ scales its stress by $\varepsilon^2$, while leaving its normalized homogeneous equation unchanged.
+
+\subsection{One exact simultaneous witness}
+
+Use~\eqref{eq:chart} and any $a>0,b,k_0$. The four-metric is
+\begin{equation}
+ g=-\dd t^2+\dd r^2+t^2\dd z^2+r^2\dd\varphi^2.
+\end{equation}
+The locally invertible transformation
+\begin{equation}
+ X^0=t\cosh z,\quad X^3=t\sinh z,\quad
+ X^1=r\cos\varphi,\quad X^2=r\sin\varphi
+\end{equation}
+pulls Minkowski space back to $g$. Its flatness is therefore independent of the selected equations. Here $z$ generates a spacelike boost orbit; this is the local calibration configuration. The same orbit shape is the covariance of
+\begin{equation}
+ \psi_{t,r}(x)=\left(\frac r{\pi t}\right)^{1/4}\exp\left(-\frac r{2t}x^2\right).
+\end{equation}
+The full action is stationary by the converse already proved, and the shape energy is positive.
+
+For a calibrated $m>0$ and zero orbit momentum, $D_0=-\partial_t^2-t^{-1}\partial_t+\partial_r^2+r^{-1}\partial_r$. Choose two time-only solutions of
+\begin{equation}
+ f''+t^{-1}f'+m^2f=0
+\end{equation}
+with initial data $(f_1,f_1')=(1,0)$ and $(f_2,f_2')=(0,1)$ at $t_*>0$. Existence and uniqueness hold on every compact positive time interval. Abel's identity gives their Wronskian $t_*/t\ne0$, so they never vanish together. Their nonzero sets cover the patch and each gives $\e^{2\sigma}=1$ through~\eqref{eq:probe}. This is one common realization of the canonical probe, geometry, action, stationarity, positive energy, and frame identification.
+
+The same selected action also has the exact cylindrical boundary-sector witness
+\begin{equation}
+ h=-\dd T^2+\dd R^2,\quad \rho=R,\quad P=-\log R,\quad Q=0,
+ \quad g=-\dd T^2+\dd R^2+\dd z^2+R^2\dd\varphi^2.
+\end{equation}
+Here $\psi=\chi=A=\gamma=0$, the axis is regular in Cartesian coordinates, the asymptotic twist is zero, and $W=aR$ satisfies the shrinking-axis condition. Its canonical covariance is obtained from $u=0,v=R$; the two massive probes $\cos(mT)$ and $\sin(mT)$ cover all nodes and identify the literal frame. Thus the local calibration and global cylindrical conditions are compatible in one selected theory. Section~\ref{sec:twist} verifies the nontrivial corrected cylindrical data separately.
+
+\section{The selected action equals the Einstein reduction off shell}
+
+Let $G=\rho M$ and $K_a=G^{-1}\partial_aG$. The mixed Christoffel symbols of~\eqref{eq:g} are
+\begin{equation}
+ \Gamma^a_{IJ}=-\tfrac12h^{ab}\partial_bG_{IJ},\qquad
+ \Gamma^I_{aJ}=\tfrac12(K_a)^I{}_J.
+\end{equation}
+Their Ricci contractions are
+\begin{align}
+ R_{ab}[g]&=R_{ab}[h]-\tfrac12\nabla_b\Tr K_a-\tfrac14\Tr(K_aK_b),\\
+ G^{IJ}R_{IJ}[g]&=-\tfrac12\nabla_a\Tr K^a-\tfrac14\Tr K_a\Tr K^a.
+\end{align}
+Since $K_a=(\partial_a\log\rho)I+J_a$ and $\Tr J_a=0$, their sum gives
+\begin{equation}
+ R[g]=R[h]-2\Box\log\rho-\tfrac32(\nabla\log\rho)^2-\tfrac14T.
+\end{equation}
+Multiplying by $\sqrt{-g}=\rho\vol$ proves the off-shell identity
+\begin{equation}\label{eq:EH}
+ \boxed{\sqrt{-g}R[g]=\vol\left[\rho R[h]+\frac X{2\rho}-\frac\rho4T\right]
+ -2\partial_a(\vol\nabla^a\rho).}
+\end{equation}
+No field equations entered this contraction. The selected even action is $a$ times the Einstein reduction per orbit coordinate volume, plus $b\int\vol R[h]$ and boundary terms. For a chosen orbit volume $V_y$, the usual normalization is $a=V_y/(16\pi G_4)$.
+
+The constant $b$ is bulk-null because the two-dimensional Einstein tensor and its coefficient derivatives vanish. Calling the complete functional an Euler invariant includes its appropriate Gauss--Bonnet boundary and corner terms. Constant $k$ likewise contributes a boundary functional. Compact support suffices for every local theorem here. The two-Killing Einstein/sigma-model reduction has established literature~\cite{Cruz,Grumiller}.
+
+\section{What Ricci-flat calibration leaves invariant}\label{sec:quadratic}
+
+\begin{theorem}[All Ricci-flat backgrounds survive quadratic curvature]
+On a four-dimensional Lorentzian manifold, let
+\begin{equation}
+ S=S_{\rm EH}+\int\sqrt{-g}\left(\alpha R^2+\beta R_{ab}R^{ab}+\gamma R_{abcd}R^{abcd}\right)\dd^4x,
+\end{equation}
+where $S_{\rm EH}$ has zero cosmological constant and $\alpha,\beta,\gamma$ are arbitrary constants. Every Ricci-flat metric is stationary under compactly supported metric variations for every choice of these constants.
+\end{theorem}
+\begin{proof}
+At $R_{ab}=0$ we have $R=0$. The first variation of $\sqrt{-g}R^2$ contains only $R^2\delta\sqrt{-g}$ and $2\sqrt{-g}R\delta R$, so it is zero. The first variation of $\sqrt{-g}R_{ab}R^{ab}$ similarly contains a factor of $R_{ab}$ in every term and is zero. In four dimensions,
+\begin{equation}
+ E_4=R_{abcd}R^{abcd}-4R_{ab}R^{ab}+R^2
+\end{equation}
+has a bulk-null integrated first variation. Explicitly, its Euler four-form is proportional to $\epsilon_{abcd}\mathcal R^{ab}\wedge\mathcal R^{cd}$. With connection $\omega$, its variation is
+\begin{equation}
+ 2\epsilon_{abcd}D(\delta\omega^{ab})\wedge\mathcal R^{cd}
+ =2\dd\left(\epsilon_{abcd}\delta\omega^{ab}\wedge\mathcal R^{cd}\right),
+\end{equation}
+using $D\mathcal R=0$. Compact support makes this integral zero. Therefore the integrated first variation of the Riemann-square term equals four times that of Ricci-square minus that of scalar-square and also vanishes. Einstein--Hilbert stationarity follows from Ricci flatness.
+\end{proof}
+
+This applies to every curved Ricci-flat reference, as well as flat ones. Thus any test consisting solely of membership in the Ricci-flat vacuum solution set leaves these coefficients unrestricted. The derivative-order premise is consequently listed separately from the vacuum calibration premise. Background stationarity is the test meant in this statement; perturbation responses contain different information.
+
+There is a useful strengthening in four dimensions. For any Einstein metric $R_{ab}=\Lambda g_{ab}$, contracted Bianchi makes $\Lambda$ constant on each connected component. The scalar-square Euler tensor
+\begin{equation}
+ 2RR_{ab}-\tfrac12g_{ab}R^2+2(g_{ab}\Box-\nabla_a\nabla_b)R
+\end{equation}
+vanishes with $R=4\Lambda$. Write $R_{ab}R^{ab}=S_{ab}S^{ab}+R^2/4$, where $S_{ab}=R_{ab}-Rg_{ab}/4$. Since $S_{ab}=0$, the first variation of its squared norm vanishes. Gauss--Bonnet again handles Riemann-square. Consequently all Einstein backgrounds with the matching cosmological term survive the same quadratic additions. This agrees with the established quadratic-gravity result~\cite{Pravda}.
+
+\section{A reduced four-derivative term detected by Levi--Civita}
+
+Put
+\begin{equation}
+ Y=\tfrac12T=(\nabla P)^2+\e^{2P}(\nabla Q)^2,\qquad
+ N=\rho^2Y-X,
+\end{equation}
+and consider the definite deformation
+\begin{equation}\label{eq:deform}
+ \Delta S=\int\vol\,\Lambda(\rho)N^2\dd^2x.
+\end{equation}
+It has total derivative order four. For the constant product, flat cylindrical, and flat Milne--polar calibrations, $N=0$ identically. The identity
+\begin{equation}
+ \delta(\vol\Lambda N^2)=\delta(\vol\Lambda)N^2+2\vol\Lambda N\delta N
+\end{equation}
+then proves vanishing of its full first variation on all three charts.
+
+Define $A_{ab}=\rho^2(P_aP_b+\e^{2P}Q_aQ_b)-\rho_a\rho_b$, so $N=h^{ab}A_{ab}$. Its metric Euler tensor and trace are
+\begin{equation}\label{eq:Ntrace}
+ E^{\Delta}_{ab}=\Lambda(2NA_{ab}-\tfrac12h_{ab}N^2),\qquad
+ h^{ab}E^{\Delta}_{ab}=\Lambda N^2.
+\end{equation}
+
+Now use the exact Levi--Civita family, for $R>0$,
+\begin{equation}\label{eq:LC}
+ \rho=R,\quad P=(c-1)\log R,\quad Q=0,\quad
+ h=\e^{\gamma_0}R^{c^2/2-c}(-\dd T^2+\dd R^2).
+\end{equation}
+It satisfies the selected vacuum equations. Writing $h=\e^{2s}\eta$, one has
+\begin{equation}
+ X=\e^{-2s},\quad Y=\e^{-2s}(c-1)^2/R^2,\quad
+ N=\e^{-2s}c(c-2).
+\end{equation}
+The four-dimensional curvature component $R_{z\varphi z\varphi}=\tfrac14c(c-2)\e^{-2s}$ proves nonflatness for $c\ne0,2$. For any such fixed member, $N^2$ is strictly positive for every $R>0$. The undeformed trace vanishes, so full stationarity and~\eqref{eq:Ntrace} force
+\begin{equation}
+ \Lambda(R)=0\qquad\text{for every }R>0.
+\end{equation}
+This excludes the entire coefficient function in~\eqref{eq:deform}, not only a constant coefficient. It is compatible with Section~\ref{sec:quadratic}: this particular reduced deformation is distinguishable, while the covariant four-dimensional quadratic-curvature family remains stationary on the Ricci-flat references.
+
+\section{Independent integrability: necessity and sufficiency}\label{sec:lax}
+
+Use local conformal coordinates $h=\e^{2\sigma}(-\dd T^2+\dd R^2)$, and let $\partial_\pm=\partial_T\pm\partial_R$ and $J_\pm=M^{-1}\partial_\pm M$. The conformal factor cancels from the two-dimensional shape equation. On a sufficiently small connected, simply connected regular subpatch, take $W>0$ of class $C^2$ and the torsion-free weighted shape system
+\begin{equation}\label{eq:MCe}
+ \MC=\partial_+J_--\partial_-J_++[J_+,J_-]=0,\qquad
+ \cE=\frac1W\{\partial_+(WJ_-)+\partial_-(WJ_+)\}=0.
+\end{equation}
+The first equation is an identity for an actual $M$. A scalar-current rational Lax family means
+\begin{equation}\label{eq:Lax}
+ L_+=\frac{J_+}{1-s},\qquad L_-=\frac{J_-}{1+s},
+ \qquad s\ne0,1,-1,
+\end{equation}
+with a scalar parameter equation depending on $W$ and $s$, independent of the chosen current solution, and a nontrivial local family of its initial values. Necessity below is a statement for the shape system with generic admissible current data, not one specially vanishing current.
+
+\begin{theorem}[Exact integrability selector]\label{thm:lax}
+The system~\eqref{eq:MCe} admits the regular nontrivial family~\eqref{eq:Lax} for generic currents if and only if $W_{+-}=0$. Its scalar parameter equations are
+\begin{equation}\label{eq:s}
+ s_+=\frac{s(1+s)}{1-s}\partial_+\log W,\qquad
+ s_-=\frac{s(1-s)}{1+s}\partial_-\log W.
+\end{equation}
+For these parameter equations, the full connection curvature obeys
+\begin{equation}\label{eq:fullcurv}
+ \boxed{\cF:=\partial_+L_--\partial_-L_++[L_+,L_-]
+ =\frac{\MC-s\cE}{1-s^2}.}
+\end{equation}
+Consequently, for actual $M$ and regular nonzero $s$, Lax flatness and the shape equation are equivalent.
+\end{theorem}
+
+\subsection{Connection algebra and necessity}
+
+Write $a_s=(1-s)^{-1}$ and $b_s=(1+s)^{-1}$, temporarily using these as coefficient names. Before imposing~\eqref{eq:s}, the connection curvature contains the independent current directions $J_+,J_-$ and $[J_+,J_-]$. The commutator condition is
+\begin{equation}
+ 2a_sb_s=a_s+b_s.
+\end{equation}
+The two remaining coefficient equations give precisely~\eqref{eq:s}. Independence is realized at $M=I$ by any two nonparallel symmetric traceless currents, for example
+\begin{equation}
+ J_+=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+ J_-=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+ [J_+,J_-]=\begin{pmatrix}0&2\\-2&0\end{pmatrix}.
+\end{equation}
+The first two span the symmetric traceless tangent, while the commutator is antisymmetric. They are admissible first jets of an actual positive unimodular $M$: at $M=I$ choose
+\begin{equation}
+ M_{+-}=\tfrac12\{J_+,J_-\}-\tfrac12(uJ_-+vJ_+),\qquad
+ u=(\log W)_+,\quad v=(\log W)_-.
+\end{equation}
+This second jet is symmetric, has $\Tr M_{+-}=\Tr(J_+J_-)$ as required by $\det M=1$, and satisfies the weighted shape equation. The coefficient matching is therefore substantive for the generic system. Direct substitution proves~\eqref{eq:fullcurv} including off-shell $\MC$ and $\cE$ terms.
+
+Put $u=(\log W)_+$, $v=(\log W)_-$, $g(s)=s(1+s)/(1-s)$, and $j(s)=s(1-s)/(1+s)$. Differentiating~\eqref{eq:s} in the opposite order gives
+\begin{align}
+ \partial_-\partial_+s-\partial_+\partial_-s
+ &=(g'j-j'g)uv+(g-j)(\log W)_{+-}\\
+ &=\frac{4s^2}{1-s^2}\left[uv+(\log W)_{+-}\right]
+ =\frac{4s^2}{1-s^2}\frac{W_{+-}}W.\label{eq:frob}
+\end{align}
+For regular nonzero $s$ this vanishes only if $W_{+-}=0$. This proves necessity.
+
+\subsection{Explicit sufficiency and spectral family}
+
+If $W_{+-}=0$, the one-form $W_R\dd T+W_T\dd R$ is locally closed. Choose its primitive $\widetilde W$, so
+\begin{equation}
+ \widetilde W_T=W_R,\quad\widetilde W_R=W_T,
+ \quad\widetilde W_+=W_+,\quad\widetilde W_-=-W_-.
+\end{equation}
+For a constant parameter $w$, define $s$ implicitly by
+\begin{equation}\label{eq:curve}
+ \boxed{w=\widetilde W+\frac W2(s+s^{-1}).}
+\end{equation}
+The derivative of the right side with respect to $s$ is $\tfrac W2(1-s^{-2})$, nonzero at every regular $s$. The implicit-function theorem therefore produces a local family for all nearby $w$. Differentiating~\eqref{eq:curve} gives~\eqref{eq:s}; substituting into~\eqref{eq:fullcurv} proves Lax flatness on every shape solution. This proves sufficiency and constructs the spectral family.
+
+The ordinary zero-curvature linear problem is $\partial_\pm\Psi=-L_\pm\Psi$ with this curvature convention. Compatibility is exactly $\cF=0$. For example $W=R$, $\widetilde W=T$ gives $w=T+\tfrac R2(s+s^{-1})$ explicitly. The local-coupling integrability framework has primary precedent~\cite{Hoare}; all identities needed here are displayed and separately verified.
+
+\subsection{From harmonic weight to the area law}
+
+Here $W_{+-}=-\e^{2\sigma}\Box W$ and $\rho_+\rho_-=-\e^{2\sigma}(\nabla\rho)^2$. If $W=W(\rho)$ and $\rho_{+-}=0$, the chain rule is
+\begin{equation}\label{eq:weightchain}
+ W_{+-}=W''(\rho)\rho_+\rho_-.
+\end{equation}
+Assume the area gradient is non-null at a point above each area value in the connected interval being classified. Then $\rho_+\rho_-\ne0$ there, so~\eqref{eq:weightchain} gives $W''=0$ at every area value. Lemma~\ref{lem:mvt}, now applied to $W$, gives
+\begin{equation}
+ W=c_0+c_1\rho.
+\end{equation}
+When the classified interval has $0$ as a boundary point, in particular for $I=(0,\infty)$, the shrinking-axis condition $\lim_{\rho\downarrow0}W(\rho)=0$ sets $c_0=0$. Positivity at one positive area gives $c_1>0$. For power laws $W=c\rho^n$, $c>0$, the exact condition is $n(n-1)=0$: both $n=0$ and $n=1$ pass integrability, and the stated axis condition selects $n=1$.
+
+These quantifiers matter. If $\rho_+\rho_-=0$ everywhere, the chain rule supplies no condition on $W''$. If $s=0$, the connection is just the Maurer--Cartan connection and contains no shape-equation test. The theorem uses generic currents and the explicitly regular spectral branch to ensure both implications.
+
+\subsection{Exact surviving frame family}
+
+For completeness, the integrability conclusion and full action selection are combined without identifying distinct assumptions. Let $B(\rho)$ be a smooth compactly supported function and set
+\begin{equation}
+ F=a\rho,\quad W=a\rho,\quad V=0,\quad
+ U_\eta=\frac a{2\rho}+2a\eta B'(\rho),\quad
+ h_\eta=\e^{-2\eta B(\rho)}h_0.
+\end{equation}
+The two-dimensional conformal transformation of $\int\vol FR$, followed by one integration by parts, gives exactly this change of $U$. The weighted shape equations and their Lax family remain the same. The literal four-dimensional metrics change with $h_\eta$; the probe operator~\eqref{eq:probe} distinguishes them. The full variational calibration of Theorem~\ref{thm:main} fixes $U$ in the calibrated literal frame. Both routes share the area-weighted shape coupling and are connected in the final theorem by these stated inputs.
+
+\section{Asymptotic twist: correction and fresh evolution}\label{sec:twist}
+
+Fix the twist-potential convention $A_R=R\e^{-2\psi}\chi_T$ and $A_T=R\e^{-2\psi}\chi_R$. In the dual cylindrical variables, define
+\begin{equation}
+ \mathcal T(T)=\int_0^\infty R\e^{-2\psi}\chi_T\,\dd R.
+\end{equation}
+The exact shape equation is the conservation law
+\begin{equation}\label{eq:twistcons}
+ \partial_T(R\e^{-2\psi}\chi_T)=\partial_R(R\e^{-2\psi}\chi_R).
+\end{equation}
+Therefore $\mathcal T=A(\infty)-A(0)$ and $\dot{\mathcal T}=[R\e^{-2\psi}\chi_R]_0^\infty$. Regularity at the axis and vanishing flux at infinity give conservation. With the fixed axis and orbit conventions, $\mathcal T=0$ selects the zero asymptotic twist sector required by the stated conical boundary class.
+
+For initial data $\chi_T^{(0)}$ and a fixed profile $f(R)=\exp[-(R/1.2)^2]$, choose the single continuum coefficient
+\begin{equation}\label{eq:cstar}
+ c_*=-\frac{\displaystyle\int_0^\infty R\e^{-2\psi}\chi_T^{(0)}\dd R}
+ {\displaystyle\int_0^\infty R\e^{-2\psi}f\dd R},\qquad
+ \chi_T^{\rm corrected}=\chi_T^{(0)}+c_* f.
+\end{equation}
+The denominator is strictly positive. Linearity of the integral proves $\mathcal T(0)=0$ exactly for this definition. The same coefficient is used on every grid; it is not refitted to discrete quadrature. The supplied v2.2 source already contains a corrected evolution, and this package includes a fresh execution with explicit finite-boundary flux accounting.
+
+\input{twist_results.tex}
+
+\section{Verification ledger and reproduction}\label{sec:verification}
+
+The proof uses one common set of fields and coefficients throughout. The compiled theorem combines division-form chart equations, genuine derivative hypotheses, and the selected coefficient identities in one quantified conclusion. The hand derivation establishes the variational origin of those equations; exact symbolic programs audit that derivation and the physical realization. Each kind of evidence is named separately below.
+
+\input{verification_results.tex}
+
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.32\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}@{}}
+\toprule
+Item & Exact role & Delivered evidence \\
+\midrule\endhead
+Derivative identification & $F'=F_1$, $F_1'=F_2$ on connected positive domain & Compiled derivative-zero and affine theorems; no independent-function substitution \\
+Quotient Weyl frame & $h$ is the literal base block in $g$ & Calibrated massive/momentum probe uniqueness; explicit common witness \\
+Asymptotic twist & Chosen axis/orbit normalization and $\mathcal T=0$ & Conservation identity, continuum correction, fresh multi-grid evolution and flux residuals \\
+Derivative order & Local polynomial action with total order at most two & Invariant classification; separate quadratic-curvature degeneracy theorem \\
+Vacuum stationarity & All compactly supported field variations of the reference vanish & Exact first variation and complete converse \\
+Quantum preparation & Calibrated canonical pair and saturated centered covariance & Gaussian kernel proof and exact covariance realization \\
+Positive normalization & Positive nondegenerate radiative kinetic form & Hamiltonian calculation and compiled $a>0$ selection \\
+Integrability data & Torsion-free system, generic currents, regular nonzero spectral branch & Full-curvature identity, Frobenius theorem, explicit spectral curve \\
+Area and axis data & Harmonic area, non-null coverage, vanishing axis weight & Chain rule and affine/axis selection; power-branch controls \\
+Empirical interpretation & The stated calibrations describe an intended physical implementation & Explicit operational hypotheses; the constructed witness proves simultaneous mathematical realization \\
+\bottomrule
+\end{longtable}
+
+Source files, logs, exact receipts, numerical tables, the pinned Lean toolchain, and the mathlib commit are included in the accompanying archive. The source inventory preserves hashes of the supplied theorem files. The build instructions rerun the proofs and calculations rather than substituting a historical receipt.
+
+\begin{thebibliography}{9}
+\bibitem{Voss20} Logan Voss research program, \emph{Quantum Covariance and Flat-Vacuum Consistency Select Nonlinear Cylindrical Gravity}, supplied v2.0 manuscript, 11 November 2026.
+\bibitem{Voss21} \emph{Voss v2.1 addendum: verification audit and single-chart selection theorem}, supplied audit, 11 November 2026.
+\bibitem{Voss22} \emph{Kinematic Foundations, Continuum Criteria, and an Independent Lax Selector}, supplied v2.2 supplement and scripts, 11 November 2026.
+\bibitem{Cruz} J. Cruz, A. Mikovi\'c, J. Navarro-Salas, \emph{Free Field Realization of Cylindrically Symmetric Einstein Gravity}, Phys. Lett. B 437 (1998) 273--278. \url{https://arxiv.org/abs/gr-qc/9802067}.
+\bibitem{Grumiller} D. Grumiller, W. Kummer, D. V. Vassilevich, \emph{Dilaton Gravity in Two Dimensions}, Phys. Rept. 369 (2002) 327--430. \url{https://arxiv.org/abs/hep-th/0204253}.
+\bibitem{Pravda} V. Pravda, A. Pravdov\'a, J. Podolsk\'y, R. \v Svarc, \emph{Exact solutions to quadratic gravity}, Phys. Rev. D 95 (2017) 084025. \url{https://arxiv.org/abs/1606.02646}.
+\bibitem{Hoare} B. Hoare, N. Levine, A. A. Tseytlin, \emph{Sigma models with local couplings: a new integrability--RG flow connection}, JHEP 11 (2020) 020. \url{https://arxiv.org/abs/2008.01112}.
+\bibitem{Mathlib} The mathlib community, \emph{Mean-value theorems and zero-derivative constancy}. Pinned source and build receipt in the archive. Current API documentation: \url{https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/MeanValue.html}.
+\end{thebibliography}
+\end{document}

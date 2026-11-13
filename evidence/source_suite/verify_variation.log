@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "arithmetic": "exact symbolic",
+  "sympy_version": "1.14.0",
+  "check_count": 29,
+  "checks": [
+    {
+      "name": "chart_area_gradient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "chart_area_harmonic",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "chart_shape_metric_tt",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "chart_shape_metric_rr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "chart_shape_metric_tr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "metric_chart_tt",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "metric_chart_rr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "metric_chart_tr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "metric_trace",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "area_chart",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "shape_chart",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "selected_tt",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "selected_rr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "selected_tr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "selected_area",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "selected_shape",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "independent_area_shape_covectors",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "target_determinant",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "target_trace_tt",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "target_trace_rr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "target_trace_tr",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "curvature_variation_integration_by_parts",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "odd_shape_chart",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "mixed_ricci_02",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "mixed_ricci_03",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "mixed_ricci_12",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "mixed_ricci_13",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "four_dimensional_generic_jet_scalar_curvature",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "einstein_density_boundary",
+      "residual": "0",
+      "status": "passed"
+    }
+  ]
+}

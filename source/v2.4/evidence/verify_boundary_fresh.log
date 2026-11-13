@@ -1,0 +1,105 @@
+{"intervals": 128, "outer_radius": 8.0, "final_time": 0.8, "dR": 0.0625, "dt": 0.01, "steps": 80, "gamma_initial": 0.8562769696346947, "gamma_final": 0.8560604608200753, "relative_energy_drift": 0.00025284904569113743, "max_exp_gamma": 2.353869243597268, "initial_discrete_twist": 4.934444893282339e-07, "final_discrete_twist": -0.00023598773831817778, "twist_drift": -0.000236481182807506, "integrated_outer_twist_flux": -1.753239539642116e-07, "twist_balance_defect": -0.0002363058588535418, "integrated_outer_energy_flux": -8.254685141063616e-20, "energy_balance_defect": -0.00021650881461943153, "max_abs_outer_twist_flux": 9.436105945162414e-07, "max_abs_outer_energy_flux": 4.442751932856513e-19, "integrated_semidiscrete_charge_rate": -0.00023648096909339173, "time_integration_charge_identity_error": -2.1371411427660233e-10, "initial_tail_twist_beyond_L": 5.498773854947363e-13, "initial_tail_quadrature_error": 2.185684171520656e-20, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 256, "outer_radius": 8.0, "final_time": 0.8, "dR": 0.03125, "dt": 0.005, "steps": 160, "gamma_initial": 0.8574406350991881, "gamma_final": 0.8573868002422587, "relative_energy_drift": 6.278552091623124e-05, "max_exp_gamma": 2.3569933445208364, "initial_discrete_twist": 1.2343553757417146e-07, "final_discrete_twist": -5.922790303905523e-05, "twist_drift": -5.93513385766294e-05, "integrated_outer_twist_flux": -1.7867686600577057e-07, "twist_balance_defect": -5.917266171062363e-05, "integrated_outer_energy_flux": -8.412548528141971e-20, "energy_balance_defect": -5.383485692944659e-05, "max_abs_outer_twist_flux": 9.576654203751762e-07, "max_abs_outer_energy_flux": 4.508925527254096e-19, "integrated_semidiscrete_charge_rate": -5.9351325121378965e-05, "time_integration_charge_identity_error": -1.3455250436511697e-11, "initial_tail_twist_beyond_L": 5.498773854947363e-13, "initial_tail_quadrature_error": 2.185684171520656e-20, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 512, "outer_radius": 8.0, "final_time": 0.8, "dR": 0.015625, "dt": 0.0025, "steps": 320, "gamma_initial": 0.8577321286626016, "gamma_final": 0.8577186881679741, "relative_energy_drift": 1.566980433441159e-05, "max_exp_gamma": 2.357775731978168, "initial_discrete_twist": 3.086315266746212e-08, "final_discrete_twist": -1.4947793631370221e-05, "twist_drift": -1.4978656784037683e-05, "integrated_outer_twist_flux": -1.7945916948475653e-07, "twist_balance_defect": -1.4799197614552926e-05, "integrated_outer_energy_flux": -8.44938130973158e-20, "energy_balance_defect": -1.344049462748123e-05, "max_abs_outer_twist_flux": 9.609104014115785e-07, "max_abs_outer_energy_flux": 4.5242037001098755e-19, "integrated_semidiscrete_charge_rate": -1.4978655941109911e-05, "time_integration_charge_identity_error": -8.429277715822463e-13, "initial_tail_twist_beyond_L": 5.498773854947363e-13, "initial_tail_quadrature_error": 2.185684171520656e-20, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 1024, "outer_radius": 8.0, "final_time": 0.8, "dR": 0.0078125, "dt": 0.00125, "steps": 640, "gamma_initial": 0.8578050381905215, "gamma_final": 0.8578016792086827, "relative_energy_drift": 3.915787025302783e-06, "max_exp_gamma": 2.357971414359752, "initial_discrete_twist": 7.715668364063682e-09, "final_discrete_twist": -3.8721118585938186e-06, "twist_drift": -3.879827526957882e-06, "integrated_outer_twist_flux": -1.796508020339218e-07, "twist_balance_defect": -3.7001767249239605e-06, "integrated_outer_energy_flux": -8.458403843848398e-20, "energy_balance_defect": -3.358981838785717e-06, "max_abs_outer_twist_flux": 9.617035209211023e-07, "max_abs_outer_energy_flux": 4.527937902814257e-19, "integrated_semidiscrete_charge_rate": -3.879827474327612e-06, "time_integration_charge_identity_error": -5.263027020490155e-14, "initial_tail_twist_beyond_L": 5.498773854947363e-13, "initial_tail_quadrature_error": 2.185684171520656e-20, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 384, "outer_radius": 12.0, "final_time": 0.8, "dR": 0.03125, "dt": 0.005, "steps": 160, "gamma_initial": 0.8574406350991881, "gamma_final": 0.8573868002422598, "relative_energy_drift": 6.278552091493643e-05, "max_exp_gamma": 2.3569933445208386, "initial_discrete_twist": 1.2343608950819338e-07, "final_discrete_twist": -5.904677957193976e-05, "twist_drift": -5.917021566144795e-05, "integrated_outer_twist_flux": -2.0954766613814856e-19, "twist_balance_defect": -5.917021566144774e-05, "integrated_outer_energy_flux": -8.408592222616146e-47, "energy_balance_defect": -5.383485692833645e-05, "max_abs_outer_twist_flux": 1.7943149671632956e-18, "max_abs_outer_energy_flux": 7.200110197298108e-46, "integrated_semidiscrete_charge_rate": -5.9170202206226e-05, "time_integration_charge_identity_error": -1.3455221955875878e-11, "initial_tail_twist_beyond_L": 4.58740033719132e-28, "initial_tail_quadrature_error": 2.241839237569199e-31, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 768, "outer_radius": 12.0, "final_time": 0.8, "dR": 0.015625, "dt": 0.0025, "steps": 320, "gamma_initial": 0.8577321286626016, "gamma_final": 0.8577186881679744, "relative_energy_drift": 1.5669804334152717e-05, "max_exp_gamma": 2.3577757319781685, "initial_discrete_twist": 3.086370305897889e-08, "final_discrete_twist": -1.4767727444629439e-05, "twist_drift": -1.4798591147688417e-05, "integrated_outer_twist_flux": -2.108018258695925e-19, "twist_balance_defect": -1.4798591147688207e-05, "integrated_outer_energy_flux": -8.45891832721129e-47, "energy_balance_defect": -1.344049462725927e-05, "max_abs_outer_twist_flux": 1.8011983711661494e-18, "max_abs_outer_energy_flux": 7.227731472414275e-46, "integrated_semidiscrete_charge_rate": -1.479859030467063e-05, "time_integration_charge_identity_error": -8.430177874676169e-13, "initial_tail_twist_beyond_L": 4.58740033719132e-28, "initial_tail_quadrature_error": 2.241839237569199e-31, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{"intervals": 1536, "outer_radius": 12.0, "final_time": 0.8, "dR": 0.0078125, "dt": 0.00125, "steps": 640, "gamma_initial": 0.8578050381905215, "gamma_final": 0.8578016792086821, "relative_energy_drift": 3.915787025949912e-06, "max_exp_gamma": 2.3579714143597506, "initial_discrete_twist": 7.716218369753689e-09, "final_discrete_twist": -3.6923092837413225e-06, "twist_drift": -3.700025502111076e-06, "integrated_outer_twist_flux": -2.110837330395819e-19, "twist_balance_defect": -3.7000255021108653e-06, "integrated_outer_energy_flux": -8.470230514460904e-47, "energy_balance_defect": -3.358981839340913e-06, "max_abs_outer_twist_flux": 1.802656622068795e-18, "max_abs_outer_energy_flux": 7.23358304662867e-46, "integrated_semidiscrete_charge_rate": -3.7000254494754007e-06, "time_integration_charge_identity_error": -5.263567554565445e-14, "initial_tail_twist_beyond_L": 4.58740033719132e-28, "initial_tail_quadrature_error": 2.241839237569199e-31, "axis_flux": 0.0, "outer_boundary": "frozen field values; historical solver unchanged", "outer_flux_derivative": "second-order one-sided derivative, not overwritten interior gradient"}
+{
+  "status": "PASS",
+  "c_star": 0.05278195754784881,
+  "original_twist": -0.013089872446886107,
+  "corrected_twist": 3.550762114890027e-18,
+  "orders": [
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 128,
+      "field": "psi",
+      "observed_order": 1.9998583860685486
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 128,
+      "field": "chi",
+      "observed_order": 2.002819733849489
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 128,
+      "field": "psi_T",
+      "observed_order": 1.9913843932385884
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 128,
+      "field": "chi_T",
+      "observed_order": 1.9939618867872522
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 256,
+      "field": "psi",
+      "observed_order": 2.0000787770735844
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 256,
+      "field": "chi",
+      "observed_order": 2.000718237486658
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 256,
+      "field": "psi_T",
+      "observed_order": 1.9975683806443167
+    },
+    {
+      "outer_radius": 8.0,
+      "coarse_intervals": 256,
+      "field": "chi_T",
+      "observed_order": 1.9984577214491706
+    },
+    {
+      "outer_radius": 12.0,
+      "coarse_intervals": 384,
+      "field": "psi",
+      "observed_order": 2.0000787770735844
+    },
+    {
+      "outer_radius": 12.0,
+      "coarse_intervals": 384,
+      "field": "chi",
+      "observed_order": 2.0007182374866614
+    },
+    {
+      "outer_radius": 12.0,
+      "coarse_intervals": 384,
+      "field": "psi_T",
+      "observed_order": 1.9975683806443167
+    },
+    {
+      "outer_radius": 12.0,
+      "coarse_intervals": 384,
+      "field": "chi_T",
+      "observed_order": 1.9984577214485386
+    }
+  ],
+  "historical_comparison": [
+    {
+      "intervals": 128,
+      "max_abs_difference": 0.0
+    },
+    {
+      "intervals": 256,
+      "max_abs_difference": 0.0
+    },
+    {
+      "intervals": 512,
+      "max_abs_difference": 0.0
+    },
+    {
+      "intervals": 1024,
+      "max_abs_difference": 0.0
+    }
+  ]
+}

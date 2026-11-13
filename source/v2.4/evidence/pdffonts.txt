@@ -1,0 +1,23 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+XUVEDB+LMRomanCaps10-Regular         Type 1            Custom           yes yes yes     99  0
+RXGVQB+LMRoman12-Bold                Type 1            Custom           yes yes yes    100  0
+DKOOAO+LMRoman12-Regular             Type 1            Custom           yes yes yes    101  0
+PXBMDH+LMRoman10-Bold                Type 1            Custom           yes yes yes    102  0
+YVTOVZ+LMRoman10-Regular             Type 1            Custom           yes yes yes    103  0
+NSEZYB+LMMathItalic10-Regular        Type 1            Custom           yes yes yes    104  0
+YVTOVZ+LMRoman10-Regular             Type 1            Custom           yes yes yes    105  0
+OLTASA+LMRoman8-Regular              Type 1            Custom           yes yes yes    106  0
+OVMUZW+LMMathSymbols8-Regular        Type 1            Custom           yes yes yes    107  0
+SINOJW+LMMathSymbols10-Regular       Type 1            Custom           yes yes yes    146  0
+TGXIHE+LMMathItalic8-Regular         Type 1            Custom           yes yes yes    148  0
+MSHXZM+LMMathExtension10-Regular     Type 1            Custom           yes yes yes    151  0
+VMTGXG+LMRoman10-Italic              Type 1            Custom           yes yes yes    155  0
+QDTWCG+MSBM10                        Type 1            Builtin          yes yes yes    157  0
+TMHVPV+MSAM10                        Type 1            Builtin          yes yes yes    160  0
+XUVNRY+LMMono10-Regular              Type 1            Custom           yes yes yes    199  0
+KLKKCG+LMMathItalic6-Regular         Type 1            Custom           yes yes yes    239  0
+HMPCUB+LMRoman6-Regular              Type 1            Custom           yes yes yes    281  0
+SMELYF+LMSans10-Regular              Type 1            Custom           yes yes yes    296  0
+CIXFWA+LMMathSymbols7-Regular        Type 1            Custom           yes yes yes    335  0
+GXIEUF+LMRoman7-Regular              Type 1            Custom           yes yes yes    336  0

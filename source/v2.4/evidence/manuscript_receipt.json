@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "recorded_utc": "2026-11-13T03:49:27.103284+00:00",
+  "artifact": "paper/Voss_Chart_Selection_Proof_v2_4.pdf",
+  "pages": 16,
+  "pdf_sha256": "2e7278b347fedc3f6a926dcb2ea9f7e1f48b2983e253e83ee740f34eaa13759d",
+  "source_sha256": {
+    "paper/Voss_Chart_Selection_Proof_v2_4.tex": "b2a79235dc5b3dbe8705959586d2221f152d22c63c1f8cde347c83ad94912360",
+    "paper/twist_results.tex": "28a83c98824fdc3d56411c5cb49db0acb34931ef53c70d0654079368695fed60",
+    "paper/verification_results.tex": "6d8613b83dc17ad595609b5500ff459cfbf2fef86fbba397533295da4254c31c"
+  },
+  "successful_build_log": "paper/manuscript_build.log",
+  "build_log_sha256": "3fafbbf7b6ee33d839525b1c4d7cf1a45ea18d7a05b27dfa5418ce1b05748c3f",
+  "visual_inspection": "All 16 final PDF pages inspected in four four-page rendered contact sheets; equations, tables, headings, page breaks, and references are legible and unclipped.",
+  "layout_warnings": "No overfull/underfull box warnings, duplicate destination warnings, or unresolved references in the final two-pass build.",
+  "font_check": "21 embedded scalable Type 1 Latin Modern/AMS fonts; details in evidence/pdffonts.txt."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "voss.reproduction.v1",
+  "status": "PASS",
+  "executed_utc": "2026-11-13T18:04:43.182163+00:00",
+  "python": "3.12.13",
+  "lean_requested": false,
+  "runs": [
+    {
+      "task": "source_suite",
+      "script": "scripts/verify_source_suite.py",
+      "script_sha256": "aca5ba170683590cc3423f78e4fdc3f9bc0d791078d53a85658e478f8ab03992",
+      "exit_code": 0,
+      "log": "source_suite.log",
+      "log_sha256": "f24cc768a0aecb9590f8a14ebe8c2d8dc0ac0c5e749492bf48deec42aef78439"
+    },
+    {
+      "task": "quantum_geometry",
+      "script": "scripts/verify_quantum_geometry.py",
+      "script_sha256": "0d201237e5b3297c82ec890a3c67750df5c8f9d52f192200a11e9b08d2c4f4c3",
+      "exit_code": 0,
+      "log": "quantum_geometry.log",
+      "log_sha256": "68e4067e3e238fd1cc0ca84a799a4cbd1b3ef6ee155a02eb011cd6019a407f22"
+    },
+    {
+      "task": "numerical_controls",
+      "script": "scripts/verify_numerical_controls.py",
+      "script_sha256": "f949517f4c8d383d144f058adf963196fb46d852244f2b358686fad8e996689d",
+      "exit_code": 0,
+      "log": "numerical_controls.log",
+      "log_sha256": "07a874b6474bc482305c89f509dd5dd816b10fae6bece632624b7c0ce255c8db"
+    }
+  ],
+  "scope": "Exact checks and bounded synthetic numerical controls; see individual assumptions and receipts."
+}

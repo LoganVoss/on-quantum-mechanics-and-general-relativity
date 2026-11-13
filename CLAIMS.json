@@ -1,0 +1,376 @@
+{
+  "schema": "voss.research-claims.v1",
+  "title": "On Quantum Mechanics and General Relativity",
+  "author": "Logan Voss",
+  "edition": "1.0",
+  "date": "2026-11-13",
+  "scope": "Current conditional quantum-state/geometry and reduced-gravity research bundle only.",
+  "novelty_status": "Worldwide novelty and priority are not established by the bounded literature comparison. Known Gaussian geometry, dimensional reduction and integrability precedents are credited.",
+  "observation_status": "No physical measurements are supplied; empirical applicability of the calibrated geometric dictionary remains an open obligation.",
+  "evidence_distinctions": {
+    "analytic_proof": "Written argument from explicitly stated assumptions; may include existence or integration steps beyond computer-checked algebra.",
+    "lean_certificate": "Kernel-checked theorem with its actual hypotheses and reported logical axioms; not blanket formalization of the manuscript.",
+    "exact_symbolic_check": "Computer-algebra identity for the stated expressions and domains; distinct from a Lean proof.",
+    "numerical_check": "Finite computation with declared domain, resolution and tolerances; not an identity, global theorem or observation.",
+    "source_reported": "Preserved historical receipts are provenance; current executed receipts live in evidence/.",
+    "independent_review": "Separately tasked AI-assisted review and calculations; not external peer review."
+  },
+  "verification_summary": {
+    "formal": {
+      "status": "passed",
+      "modules": 8,
+      "theorems": 48,
+      "residual_extension_theorems": 8,
+      "allowed_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "receipt": "evidence/lean/receipt.json"
+    },
+    "source_symbolic": {
+      "exact_checks": 373,
+      "additional_noncommuting_rational_jets": 256,
+      "receipt": "evidence/source_suite/python_suite_receipt.json"
+    },
+    "independent_quantum_and_robustness": {
+      "status": "pass",
+      "exact_checks": 58,
+      "wavefunction_quadratures": 5,
+      "receipt": "evidence/quantum_geometry/quantum_geometry_receipt.json"
+    },
+    "independent_numerical_controls": {
+      "status": "PASS",
+      "receipt": "evidence/numerical_controls/independent_controls_receipt.json"
+    }
+  },
+  "claims": [
+    {
+      "id": "ACTION.SELECTION",
+      "statement": "Full first-variation stationarity of the positive Milne-polar calibration is equivalent to F=a rho+b, U=a/(2rho), W=a rho, V=0 and constant odd coupling k; positive nondegenerate shape energy implies a>0.",
+      "assumptions": [
+        "Oriented two-dimensional Lorentzian base; independent fields h, rho>0 and symmetric positive unimodular 2x2 M.",
+        "Local base-diffeomorphism and constant target SL(2,R) congruence invariance; derivative-polynomial action of total derivative order at most two; no extra fields.",
+        "F is C2 and U,W,V,k are C1 on the connected positive area domain.",
+        "Vary all fields independently before evaluating h=-dt^2+dr^2, rho=tr, M=diag(t/r,r/t) for every t,r>0; use compactly supported smooth variations.",
+        "The literal quotient frame and orbit normalization are fixed; a>0 additionally assumes positive nondegenerate radiative shape energy."
+      ],
+      "proof_status": {
+        "analytic": "proved conditional equivalence, including invariant action classification and all-field converse",
+        "formal": "Lean certifies explicit chart-algebra/derivative implications, positivity and constant-odd consequences; the full variational derivation is not formalized"
+      },
+      "execution_status": "Fresh symbolic suite and clean Lean build passed.",
+      "evidence": [
+        "docs/MODEL_AND_THEOREM.md",
+        "source/v2.4/notes/VARIATIONAL_DERIVATION.md",
+        "source/v2.4/notes/PHYSICAL_PREMISES_PROOF.md",
+        "formal/AnalyticBridge.lean",
+        "formal/ThmA.lean",
+        "evidence/lean/receipt.json",
+        "evidence/source_suite/variation_certificate.json"
+      ],
+      "limits": [
+        "Stationarity is not a positive second variation or global dynamical stability.",
+        "Overall a and bulk-inert b,k are not fixed numerically.",
+        "No uniqueness claim outside the specified derivative order, field content and frame."
+      ]
+    },
+    {
+      "id": "ACTION.EINSTEIN_REDUCTION",
+      "statement": "The selected bulk action equals the orbit-volume-normalized Einstein-Hilbert action up to the explicit divergence and constant-curvature/odd boundary contributions.",
+      "assumptions": [
+        "g=h_ab dx^a dx^b+rho M_IJ dy^I dy^J with no mixed blocks, two commuting spacelike symmetry directions and y-independent fields.",
+        "h is the literal quotient metric, rho>0 and det M=1; fixed orbit-coordinate normalization.",
+        "For equivalence to all vacuum equations, a is nonzero and all h,rho,M variations are retained."
+      ],
+      "proof_status": {
+        "analytic": "proved off shell; direct variation spans all nontrivial block equations",
+        "formal": "not a complete Lean formalization of four-dimensional differential geometry"
+      },
+      "execution_status": "Fresh exact symbolic off-shell curvature and mixed-Ricci checks passed.",
+      "evidence": [
+        "source/v2.4/notes/VARIATIONAL_DERIVATION.md",
+        "evidence/source_suite/variation_certificate.json",
+        "docs/MODEL_AND_THEOREM.md"
+      ],
+      "limits": [
+        "Boundary and corner completion must be specified for global variational/topological statements.",
+        "The block ansatz restricts the gravitational sector."
+      ]
+    },
+    {
+      "id": "QUANTUM.STATE_ORBIT_BRIDGE",
+      "statement": "Centered canonical uncertainty saturation selects one Gaussian ray for each positive unimodular covariance shape; the calibrated equivariant orbit-shape map is the identity.",
+      "assumptions": [
+        "One canonical pair in the dimensionless Schrodinger representation on L2(R), [Q,P]=i, with calibrated dimensional scales q_star p_star=hbar.",
+        "Positive trace-one state with centered finite second moments and covariance determinant exactly 1/4.",
+        "Covariance and gravitational orbit shapes transform in the same specified SL(2,R) congruence representation; normalized orbit shape is positive unimodular."
+      ],
+      "proof_status": {
+        "analytic": "Gaussian-kernel reconstruction and equivariant uniqueness proved",
+        "formal": "not formalized in Lean"
+      },
+      "execution_status": "Original covariance/witness symbolic checks and independent oscillator negative-control integrals passed.",
+      "evidence": [
+        "source/v2.4/notes/PHYSICAL_PREMISES_PROOF.md",
+        "docs/QUANTUM_GEOMETRY.md",
+        "evidence/source_suite/physical_premises_checks.json",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Kinematic model correspondence; it does not derive spacetime dimension, Lorentzian signature, quantized gravity or empirical applicability.",
+        "Vacuum and first excited state share normalized covariance shape but are orthogonal; saturation is essential."
+      ]
+    },
+    {
+      "id": "QUANTUM.GEOMETRIC_TENSOR",
+      "statement": "For psi=(v/pi)^(1/4) exp[(iu-v)x^2/2], the quantum geometric tensor is [[1,i],[-i,1]]/(8v^2); target G=8 Re(QGT)=2 g_QFI.",
+      "assumptions": [
+        "Centered saturated one-mode Gaussian family, u real and v>0.",
+        "QGT_ij=<partial_i psi|partial_j psi>-<partial_i psi|psi><psi|partial_j psi>; coordinate order (u,v).",
+        "Pure-state QFI convention g_QFI=4 Re(QGT)."
+      ],
+      "proof_status": {
+        "analytic": "proved by normalized Gaussian moments",
+        "formal": "not formalized in Lean"
+      },
+      "execution_status": "Independent exact Gaussian-moment, tensor and matrix-metric identities passed.",
+      "evidence": [
+        "docs/QUANTUM_GEOMETRY.md",
+        "scripts/verify_quantum_geometry.py",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Normalization factors belong to the stated conventions.",
+        "This is a state-family metric, not the Lorentzian spacetime metric."
+      ]
+    },
+    {
+      "id": "QUANTUM.FINITE_FIDELITY",
+      "statement": "Squared fidelity equals 1/sqrt(det((M+N)/2))=sech(d_G(M,N)/2).",
+      "assumptions": [
+        "Both states belong to the centered saturated one-mode Gaussian family.",
+        "d_G is intrinsic hyperbolic geodesic distance for G=(du^2+dv^2)/v^2, with curvature -1.",
+        "Fidelity means squared overlap |<psi_M|psi_N>|^2."
+      ],
+      "proof_status": {
+        "analytic": "proved by direct Gaussian integration and the hyperbolic distance identity",
+        "formal": "not formalized in Lean"
+      },
+      "execution_status": "Exact determinant/distance identities and five independent adaptive wavefunction quadratures passed.",
+      "evidence": [
+        "docs/QUANTUM_GEOMETRY.md",
+        "scripts/verify_quantum_geometry.py",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Intrinsic distance differs from ambient projective-space distance arccos(sqrt(fidelity)).",
+        "The formula does not apply to arbitrary mixed, displaced or nonsaturating states from normalized shape alone."
+      ],
+      "primary_sources": [
+        "https://arxiv.org/abs/1507.01941v1"
+      ],
+      "new_to_bundle": "Explicit finite-distance specialization in the model conventions; no priority claim."
+    },
+    {
+      "id": "QUANTUM.BERRY_ODD",
+      "statement": "Berry curvature is -Omega/4; for constant k, S_odd=2k integral(phi*Omega)=-8k integral(phi*F_B)=-8k integral_boundary(phi*A).",
+      "assumptions": [
+        "Same centered saturated Gaussian family and target coordinates P=-log(v), Q=u.",
+        "Berry convention A=i<psi|dpsi>=-du/(4v); F_B=dA; Omega=du wedge dv/v^2.",
+        "Smooth shape map from an oriented base patch, constant k and the induced boundary orientation."
+      ],
+      "proof_status": {
+        "analytic": "proved by Gaussian moments, exterior differentiation and Stokes theorem",
+        "formal": "quantum-geometric identification not formalized in Lean"
+      },
+      "execution_status": "Independent exact connection, curvature, odd-term normalization and oriented-rectangle checks passed.",
+      "evidence": [
+        "docs/QUANTUM_GEOMETRY.md",
+        "scripts/verify_quantum_geometry.py",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Upper half-plane is contractible and the displayed Gaussian gauge is global; no area quantization or value of k follows.",
+        "This interprets a constant-coupling boundary term and introduces no new bulk force."
+      ],
+      "primary_sources": [
+        "https://arxiv.org/abs/2004.14204v1"
+      ],
+      "new_to_bundle": "Explicit identification of the permitted odd boundary term with Gaussian Berry curvature; no priority claim."
+    },
+    {
+      "id": "SELECTION.POINTWISE_ROBUSTNESS",
+      "statement": "Five raw metric residuals bounded by epsilon imply |V|<=2epsilon, |rho F_second|<=8epsilon/15, |W/rho-F_prime|<=25epsilon/17 and |2rho U-F_prime|<=31epsilon/15.",
+      "assumptions": [
+        "rho>0 and epsilon>=0; residuals are the unscaled Euler components in the fixed dimensionless calibration.",
+        "e1=Ett(A),e2=Err(A),e3=Ett(B),e4=Err(B),e5=Etr(A)=Etr(B), where A=(2sqrt(rho),sqrt(rho)/2) and B has swapped coordinates.",
+        "All five absolute residuals are at most epsilon; genuine derivatives are required when interpreting F_prime,F_second as derivatives of an action coefficient."
+      ],
+      "proof_status": {
+        "analytic": "four exact inversions and triangle-inequality bounds proved; constants individually sharp for the pointwise algebraic inference problem",
+        "formal": "8 added Lean theorems certify 4 inversions and 4 scaled inequalities in ResidualInversion; part of the 48-theorem, 8-module build"
+      },
+      "execution_status": "Clean Lean build passed; exact symbolic inversion and feasible sharpness witnesses passed.",
+      "evidence": [
+        "docs/ROBUST_SELECTION.md",
+        "formal/ResidualInversion.lean",
+        "evidence/lean/receipt.json",
+        "scripts/verify_quantum_geometry.py",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Sharpness is pointwise under the stated residual constraints, not an optimum under additional global/physical restrictions.",
+        "Inference robustness is not dynamical stability; changed residual normalization changes constants."
+      ],
+      "inherited_credit": "Original ThmA.robust_V and robust_F2 establish partial sharp bounds for denominator-cleared residuals; this extension completes raw-residual U/W inference and its exact inversion."
+    },
+    {
+      "id": "SELECTION.INTEGRATED_ROBUSTNESS",
+      "statement": "Uniform residual control on a connected positive interval bounds all coefficients against one common affine family with explicit logarithmic errors.",
+      "assumptions": [
+        "F is C2 on a connected I subset (0,infinity); the five-residual envelope epsilon>=0 holds at every rho in I.",
+        "Choose rho0 in I, a=F_prime(rho0), b=F(rho0)-a rho0.",
+        "L=abs(log(rho/rho0)); H=rho log(rho/rho0)-rho+rho0."
+      ],
+      "proof_status": {
+        "analytic": "proved by integrating the F_second bound and Taylor integral remainder",
+        "formal": "integrated logarithmic bounds not formalized in Lean"
+      },
+      "execution_status": "Exact second derivative and basepoint identities of H passed; integration proof is written explicitly.",
+      "evidence": [
+        "docs/ROBUST_SELECTION.md",
+        "scripts/verify_quantum_geometry.py",
+        "evidence/quantum_geometry/quantum_geometry_receipt.json"
+      ],
+      "limits": [
+        "Finite sampling alone does not prove the uniform premise.",
+        "Fixed nonzero epsilon gives no uniform near-axis bound."
+      ],
+      "depends_on": [
+        "SELECTION.POINTWISE_ROBUSTNESS"
+      ],
+      "bounds": {
+        "F_prime": "abs(F_prime-a)<=8epsilon L/15",
+        "F": "abs(F-(a rho+b))<=8epsilon H/15",
+        "W": "abs(W-a rho)<=rho epsilon(25/17+8L/15)",
+        "U": "abs(U-a/(2rho))<=epsilon/rho(31/30+4L/15)"
+      }
+    },
+    {
+      "id": "LAX.LOCAL_EQUIVALENCE",
+      "statement": "A universal regular nontrivial scalar-current Lax family exists locally exactly when W is harmonic; its curvature is (MC-s E)/(1-s^2).",
+      "assumptions": [
+        "Two-dimensional Lorentzian conformal patch; W is positive C2; M is smooth positive symmetric unimodular.",
+        "Torsion-free weighted-current system; L_plus=J_plus/(1-s), L_minus=J_minus/(1+s).",
+        "Spectral construction depends on W and the constant spectral parameter, not on specially chosen current solutions.",
+        "Generic admissible current jets with independent J_plus,J_minus and their commutator; regular s excludes 0,+1,-1.",
+        "Local simply connected subpatch for harmonic conjugate and spectral construction; avoid branch points."
+      ],
+      "proof_status": {
+        "analytic": "necessity and constructive sufficiency proved within the specified ansatz",
+        "formal": "Lean certifies spectral derivatives, obstruction and scalar/matrix curvature identities, not every PDE existence argument"
+      },
+      "execution_status": "Fresh exact symbolic suite and 256 deterministic noncommuting rational current jets passed; Lean certificates compiled.",
+      "evidence": [
+        "source/v2.4/notes/INTEGRABILITY_COMPLETE_PROOF.md",
+        "formal/Integrability.lean",
+        "formal/LaxCertificates.lean",
+        "evidence/source_suite/integrability_complete_certificate.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "Not a classification of every possible Lax ansatz.",
+        "Constant-current solutions and s=0 do not test the stated necessity."
+      ]
+    },
+    {
+      "id": "LAX.AREA_LINEARITY",
+      "statement": "Harmonic area plus generic coverage makes W(rho) affine; a zero shrinking-axis limit and positivity select W=c rho, c>0.",
+      "assumptions": [
+        "W=w(rho), w C2 on a connected positive interval; rho_plus_minus=0.",
+        "For every area value there is a point with that rho and rho_plus*rho_minus nonzero.",
+        "For zero intercept, the area interval approaches zero and lim(rho downarrow 0) W(rho)=0; positivity and nontriviality for c>0."
+      ],
+      "proof_status": {
+        "analytic": "proved by chain rule, connected-domain constancy and the axis limit",
+        "formal": "explicit affine, axis and positivity implications compiled"
+      },
+      "execution_status": "Lean build and exact symbolic selector checks passed.",
+      "evidence": [
+        "source/v2.4/notes/INTEGRABILITY_COMPLETE_PROOF.md",
+        "formal/Integrability.lean",
+        "formal/PremiseObstructions.lean",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "Null-only area data allow nonaffine W(rho).",
+        "Integrability alone leaves conformal-frame freedom in other coefficients."
+      ],
+      "depends_on": [
+        "LAX.LOCAL_EQUIVALENCE"
+      ]
+    },
+    {
+      "id": "NUMERICS.CORRECTED_NONLINEAR_BENCHMARK",
+      "statement": "Seven fresh finite-domain nonlinear evolutions show approximately second-order all-field convergence and converging energy/twist balance defects for the corrected benchmark.",
+      "assumptions": [
+        "Exact source initial profiles and one fixed continuum correction chi_T+=c_star exp[-(R/1.2)^2], c_star=0.052781957547848805.",
+        "Cylindrical nonlinear equations, regular-axis treatment, frozen outer field values and explicit finite-boundary flux diagnostics.",
+        "Final time 0.8; outer radii 8 and 12; 128 to 1536 intervals; historical PDE implementation retained and hashed."
+      ],
+      "proof_status": {
+        "analytic": "continuum conservation/balance identities derived",
+        "formal": "no formal global numerical or dynamical stability theorem"
+      },
+      "execution_status": "Fresh seven-run reproduction passed; all-field observed orders range approximately 1.9914 to 2.0028.",
+      "evidence": [
+        "docs/VERIFICATION.md",
+        "scripts/verify_source_suite.py",
+        "evidence/source_suite/boundary/boundary_fresh_receipt.json",
+        "evidence/source_suite/boundary/boundary_fresh_convergence.csv",
+        "evidence/source_suite/additional_boundary_checks.json"
+      ],
+      "limits": [
+        "Synthetic finite-time evidence; no laboratory observation, arbitrary-data stability or all-time existence conclusion.",
+        "Zero continuum initial twist does not imply exactly zero finite-grid charge or boundary flux."
+      ],
+      "run_count": 7,
+      "final_time": 0.8
+    },
+    {
+      "id": "NUMERICS.EXACT_NONLINEAR_ORACLE",
+      "statement": "If f solves the radial wave equation, psi=-log(cosh f), chi=tanh f solve the nonlinear two-field system and preserve its scalar-wave energy density.",
+      "assumptions": [
+        "Smooth radial wave f_TT-f_RR-f_R/R=0 with regular-axis extension where applicable.",
+        "Numerical oracle f=1.6 J0(kR) cos(kT), outer radius 8, J0(8k)=0, final time 0.8.",
+        "Spatial convergence compared directly to the exact continuum fields; separate temporal refinement holds the grid fixed."
+      ],
+      "proof_status": {
+        "analytic": "exact geodesic substitution and energy identity proved",
+        "formal": "not formalized in Lean"
+      },
+      "execution_status": "Three exact symbolic identities passed; linear and nonlinear oracle grid families converge at approximately second order; finer temporal refinement gives order 3.9291.",
+      "evidence": [
+        "docs/VERIFICATION.md",
+        "scripts/verify_numerical_controls.py",
+        "evidence/numerical_controls/independent_controls_receipt.json",
+        "evidence/numerical_controls/exact_solution_errors.csv",
+        "evidence/numerical_controls/time_refinement.csv"
+      ],
+      "limits": [
+        "Geodesic/commuting-current subfamily; complements rather than replaces the independent-profile nonlinear benchmark.",
+        "Coarse temporal sequence order 1.2621 is retained and does not establish fourth-order behavior.",
+        "Finite tests do not prove a global stability theorem."
+      ]
+    }
+  ],
+  "further_context": [
+    "docs/MODEL_AND_THEOREM.md",
+    "docs/FORMAL_PROOFS.md",
+    "docs/RELATED_WORK.md",
+    "docs/RESEARCH_ROADMAP.md",
+    "docs/PROVENANCE.md",
+    "evidence/phase_freeze.json"
+  ]
+}

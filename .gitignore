@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+.lake/
+__pycache__/
+*.pyc
+work/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc

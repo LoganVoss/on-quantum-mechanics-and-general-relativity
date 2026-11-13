@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "matplotlib": "3.10.7",
+  "numpy": "2.3.5",
+  "plot_script_sha256": "10dab39b60882440556bd9bb87ea4ffa1cb1b366b728bdf7cec7490236a6cede",
+  "inputs": {
+    "evidence/quantum_geometry/quantum_geometry_receipt.json": "2b8a51877ea0174546e028e9db9103d32f20bc74c713ef5db3b0bde25ec34f45",
+    "evidence/numerical_controls/exact_solution_errors.csv": "7bf2323aa9546237c2bc42237266aac44da4673de56b4193d1b90c71106a4c32",
+    "evidence/numerical_controls/independent_controls_receipt.json": "c2bc1bb53e79c1fe33a898ebf3d39f393b7f0fd60645dd7cfc520efce8ab85bf"
+  },
+  "outputs": {
+    "verification.png": "bf182dee0a3694c5a5d92e1886e67f369c5b147b276f10a00e7234367e7116f1",
+    "verification.pdf": "9fb618f835a50c01e0ea1667e57487bda51a09ed7584b6e3d6e69c0a16f4df3b",
+    "fidelity_points.csv": "2c5fd896b477b11eeed891ede83a2780b56f808593eb17b5cebbeee04a26b658"
+  },
+  "dimensions_inches": [
+    11.2,
+    4.6
+  ],
+  "png_dpi": 300,
+  "quadrature_points": 5,
+  "nonlinear_grids": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "note": "Theory curve and recorded synthetic checks; no experimental data. Reference slope is explicitly offset, not fitted."
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "voss.claim-ledger.v2",
+  "version": "2.4",
+  "date_local": "2026-11-12",
+  "claims": [
+    {
+      "id": "ACTION.CLASSIFICATION",
+      "status": "proved_analytic",
+      "statement": "Local diffeomorphism and target SL2 invariant derivative-polynomial total-order<=2 action consists of F,U,W,V and odd k modulo divergences",
+      "physical_inputs": [
+        "locality",
+        "two-dimensional Lorentzian base",
+        "specified fields and target-frame representation",
+        "total derivative order <=2"
+      ]
+    },
+    {
+      "id": "ACTION.VARIATION",
+      "status": "proved_analytic_and_exact_symbolic",
+      "statement": "Full independent first variation produces chart equations; boundary current and all-field converse explicit",
+      "exact_checks": 29,
+      "evidence": [
+        "notes/VARIATIONAL_DERIVATION.md",
+        "evidence/variation_certificate.json"
+      ]
+    },
+    {
+      "id": "SELECTION.ANALYTIC_CLOSURE",
+      "status": "lean_kernel_verified",
+      "statement": "Division-form chart equations plus genuine derivative identifications imply one common a,b and all selected coefficients",
+      "evidence": [
+        "lean/AnalyticBridge.lean",
+        "lean/build_receipt.json"
+      ]
+    },
+    {
+      "id": "ODD.COUPLING",
+      "status": "proved_analytic_lean_and_symbolic",
+      "statement": "Full chart Q equation forces k prime zero; connectedness makes k constant; its density is a divergence"
+    },
+    {
+      "id": "PHYSICAL.REALIZATION",
+      "status": "constructive_analytic_and_exact_symbolic",
+      "statement": "Local Milne and global cylindrical witnesses satisfy the stated physical-model inputs in the same selected theory",
+      "exact_checks": 276,
+      "evidence": [
+        "notes/PHYSICAL_PREMISES_PROOF.md",
+        "evidence/physical_premises_checks.json"
+      ],
+      "empirical_interpretation": "operational hypotheses"
+    },
+    {
+      "id": "FRAME.LITERAL_QUOTIENT",
+      "status": "explicit_physical_premise_with_proved_operational_identifiability",
+      "statement": "h is the literal quotient metric block; calibrated minimal massive or nonzero-momentum probe identifies conformal multiplier",
+      "assumptions": [
+        "known geometric dictionary",
+        "fixed orbit normalization",
+        "minimal probe action",
+        "known mass or momentum",
+        "test-field limit",
+        "known principal normalization"
+      ],
+      "evidence": [
+        "paper/Voss_Chart_Selection_Proof_v2_4.pdf"
+      ]
+    },
+    {
+      "id": "DERIVATIVE.VACUUM_DEGENERACY",
+      "status": "proved_analytic",
+      "statement": "All 4D Ricci-flat metrics remain stationary under arbitrary constant R squared, Ricci squared, and Riemann squared additions; all Einstein metrics likewise for matching cosmological term",
+      "test_type": "background solution stationarity"
+    },
+    {
+      "id": "DERIVATIVE.REDUCED_DISCRIMINATOR",
+      "status": "proved_analytic_and_exact_symbolic",
+      "statement": "Three flat charts leave Lambda(rho)N squared invisible; one exact curved Levi-Civita exponent c not equal 0 or 2 forces Lambda identically zero",
+      "exact_checks": 36,
+      "evidence": [
+        "notes/DEFORMATION_FRAME_TWIST_ADDENDUM.md",
+        "evidence/levi_civita_deformation_receipt.json"
+      ]
+    },
+    {
+      "id": "LAX.NECESSITY_SUFFICIENCY",
+      "status": "proved_analytic_with_lean_algebra_and_exact_symbolic_checks",
+      "statement": "Generic torsion-free weighted current system admits local regular nontrivial rational scalar-current Lax family iff W is harmonic",
+      "assumptions": [
+        "W>0 and C2",
+        "generic admissible current jets",
+        "s nonzero and not +/-1",
+        "local spectral construction"
+      ],
+      "symbolic_checks": 32,
+      "exact_noncommuting_jets": 256,
+      "evidence": [
+        "notes/INTEGRABILITY_COMPLETE_PROOF.md",
+        "lean/Integrability.lean",
+        "lean/LaxCertificates.lean",
+        "evidence/integrability_complete_certificate.json"
+      ]
+    },
+    {
+      "id": "LAX.AREA_BRANCH",
+      "status": "proved_analytic_and_lean_kernel_verified",
+      "statement": "Harmonic area with non-null coverage gives affine W; zero axis limit and positivity give W=c rho, c>0",
+      "assumptions": [
+        "harmonic rho",
+        "one non-null point per area value",
+        "connected area interval with 0 boundary",
+        "shrinking-axis W limit zero",
+        "positive coupling"
+      ]
+    },
+    {
+      "id": "BOUNDARY.ASYMPTOTIC_TWIST",
+      "status": "explicit_boundary_premise_proved_conservation_and_fresh_numerics",
+      "statement": "Zero asymptotic twist is a selected global sector; continuum correction sets charge zero; boundary flux accounted in fresh finite-domain runs",
+      "original_continuum_twist": -0.013089872446886107,
+      "correction_coefficient": 0.05278195754784881,
+      "fresh_evolutions": 7,
+      "chronology": {
+        "v2.1": "diagnosis and proposed correction",
+        "v2.2": "corrected four-grid evolution archived",
+        "v2.4": "fresh reproduction plus finite-boundary flux accounting and matched-spacing larger domains"
+      },
+      "evidence": [
+        "evidence/boundary/boundary_fresh_receipt.json"
+      ]
+    }
+  ],
+  "formal_evidence_definition": "Lean theorem signatures state exact hypotheses; full differential-geometric variation and physical realization have written proofs plus exact symbolic checks. Empirical premises remain explicitly identified."
+}

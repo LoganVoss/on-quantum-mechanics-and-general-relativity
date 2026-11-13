@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "kind": "independent_receipt_and_state_checks",
+  "balance_orders": [
+    {
+      "outer_radius": 8.0,
+      "quantity": "twist_balance_defect",
+      "coarse_intervals": 128,
+      "observed_order": 1.9976527021279848
+    },
+    {
+      "outer_radius": 8.0,
+      "quantity": "twist_balance_defect",
+      "coarse_intervals": 256,
+      "observed_order": 1.9994118343380154
+    },
+    {
+      "outer_radius": 8.0,
+      "quantity": "twist_balance_defect",
+      "coarse_intervals": 512,
+      "observed_order": 1.9998528751582232
+    },
+    {
+      "outer_radius": 8.0,
+      "quantity": "energy_balance_defect",
+      "coarse_intervals": 128,
+      "observed_order": 2.007813266994128
+    },
+    {
+      "outer_radius": 8.0,
+      "quantity": "energy_balance_defect",
+      "coarse_intervals": 256,
+      "observed_order": 2.001954357679798
+    },
+    {
+      "outer_radius": 8.0,
+      "quantity": "energy_balance_defect",
+      "coarse_intervals": 512,
+      "observed_order": 2.000490331906804
+    },
+    {
+      "outer_radius": 12.0,
+      "quantity": "twist_balance_defect",
+      "coarse_intervals": 384,
+      "observed_order": 1.9994113181752253
+    },
+    {
+      "outer_radius": 12.0,
+      "quantity": "twist_balance_defect",
+      "coarse_intervals": 768,
+      "observed_order": 1.9998527155324397
+    },
+    {
+      "outer_radius": 12.0,
+      "quantity": "energy_balance_defect",
+      "coarse_intervals": 384,
+      "observed_order": 2.0019543576738728
+    },
+    {
+      "outer_radius": 12.0,
+      "quantity": "energy_balance_defect",
+      "coarse_intervals": 768,
+      "observed_order": 2.00049033164452
+    }
+  ],
+  "finite_nonnegative_energy_state_files": [
+    "corrected_L12_N1536.npz",
+    "corrected_L12_N384.npz",
+    "corrected_L12_N768.npz",
+    "corrected_L8_N1024.npz",
+    "corrected_L8_N128.npz",
+    "corrected_L8_N256.npz",
+    "corrected_L8_N512.npz"
+  ],
+  "limit": "Finite final-time states and convergent balance defects; not a proof of global PDE stability."
+}

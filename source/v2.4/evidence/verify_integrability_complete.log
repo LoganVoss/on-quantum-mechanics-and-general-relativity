@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "arithmetic": "exact_symbolic_and_rational",
+  "sympy_version": "1.14.0",
+  "symbolic_check_count": 32,
+  "generic_noncommuting_jet_count": 256,
+  "checks": [
+    {
+      "name": "commutator_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "plus_scalar_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "minus_scalar_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "MC_multiplier",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "EOM_multiplier",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "g_minus_h",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "gprime_h_minus_hprime_g",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "frobenius_obstruction",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_curve_plus",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_curve_minus",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_parameter_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "jet_independence",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "determinant_second_jet",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "ansatz_constraint_identity",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "coupled_dilaton_identity",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "affine_F_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "power_second_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "bump_value_at_midpoint",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "bump_second_at_midpoint",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "frame_counterexample_curvature",
+      "residual": "0",
+      "status": "passed"
+    }
+  ]
+}

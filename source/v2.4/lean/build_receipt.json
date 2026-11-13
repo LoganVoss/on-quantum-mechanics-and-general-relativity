@@ -1,0 +1,318 @@
+{
+  "schema": "voss.lean-chart-completion.build-receipt.v1",
+  "status": "kernel_checked_clean_build_succeeded",
+  "build_time_utc": "2026-11-13T03:44:19.645791+00:00",
+  "lean_version": "Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "build_command": "lake build",
+  "exit_code": 0,
+  "warnings_as_errors": true,
+  "clean_project_build": true,
+  "theorem_count": 40,
+  "module_count": 7,
+  "all_theorems_have_axiom_reports": true,
+  "allowed_logical_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "additional_axioms": [],
+  "sorryAx": false,
+  "proof_placeholders": false,
+  "theorems_by_module": {
+    "AnalyticBridge.lean": [
+      "VossAnalyticBridge.constant_on_open_of_hasDerivAt_zero",
+      "VossAnalyticBridge.affine_on_positive_of_second_derivative_zero",
+      "VossAnalyticBridge.complete_selection",
+      "VossAnalyticBridge.complete_selection_positive",
+      "VossAnalyticBridge.constant_odd_coupling"
+    ],
+    "ChartGeometry.lean": [
+      "VossChartGeometry.minkowski_pullback",
+      "VossChartGeometry.orbit_area_density",
+      "VossChartGeometry.literal_quotient_block",
+      "VossChartGeometry.lorentzian_chart_determinant",
+      "VossChartGeometry.spatial_diagonal_positive"
+    ],
+    "Integrability.lean": [
+      "VossIntegrability.spectralG_hasDerivAt",
+      "VossIntegrability.spectralH_hasDerivAt",
+      "VossIntegrability.frobenius_identity",
+      "VossIntegrability.obstruction_zero_iff_harmonic",
+      "VossIntegrability.harmonic_composition_forces_second_derivative_zero",
+      "VossIntegrability.integrability_selects_affine",
+      "VossIntegrability.axis_continuity_removes_intercept",
+      "VossIntegrability.positive_linear_branch"
+    ],
+    "LaxCertificates.lean": [
+      "VossLaxCertificates.scalar_curvature_decomposition",
+      "VossLaxCertificates.matrix_curvature_decomposition",
+      "VossLaxCertificates.curvature_zero_iff_eom",
+      "VossLaxCertificates.spectralC_hasDerivAt",
+      "VossLaxCertificates.spectral_curve_coefficients"
+    ],
+    "PremiseObstructions.lean": [
+      "VossPremiseObstructions.independent_labels_counterexample",
+      "VossPremiseObstructions.zero_spectral_value_loses_constraint",
+      "VossPremiseObstructions.null_area_jet_loses_constraint",
+      "VossPremiseObstructions.axis_value_without_continuity"
+    ],
+    "ThmA.lean": [
+      "VossThmA.theoremA_forward",
+      "VossThmA.theoremA_converse",
+      "VossThmA.einstein_direction",
+      "VossThmA.robust_V",
+      "VossThmA.robust_F2",
+      "VossThmA.power_branch"
+    ],
+    "ThmABridge.lean": [
+      "VossThmABridge.iff_of_mul",
+      "VossThmABridge.tt_iff",
+      "VossThmABridge.rr_iff",
+      "VossThmABridge.tr_iff",
+      "VossThmABridge.lax_ab",
+      "VossThmABridge.lax_obstruction_coeff",
+      "VossThmABridge.lax_gh"
+    ]
+  },
+  "axiom_dependencies": {
+    "VossThmABridge.iff_of_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.tt_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.rr_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.tr_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_ab": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_obstruction_coeff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_gh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.theoremA_forward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.theoremA_converse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.einstein_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.robust_V": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.robust_F2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.power_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.minkowski_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.orbit_area_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.literal_quotient_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.lorentzian_chart_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.spatial_diagonal_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.constant_on_open_of_hasDerivAt_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.affine_on_positive_of_second_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.complete_selection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.complete_selection_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.constant_odd_coupling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.spectralG_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.spectralH_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.frobenius_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.obstruction_zero_iff_harmonic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.harmonic_composition_forces_second_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.integrability_selects_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.axis_continuity_removes_intercept": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.positive_linear_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.independent_labels_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.zero_spectral_value_loses_constraint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.null_area_jet_loses_constraint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.axis_value_without_continuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.scalar_curvature_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.matrix_curvature_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.curvature_zero_iff_eom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.spectralC_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.spectral_curve_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_sha256": {
+    "AnalyticBridge.lean": "fe90e4a260207ff5ef347e53f8ceb10077c725d9da3d3bd8082503b99447fc6b",
+    "ChartGeometry.lean": "89eb1898b2f3df1f1dad969565cff7962ef69c93cbde6606c321a5a8e0214468",
+    "Integrability.lean": "40759420123179096601b07f1ddc6d616efc0ea34d61afda28396b968a403d81",
+    "LaxCertificates.lean": "b1e832835f3b3c278694b0fc8c5014dea32c24d41599969e34ea3c56578d6793",
+    "PremiseObstructions.lean": "9a04c8b749a2b55cb2b0df6506741157041c20702ba31a3b95ecaceff43c9b02",
+    "ThmA.lean": "a72477e55b94faeab5c5246309ea2d717231ba2d8442877118eea36473e4f018",
+    "ThmABridge.lean": "ceb1d280e5b57b64f40450ab0b440ab79a506b7e645b0062d6d7e2bbe33f1443",
+    "lakefile.lean": "ad169be8f109ab680f774b6d52d47c3a13d748b64755039651edb357c2e17ec0"
+  },
+  "configuration_sha256": {
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "0da6db9b2ce645b71d24c2d1424f20609293d2de210dec078e5b211ef542f576"
+  },
+  "compiled_sha256": {
+    "compiled/AnalyticBridge.olean": "c212a3b13167f3aeada553d1c17f9eb11376656dae31276fbe03cd40c9865037",
+    "compiled/ChartGeometry.olean": "83da47161c127625ed21fcc320540ed5b5dead65da4c46eb656d2380e53e109a",
+    "compiled/Integrability.olean": "d197bef7ac4c282a2b0451fada8783fd232973bc7eb86ba6a55929f7d56b08a3",
+    "compiled/LaxCertificates.olean": "4c45b726ce8e436f7d217c8a1d8f2ad81a4dfa951faab479f481e5b8c5d5a4b9",
+    "compiled/PremiseObstructions.olean": "0576df817327439f804f6ae946d107683a6c603265c1d7d9bb1261f047d1e0a0",
+    "compiled/ThmA.olean": "43c75bafe964a48a980a20e240b81bf0208eef63be3ae9e5e82f33fa12f72d94",
+    "compiled/ThmABridge.olean": "318215d9f15281d64a68d7fd488c870f1aec864874e58dc52c7eba4f0de6190f"
+  },
+  "build_log_sha256": "6221542a3e31cb3782be7ba32cb03004bc9c6b2d835c10838a267aaf92228aa2",
+  "principal_theorem": "VossAnalyticBridge.complete_selection_positive",
+  "principal_hypotheses": [
+    "All three division-form chart metric equations for every t,r>0 with rho=t*r",
+    "HasDerivAt F (F1 rho) rho at every rho>0",
+    "HasDerivAt F1 (F2 rho) rho at every rho>0",
+    "W(rho0)>0 at one rho0>0"
+  ],
+  "principal_conclusion": "One common a>0 and b satisfy F=a*rho+b, F1=a, F2=0, U=a/(2*rho), W=a*rho, V=0 for all rho>0",
+  "verification_boundary": {
+    "variational_first_variation": "analytic derivation and symbolic checks in the accompanying report",
+    "flat_chart_algebra_geometry_derivative_bridge": "kernel checked here",
+    "integrability_rational_identity_and_affine_selector": "kernel checked here",
+    "physical_action_class_and_operational_premises": "explicit hypotheses documented in the accompanying report"
+  }
+}

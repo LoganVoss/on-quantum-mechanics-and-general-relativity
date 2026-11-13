@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "final_pass_issue_count": 0,
+  "source_sha256": "843980d17ebfb1af5156ea6f7a4a6dcbcda6dcc4b297e1d5a41b4aff47c399d9",
+  "pdf_sha256": "1bd431dd9a1b68a30b6ee3ba9d8bdb04e236e335d96545c91c92bfa83cfcc66e",
+  "log_sha256": "d5666139c9fc69c1d711be432d385d5c7b7f177d2b23bcc6f328e22c0f301b9c",
+  "visual_review": "All 12 pages rendered and reviewed; cover paragraph spacing corrected and rechecked.",
+  "page_count": 12,
+  "review_date_local": "2026-11-13"
+}

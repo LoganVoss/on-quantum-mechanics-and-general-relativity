@@ -1,0 +1,54 @@
+ℹ [1941/1948] Built ThmABridge
+info: ././././ThmABridge.lean:71:0: 'VossThmABridge.iff_of_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:72:0: 'VossThmABridge.tt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:73:0: 'VossThmABridge.rr_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:74:0: 'VossThmABridge.tr_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:75:0: 'VossThmABridge.lax_ab' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:76:0: 'VossThmABridge.lax_obstruction_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmABridge.lean:77:0: 'VossThmABridge.lax_gh' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1942/1948] Built ThmA
+info: ././././ThmA.lean:193:0: 'VossThmA.theoremA_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmA.lean:194:0: 'VossThmA.theoremA_converse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmA.lean:195:0: 'VossThmA.einstein_direction' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmA.lean:196:0: 'VossThmA.robust_V' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmA.lean:197:0: 'VossThmA.robust_F2' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ThmA.lean:198:0: 'VossThmA.power_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1943/1948] Built ChartGeometry
+info: ././././ChartGeometry.lean:46:0: 'VossChartGeometry.minkowski_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ChartGeometry.lean:47:0: 'VossChartGeometry.orbit_area_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ChartGeometry.lean:48:0: 'VossChartGeometry.literal_quotient_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ChartGeometry.lean:49:0: 'VossChartGeometry.lorentzian_chart_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././ChartGeometry.lean:50:0: 'VossChartGeometry.spatial_diagonal_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1944/1948] Built AnalyticBridge
+info: ././././AnalyticBridge.lean:138:0: 'VossAnalyticBridge.constant_on_open_of_hasDerivAt_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././AnalyticBridge.lean:139:0: 'VossAnalyticBridge.affine_on_positive_of_second_derivative_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././AnalyticBridge.lean:140:0: 'VossAnalyticBridge.complete_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././AnalyticBridge.lean:141:0: 'VossAnalyticBridge.complete_selection_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././AnalyticBridge.lean:142:0: 'VossAnalyticBridge.constant_odd_coupling' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1945/1948] Built Integrability
+info: ././././Integrability.lean:118:0: 'VossIntegrability.spectralG_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:119:0: 'VossIntegrability.spectralH_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:120:0: 'VossIntegrability.frobenius_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:121:0: 'VossIntegrability.obstruction_zero_iff_harmonic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:122:0: 'VossIntegrability.harmonic_composition_forces_second_derivative_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././Integrability.lean:123:0: 'VossIntegrability.integrability_selects_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:124:0: 'VossIntegrability.axis_continuity_removes_intercept' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Integrability.lean:125:0: 'VossIntegrability.positive_linear_branch' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1946/1948] Built PremiseObstructions
+info: ././././PremiseObstructions.lean:63:0: 'VossPremiseObstructions.independent_labels_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././PremiseObstructions.lean:64:0: 'VossPremiseObstructions.zero_spectral_value_loses_constraint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: ././././PremiseObstructions.lean:65:0: 'VossPremiseObstructions.null_area_jet_loses_constraint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././PremiseObstructions.lean:66:0: 'VossPremiseObstructions.axis_value_without_continuity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [1947/1948] Built LaxCertificates
+info: ././././LaxCertificates.lean:82:0: 'VossLaxCertificates.scalar_curvature_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LaxCertificates.lean:83:0: 'VossLaxCertificates.matrix_curvature_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LaxCertificates.lean:84:0: 'VossLaxCertificates.curvature_zero_iff_eom' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LaxCertificates.lean:85:0: 'VossLaxCertificates.spectralC_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LaxCertificates.lean:86:0: 'VossLaxCertificates.spectral_curve_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.

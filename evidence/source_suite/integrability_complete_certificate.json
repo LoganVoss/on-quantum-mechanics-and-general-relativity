@@ -1,0 +1,1707 @@
+{
+  "status": "passed",
+  "arithmetic": "exact_symbolic_and_rational",
+  "sympy_version": "1.14.0",
+  "symbolic_check_count": 32,
+  "generic_noncommuting_jet_count": 256,
+  "checks": [
+    {
+      "name": "commutator_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "plus_scalar_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "minus_scalar_coefficient",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "MC_multiplier",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "EOM_multiplier",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "g_minus_h",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "gprime_h_minus_hprime_g",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "frobenius_obstruction",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_curve_plus",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_curve_minus",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "spectral_parameter_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "full_curvature_identity_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "jet_independence",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "symmetric_second_jet_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_00",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_01",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_10",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "same_mixed_second_jet_11",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "determinant_second_jet",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "ansatz_constraint_identity",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "coupled_dilaton_identity",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "affine_F_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "power_second_derivative",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "bump_value_at_midpoint",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "bump_second_at_midpoint",
+      "residual": "0",
+      "status": "passed"
+    },
+    {
+      "name": "frame_counterexample_curvature",
+      "residual": "0",
+      "status": "passed"
+    }
+  ],
+  "generic_jet_checks": [
+    {
+      "index": 0,
+      "s": "2/259",
+      "independence_determinant": "1369/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 1,
+      "s": "3/260",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 2,
+      "s": "4/261",
+      "independence_determinant": "200/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 3,
+      "s": "5/262",
+      "independence_determinant": "1369/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 4,
+      "s": "6/263",
+      "independence_determinant": "392/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 5,
+      "s": "7/264",
+      "independence_determinant": "49/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 6,
+      "s": "8/265",
+      "independence_determinant": "9409/3528",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 7,
+      "s": "9/266",
+      "independence_determinant": "4418/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 8,
+      "s": "10/267",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 9,
+      "s": "11/268",
+      "independence_determinant": "512/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 10,
+      "s": "12/269",
+      "independence_determinant": "5329/1250",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 11,
+      "s": "13/270",
+      "independence_determinant": "529/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 12,
+      "s": "14/271",
+      "independence_determinant": "100352/625",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 13,
+      "s": "15/272",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 14,
+      "s": "16/273",
+      "independence_determinant": "12769/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 15,
+      "s": "17/274",
+      "independence_determinant": "15488/225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 16,
+      "s": "18/275",
+      "independence_determinant": "72/625",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 17,
+      "s": "19/276",
+      "independence_determinant": "1/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 18,
+      "s": "20/277",
+      "independence_determinant": "81/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 19,
+      "s": "21/278",
+      "independence_determinant": "12321/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 20,
+      "s": "22/279",
+      "independence_determinant": "29282/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 21,
+      "s": "23/280",
+      "independence_determinant": "1521/392",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 22,
+      "s": "24/281",
+      "independence_determinant": "2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 23,
+      "s": "25/282",
+      "independence_determinant": "841/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 24,
+      "s": "26/283",
+      "independence_determinant": "1682/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 25,
+      "s": "27/284",
+      "independence_determinant": "961/162",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 26,
+      "s": "28/285",
+      "independence_determinant": "27889/392",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 27,
+      "s": "29/286",
+      "independence_determinant": "200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 28,
+      "s": "30/287",
+      "independence_determinant": "42025/72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 29,
+      "s": "31/288",
+      "independence_determinant": "50/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 30,
+      "s": "32/289",
+      "independence_determinant": "17689/1152",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 31,
+      "s": "33/290",
+      "independence_determinant": "800/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 32,
+      "s": "34/291",
+      "independence_determinant": "182329/1800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 33,
+      "s": "35/292",
+      "independence_determinant": "1723969/882",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 34,
+      "s": "36/293",
+      "independence_determinant": "9/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 35,
+      "s": "37/294",
+      "independence_determinant": "1681/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 36,
+      "s": "38/295",
+      "independence_determinant": "9/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 37,
+      "s": "39/296",
+      "independence_determinant": "25/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 38,
+      "s": "40/297",
+      "independence_determinant": "18769/800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 39,
+      "s": "41/298",
+      "independence_determinant": "10609/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 40,
+      "s": "42/299",
+      "independence_determinant": "339488/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 41,
+      "s": "43/300",
+      "independence_determinant": "1800/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 42,
+      "s": "44/301",
+      "independence_determinant": "968/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 43,
+      "s": "45/302",
+      "independence_determinant": "121/1800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 44,
+      "s": "46/303",
+      "independence_determinant": "8192/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 45,
+      "s": "47/304",
+      "independence_determinant": "289/800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 46,
+      "s": "48/305",
+      "independence_determinant": "9409/882",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 47,
+      "s": "49/306",
+      "independence_determinant": "55225/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 48,
+      "s": "50/307",
+      "independence_determinant": "32/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 49,
+      "s": "51/308",
+      "independence_determinant": "32/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 50,
+      "s": "52/309",
+      "independence_determinant": "28561/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 51,
+      "s": "53/310",
+      "independence_determinant": "130321/882",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 52,
+      "s": "54/311",
+      "independence_determinant": "98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 53,
+      "s": "55/312",
+      "independence_determinant": "167281/1568",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 54,
+      "s": "56/313",
+      "independence_determinant": "2888/225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 55,
+      "s": "57/314",
+      "independence_determinant": "3969/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 56,
+      "s": "58/315",
+      "independence_determinant": "25/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 57,
+      "s": "59/316",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 58,
+      "s": "60/317",
+      "independence_determinant": "49/450",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 59,
+      "s": "61/318",
+      "independence_determinant": "289/72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 60,
+      "s": "62/319",
+      "independence_determinant": "98/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 61,
+      "s": "63/320",
+      "independence_determinant": "2888",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 62,
+      "s": "64/321",
+      "independence_determinant": "225/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 63,
+      "s": "65/322",
+      "independence_determinant": "25088/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 64,
+      "s": "66/323",
+      "independence_determinant": "16641/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 65,
+      "s": "67/324",
+      "independence_determinant": "39601/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 66,
+      "s": "68/325",
+      "independence_determinant": "18/2401",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 67,
+      "s": "69/326",
+      "independence_determinant": "5202/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 68,
+      "s": "70/327",
+      "independence_determinant": "512/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 69,
+      "s": "71/328",
+      "independence_determinant": "182408/5625",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 70,
+      "s": "72/329",
+      "independence_determinant": "225/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 71,
+      "s": "73/330",
+      "independence_determinant": "8/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 72,
+      "s": "74/331",
+      "independence_determinant": "5832/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 73,
+      "s": "75/332",
+      "independence_determinant": "25/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 74,
+      "s": "76/333",
+      "independence_determinant": "26912/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 75,
+      "s": "77/334",
+      "independence_determinant": "4967552/11025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 76,
+      "s": "78/335",
+      "independence_determinant": "729/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 77,
+      "s": "79/336",
+      "independence_determinant": "3698/2025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 78,
+      "s": "80/337",
+      "independence_determinant": "3698/11025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 79,
+      "s": "81/338",
+      "independence_determinant": "5329/288",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 80,
+      "s": "82/339",
+      "independence_determinant": "8192/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 81,
+      "s": "83/340",
+      "independence_determinant": "8/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 82,
+      "s": "84/341",
+      "independence_determinant": "44402/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 83,
+      "s": "85/342",
+      "independence_determinant": "1681/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 84,
+      "s": "86/343",
+      "independence_determinant": "162/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 85,
+      "s": "87/344",
+      "independence_determinant": "72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 86,
+      "s": "88/345",
+      "independence_determinant": "1089/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 87,
+      "s": "89/346",
+      "independence_determinant": "121/22050",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 88,
+      "s": "90/347",
+      "independence_determinant": "5929/450",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 89,
+      "s": "91/348",
+      "independence_determinant": "81/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 90,
+      "s": "92/349",
+      "independence_determinant": "16889672/21609",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 91,
+      "s": "93/350",
+      "independence_determinant": "512/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 92,
+      "s": "94/351",
+      "independence_determinant": "36992/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 93,
+      "s": "95/352",
+      "independence_determinant": "512/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 94,
+      "s": "96/353",
+      "independence_determinant": "135200/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 95,
+      "s": "97/354",
+      "independence_determinant": "429025/7938",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 96,
+      "s": "98/355",
+      "independence_determinant": "16129/288",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 97,
+      "s": "99/356",
+      "independence_determinant": "25/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 98,
+      "s": "100/357",
+      "independence_determinant": "1152/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 99,
+      "s": "101/358",
+      "independence_determinant": "2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 100,
+      "s": "102/359",
+      "independence_determinant": "18/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 101,
+      "s": "103/360",
+      "independence_determinant": "2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 102,
+      "s": "104/361",
+      "independence_determinant": "49/72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 103,
+      "s": "105/362",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 104,
+      "s": "106/363",
+      "independence_determinant": "7688/3969",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 105,
+      "s": "107/364",
+      "independence_determinant": "574592/30625",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 106,
+      "s": "108/365",
+      "independence_determinant": "18225/1568",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 107,
+      "s": "109/366",
+      "independence_determinant": "2/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 108,
+      "s": "110/367",
+      "independence_determinant": "242/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 109,
+      "s": "111/368",
+      "independence_determinant": "18/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 110,
+      "s": "112/369",
+      "independence_determinant": "121/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 111,
+      "s": "113/370",
+      "independence_determinant": "168921/800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 112,
+      "s": "114/371",
+      "independence_determinant": "13448/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 113,
+      "s": "115/372",
+      "independence_determinant": "1/450",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 114,
+      "s": "116/373",
+      "independence_determinant": "339889/88200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 115,
+      "s": "117/374",
+      "independence_determinant": "9/128",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 116,
+      "s": "118/375",
+      "independence_determinant": "961/882",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 117,
+      "s": "119/376",
+      "independence_determinant": "72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 118,
+      "s": "120/377",
+      "independence_determinant": "225/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 119,
+      "s": "121/378",
+      "independence_determinant": "4608/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 120,
+      "s": "122/379",
+      "independence_determinant": "1352/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 121,
+      "s": "123/380",
+      "independence_determinant": "72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 122,
+      "s": "124/381",
+      "independence_determinant": "289/45000",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 123,
+      "s": "125/382",
+      "independence_determinant": "2/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 124,
+      "s": "126/383",
+      "independence_determinant": "128/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 125,
+      "s": "127/384",
+      "independence_determinant": "2312/225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 126,
+      "s": "128/385",
+      "independence_determinant": "458329/14112",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 127,
+      "s": "129/386",
+      "independence_determinant": "1225/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 128,
+      "s": "130/387",
+      "independence_determinant": "6728/60025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 129,
+      "s": "131/388",
+      "independence_determinant": "1682",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 130,
+      "s": "132/389",
+      "independence_determinant": "12168/625",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 131,
+      "s": "133/390",
+      "independence_determinant": "961/648",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 132,
+      "s": "134/391",
+      "independence_determinant": "49/162",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 133,
+      "s": "135/392",
+      "independence_determinant": "1089/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 134,
+      "s": "136/393",
+      "independence_determinant": "32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 135,
+      "s": "137/394",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 136,
+      "s": "138/395",
+      "independence_determinant": "17161/32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 137,
+      "s": "139/396",
+      "independence_determinant": "9/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 138,
+      "s": "140/397",
+      "independence_determinant": "9/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 139,
+      "s": "141/398",
+      "independence_determinant": "270848/2025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 140,
+      "s": "142/399",
+      "independence_determinant": "8/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 141,
+      "s": "143/400",
+      "independence_determinant": "8281/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 142,
+      "s": "144/401",
+      "independence_determinant": "187489/14112",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 143,
+      "s": "145/402",
+      "independence_determinant": "25/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 144,
+      "s": "146/403",
+      "independence_determinant": "968/225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 145,
+      "s": "147/404",
+      "independence_determinant": "361/72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 146,
+      "s": "148/405",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 147,
+      "s": "149/406",
+      "independence_determinant": "722/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 148,
+      "s": "150/407",
+      "independence_determinant": "162/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 149,
+      "s": "151/408",
+      "independence_determinant": "288/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 150,
+      "s": "152/409",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 151,
+      "s": "153/410",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 152,
+      "s": "154/411",
+      "independence_determinant": "1681/288",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 153,
+      "s": "155/412",
+      "independence_determinant": "9/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 154,
+      "s": "156/413",
+      "independence_determinant": "121/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 155,
+      "s": "157/414",
+      "independence_determinant": "242/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 156,
+      "s": "158/415",
+      "independence_determinant": "20449/162",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 157,
+      "s": "159/416",
+      "independence_determinant": "625/2592",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 158,
+      "s": "160/417",
+      "independence_determinant": "1225/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 159,
+      "s": "161/418",
+      "independence_determinant": "1568",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 160,
+      "s": "162/419",
+      "independence_determinant": "15129/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 161,
+      "s": "163/420",
+      "independence_determinant": "9/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 162,
+      "s": "164/421",
+      "independence_determinant": "255025/3528",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 163,
+      "s": "165/422",
+      "independence_determinant": "2888/2025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 164,
+      "s": "166/423",
+      "independence_determinant": "841/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 165,
+      "s": "167/424",
+      "independence_determinant": "32/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 166,
+      "s": "168/425",
+      "independence_determinant": "128/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 167,
+      "s": "169/426",
+      "independence_determinant": "74529/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 168,
+      "s": "170/427",
+      "independence_determinant": "32/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 169,
+      "s": "171/428",
+      "independence_determinant": "72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 170,
+      "s": "172/429",
+      "independence_determinant": "111392/11025",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 171,
+      "s": "173/430",
+      "independence_determinant": "50/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 172,
+      "s": "174/431",
+      "independence_determinant": "1849/3528",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 173,
+      "s": "175/432",
+      "independence_determinant": "289/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 174,
+      "s": "176/433",
+      "independence_determinant": "529/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 175,
+      "s": "177/434",
+      "independence_determinant": "14641/288",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 176,
+      "s": "178/435",
+      "independence_determinant": "200/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 177,
+      "s": "179/436",
+      "independence_determinant": "2312/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 178,
+      "s": "180/437",
+      "independence_determinant": "72",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 179,
+      "s": "181/438",
+      "independence_determinant": "1521/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 180,
+      "s": "182/439",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 181,
+      "s": "183/440",
+      "independence_determinant": "361/98",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 182,
+      "s": "184/441",
+      "independence_determinant": "2601/32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 183,
+      "s": "185/442",
+      "independence_determinant": "81/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 184,
+      "s": "186/443",
+      "independence_determinant": "392/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 185,
+      "s": "187/444",
+      "independence_determinant": "2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 186,
+      "s": "188/445",
+      "independence_determinant": "11552/81",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 187,
+      "s": "189/446",
+      "independence_determinant": "7688/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 188,
+      "s": "190/447",
+      "independence_determinant": "841/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 189,
+      "s": "191/448",
+      "independence_determinant": "32/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 190,
+      "s": "192/449",
+      "independence_determinant": "177608/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 191,
+      "s": "193/450",
+      "independence_determinant": "288/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 192,
+      "s": "194/451",
+      "independence_determinant": "8712/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 193,
+      "s": "195/452",
+      "independence_determinant": "4608/2401",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 194,
+      "s": "196/453",
+      "independence_determinant": "50/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 195,
+      "s": "197/454",
+      "independence_determinant": "98/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 196,
+      "s": "198/455",
+      "independence_determinant": "800/441",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 197,
+      "s": "199/456",
+      "independence_determinant": "2401/200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 198,
+      "s": "200/457",
+      "independence_determinant": "18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 199,
+      "s": "201/458",
+      "independence_determinant": "32/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 200,
+      "s": "202/459",
+      "independence_determinant": "269361/392",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 201,
+      "s": "203/460",
+      "independence_determinant": "648/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 202,
+      "s": "204/461",
+      "independence_determinant": "32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 203,
+      "s": "205/462",
+      "independence_determinant": "200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 204,
+      "s": "206/463",
+      "independence_determinant": "2/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 205,
+      "s": "207/464",
+      "independence_determinant": "4489/1800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 206,
+      "s": "208/465",
+      "independence_determinant": "5618/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 207,
+      "s": "209/466",
+      "independence_determinant": "282752/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 208,
+      "s": "210/467",
+      "independence_determinant": "37249/882",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 209,
+      "s": "211/468",
+      "independence_determinant": "16129/128",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 210,
+      "s": "212/469",
+      "independence_determinant": "961/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 211,
+      "s": "213/470",
+      "independence_determinant": "529/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 212,
+      "s": "214/471",
+      "independence_determinant": "81/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 213,
+      "s": "215/472",
+      "independence_determinant": "2745649/793800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 214,
+      "s": "216/473",
+      "independence_determinant": "8/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 215,
+      "s": "217/474",
+      "independence_determinant": "494209/2450",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 216,
+      "s": "218/475",
+      "independence_determinant": "32768/25",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 217,
+      "s": "219/476",
+      "independence_determinant": "1369/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 218,
+      "s": "220/477",
+      "independence_determinant": "128",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 219,
+      "s": "221/478",
+      "independence_determinant": "225/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 220,
+      "s": "222/479",
+      "independence_determinant": "32/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 221,
+      "s": "223/480",
+      "independence_determinant": "6889/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 222,
+      "s": "224/481",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 223,
+      "s": "225/482",
+      "independence_determinant": "58081/4050",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 224,
+      "s": "226/483",
+      "independence_determinant": "578/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 225,
+      "s": "227/484",
+      "independence_determinant": "169/18",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 226,
+      "s": "228/485",
+      "independence_determinant": "58081/1568",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 227,
+      "s": "229/486",
+      "independence_determinant": "177241/88200",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 228,
+      "s": "230/487",
+      "independence_determinant": "32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 229,
+      "s": "231/488",
+      "independence_determinant": "12769/128",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 230,
+      "s": "232/489",
+      "independence_determinant": "10201/128",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 231,
+      "s": "233/490",
+      "independence_determinant": "1/162",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 232,
+      "s": "234/491",
+      "independence_determinant": "2809/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 233,
+      "s": "235/492",
+      "independence_determinant": "23409/2450",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 234,
+      "s": "236/493",
+      "independence_determinant": "22201/32",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 235,
+      "s": "237/494",
+      "independence_determinant": "578/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 236,
+      "s": "238/495",
+      "independence_determinant": "512/3969",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 237,
+      "s": "239/496",
+      "independence_determinant": "2048/225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 238,
+      "s": "240/497",
+      "independence_determinant": "169/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 239,
+      "s": "241/498",
+      "independence_determinant": "9/2",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 240,
+      "s": "242/499",
+      "independence_determinant": "2/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 241,
+      "s": "243/500",
+      "independence_determinant": "49/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 242,
+      "s": "244/501",
+      "independence_determinant": "529/50",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 243,
+      "s": "245/502",
+      "independence_determinant": "16129/19208",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 244,
+      "s": "246/503",
+      "independence_determinant": "1/800",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 245,
+      "s": "247/504",
+      "independence_determinant": "25538/2401",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 246,
+      "s": "248/505",
+      "independence_determinant": "6498/1225",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 247,
+      "s": "249/506",
+      "independence_determinant": "9/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 248,
+      "s": "250/507",
+      "independence_determinant": "32/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 249,
+      "s": "251/508",
+      "independence_determinant": "8649/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 250,
+      "s": "252/509",
+      "independence_determinant": "722/49",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 251,
+      "s": "253/510",
+      "independence_determinant": "9/8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 252,
+      "s": "254/511",
+      "independence_determinant": "722/9",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 253,
+      "s": "255/512",
+      "independence_determinant": "5041/162",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 254,
+      "s": "256/513",
+      "independence_determinant": "8",
+      "curvature": "zero_matrix"
+    },
+    {
+      "index": 255,
+      "s": "1/2",
+      "independence_determinant": "9522/625",
+      "curvature": "zero_matrix"
+    }
+  ]
+}

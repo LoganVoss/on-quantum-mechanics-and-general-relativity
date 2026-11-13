@@ -1,0 +1,63 @@
+{
+  "schema": "voss.premise-ledger.addendum.v1",
+  "claims": [
+    {
+      "id": "PHYSICAL.LITERAL_FRAME",
+      "type": "physical_dictionary_premise",
+      "statement": "h is the literal quotient metric block with calibrated orbit normalization",
+      "historical": "v2.0 ledger omission identified in v2.1; explicit v2.2; operational probe v2.3",
+      "current": "exact transformation and operational identification proof"
+    },
+    {
+      "id": "DERIVATIVE.N2.FLAT_BLINDNESS",
+      "type": "exact_mathematical_proof",
+      "statement": "The full first variation of integral sqrt(-h) Lambda(rho) N^2 vanishes on all three supplied flat references"
+    },
+    {
+      "id": "DERIVATIVE.N2.CURVED_SELECTION",
+      "type": "exact_symbolic_and_analytic_proof",
+      "statement": "One fixed Levi-Civita exponent c outside {0,2}, required stationary at every positive radius, forces Lambda(rho)=0 pointwise",
+      "receipt": "levi_civita_deformation_receipt.json"
+    },
+    {
+      "id": "BOUNDARY.UNTWISTED_SECTOR",
+      "type": "global_boundary_premise",
+      "statement": "A(infinity)-A(axis)=0 with regular axis, fixed orbit periodicity and conical normalization"
+    },
+    {
+      "id": "BOUNDARY.ORIGINAL_DATA",
+      "type": "executed_continuum_quadrature",
+      "statement": "Original profile has nonzero asymptotic twist",
+      "value": -0.013089872446886107
+    },
+    {
+      "id": "BOUNDARY.CORRECTED_DATA",
+      "type": "exact_integral_identity_and_executed_quadrature",
+      "statement": "Unique additive Gaussian coefficient sets continuum twist to zero",
+      "coefficient": 0.05278195754784881
+    },
+    {
+      "id": "BOUNDARY.CORRECTED_EVOLUTION",
+      "type": "fresh_classical_numerical_verification",
+      "historical": "v2.1 gave coefficient without re-evolution; v2.2 performed four corrected runs",
+      "current": "all four v2.2 runs reproduced exactly; three matched-spacing extended-domain runs added",
+      "receipt": "fresh_boundary/boundary_fresh_receipt.json"
+    },
+    {
+      "id": "BOUNDARY.FLUX_BALANCE",
+      "type": "exact_conservation_law_and_executed_numerics",
+      "statement": "Twist balance includes nonzero finite-radius outer flux; numerical balance defect converges at second order",
+      "finest_L8_integrated_flux": -1.796508020339218e-07,
+      "finest_L8_balance_defect": -3.7001767249239605e-06,
+      "finest_L12_integrated_flux": -2.110837330395819e-19
+    }
+  ],
+  "source_sha256": {
+    "Voss_Verification_Research_v2_3_GitHub_Bundle/voss-verification-v2.3/baseline_v2_2/source_audit/Voss_v2_1_Audit.pdf": "a2548a73dbb53d2f90537fcbae2af3a9bac8d8036d46c394f16b5c88b2f16ada",
+    "Voss_Verification_Research_v2_3_GitHub_Bundle/voss-verification-v2.3/baseline_v2_2/scripts/verify_corrected_boundary.py": "27b37e47744bd7a7ef6045119d57b38a51fffd256d142e5b25cdf5c7b58389eb",
+    "Voss_Verification_Research_v2_3_GitHub_Bundle/voss-verification-v2.3/baseline_v2_2/source_audit/pde_repro.py": "a8cfa99d81f9bf7bf0a3a6ad4b0869d7650566eac47ec0a34c93ec28afa76c7a",
+    "Voss_Verification_Research_v2_3_GitHub_Bundle/voss-verification-v2.3/baseline_v2_2/evidence/corrected_boundary_summary.json": "fdfb881384551477f2536b05bcbbc56ee358670f29ea344a3c6fa0181c3709e5",
+    "verify_boundary_fresh.py": "f259af4446d62ec6fab277323e1e9ee506d15ff0fa974adf6a4dc53729a2f1f3",
+    "verify_levi_civita_deformation.py": "e8ce4f340e5bb270655018ebd35a03c1bb0f2a8aa17c015b934309c979c7f66e"
+  }
+}

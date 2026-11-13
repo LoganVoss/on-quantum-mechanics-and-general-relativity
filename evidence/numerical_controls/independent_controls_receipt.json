@@ -1,0 +1,223 @@
+{
+  "status": "PASS",
+  "kind": "independent_analytic_oracle_and_temporal_refinement",
+  "executed_utc": "2026-11-13T17:49:28.981871+00:00",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "source_sha256": "a8cfa99d81f9bf7bf0a3a6ad4b0869d7650566eac47ec0a34c93ec28afa76c7a",
+  "control_source_sha256": "f949517f4c8d383d144f058adf963196fb46d852244f2b358686fad8e996689d",
+  "domain": {
+    "outer_radius": 8.0,
+    "final_time": 0.8,
+    "amplitude": 1.6,
+    "bessel_wave_number": 0.3006031947119716
+  },
+  "symbolic_residuals": {
+    "psi_geodesic": "0",
+    "chi_geodesic": "0",
+    "energy_isometry": "0"
+  },
+  "exact_solution_rows": [
+    {
+      "intervals": 64,
+      "dR": 0.125,
+      "dt": 0.02,
+      "steps": 40,
+      "requested_cfl": 0.16,
+      "case": "linear_bessel",
+      "field_linf_errors": [
+        6.036815980881016e-06,
+        0.0,
+        1.5061406898775331e-05,
+        0.0
+      ],
+      "all_field_linf": 1.5061406898775331e-05
+    },
+    {
+      "intervals": 128,
+      "dR": 0.0625,
+      "dt": 0.01,
+      "steps": 80,
+      "requested_cfl": 0.16,
+      "case": "linear_bessel",
+      "field_linf_errors": [
+        1.5144139917655508e-06,
+        0.0,
+        3.7563332159068485e-06,
+        0.0
+      ],
+      "all_field_linf": 3.7563332159068485e-06,
+      "observed_order": 2.0034595876431456
+    },
+    {
+      "intervals": 256,
+      "dR": 0.03125,
+      "dt": 0.005,
+      "steps": 160,
+      "requested_cfl": 0.16,
+      "case": "linear_bessel",
+      "field_linf_errors": [
+        3.7902433946968017e-07,
+        0.0,
+        9.400719592628226e-07,
+        0.0
+      ],
+      "all_field_linf": 9.400719592628226e-07,
+      "observed_order": 1.9984819474601971
+    },
+    {
+      "intervals": 512,
+      "dR": 0.015625,
+      "dt": 0.0025,
+      "steps": 320,
+      "requested_cfl": 0.16,
+      "case": "linear_bessel",
+      "field_linf_errors": [
+        9.478843465693387e-08,
+        0.0,
+        2.35007261678577e-07,
+        0.0
+      ],
+      "all_field_linf": 2.35007261678577e-07,
+      "observed_order": 2.000065857866942
+    },
+    {
+      "intervals": 64,
+      "dR": 0.125,
+      "dt": 0.02,
+      "steps": 40,
+      "requested_cfl": 0.16,
+      "case": "nonlinear_geodesic",
+      "field_linf_errors": [
+        1.1310816090424891e-05,
+        5.564257878565293e-06,
+        2.5965826184362432e-05,
+        1.3311952507710084e-05
+      ],
+      "all_field_linf": 2.5965826184362432e-05
+    },
+    {
+      "intervals": 128,
+      "dR": 0.0625,
+      "dt": 0.01,
+      "steps": 80,
+      "requested_cfl": 0.16,
+      "case": "nonlinear_geodesic",
+      "field_linf_errors": [
+        2.8354483895369487e-06,
+        1.3916803154878643e-06,
+        6.525687932719751e-06,
+        3.3330498874044323e-06
+      ],
+      "all_field_linf": 6.525687932719751e-06,
+      "observed_order": 1.9924122274814433
+    },
+    {
+      "intervals": 256,
+      "dR": 0.03125,
+      "dt": 0.005,
+      "steps": 160,
+      "requested_cfl": 0.16,
+      "case": "nonlinear_geodesic",
+      "field_linf_errors": [
+        7.093263026600183e-07,
+        3.4795765274653334e-07,
+        1.6338059614408318e-06,
+        8.333481546982102e-07
+      ],
+      "all_field_linf": 1.6338059614408318e-06,
+      "observed_order": 1.9978933450993064
+    },
+    {
+      "intervals": 512,
+      "dR": 0.015625,
+      "dt": 0.0025,
+      "steps": 320,
+      "requested_cfl": 0.16,
+      "case": "nonlinear_geodesic",
+      "field_linf_errors": [
+        1.7735294623524855e-07,
+        8.699175890747313e-08,
+        4.086162230109054e-07,
+        2.0834175585432435e-07
+      ],
+      "all_field_linf": 4.086162230109054e-07,
+      "observed_order": 1.999418263682276
+    }
+  ],
+  "time_refinement": {
+    "initial_data": "corrected historical nonlinear benchmark",
+    "c_star": 0.052781957547848805,
+    "rows": [
+      {
+        "intervals": 128,
+        "dR": 0.0625,
+        "dt": 0.04,
+        "steps": 20,
+        "requested_cfl": 0.64
+      },
+      {
+        "intervals": 128,
+        "dR": 0.0625,
+        "dt": 0.02,
+        "steps": 40,
+        "requested_cfl": 0.32
+      },
+      {
+        "intervals": 128,
+        "dR": 0.0625,
+        "dt": 0.01,
+        "steps": 80,
+        "requested_cfl": 0.16
+      },
+      {
+        "intervals": 128,
+        "dR": 0.0625,
+        "dt": 0.005,
+        "steps": 160,
+        "requested_cfl": 0.08
+      },
+      {
+        "intervals": 128,
+        "dR": 0.0625,
+        "dt": 0.0025,
+        "steps": 320,
+        "requested_cfl": 0.04
+      }
+    ],
+    "successive_linf_differences": [
+      8.582208640417477e-06,
+      3.5782409366635903e-06,
+      2.760728532447132e-07,
+      1.81235622065401e-08
+    ],
+    "observed_order": 3.92911058032227,
+    "accepted_steps": [
+      0.01,
+      0.005,
+      0.0025
+    ],
+    "accepted_order_interval": [
+      3.5,
+      4.5
+    ],
+    "coarse_exploration": {
+      "steps": [
+        0.04,
+        0.02,
+        0.01
+      ],
+      "observed_order": 1.2620984417515377,
+      "status": "does_not_meet_expected_asymptotic_order",
+      "interpretation": "Coarse timesteps do not establish fourth-order convergence; the finer regime resolves it. Coarse result retained, not discarded."
+    }
+  },
+  "elapsed_seconds": 0.1678288329858333,
+  "limits": [
+    "Finite T=0.8 bounded controls; no global or arbitrary-data stability theorem.",
+    "Exact geodesic solution is an integrable commuting-current subfamily, not generic nonlinear scattering.",
+    "Time refinement holds spatial grid fixed; spatial refinement uses a separate exact continuum oracle."
+  ]
+}

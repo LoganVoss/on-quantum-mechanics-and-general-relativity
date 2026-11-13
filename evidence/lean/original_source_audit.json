@@ -1,0 +1,124 @@
+{
+  "module_count": 7,
+  "theorem_count": 40,
+  "axiom_report_count": 40,
+  "suspicious_tokens": {
+    "Integrability.lean": [],
+    "ThmA.lean": [],
+    "LaxCertificates.lean": [],
+    "PremiseObstructions.lean": [],
+    "AnalyticBridge.lean": [],
+    "ChartGeometry.lean": [],
+    "ThmABridge.lean": []
+  },
+  "hash_checks": [
+    {
+      "path": "AnalyticBridge.lean",
+      "expected": "fe90e4a260207ff5ef347e53f8ceb10077c725d9da3d3bd8082503b99447fc6b",
+      "actual": "fe90e4a260207ff5ef347e53f8ceb10077c725d9da3d3bd8082503b99447fc6b",
+      "match": true
+    },
+    {
+      "path": "ChartGeometry.lean",
+      "expected": "89eb1898b2f3df1f1dad969565cff7962ef69c93cbde6606c321a5a8e0214468",
+      "actual": "89eb1898b2f3df1f1dad969565cff7962ef69c93cbde6606c321a5a8e0214468",
+      "match": true
+    },
+    {
+      "path": "Integrability.lean",
+      "expected": "40759420123179096601b07f1ddc6d616efc0ea34d61afda28396b968a403d81",
+      "actual": "40759420123179096601b07f1ddc6d616efc0ea34d61afda28396b968a403d81",
+      "match": true
+    },
+    {
+      "path": "LaxCertificates.lean",
+      "expected": "b1e832835f3b3c278694b0fc8c5014dea32c24d41599969e34ea3c56578d6793",
+      "actual": "b1e832835f3b3c278694b0fc8c5014dea32c24d41599969e34ea3c56578d6793",
+      "match": true
+    },
+    {
+      "path": "PremiseObstructions.lean",
+      "expected": "9a04c8b749a2b55cb2b0df6506741157041c20702ba31a3b95ecaceff43c9b02",
+      "actual": "9a04c8b749a2b55cb2b0df6506741157041c20702ba31a3b95ecaceff43c9b02",
+      "match": true
+    },
+    {
+      "path": "ThmA.lean",
+      "expected": "a72477e55b94faeab5c5246309ea2d717231ba2d8442877118eea36473e4f018",
+      "actual": "a72477e55b94faeab5c5246309ea2d717231ba2d8442877118eea36473e4f018",
+      "match": true
+    },
+    {
+      "path": "ThmABridge.lean",
+      "expected": "ceb1d280e5b57b64f40450ab0b440ab79a506b7e645b0062d6d7e2bbe33f1443",
+      "actual": "ceb1d280e5b57b64f40450ab0b440ab79a506b7e645b0062d6d7e2bbe33f1443",
+      "match": true
+    },
+    {
+      "path": "lakefile.lean",
+      "expected": "ad169be8f109ab680f774b6d52d47c3a13d748b64755039651edb357c2e17ec0",
+      "actual": "ad169be8f109ab680f774b6d52d47c3a13d748b64755039651edb357c2e17ec0",
+      "match": true
+    },
+    {
+      "path": "lean-toolchain",
+      "expected": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+      "actual": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+      "match": true
+    },
+    {
+      "path": "lake-manifest.json",
+      "expected": "0da6db9b2ce645b71d24c2d1424f20609293d2de210dec078e5b211ef542f576",
+      "actual": "0da6db9b2ce645b71d24c2d1424f20609293d2de210dec078e5b211ef542f576",
+      "match": true
+    },
+    {
+      "path": "compiled/AnalyticBridge.olean",
+      "expected": "c212a3b13167f3aeada553d1c17f9eb11376656dae31276fbe03cd40c9865037",
+      "actual": "c212a3b13167f3aeada553d1c17f9eb11376656dae31276fbe03cd40c9865037",
+      "match": true
+    },
+    {
+      "path": "compiled/ChartGeometry.olean",
+      "expected": "83da47161c127625ed21fcc320540ed5b5dead65da4c46eb656d2380e53e109a",
+      "actual": "83da47161c127625ed21fcc320540ed5b5dead65da4c46eb656d2380e53e109a",
+      "match": true
+    },
+    {
+      "path": "compiled/Integrability.olean",
+      "expected": "d197bef7ac4c282a2b0451fada8783fd232973bc7eb86ba6a55929f7d56b08a3",
+      "actual": "d197bef7ac4c282a2b0451fada8783fd232973bc7eb86ba6a55929f7d56b08a3",
+      "match": true
+    },
+    {
+      "path": "compiled/LaxCertificates.olean",
+      "expected": "4c45b726ce8e436f7d217c8a1d8f2ad81a4dfa951faab479f481e5b8c5d5a4b9",
+      "actual": "4c45b726ce8e436f7d217c8a1d8f2ad81a4dfa951faab479f481e5b8c5d5a4b9",
+      "match": true
+    },
+    {
+      "path": "compiled/PremiseObstructions.olean",
+      "expected": "0576df817327439f804f6ae946d107683a6c603265c1d7d9bb1261f047d1e0a0",
+      "actual": "0576df817327439f804f6ae946d107683a6c603265c1d7d9bb1261f047d1e0a0",
+      "match": true
+    },
+    {
+      "path": "compiled/ThmA.olean",
+      "expected": "43c75bafe964a48a980a20e240b81bf0208eef63be3ae9e5e82f33fa12f72d94",
+      "actual": "43c75bafe964a48a980a20e240b81bf0208eef63be3ae9e5e82f33fa12f72d94",
+      "match": true
+    },
+    {
+      "path": "compiled/ThmABridge.olean",
+      "expected": "318215d9f15281d64a68d7fd488c870f1aec864874e58dc52c7eba4f0de6190f",
+      "actual": "318215d9f15281d64a68d7fd488c870f1aec864874e58dc52c7eba4f0de6190f",
+      "match": true
+    },
+    {
+      "path": "build.log",
+      "expected": "6221542a3e31cb3782be7ba32cb03004bc9c6b2d835c10838a267aaf92228aa2",
+      "actual": "6221542a3e31cb3782be7ba32cb03004bc9c6b2d835c10838a267aaf92228aa2",
+      "match": true
+    }
+  ]
+}

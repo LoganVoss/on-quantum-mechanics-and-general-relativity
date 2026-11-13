@@ -1,0 +1,22 @@
+Title:           Voss Chart Selection: Variational Proof, Analytic Closure, and Integrability
+Subject:         
+Keywords:        
+Author:          Logan Voss research program; AI-assisted proof and verification
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.26
+CreationDate:    Thu Nov 12 19:46:47 2026 PST
+ModDate:         Thu Nov 12 19:46:47 2026 PST
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           16
+Encrypted:       no
+Page size:       595.276 x 841.89 pts (A4)
+Page rot:        0
+File size:       425504 bytes
+Optimized:       no
+PDF version:     1.7

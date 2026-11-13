@@ -1,0 +1,574 @@
+{
+  "schema": "voss.portable-lean-verification.v1",
+  "timestamp_utc": "2026-11-13T17:53:00.733723+00:00",
+  "status": "passed",
+  "verifier_sha256": "bb50cb544b18dc457897298a6acb6097161feced0d57b1d7a117694238eb3b65",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.509,
+      "timeout_seconds": 300,
+      "log": "version.log",
+      "log_sha256": "adae83ba7663543abb21a1527013239eb469a7dbff15bea8c52d90901b42cc65"
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.954,
+      "timeout_seconds": 300,
+      "log": "build.log",
+      "log_sha256": "744050fb9c12f41783b4f4cdaffdfb124af881536b315d1fc49fe1d461f4ca4f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "../evidence/lean/controls/AcceptedTrue.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.57,
+      "timeout_seconds": 300,
+      "log": "positive_control.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "../evidence/lean/controls/RejectedFalse.lean"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.517,
+      "timeout_seconds": 300,
+      "log": "negative_control.log",
+      "log_sha256": "f864c0f5e1e644f50284dde564a578f2794de044fbde96a3fd121a01fdb9de6f"
+    }
+  ],
+  "module_count": 8,
+  "theorem_count": 48,
+  "theorem_inventory": [
+    {
+      "module": "AnalyticBridge.lean",
+      "name": "VossAnalyticBridge.constant_on_open_of_hasDerivAt_zero"
+    },
+    {
+      "module": "AnalyticBridge.lean",
+      "name": "VossAnalyticBridge.affine_on_positive_of_second_derivative_zero"
+    },
+    {
+      "module": "AnalyticBridge.lean",
+      "name": "VossAnalyticBridge.complete_selection"
+    },
+    {
+      "module": "AnalyticBridge.lean",
+      "name": "VossAnalyticBridge.complete_selection_positive"
+    },
+    {
+      "module": "AnalyticBridge.lean",
+      "name": "VossAnalyticBridge.constant_odd_coupling"
+    },
+    {
+      "module": "ChartGeometry.lean",
+      "name": "VossChartGeometry.minkowski_pullback"
+    },
+    {
+      "module": "ChartGeometry.lean",
+      "name": "VossChartGeometry.orbit_area_density"
+    },
+    {
+      "module": "ChartGeometry.lean",
+      "name": "VossChartGeometry.literal_quotient_block"
+    },
+    {
+      "module": "ChartGeometry.lean",
+      "name": "VossChartGeometry.lorentzian_chart_determinant"
+    },
+    {
+      "module": "ChartGeometry.lean",
+      "name": "VossChartGeometry.spatial_diagonal_positive"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.spectralG_hasDerivAt"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.spectralH_hasDerivAt"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.frobenius_identity"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.obstruction_zero_iff_harmonic"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.harmonic_composition_forces_second_derivative_zero"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.integrability_selects_affine"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.axis_continuity_removes_intercept"
+    },
+    {
+      "module": "Integrability.lean",
+      "name": "VossIntegrability.positive_linear_branch"
+    },
+    {
+      "module": "LaxCertificates.lean",
+      "name": "VossLaxCertificates.scalar_curvature_decomposition"
+    },
+    {
+      "module": "LaxCertificates.lean",
+      "name": "VossLaxCertificates.matrix_curvature_decomposition"
+    },
+    {
+      "module": "LaxCertificates.lean",
+      "name": "VossLaxCertificates.curvature_zero_iff_eom"
+    },
+    {
+      "module": "LaxCertificates.lean",
+      "name": "VossLaxCertificates.spectralC_hasDerivAt"
+    },
+    {
+      "module": "LaxCertificates.lean",
+      "name": "VossLaxCertificates.spectral_curve_coefficients"
+    },
+    {
+      "module": "PremiseObstructions.lean",
+      "name": "VossPremiseObstructions.independent_labels_counterexample"
+    },
+    {
+      "module": "PremiseObstructions.lean",
+      "name": "VossPremiseObstructions.zero_spectral_value_loses_constraint"
+    },
+    {
+      "module": "PremiseObstructions.lean",
+      "name": "VossPremiseObstructions.null_area_jet_loses_constraint"
+    },
+    {
+      "module": "PremiseObstructions.lean",
+      "name": "VossPremiseObstructions.axis_value_without_continuity"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.invert_potential"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.invert_second_derivative"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.invert_shape"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.invert_area"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.potential_bound"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.second_derivative_bound"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.shape_bound"
+    },
+    {
+      "module": "ResidualInversion.lean",
+      "name": "VossResidualInversion.area_bound"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.theoremA_forward"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.theoremA_converse"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.einstein_direction"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.robust_V"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.robust_F2"
+    },
+    {
+      "module": "ThmA.lean",
+      "name": "VossThmA.power_branch"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.iff_of_mul"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.tt_iff"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.rr_iff"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.tr_iff"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.lax_ab"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.lax_obstruction_coeff"
+    },
+    {
+      "module": "ThmABridge.lean",
+      "name": "VossThmABridge.lax_gh"
+    }
+  ],
+  "warnings_as_errors": true,
+  "source_sha256": {
+    "AnalyticBridge.lean": "fe90e4a260207ff5ef347e53f8ceb10077c725d9da3d3bd8082503b99447fc6b",
+    "ChartGeometry.lean": "89eb1898b2f3df1f1dad969565cff7962ef69c93cbde6606c321a5a8e0214468",
+    "Integrability.lean": "40759420123179096601b07f1ddc6d616efc0ea34d61afda28396b968a403d81",
+    "LaxCertificates.lean": "b1e832835f3b3c278694b0fc8c5014dea32c24d41599969e34ea3c56578d6793",
+    "PremiseObstructions.lean": "9a04c8b749a2b55cb2b0df6506741157041c20702ba31a3b95ecaceff43c9b02",
+    "ResidualInversion.lean": "9a94a65e2050e99e8e810ff8fd4219666e8bcfd3881ceeeb590b103835cb1b04",
+    "ThmA.lean": "a72477e55b94faeab5c5246309ea2d717231ba2d8442877118eea36473e4f018",
+    "ThmABridge.lean": "ceb1d280e5b57b64f40450ab0b440ab79a506b7e645b0062d6d7e2bbe33f1443"
+  },
+  "configuration_sha256": {
+    "lakefile.lean": "4c8eadf81ee971aa4452701c4929d07fe0456dc9c8572f5f85c7613e0c80800b",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "0da6db9b2ce645b71d24c2d1424f20609293d2de210dec078e5b211ef542f576"
+  },
+  "lean_version": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+  "dependency_revisions": {
+    "mathlib": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "plausible": "77e08eddc486491d7b9e470926b3dbe50319451a",
+    "LeanSearchClient": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+    "importGraph": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+    "proofwidgets": "c4919189477c3221e6a204008998b0d724f49904",
+    "aesop": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+    "Qq": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+    "batteries": "f5d04a9c4973d401c8c92500711518f7c656f034",
+    "Cli": "02dbd02bc00ec4916e99b04b2245b30200e200d0"
+  },
+  "clean_project_build": true,
+  "build_warning_count": 0,
+  "build_error_count": 0,
+  "axiom_dependencies": {
+    "VossThmABridge.iff_of_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.tt_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.rr_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.tr_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_ab": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_obstruction_coeff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmABridge.lax_gh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.theoremA_forward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.theoremA_converse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.einstein_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.robust_V": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.robust_F2": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossThmA.power_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.minkowski_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.orbit_area_density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.literal_quotient_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.lorentzian_chart_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossChartGeometry.spatial_diagonal_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.invert_potential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.invert_second_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.invert_shape": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.invert_area": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.potential_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.second_derivative_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.shape_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossResidualInversion.area_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.constant_on_open_of_hasDerivAt_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.affine_on_positive_of_second_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.complete_selection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.complete_selection_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossAnalyticBridge.constant_odd_coupling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.spectralG_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.spectralH_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.frobenius_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.obstruction_zero_iff_harmonic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.harmonic_composition_forces_second_derivative_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.integrability_selects_affine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.axis_continuity_removes_intercept": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossIntegrability.positive_linear_branch": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.independent_labels_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.zero_spectral_value_loses_constraint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.null_area_jet_loses_constraint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossPremiseObstructions.axis_value_without_continuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.scalar_curvature_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.matrix_curvature_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.curvature_zero_iff_eom": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.spectralC_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "VossLaxCertificates.spectral_curve_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "axiom_report_count": 48,
+  "positive_control": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "../evidence/lean/controls/AcceptedTrue.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.57,
+    "timeout_seconds": 300,
+    "log": "positive_control.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "negative_control": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "-DwarningAsError=true",
+      "../evidence/lean/controls/RejectedFalse.lean"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.517,
+    "timeout_seconds": 300,
+    "log": "negative_control.log",
+    "log_sha256": "f864c0f5e1e644f50284dde564a578f2794de044fbde96a3fd121a01fdb9de6f"
+  },
+  "compiled_sha256": {
+    "ThmA.olean": "43c75bafe964a48a980a20e240b81bf0208eef63be3ae9e5e82f33fa12f72d94",
+    "ThmABridge.olean": "318215d9f15281d64a68d7fd488c870f1aec864874e58dc52c7eba4f0de6190f",
+    "AnalyticBridge.olean": "c212a3b13167f3aeada553d1c17f9eb11376656dae31276fbe03cd40c9865037",
+    "ChartGeometry.olean": "83da47161c127625ed21fcc320540ed5b5dead65da4c46eb656d2380e53e109a",
+    "Integrability.olean": "d197bef7ac4c282a2b0451fada8783fd232973bc7eb86ba6a55929f7d56b08a3",
+    "PremiseObstructions.olean": "0576df817327439f804f6ae946d107683a6c603265c1d7d9bb1261f047d1e0a0",
+    "LaxCertificates.olean": "4c45b726ce8e436f7d217c8a1d8f2ad81a4dfa951faab479f481e5b8c5d5a4b9",
+    "ResidualInversion.olean": "f978444ab571f45aaf52ecc7b32596221c7f83a252390c7ca8a1620133b37315"
+  },
+  "negative_control_rejected": true
+}
