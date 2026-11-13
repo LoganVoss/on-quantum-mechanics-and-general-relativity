@@ -4,9 +4,9 @@ title: "On Quantum Mechanics and General Relativity"
 authors:
   - family-names: Voss
     given-names: Logan
-version: 1.0.0
+version: 2.0.0
 date-released: 2026-11-13
 type: software
 repository-code: "https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity"
 url: "https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity"
-abstract: "A reproducible research bundle for a conditional quantum-state geometry and reduced-gravity selection theorem, including Lean certificates, symbolic calculations, nonlinear numerical controls, and exact geometric corollaries."
+abstract: "A reproducible research bundle for conditional action selection, a selected reciprocal quantum-state/shape interaction, one-Killing gravitational extension, and sourced quadratic-curvature discrimination, with formal certificates and independently checked computations."

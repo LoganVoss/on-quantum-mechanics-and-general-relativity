@@ -1,8 +1,8 @@
 # What Lean proves
 
-The release contains **48 machine-checked theorem statements in eight Lean modules**: the 40 original theorems in seven unchanged modules, plus eight new residual-inversion and error-bound theorems. A fresh build on November 13, 2026 completed with **zero warnings and zero errors**.
+The release contains **63 machine-checked theorem statements in nine Lean modules**: the 40 original theorems, eight version-1 residual theorems, and 15 version-2 extension certificates. A fresh build on November 13, 2026 completed with **zero warnings and zero errors**.
 
-The full [execution receipt](../evidence/lean/receipt.json) records the source hashes, exact dependency revisions, compiled-object hashes, commands, and all 48 theorem names and axiom reports. The [build log](../evidence/lean/build.log) is retained.
+The full [execution receipt](../evidence/lean/receipt.json) records the source hashes, exact dependency revisions, compiled-object hashes, commands, and all 63 theorem names and axiom reports. The [build log](../evidence/lean/build.log) is retained.
 
 ## The central selection theorem
 
@@ -35,12 +35,13 @@ The derivation of the chart equations from the action is supplied as a written v
 | [Integrability](../formal/Integrability.lean) | 8 | Spectral-coefficient derivatives, Frobenius identity, harmonic/affine selector, continuous-axis normalization |
 | [PremiseObstructions](../formal/PremiseObstructions.lean) | 4 | Exact witnesses showing why derivative, nonzero spectral, non-null area, and axis-continuity premises matter |
 | [LaxCertificates](../formal/LaxCertificates.lean) | 5 | Scalar/matrix curvature identities, EOM equivalence, spectral-curve derivative and coefficients |
-| [ResidualInversion](../formal/ResidualInversion.lean) | 8 | Four exact division-residual inversions and four pointwise error bounds; new in this release |
-| **Total** | **48** | **Eight modules** |
+| [ResidualInversion](../formal/ResidualInversion.lean) | 8 | Four exact division-residual inversions and four pointwise error bounds; added in version 1.0 |
+| [ExtensionCertificates](../formal/ExtensionCertificates.lean) | 15 | Helical and sourced selectors; response inverse; energy positivity, force identities, uncertainty bound |
+| **Total** | **63** | **Nine modules** |
 
-## New quantitative certificates
+## Version-1 quantitative certificates
 
-The new module uses the five division-form residuals $e_1,\ldots,e_5$ defined explicitly in its source. If each residual satisfies $|e_i|\leq\varepsilon$, the formal proofs give
+The residual module uses the five division-form residuals $e_1,\ldots,e_5$ defined explicitly in its source. If each residual satisfies $|e_i|\leq\varepsilon$, the formal proofs give
 
 ```math
 |V|\leq2\varepsilon,\qquad
@@ -55,6 +56,20 @@ The new module uses the five division-form residuals $e_1,\ldots,e_5$ defined ex
 
 These are exact finite algebraic implications. Interpreting $F_1,F_2$ as derivatives requires the derivative assumptions above. Interpreting $\varepsilon$ as an experimental uncertainty requires a measurement protocol. The bounds quantify coefficient selection; they are not a proof of nonlinear dynamical stability. The intended physical use has $\rho>0$.
 
+## Version-2 certificates
+
+The new [extension module](../formal/ExtensionCertificates.lean) certifies 15 statements from the frozen extension formulas:
+
+- Three helical inverse/selection/error results and a zero-pitch counterexample.
+- Three dust–electrovac inverse/selection/error results.
+- Two regular two-channel response inverse/error results.
+- Two coordinate mismatch-energy positivity and zero-condition results.
+- Four pure/general covariance force, shifted-energy, and uncertainty-bound results.
+
+The [exact coverage ledger](../evidence/lean/extension_coverage.json) maps every theorem to its assumptions. The scalar residuals, transfer functions, coordinate energy, and force expressions are explicit definitions in these signatures. Their derivation from tensor variations and quantum operators is supplied by the written proofs and separate symbolic calculations. The compiler does not turn these algebraic certificates into a formal proof of the complete physical theory.
+
+In particular, the band-leakage theorem, positive operator extension, conserved-current duality, full matter Ward identity, and field-reduction geometry remain analytic/symbolic results. No new mathematical axioms were introduced to represent them.
+
 ## Integrability: the precise formal boundary
 
 Lean verifies the rational curvature and Frobenius identities, their nondegenerate algebraic consequences, and the real-calculus passage from a zero second derivative to an affine coefficient. The matrix curvature theorem is entrywise and allows an arbitrary matrix in the commutator position; it does not assume that the currents commute.
@@ -64,12 +79,12 @@ The local construction of the spectral parameter, the geometric interpretation o
 ## Reproduction and trust
 
 The project pins Lean **4.19.0** and Mathlib commit
-`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The fresh run used the published Mathlib dependency cache, then compiled all eight project modules from source. No historical project `.olean` objects were reused. The original seven proof-source files remain byte-identical to the supplied v2.4 files.
+`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The fresh run used the published Mathlib dependency cache, then compiled all nine project modules from source. No historical project `.olean` objects were reused. The original seven proof-source files remain byte-identical to the supplied v2.4 files.
 
 After preparing the pinned dependencies as described in [Reproducibility](REPRODUCIBILITY.md), run from the repository root:
 
 ```sh
-python3 scripts/verify_lean.py --project formal --output evidence/lean
+python3 scripts/verify_lean.py --project formal --output work/lean
 ```
 
 The verifier removes only the project's generated `formal/.lake/build` directory to force a fresh project build. It checks that every proof module is included in the Lake roots, every theorem has an axiom report, every actual report matches the source inventory, dependency checkouts match their pinned commits, and the proof build contains zero warnings and zero errors. It refuses proof placeholders, additional source axioms, selected trust overrides, and unexpected axiom dependencies.

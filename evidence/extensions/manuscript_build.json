@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "final_pass_issue_count": 0,
+  "source_sha256": "277a333ed1ec1d789fc9544a23ae2a34ada6f2f650439c2fc196a33f1f0b8dc1",
+  "pdf_sha256": "4b4cc6de76d7fb8bff68c3402731d185c9a273b95dc51cb34776e8a4f4143d8f",
+  "log_sha256": "4d470750fde681e8d82f7a091ab33eb914b266f0e5f743b0f31fe81fa77b3a21",
+  "visual_review": "All 15 final rendered pages inspected; contents orphan removed; no clipping, broken math, or layout issue.",
+  "page_count": 15,
+  "review_date_local": "2026-11-13"
+}

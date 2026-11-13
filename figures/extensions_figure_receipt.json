@@ -1,0 +1,136 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "matplotlib": "3.10.7",
+  "numpy": "2.3.5",
+  "plot_script_sha256": "e243a737037bcb077f68ea6a80783a3ff0936f39894c4dad196c596b0f112b18",
+  "input": "evidence/extensions/dynamics/dynamical_extension_receipt.json",
+  "input_sha256": "6f575d5ad70acbeb7527b67c2621fd0f8a290da8d4fb185ff010dc43259d976b",
+  "outputs": {
+    "extensions.png": "a1c43342ee6cc6157f0bce5e2a7100f7eb882fc485d5ee0eda319a6a9f3d02ca",
+    "extensions.pdf": "ff4c3cde0754a369000e6a35d4161bc7aedef0a19cbea0bcdca103da3a2a4ca2"
+  },
+  "dimensions_inches": [
+    11.6,
+    4.9
+  ],
+  "png_dpi": 300,
+  "panel_A": {
+    "domain": "centered pure uncertainty-saturating Gaussian probe, calibrated gap Delta=hbar*omega",
+    "fidelity_plot_interval": [
+      0.4,
+      1
+    ],
+    "energy_formula": "e=E/Delta=F^(-2)-1",
+    "source_formula": "s=norm(grad_M E)_G/Delta=sqrt(e(e+1))",
+    "exact_point": {
+      "squared_fidelity": "4/5",
+      "normalized_energy": "9/16",
+      "normalized_source": "15/16"
+    }
+  },
+  "panel_B": {
+    "Hilbert_dimensions": [
+      512,
+      768
+    ],
+    "shape_grid": [
+      4,
+      8
+    ],
+    "shape_radius": 1.2,
+    "primitive_series": [
+      {
+        "Hilbert_dimension": 512,
+        "oscillator_cutoff": 16,
+        "times": [
+          0.0,
+          0.049999999999999996,
+          0.09999999999999999,
+          0.15,
+          0.19999999999999998,
+          0.24999999999999997,
+          0.3,
+          0.35
+        ],
+        "shape_response_plus": [
+          -9.830341859040407e-18,
+          0.0010283491384818952,
+          0.0040964748480241744,
+          0.008934631962243963,
+          0.014472130378330802,
+          0.019279792416419483,
+          0.022949350569442382,
+          0.026219364795274997
+        ],
+        "shape_response_minus": [
+          -9.830341859040407e-18,
+          -0.0010283491384819406,
+          -0.004096474848024065,
+          -0.008934631962243948,
+          -0.014472130378331052,
+          -0.019279792416419566,
+          -0.02294935056944235,
+          -0.026219364795274886
+        ],
+        "uncoupled_shape_response": [
+          -9.830341859040407e-18,
+          -1.0782933800350696e-17,
+          7.249089682550892e-17,
+          1.0779161327869136e-16,
+          1.6008364436448723e-16,
+          1.6588349409776527e-16,
+          1.7488227511936144e-16,
+          1.0516163426513392e-16
+        ]
+      },
+      {
+        "Hilbert_dimension": 768,
+        "oscillator_cutoff": 24,
+        "times": [
+          0.0,
+          0.049999999999999996,
+          0.09999999999999999,
+          0.15,
+          0.19999999999999998,
+          0.24999999999999997,
+          0.3,
+          0.35
+        ],
+        "shape_response_plus": [
+          -2.1133889516432835e-17,
+          0.0010283530146070635,
+          0.0040964900403173445,
+          0.008934664569987646,
+          0.014472181919620531,
+          0.019279854582335547,
+          0.022949400989103537,
+          0.0262193691255806
+        ],
+        "shape_response_minus": [
+          -2.1133889516432835e-17,
+          -0.0010283530146071133,
+          -0.004096490040317438,
+          -0.00893466456998777,
+          -0.014472181919620639,
+          -0.019279854582335585,
+          -0.022949400989103613,
+          -0.026219369125580608
+        ],
+        "uncoupled_shape_response": [
+          -2.1133889516432835e-17,
+          -6.175528205367678e-17,
+          -1.9929065667405806e-17,
+          9.198601108654026e-17,
+          1.8135099796787902e-16,
+          2.289144244917552e-16,
+          2.0600602209626288e-16,
+          1.244147050191257e-16
+        ]
+      }
+    ],
+    "interpolation": "straight line joins between recorded samples; no resimulation",
+    "cutoff_response_difference_from_receipt": 6.216591606419963e-08
+  },
+  "note": "Only frozen formulas and primitive receipt data are rendered. No new evolution or solving. Synthetic finite-regulator results are not measurements or shape-grid continuum evidence."
+}

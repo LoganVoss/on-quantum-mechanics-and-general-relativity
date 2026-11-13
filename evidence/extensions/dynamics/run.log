@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "exact_checks": 41,
+  "quantum_dimensions": [
+    512,
+    768
+  ],
+  "cutoff_response_difference": 6.216591606419963e-08,
+  "kappa": 0.11146598698569911
+}

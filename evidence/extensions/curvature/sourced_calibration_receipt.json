@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "exact_check_count": 73,
+  "checks": [
+    {
+      "name": "dust_R_scalar",
+      "residual": "0"
+    },
+    {
+      "name": "dust_BoxR",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_00",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_01",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_02",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_03",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_10",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_11",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_12",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_13",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_20",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_21",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_22",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_23",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_30",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_31",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_32",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_component_33",
+      "residual": "0"
+    },
+    {
+      "name": "dust_conservation",
+      "residual": "0"
+    },
+    {
+      "name": "RN_R_scalar",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_00",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_01",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_02",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_03",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_10",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_11",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_12",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_13",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_20",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_21",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_22",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_23",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_30",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_31",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_32",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Ricci_component_33",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_00",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_01",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_02",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_03",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_10",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_11",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_12",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_13",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_20",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_21",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_22",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_23",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_30",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_31",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_32",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Einstein_Maxwell_component_33",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Maxwell_equation_0",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Maxwell_equation_1",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Maxwell_equation_2",
+      "residual": "0"
+    },
+    {
+      "name": "RN_Maxwell_equation_3",
+      "residual": "0"
+    },
+    {
+      "name": "RN_H2_trace",
+      "residual": "0"
+    },
+    {
+      "name": "RN_H2_divergence_0",
+      "residual": "0"
+    },
+    {
+      "name": "RN_H2_divergence_1",
+      "residual": "0"
+    },
+    {
+      "name": "RN_H2_divergence_2",
+      "residual": "0"
+    },
+    {
+      "name": "RN_H2_divergence_3",
+      "residual": "0"
+    },
+    {
+      "name": "RN_regular_lapse",
+      "residual": "0"
+    },
+    {
+      "name": "nonlinear_residual_beta_inverse",
+      "residual": "0"
+    },
+    {
+      "name": "nonlinear_residual_alpha_inverse",
+      "residual": "0"
+    },
+    {
+      "name": "nonlinear_residual_map_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_dust_-1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_RN_-1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_dust_-1_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_RN_-1_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_dust_1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_RN_1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_dust_1_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_corner_RN_1_1",
+      "residual": "0"
+    }
+  ],
+  "dust": {
+    "metric": "diag(-1,t^(4/3),t^(4/3),t^(4/3))",
+    "R": "4/(3*t**2)",
+    "BoxR": "-8/(3*t**4)"
+  },
+  "electrovac": {
+    "metric_f": "1 - 2/r + 1/(4*r**2)",
+    "R": "0",
+    "H_Ricci_squared_mixed_diagonal": [
+      "-3*(4*r**2 - 8*r + 1)/(4*r**8)",
+      "-(4*r**2 - 8*r + 1)/(4*r**8)",
+      "(4*r**2 - 8*r + 1)/(2*r**8)",
+      "(4*r**2 - 8*r + 1)/(2*r**8)"
+    ],
+    "point": {
+      "r": 3,
+      "theta": "pi/2"
+    },
+    "point_H2_mixed_diagonal": [
+      "-13/8748",
+      "-13/26244",
+      "13/13122",
+      "13/13122"
+    ],
+    "Bach_mixed_diagonal_at_point": [
+      "-13/17496",
+      "-13/52488",
+      "13/26244",
+      "13/26244"
+    ],
+    "matter": "Minimal Maxwell -F\u00b2/4, F_tr=1/(2r\u00b2), kappa=2 in selected geometric units."
+  },
+  "calibration_response_matrix": "Matrix([[-16, -16/3], [0, -13/8748]])",
+  "selection": "Unchanged calibrated dust FLRW forces 3alpha+beta=0; unchanged calibrated charged electrovac forces beta=0; hence alpha=beta=0 modulo constant Euler density. All variations are unrestricted4D. These additional source/background calibrations are hypotheses, not derived from the original flat-vacuum selection.",
+  "source_sha256": "f4d0a6c013cf909271bac3d67f098f178bb7cc94ef5ad9fe3bdc701fa4ebf111",
+  "elapsed_seconds": 1.6225742499809712
+}

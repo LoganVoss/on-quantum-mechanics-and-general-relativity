@@ -1,0 +1,81 @@
+{
+  "schema": "voss.extensions-reproduction.v1",
+  "status": "PASS",
+  "executed_utc": "2026-11-13T19:54:13.391688+00:00",
+  "python": "3.12.13",
+  "runs": [
+    {
+      "task": "dynamics",
+      "script": "scripts/extension_checks/verify_dynamical_extension.py",
+      "source_sha256": "25beeb75cd67f717479d10233637002ab05aad082786c7de8b4e3488e1bec32a",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "dynamics/dynamical_extension_receipt.json",
+      "exact_check_count": 41
+    },
+    {
+      "task": "curvature_response",
+      "script": "scripts/extension_checks/verify_curvature_response.py",
+      "source_sha256": "b34d12a8d250bd51b34163be61f7718ff213545a9ea66dd1c0629cd58f0d5afa",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "curvature_response/curvature_response_receipt.json",
+      "exact_check_count": 88
+    },
+    {
+      "task": "sourced_calibrations",
+      "script": "scripts/extension_checks/verify_sourced_calibrations.py",
+      "source_sha256": "f4d0a6c013cf909271bac3d67f098f178bb7cc94ef5ad9fe3bdc701fa4ebf111",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "sourced_calibrations/sourced_calibration_receipt.json",
+      "exact_check_count": 73
+    },
+    {
+      "task": "one_killing",
+      "script": "scripts/extension_checks/verify_one_killing.py",
+      "source_sha256": "b4471fcadfa3b1b946a26890ea6feee402a5200cf534b7e634d4a24ae140af89",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "one_killing/one_killing_receipt.json",
+      "exact_check_count": 309
+    },
+    {
+      "task": "generic_reduction",
+      "script": "scripts/extension_checks/verify_generic_reduction.py",
+      "source_sha256": "1c894db095eb918c388e5021bad92080417bbc7f02ba6d0356ae922a2ba187ef",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "generic_reduction/generic_reduction_receipt.json",
+      "exact_check_count": 15
+    },
+    {
+      "task": "projection",
+      "script": "scripts/extension_checks/verify_projection.py",
+      "source_sha256": "7a72f0e383137d0db16d93864b3c83fb504f7bd4ad1c10f8ac5998bbf8309a39",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "projection/projection_receipt.json",
+      "exact_check_count": 13
+    },
+    {
+      "task": "independent_rn",
+      "script": "scripts/extension_checks/verify_rn_variation_independent.py",
+      "source_sha256": "a32ba89ae7eb3625179f118068d3fe6e7fa04f3c65ce3cb5e0318c8047665aaf",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "independent_rn/independent_rn_receipt.json",
+      "exact_check_count": null
+    },
+    {
+      "task": "independent_review",
+      "script": "scripts/extension_checks/verify_independent_review.py",
+      "source_sha256": "e89768abc086cf211bdfd4e1c8f321f6cc00bcec351770a06d3077a138964a55",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "independent_review/receipt.json",
+      "exact_check_count": 31
+    }
+  ],
+  "scope": "Frozen mathematical identities and bounded synthetic controls; no experimental observations or interacting quantum continuum."
+}

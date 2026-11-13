@@ -1,6 +1,6 @@
 # Related work and contribution
 
-The mathematical ingredients have a substantial history. This edition presents the conditional calibration theorem, an explicit quantum-to-orbit dictionary, and a reproducible evidence package. It makes additional consequences explicit in the same conventions. A bounded literature review does not establish worldwide priority.
+The mathematical ingredients have a substantial history. The foundation edition presents the conditional calibration theorem, an explicit quantum-to-orbit dictionary, and a reproducible evidence package. It makes additional consequences explicit in the same conventions. A bounded literature review does not establish worldwide priority.
 
 | Primary source | Relationship to this bundle |
 |---|---|
@@ -14,6 +14,24 @@ The mathematical ingredients have a substantial history. This edition presents t
 | [Pravda et al., *Exact solutions to quadratic gravity* (2017)](https://arxiv.org/abs/1606.02646v3) | Explains why surviving vacuum solutions alone do not eliminate higher-curvature dynamics. |
 | [Niedermaier, *Dimensionally reduced gravity theories are asymptotically safe* (2003)](https://arxiv.org/abs/hep-th/0304117v1) | A concrete renormalization direction for reduced models. Its results do not establish a continuum limit for the regulator in this archive. |
 
-The original v2.4 package provides the all-field variation, connected-domain derivative closure, physical-model witnesses, odd-coupling selection, Lax necessity/sufficiency calculation, and corrected nonlinear evolutions. This edition independently rebuilds and reproduces those artifacts, adds the finite-distance/Berry dictionary, completes the residual bounds for $U,W$ and integrates them, and supplies an exact nonlinear numerical oracle. The inherited sharp $V,F''$ bounds are credited in the quantitative extension.
+The original v2.4 package provides the all-field variation, connected-domain derivative closure, physical-model witnesses, odd-coupling selection, Lax necessity/sufficiency calculation, and corrected nonlinear evolutions. The foundation edition independently rebuilt and reproduced those artifacts, adds the finite-distance/Berry dictionary, completes the residual bounds for $U,W$ and integrates them, and supplies an exact nonlinear numerical oracle. The inherited sharp $V,F''$ bounds are credited in the quantitative extension.
 
 Sources were checked against primary paper records or full texts on November 13, 2026. Third-party papers are linked, not redistributed. Historical Voss documents are preserved with their original version labels and evidence status in [provenance](PROVENANCE.md).
+
+## Dynamical and wider-sector extensions in edition 2
+
+The added theorems use established mechanisms with a newly explicit selection and observable contract in this framework. The quantum cell, smooth state-fluid model, one-Killing vacuum sector, and sourced quadratic class have separately stated assumptions; their conjunction is not a quantum-continuum theorem.
+
+| Primary source | Role in the extension |
+|---|---|
+| [Hackl & Bianchi, Gaussian states from Kähler structures (2021)](https://arxiv.org/abs/2010.15518v4) | Symplectic Gaussian dynamics, quadratic Hamiltonians, and excitation energy are established. The interaction theorem states the additional target-only selection assumptions. |
+| [Hackl et al., Geometry of variational methods (2020)](https://arxiv.org/abs/2004.01015v4) | Precedent for conserving variational quantum dynamics; the classical-shape equations are a separate variational model. |
+| [Wiggins, What solvable models reveal about Born–Oppenheimer, Born–Huang, and exact factorization (2026)](https://arxiv.org/abs/2608.08668v2) | Distinguishes exact band representations from autonomous one-band approximations and relates the scalar correction to the quantum metric. The explicit leakage coefficient here is derived directly. |
+| [Moncrief, The Reduction Problem for Einstein’s Equations](https://maths.anu.edu.au/files/CMAProcVol19-Moncrief.pdf) | The one-Killing Einstein/hyperbolic-wave-map reduction is established. This edition adds the inverse helical calibration and verifies recovery of its original sector. |
+| [Leigh et al., The Geroch group in Einstein spaces (2014)](https://arxiv.org/abs/1403.6511v2) | Quotient-frame and norm/twist conventions; spacelike signs in this bundle are derived and checked independently. |
+| [Brown, Action functionals for relativistic perfect fluids (1993)](https://arxiv.org/abs/gr-qc/9304026v1) | Dynamical number current, velocity potentials, and Clebsch fields. The chosen quantum-state fluid is an explicit additional matter architecture. |
+| [Salvio, Quadratic Gravity (2018)](https://arxiv.org/abs/1804.09944v2) | Established mode content and exterior potentials; no discovery claim is made for the additional poles or Yukawa terms. |
+| [Donoghue, General relativity as an effective field theory (1994)](https://arxiv.org/abs/gr-qc/9405057) | Explains why an exact finite polynomial selector must not be promoted to vanishing of all quantum effective corrections. |
+| [Buoninfante et al., Dust collapse and horizon formation in Quadratic Gravity (2025)](https://arxiv.org/abs/2410.05941) | Related sourced FLRW precedent. The second, charged calibration supplies the independent coefficient channel in the present selector. |
+
+The supplied research review contributed the flat Hessian-probe comparison and identified the three extension questions. Its inputs are identified by hashes in the provenance record; its prose is not redistributed. The nonlinear dust–electrovac selector, explicit reciprocal-coupling chain, helical inverse calibration, and exact ground-band calculation are documented as derivations performed for this edition. Worldwide originality remains unestablished by the bounded comparison.

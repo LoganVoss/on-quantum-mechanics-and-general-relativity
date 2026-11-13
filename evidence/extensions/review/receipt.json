@@ -1,0 +1,149 @@
+{
+  "status": "pass",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "exact_check_count": 31,
+  "checks": [
+    {
+      "name": "isotropy_offdiagonal",
+      "exact_residual": "0"
+    },
+    {
+      "name": "isotropy_common_diagonal",
+      "exact_residual": "0"
+    },
+    {
+      "name": "calibration_frame_det",
+      "exact_residual": "0"
+    },
+    {
+      "name": "selected_quadratic_00",
+      "exact_residual": "0"
+    },
+    {
+      "name": "selected_quadratic_01",
+      "exact_residual": "0"
+    },
+    {
+      "name": "selected_quadratic_10",
+      "exact_residual": "0"
+    },
+    {
+      "name": "selected_quadratic_11",
+      "exact_residual": "0"
+    },
+    {
+      "name": "gap_determinant",
+      "exact_residual": "0"
+    },
+    {
+      "name": "projected_operator_independent_moments",
+      "exact_residual": "0"
+    },
+    {
+      "name": "offband_coefficient",
+      "exact_residual": "0"
+    },
+    {
+      "name": "offband_mean_zero",
+      "exact_residual": "0"
+    },
+    {
+      "name": "offband_norm_prefactor",
+      "exact_residual": "0"
+    },
+    {
+      "name": "projected_operator_factorization",
+      "exact_residual": "0"
+    },
+    {
+      "name": "leakage_Taylor_coefficient",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_Rtt_warped_derivation",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_Rrr_warped_derivation",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_target_norm_equation",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_twist_from_connection",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_weight_inverse",
+      "exact_residual": "0"
+    },
+    {
+      "name": "helical_potential_inverse",
+      "exact_residual": "0"
+    },
+    {
+      "name": "current_dual_action",
+      "exact_residual": "0"
+    },
+    {
+      "name": "current_response_preserved_0",
+      "exact_residual": "0"
+    },
+    {
+      "name": "current_response_preserved_1",
+      "exact_residual": "0"
+    },
+    {
+      "name": "current_response_preserved_2",
+      "exact_residual": "0"
+    },
+    {
+      "name": "contact_omission_error",
+      "exact_residual": "0"
+    },
+    {
+      "name": "RN_scalar_curvature",
+      "exact_residual": "0"
+    },
+    {
+      "name": "RN_independent_action_variation",
+      "exact_residual": "0"
+    },
+    {
+      "name": "RN_regular_point_response",
+      "exact_residual": "0"
+    },
+    {
+      "name": "dust_R_from_Hubble",
+      "exact_residual": "0"
+    },
+    {
+      "name": "dust_BoxR_from_Hubble",
+      "exact_residual": "0"
+    },
+    {
+      "name": "sourced_two_channel_rank",
+      "exact_residual": "0"
+    }
+  ],
+  "RN_lapse_from_raw_action": "-3*(4*r**2 - 8*r + 1)/(4*r**8)",
+  "source_sha256": {
+    "work/extension_joint/verify_projection.py": "7a72f0e383137d0db16d93864b3c83fb504f7bd4ad1c10f8ac5998bbf8309a39",
+    "work/extension_joint/verify_rn_variation_independent.py": "a32ba89ae7eb3625179f118068d3fe6e7fa04f3c65ce3cb5e0318c8047665aaf",
+    "work/extension_symmetry/verify_one_killing.py": "b4471fcadfa3b1b946a26890ea6feee402a5200cf534b7e634d4a24ae140af89",
+    "work/extension_symmetry/verify_generic_reduction.py": "1c894db095eb918c388e5021bad92080417bbc7f02ba6d0356ae922a2ba187ef",
+    "work/extension_symmetry/FROZEN_ONE_KILLING_FINDINGS.md": "24123b7146807110e9e861c6f560e7d46c61f07c84f9eb4cbd5516c514db114d",
+    "work/extension_curvature/FROZEN_CURVATURE_FINDINGS.md": "ebef68f1d0c89e3f2b2dd9737388f0697e09ad8626fbb99da68be789ebf20df0",
+    "work/extension_curvature/verify_sourced_calibrations.py": "f4d0a6c013cf909271bac3d67f098f178bb7cc94ef5ad9fe3bdc701fa4ebf111",
+    "work/extension_dynamics/verify_dynamical_extension.py": "25beeb75cd67f717479d10233637002ab05aad082786c7de8b4e3488e1bec32a",
+    "work/extension_dynamics/DYNAMICS_FROZEN.md": "e1d86dcfc9089d7c4d0d4c774e36ca10894f65a3428191d3efc12561959e2c28"
+  },
+  "reviewer_script_sha256": "e89768abc086cf211bdfd4e1c8f321f6cc00bcec351770a06d3077a138964a55",
+  "scope": "Independent exact rederivations of selected integration points only. Does not reproduce the whole proposed verification suite or finite-regulator evolution.",
+  "review_status": "completed; bounded-observable repair verified; no unresolved algebraic discrepancy in reviewed claims",
+  "domain_repair": "Continuum response observable replaced by bounded smooth radial-cutoff O=zeta(r)X1, equal to X1 near initial compact packet support.",
+  "written_review_sha256": "0463fe28cb6a9f5175e7feee9e133b88f05aad51c3e3d5d6742958e42a362d8c"
+}

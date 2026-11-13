@@ -2,9 +2,9 @@
   "schema": "voss.research-claims.v1",
   "title": "On Quantum Mechanics and General Relativity",
   "author": "Logan Voss",
-  "edition": "1.0",
+  "edition": "2.0",
   "date": "2026-11-13",
-  "scope": "Current conditional quantum-state/geometry and reduced-gravity research bundle only.",
+  "scope": "Foundational conditional quantum-state geometry and reduced gravity, plus selected reciprocal probe dynamics, one-Killing extension and source-conditioned full-4D quadratic-curvature discrimination.",
   "novelty_status": "Worldwide novelty and priority are not established by the bounded literature comparison. Known Gaussian geometry, dimensional reduction and integrability precedents are credited.",
   "observation_status": "No physical measurements are supplied; empirical applicability of the calibrated geometric dictionary remains an open obligation.",
   "evidence_distinctions": {
@@ -18,15 +18,20 @@
   "verification_summary": {
     "formal": {
       "status": "passed",
-      "modules": 8,
-      "theorems": 48,
-      "residual_extension_theorems": 8,
+      "modules": 9,
+      "theorems": 63,
+      "foundation_theorems": 48,
+      "foundation_residual_extension_theorems": 8,
+      "edition_2_extension_theorems": 15,
+      "warnings": 0,
+      "errors": 0,
       "allowed_axioms": [
         "Classical.choice",
         "Quot.sound",
         "propext"
       ],
-      "receipt": "evidence/lean/receipt.json"
+      "receipt": "evidence/lean/receipt.json",
+      "preserved_edition_1_receipt": "evidence/baseline_v1/lean/receipt.json"
     },
     "source_symbolic": {
       "exact_checks": 373,
@@ -42,6 +47,45 @@
     "independent_numerical_controls": {
       "status": "PASS",
       "receipt": "evidence/numerical_controls/independent_controls_receipt.json"
+    },
+    "edition_2_extensions": {
+      "dynamics": {
+        "exact_checks": 41,
+        "quantum_regulator_dimensions": [
+          512,
+          768
+        ],
+        "receipt": "evidence/extensions/dynamics/dynamical_extension_receipt.json"
+      },
+      "one_killing": {
+        "exact_checks": 309,
+        "generic_reduction_checks": 15,
+        "receipts": [
+          "evidence/extensions/one_killing/one_killing_receipt.json",
+          "evidence/extensions/one_killing/generic_reduction_receipt.json"
+        ]
+      },
+      "curvature": {
+        "response_exact_checks": 88,
+        "sourced_calibration_exact_checks": 73,
+        "receipts": [
+          "evidence/extensions/curvature/curvature_response_receipt.json",
+          "evidence/extensions/curvature/sourced_calibration_receipt.json"
+        ]
+      },
+      "ground_band": {
+        "exact_checks": 13,
+        "receipt": "evidence/extensions/projection/projection_receipt.json"
+      },
+      "independent_review": {
+        "exact_checks": 31,
+        "domain_repair": "Continuum response uses bounded O=zeta(r)X1, equal to X1 near initial packet support.",
+        "receipt": "evidence/extensions/review/receipt.json"
+      },
+      "independent_raw_action_variation": {
+        "scope": "Ricci-squared lapse variation on charged electrovac, then evaluation at a regular exterior point.",
+        "receipt": "evidence/extensions/independent_rn/independent_rn_receipt.json"
+      }
     }
   },
   "claims": [
@@ -73,7 +117,8 @@
         "Stationarity is not a positive second variation or global dynamical stability.",
         "Overall a and bulk-inert b,k are not fixed numerically.",
         "No uniqueness claim outside the specified derivative order, field content and frame."
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "ACTION.EINSTEIN_REDUCTION",
@@ -96,7 +141,8 @@
       "limits": [
         "Boundary and corner completion must be specified for global variational/topological statements.",
         "The block ansatz restricts the gravitational sector."
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "QUANTUM.STATE_ORBIT_BRIDGE",
@@ -120,7 +166,8 @@
       "limits": [
         "Kinematic model correspondence; it does not derive spacetime dimension, Lorentzian signature, quantized gravity or empirical applicability.",
         "Vacuum and first excited state share normalized covariance shape but are orthogonal; saturation is essential."
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "QUANTUM.GEOMETRIC_TENSOR",
@@ -143,7 +190,8 @@
       "limits": [
         "Normalization factors belong to the stated conventions.",
         "This is a state-family metric, not the Lorentzian spacetime metric."
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "QUANTUM.FINITE_FIDELITY",
@@ -170,7 +218,8 @@
       "primary_sources": [
         "https://arxiv.org/abs/1507.01941v1"
       ],
-      "new_to_bundle": "Explicit finite-distance specialization in the model conventions; no priority claim."
+      "new_to_bundle": "Explicit finite-distance specialization in the model conventions; no priority claim.",
+      "introduced_in": "1.0"
     },
     {
       "id": "QUANTUM.BERRY_ODD",
@@ -197,7 +246,8 @@
       "primary_sources": [
         "https://arxiv.org/abs/2004.14204v1"
       ],
-      "new_to_bundle": "Explicit identification of the permitted odd boundary term with Gaussian Berry curvature; no priority claim."
+      "new_to_bundle": "Explicit identification of the permitted odd boundary term with Gaussian Berry curvature; no priority claim.",
+      "introduced_in": "1.0"
     },
     {
       "id": "SELECTION.POINTWISE_ROBUSTNESS",
@@ -209,7 +259,7 @@
       ],
       "proof_status": {
         "analytic": "four exact inversions and triangle-inequality bounds proved; constants individually sharp for the pointwise algebraic inference problem",
-        "formal": "8 added Lean theorems certify 4 inversions and 4 scaled inequalities in ResidualInversion; part of the 48-theorem, 8-module build"
+        "formal": "8 edition-1.0 Lean theorems certify 4 inversions and 4 scaled inequalities in ResidualInversion; retained in the current 63-theorem, 9-module build."
       },
       "execution_status": "Clean Lean build passed; exact symbolic inversion and feasible sharpness witnesses passed.",
       "evidence": [
@@ -223,7 +273,8 @@
         "Sharpness is pointwise under the stated residual constraints, not an optimum under additional global/physical restrictions.",
         "Inference robustness is not dynamical stability; changed residual normalization changes constants."
       ],
-      "inherited_credit": "Original ThmA.robust_V and robust_F2 establish partial sharp bounds for denominator-cleared residuals; this extension completes raw-residual U/W inference and its exact inversion."
+      "inherited_credit": "Original ThmA.robust_V and robust_F2 establish partial sharp bounds for denominator-cleared residuals; this extension completes raw-residual U/W inference and its exact inversion.",
+      "introduced_in": "1.0"
     },
     {
       "id": "SELECTION.INTEGRATED_ROBUSTNESS",
@@ -255,7 +306,8 @@
         "F": "abs(F-(a rho+b))<=8epsilon H/15",
         "W": "abs(W-a rho)<=rho epsilon(25/17+8L/15)",
         "U": "abs(U-a/(2rho))<=epsilon/rho(31/30+4L/15)"
-      }
+      },
+      "introduced_in": "1.0"
     },
     {
       "id": "LAX.LOCAL_EQUIVALENCE",
@@ -282,7 +334,8 @@
       "limits": [
         "Not a classification of every possible Lax ansatz.",
         "Constant-current solutions and s=0 do not test the stated necessity."
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "LAX.AREA_LINEARITY",
@@ -309,7 +362,8 @@
       ],
       "depends_on": [
         "LAX.LOCAL_EQUIVALENCE"
-      ]
+      ],
+      "introduced_in": "1.0"
     },
     {
       "id": "NUMERICS.CORRECTED_NONLINEAR_BENCHMARK",
@@ -336,7 +390,8 @@
         "Zero continuum initial twist does not imply exactly zero finite-grid charge or boundary flux."
       ],
       "run_count": 7,
-      "final_time": 0.8
+      "final_time": 0.8,
+      "introduced_in": "1.0"
     },
     {
       "id": "NUMERICS.EXACT_NONLINEAR_ORACLE",
@@ -362,7 +417,302 @@
         "Geodesic/commuting-current subfamily; complements rather than replaces the independent-profile nonlinear benchmark.",
         "Coarse temporal sequence order 1.2621 is retained and does not establish fourth-order behavior.",
         "Finite tests do not prove a global stability theorem."
+      ],
+      "introduced_in": "1.0"
+    },
+    {
+      "id": "PROBE.QUADRATIC_SELECTION",
+      "introduced_in": "2.0",
+      "statement": "The calibrated target-equivariant centered positive quadratic probe has K(M)=hbar omega M^(-1); subtracting hbar omega/2 gives a nonnegative oscillator with ground covariance M/2.",
+      "assumptions": [
+        "Independent probe state; dimensionless canonical quadratures with [Q,P]=i and physical scale product hbar.",
+        "M is positive symmetric unimodular; K(M) is instantaneous, algebraic, target-only, symmetric positive and Weyl ordered.",
+        "K(A M A^T)=A^(-T) K(M) A^(-1) for every A in SL(2,R); calibrated positive energy gap hbar omega; constant ground-energy reference.",
+        "No derivative, background, extra-field or spectator-area dependence is admitted in this probe class."
+      ],
+      "proof_status": {
+        "analytic": "Proved by rotation isotropy, target transitivity and canonical oscillator equivalence.",
+        "formal": "Hamiltonian selection and Hilbert-space reconstruction are not formalized in Lean."
+      },
+      "execution_status": "Exact isotropy/equivariance checks and separately implemented Cholesky-frame verification passed.",
+      "evidence": [
+        "docs/DYNAMICAL_COUPLING.md",
+        "scripts/extension_checks/verify_dynamical_extension.py",
+        "evidence/extensions/dynamics/dynamical_extension_receipt.json",
+        "evidence/extensions/review/receipt.json"
+      ],
+      "limits": [
+        "The nonquadratic addition zeta n_M(n_M-1), zeta>=0, preserves the ground state and first gap; quadraticity is essential.",
+        "An independent area rho in the original field class permits omega(rho) unless further constrained.",
+        "Constant gap is a three-dimensional Einstein-frame clock calibration, not automatic minimal four-dimensional proper-time coupling."
       ]
+    },
+    {
+      "id": "PROBE.ENERGY_FORCE_UNCERTAINTY",
+      "introduced_in": "2.0",
+      "statement": "For a centered saturated Gaussian probe, E=hbar omega(F^(-2)-1) and squared target-force magnitude is E(E+hbar omega); general centered covariance subtracts the exact uncertainty slack.",
+      "assumptions": [
+        "Selected quadratic interaction; independent geometric target M and centered probe covariance N=2Sigma.",
+        "For the fidelity formula, det N=1 and F is squared Gaussian overlap with the matched ground state.",
+        "For the general force identity, a positive trace-one centered state with finite second moments gives symmetric positive N and det N>=1; the probe is held fixed when differentiating with respect to M.",
+        "Target metric is G=(dx^2+dy^2)/y^2, y>0; E is excitation energy above the matched oscillator vacuum."
+      ],
+      "proof_status": {
+        "analytic": "Gaussian trace/distance identity and target differentiation proved; covariance slack follows exactly from det N.",
+        "formal": "ExtensionCertificates certifies coordinate energy positivity, zero matching, pure/general covariance force identities, shifted-energy identity and determinant-bound equality. Quantum-state reconstruction and derivative identification are separate."
+      },
+      "execution_status": "Exact symbolic and Lean algebraic checks passed.",
+      "evidence": [
+        "docs/ENERGY_SHAPE_RELATION.md",
+        "docs/DYNAMICAL_COUPLING.md",
+        "formal/ExtensionCertificates.lean",
+        "evidence/extensions/dynamics/dynamical_extension_receipt.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "Source means a target-space gradient; it is not an uncalibrated spacetime force.",
+        "Energy alone does not fix source direction; isotropic mixed covariance can carry energy with zero directional force."
+      ],
+      "formulas": {
+        "energy": "E=(hbar omega/4)[Tr(M^(-1)N)-2]",
+        "general_force": "norm(grad_M E)^2=E(E+hbar omega)-(hbar omega)^2(det N-1)/4",
+        "pure_fidelity": "E=hbar omega(F^(-2)-1)"
+      }
+    },
+    {
+      "id": "QUANTUM.JOINT_CELL_RESPONSE",
+      "introduced_in": "2.0",
+      "statement": "A positive self-adjoint shape-probe Hamiltonian has linear unitary dynamics; symmetry-related preparations have identical full joint-energy spectral measures and opposite bounded-observable initial responses.",
+      "assumptions": [
+        "Hilbert space L2(H2,dvol_G) tensor L2(R); Hjoint=-(hbar^2/(2I))Delta_G+Hprobe_ex(M), I>0 and omega>0.",
+        "Use the sum of closed nonnegative kinetic and direct-integral oscillator forms with dense common domain.",
+        "Initial shape packet is normalized, smooth, compactly supported and radial about M=I; probe covariances are diag(exp(r),exp(-r)) and its swap.",
+        "Observable O=zeta(r_shape)X1 is bounded: zeta is smooth radial compact support and equals one near the initial packet support; initial vector belongs to D(Hjoint^2)."
+      ],
+      "proof_status": {
+        "analytic": "Positive operator constructed by closed-form representation; matching full spectra and opposite responses follow from the joint quarter-turn symmetry; initial acceleration derived on the declared core.",
+        "formal": "Operator construction, unitary dynamics and observable-domain arguments are not formalized in Lean."
+      },
+      "execution_status": "512- and 768-dimensional positive finite regulators passed symmetry, norm/energy, directional-response, entanglement and uncoupled controls; Fock cutoff comparison passed at fixed shape grid.",
+      "evidence": [
+        "docs/DYNAMICAL_COUPLING.md",
+        "scripts/extension_checks/verify_dynamical_extension.py",
+        "evidence/extensions/dynamics/dynamical_extension_receipt.json",
+        "evidence/extensions/review/REVIEW.md"
+      ],
+      "limits": [
+        "No shape-grid or field-continuum convergence theorem is established.",
+        "The bounded-observable repair avoids assuming later-time moments of the unbounded X1 remain finite.",
+        "The cell does not quantize all gravitational constraints; it is not identified with a fundamental spacetime Hilbert space.",
+        "The numerical finite-grid packet differs from the continuum compact bump."
+      ],
+      "initial_response": "d^2<O>/dt^2 at t=0 = +/- hbar omega(1+kappa_packet)sinh(r)/(2I), kappa_packet=<X1^2>=<X2^2>"
+    },
+    {
+      "id": "QUANTUM.GROUND_BAND_COMPRESSION",
+      "introduced_in": "2.0",
+      "statement": "Exact compression to the local Gaussian ground band gives a Berry-covariant kinetic operator plus a scalar correction, and every nonzero compact packet has initial off-band leakage E t^2/(4I)+o(t^2).",
+      "assumptions": [
+        "Same positive joint cell, kappa0=hbar^2/(2I), with the oscillator ground energy subtracted.",
+        "P is the pointwise orthogonal projector onto psi_(u,v); initial state Phi(u,v)psi_(u,v) is normalized with Phi smooth compact support.",
+        "Shape measure du dv/v^2; Berry connection A=-du/(4v); E is the initial expectation of the full Hjoint.",
+        "Initial vector is in D(Hjoint); the displayed smooth compact Gaussian packets support the stronger core differentiations used in the compression."
+      ],
+      "proof_status": {
+        "analytic": "Exact Gaussian-moment compression, compact-support adjoint factorization and strong unitary Taylor expansion proved.",
+        "formal": "Operator compression, factorization domains and leakage asymptotic are not formalized in Lean."
+      },
+      "execution_status": "13 projection checks and independent logarithmic-derivative moment/factorization checks passed.",
+      "evidence": [
+        "docs/DYNAMICAL_COUPLING.md",
+        "scripts/extension_checks/verify_projection.py",
+        "evidence/extensions/projection/projection_receipt.json",
+        "evidence/extensions/review/receipt.json"
+      ],
+      "limits": [
+        "Compression does not create an invariant ground band or exact autonomous projected evolution.",
+        "The leakage formula is a small-time coefficient, not an all-time equality or finite-time upper bound.",
+        "Frequency independence of the coefficient does not establish a uniform adiabatic limit."
+      ],
+      "formulas": {
+        "compression": "P H P=kappa0[-v^2(partial_u^2+partial_v^2)-i v partial_u/2+5/16]=kappa0(-Delta_A+1/4)",
+        "factorization": "D=v(partial_v-i partial_u)+1/4; P H P=kappa0 Ddagger D",
+        "leakage": "norm((1-P)exp(-itH/hbar)Phi psi)^2=E t^2/(4I)+o(t^2)"
+      }
+    },
+    {
+      "id": "GRAVITY.ONE_KILLING_SELECTION",
+      "introduced_in": "2.0",
+      "statement": "A flat helical calibration selects w=f and V=0 in the full target-invariant one-Killing Einstein-frame two-derivative class; positive target energy adds f>0.",
+      "assumptions": [
+        "Arbitrary three-dimensional Lorentzian h with lambda>0 and chi real; g4=lambda^(-1)h+lambda(dy+A)^2 with only y-independence imposed.",
+        "Local diffeomorphism invariance, full constant SL(2,R) target invariance, no extra fields, derivative-polynomial total order<=2; action integral sqrt(-h)[fR-w((dlambda)^2+(dchi)^2)/(2lambda^2)+V] with constants.",
+        "Helical calibration lambda=1+Omega^2 r^2, chi=2Omega T, h=diag(-lambda,lambda,r^2), A=Omega r^2 dx/lambda; Omega!=0 and r>0.",
+        "All fields varied independently; fixed Einstein-frame dictionary, orientation and Killing-coordinate normalization."
+      ],
+      "proof_status": {
+        "analytic": "Invariant classification, exact quotient tensor equations, full stationarity converse and off-shell reduction proved.",
+        "formal": "Four added algebraic lemmas certify the stipulated helical residual inverse, selection, bounds and zero-pitch counterexample; geometry/classification are not formalized."
+      },
+      "execution_status": "309 exact checks of calibration and cylindrical reduction plus generic-jet reduction checks and independent warped-product calculation passed.",
+      "evidence": [
+        "docs/ONE_KILLING_EXTENSION.md",
+        "formal/ExtensionCertificates.lean",
+        "scripts/extension_checks/verify_one_killing.py",
+        "scripts/extension_checks/verify_generic_reduction.py",
+        "evidence/extensions/one_killing/one_killing_receipt.json",
+        "evidence/extensions/one_killing/generic_reduction_receipt.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "The action allows arbitrary dependence on both quotient spatial coordinates, though the flat calibration itself has extra isometries.",
+        "This is not an explicit generic solution with exactly one symmetry or a global PDE stability theorem.",
+        "Full target invariance excludes norm-dependent potentials such as a reduced four-dimensional cosmological term; no cosmological-constant solution follows."
+      ]
+    },
+    {
+      "id": "GRAVITY.ONE_KILLING_OLD_SECTOR",
+      "introduced_in": "2.0",
+      "statement": "Further cylindrical restriction of the selected one-Killing action reproduces the original nonlinear shape equations and gamma constraints exactly.",
+      "assumptions": [
+        "lambda=exp(psi), h3=exp(gamma)(-dT^2+dR^2)+R^2 dphi^2, and chi_T=exp(2psi)A_R/R, chi_R=exp(2psi)A_T/R.",
+        "Vacuum local twist duality, compatible orientations and smooth fields on a regular patch.",
+        "Original two-orbit M and new norm/twist target M(lambda,chi) are distinct geometric dictionaries."
+      ],
+      "proof_status": {
+        "analytic": "Exact field-equation and Hodge-component reduction proved for arbitrary psi,chi,gamma(T,R).",
+        "formal": "Not formalized as a full tensor/PDE reduction in Lean."
+      },
+      "execution_status": "All four cylindrical field/constraint reductions and both twist component identities passed exact symbolic checks.",
+      "evidence": [
+        "docs/ONE_KILLING_EXTENSION.md",
+        "evidence/extensions/one_killing/one_killing_receipt.json",
+        "evidence/extensions/frozen/FROZEN_ONE_KILLING_FINDINGS.md"
+      ],
+      "limits": [
+        "Sharing the hyperbolic target metric does not identify the old and new matrices as the same physical observable.",
+        "Global twist periods and bundle topology require additional data."
+      ]
+    },
+    {
+      "id": "MATTER.SMOOTH_CURRENT_RECONSTRUCTION",
+      "introduced_in": "2.0",
+      "statement": "A covariant smooth state-fluid action supplies reciprocal sources; shear dressing yields a conserved total twist current and an exactly equivalent dual action with compulsory cross and current-squared terms.",
+      "assumptions": [
+        "Classical h,lambda,chi and a normalized quantum state field with a smooth timelike densitized number current j; number conservation follows from a varied velocity potential.",
+        "S_m=integral[j^a(partial_a theta+i hbar<Psi|partial_a Psi>)-sqrt(-h)n(m0+<H_M>)], with n=sqrt(-h_ab j^a j^b)/sqrt(-h); normalization and optional Clebsch variables specified.",
+        "Psi=exp(i chi Q^2/2)psi_tilde; J^a=hbar n u^a<Q^2/2>; J is independent of the auxiliary one-form v during elimination but its metric/state/current dependence is varied afterward.",
+        "Local contractible patch, Lorentzian star^2=-1 on one-/two-forms, f>0 and smooth current or an explicit finite regulator.",
+        "The oscillator gap is calibrated in h3 proper flow time; horizontal four-dimensional proper time obeys d tau4=lambda^(-1/2)ds3."
+      ],
+      "proof_status": {
+        "analytic": "Common-action field equations, dust stress, reciprocal Ward identities and first-order twist duality proved analytically.",
+        "formal": "State-fluid variation and duality are not formalized in Lean."
+      },
+      "execution_status": "Exact master-action, current-response, contact-term and nonzero naive-vacuum-source controls passed; fluid stress/Ward arguments are written derivations outside those check counts.",
+      "evidence": [
+        "docs/CURRENT_AND_RECONSTRUCTION.md",
+        "scripts/extension_checks/verify_generic_reduction.py",
+        "evidence/extensions/one_killing/generic_reduction_receipt.json",
+        "evidence/extensions/review/REVIEW.md",
+        "evidence/extensions/review/receipt.json"
+      ],
+      "limits": [
+        "The vacuum twist map is generically nonclosed after sourcing and cannot be retained unchanged.",
+        "Delta-function worldline current squared is undefined without regularization; smooth-fluid caustics are not solved.",
+        "No controlled derivation from the fully quantum cell to this variational state-fluid continuum is supplied.",
+        "No ordinary minimally coupled four-dimensional matter uplift is established; a fixed 4D proper-time gap would become lambda-dependent in the 3D clock."
+      ],
+      "formulas": {
+        "total_current": "C=f lambda^(-2)dchi+J; F=-star C/f; dF=0",
+        "reconstruction": "dchi=lambda^2(star F-J/f)",
+        "dual": "Ldual=-f lambda^2 F^2/4-lambda^2 J.star F+lambda^2 J^2/(2f)"
+      }
+    },
+    {
+      "id": "DYNAMICS.VARIATIONAL_CELL",
+      "introduced_in": "2.0",
+      "statement": "The reciprocal classical-shape/Gaussian-probe variational cell conserves total energy and shear charge, has global finite-energy ODE continuation, and has two positive nonzero linear-response sideband frequencies.",
+      "assumptions": [
+        "Classical upper-half-plane shape (x,y), independent centered pure Gaussian probe (u,v), y,v>0, positive inertia mu and calibrated gap.",
+        "L=mu(xdot^2+ydot^2)/(2y^2)-hbar udot/(4v)-E(x,y,u,v); finite initial energy.",
+        "Global continuation argument concerns this finite-dimensional ODE on a complete hyperbolic target; linearization is about a common isotropic equilibrium."
+      ],
+      "proof_status": {
+        "analytic": "Euler equations, conserved quantities, finite-energy compactness/continuation and characteristic polynomial derived.",
+        "formal": "No Lean proof of the coupled ODE global continuation or mode calculation."
+      },
+      "execution_status": "Exact covariance/conservation and sideband identities passed; bounded t=20 evolution at two tolerances preserved positivity with small energy/charge drift.",
+      "evidence": [
+        "docs/DYNAMICAL_COUPLING.md",
+        "evidence/extensions/dynamics/dynamical_extension_receipt.json",
+        "evidence/extensions/dynamics/reciprocal_semiclassical_trajectory.npz"
+      ],
+      "limits": [
+        "This is a variational quantum-state/classical-geometry model, not the exact general dynamics of the fully quantum joint state.",
+        "No global field-PDE or constrained quantum-gravity stability result follows."
+      ]
+    },
+    {
+      "id": "CURVATURE.SOURCED_QUADRATIC_SELECTION",
+      "introduced_in": "2.0",
+      "statement": "Within the unrestricted four-dimensional constant parity-even quadratic-curvature class, preserving the specified dust and charged electrovac solutions with their same sources selects alpha=beta=0 modulo constant Euler density.",
+      "assumptions": [
+        "Action (2kappa)^(-1) integral sqrt(-g)[R+alpha R^2+beta Ricci_ab Ricci^ab+gamma Euler4]+S_m, with constants and kappa>0; unrestricted metric variation.",
+        "Fixed physical metric convention and fixed minimal source actions; source configurations are held to the stated calibrated Einstein-matter solutions.",
+        "Dust calibration: ds^2=-dt^2+t^(4/3)d x^2, kappa rho_dust=4/(3t^2), p=0, t>0.",
+        "Charged calibration: f(r)=1-2/r+1/(4r^2), exterior r=3 witness; Maxwell F_tr=1/(2r^2) and kappa=2 in displayed units, or appropriately rescaled physical charge for general fixed kappa."
+      ],
+      "proof_status": {
+        "analytic": "Dust trace gives 3alpha+beta=0; nonzero charged Ricci-squared lapse variation gives beta=0; converse immediate; exact residual inverse and sharp error bounds derived.",
+        "formal": "Three added Lean lemmas certify the stipulated two-residual inverse, zero selection and error bounds; the curvature variation and matter calibration are separate analytic/symbolic proofs."
+      },
+      "execution_status": "73 exact sourced-calibration checks, direct independent radial action variation, reviewer metric/connection variation and Lean scalar certificates passed.",
+      "evidence": [
+        "docs/QUADRATIC_SELECTION.md",
+        "formal/ExtensionCertificates.lean",
+        "scripts/extension_checks/verify_sourced_calibrations.py",
+        "scripts/extension_checks/verify_rn_variation_independent.py",
+        "evidence/extensions/curvature/sourced_calibration_receipt.json",
+        "evidence/extensions/independent_rn/independent_rn_receipt.json",
+        "evidence/extensions/review/receipt.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "Sourced calibration premises are additional to the original flat-vacuum theorem; no empirical exclusion of observed corrections is claimed.",
+        "Arbitrary higher operators, nonlocal terms and source-redefinition equivalences lie beyond this fixed class.",
+        "Constant Euler density and completed boundary terms remain locally invisible."
+      ]
+    },
+    {
+      "id": "CURVATURE.RESPONSE_INVERSE",
+      "introduced_in": "2.0",
+      "statement": "Two finite nonzero sourced curvature-transfer channels determine alpha and beta exactly in the constant quadratic class; extra scales can identify kappa and test the common-intercept response model.",
+      "assumptions": [
+        "Same physical metric, source prescription and constant quadratic action; linearization about Minkowski spacetime and conserved perturbative source.",
+        "Nonzero spacelike Fourier scale z=k^2>0; independently calibrated nonzero transverse-traceless amplitude and scalar trace channel.",
+        "Chosen Green-function/boundary prescription isolates the particular sourced response; arbitrary homogeneous additions excluded.",
+        "r2=1/(1-beta z), r0=1/[1+(6alpha+2beta)z] are finite and nonzero; positivity conditions added when using direct-response interval bounds."
+      ],
+      "proof_status": {
+        "analytic": "Full linear symbol from quadratic action, channel inversion, error intervals and unknown-normalization design inverse derived.",
+        "formal": "Two added Lean lemmas certify the assumed rational-channel inverse and affine inverse-error bounds; source realization and full tensor symbol are not formalized."
+      },
+      "execution_status": "88 exact symbolic identities, finite rational inverse controls and Lean response certificates passed.",
+      "evidence": [
+        "docs/RESPONSE_TOMOGRAPHY.md",
+        "docs/QUADRATIC_SELECTION.md",
+        "formal/ExtensionCertificates.lean",
+        "scripts/extension_checks/verify_curvature_response.py",
+        "evidence/extensions/curvature/curvature_response_receipt.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "One scale cannot exclude arbitrary higher-derivative operators; the supplied six-derivative negative control matches one scale exactly.",
+        "No measurements are supplied; source engineering, observation maps and physical uncertainty remain future work.",
+        "No-extra-pole inference applies to an exact finite polynomial model and is not automatic for poles beyond an EFT validity range."
+      ],
+      "inverse": "y2=(r2^(-1)-1)/z; y0=(r0^(-1)-1)/z; beta=-y2; alpha=(y0+2y2)/6"
     }
   ],
   "further_context": [
@@ -371,6 +721,28 @@
     "docs/RELATED_WORK.md",
     "docs/RESEARCH_ROADMAP.md",
     "docs/PROVENANCE.md",
-    "evidence/phase_freeze.json"
-  ]
+    "evidence/phase_freeze.json",
+    "docs/DYNAMICAL_COUPLING.md",
+    "docs/ONE_KILLING_EXTENSION.md",
+    "docs/CURRENT_AND_RECONSTRUCTION.md",
+    "docs/QUADRATIC_SELECTION.md",
+    "docs/RESPONSE_TOMOGRAPHY.md",
+    "evidence/extensions/frozen/extensions_freeze.json"
+  ],
+  "extension_relationships": [
+    "The original two-orbit shape matrix and the new Killing norm/twist matrix parameterize the same type of hyperbolic target but are different geometric dictionaries.",
+    "The original cylindrical vacuum equations are an explicitly checked further symmetry-restricted sector of the selected one-Killing action.",
+    "The positive fully quantum cell and covariant variational state-fluid are distinct constructions; no controlled cell-to-fluid continuum or mean-field limit is derived.",
+    "The sourced reconstructed four-metric is not proved to arise from ordinary minimally coupled four-dimensional matter; the constant gap uses the three-dimensional Einstein-frame clock.",
+    "The full-4D quadratic discriminator uses extra fixed-source calibrations and a separate finite action class; it is not derived from the Gaussian state dictionary alone."
+  ],
+  "provenance": {
+    "original_release": "https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v1.0.0",
+    "original_release_unchanged": true,
+    "foundation_formal_receipt": "evidence/baseline_v1/lean/receipt.json",
+    "extension_freeze": "evidence/extensions/frozen/extensions_freeze.json",
+    "extension_independent_review": "evidence/extensions/review/REVIEW.md",
+    "motivating_review_manifest": "evidence/extensions/review_input_manifest.json",
+    "motivating_review_raw_contents_redistributed": false
+  }
 }

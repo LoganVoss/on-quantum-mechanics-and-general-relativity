@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-11-13T19:26:18.096882+00:00",
+  "source_sha256": "7a72f0e383137d0db16d93864b3c83fb504f7bd4ad1c10f8ac5998bbf8309a39",
+  "sympy": "1.14.0",
+  "checks": [
+    {
+      "name": "gaussian_normalization",
+      "residual": "0"
+    },
+    {
+      "name": "exact_projected_kinetic_operator",
+      "residual": "0"
+    },
+    {
+      "name": "Berry_covariant_kinetic_plus_Born_Huang",
+      "residual": "0"
+    },
+    {
+      "name": "exact_offband_second_excitation",
+      "residual": "0"
+    },
+    {
+      "name": "offband_orthogonal_to_vacuum",
+      "residual": "0"
+    },
+    {
+      "name": "centered_x_squared_variance",
+      "residual": "0"
+    },
+    {
+      "name": "projected_factorization_Ddagger_D",
+      "residual": "0"
+    },
+    {
+      "name": "leakage_norm_coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "holomorphic_zero_leakage_condition",
+      "residual": "0"
+    },
+    {
+      "name": "explicit_packet_normalization",
+      "residual": "0"
+    },
+    {
+      "name": "explicit_packet_kinetic_energy_in_kappa_units",
+      "residual": "0"
+    },
+    {
+      "name": "explicit_packet_independent_projected_energy",
+      "residual": "0"
+    },
+    {
+      "name": "explicit_packet_offband_norm_in_kappa_squared_units",
+      "residual": "0"
+    }
+  ],
+  "check_count": 13,
+  "projected_operator": "-v**2*Derivative(chi(u, v), (u, 2)) - v**2*Derivative(chi(u, v), (v, 2)) - I*v*Derivative(chi(u, v), u)/2 + 5*chi(u, v)/16",
+  "offband_coefficient_D": "v*(-I*Derivative(chi(u, v), u) + Derivative(chi(u, v), v)) + chi(u, v)/4",
+  "domain": "chi in C_c^infty(H\u00b2); Gaussian psi_M; full H=kappa(-\u0394_G)+Hprobe(M), ground energy subtracted",
+  "analytic_steps": [
+    "Friedrichs positive operator extension",
+    "compact-support integration by parts",
+    "holomorphic compact-support uniqueness",
+    "strong unitary Taylor expansion on D(H)"
+  ],
+  "claim": "exact band compression and instantaneous leakage law, not an exact invariant ground-band evolution",
+  "concrete_packet": {
+    "chi": "2*pi^(-1/4)*v^2*exp(-v-u^2/2)",
+    "energy_over_kappa": "45/16",
+    "leakage_norm_squared_over_kappa_squared": "45/32",
+    "initial_excitation_probability_coefficient": "45*hbar^2/(128*I^2)"
+  }
+}

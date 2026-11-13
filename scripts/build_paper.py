@@ -15,10 +15,11 @@ import sys
 root = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--output-dir', type=Path, default=root / 'work/paper')
+parser.add_argument('--source', type=Path, default=root / 'paper/On_Quantum_Mechanics_and_General_Relativity.tex')
 args = parser.parse_args()
 out = args.output_dir.resolve()
 out.mkdir(parents=True, exist_ok=True)
-source = root / 'paper/On_Quantum_Mechanics_and_General_Relativity.tex'
+source = args.source.resolve()
 result = subprocess.run(['tectonic', '--keep-logs', '--outdir', str(out), str(source)],
                         cwd=source.parent, capture_output=True, text=True, timeout=900)
 (out / 'compiler.log').write_text(result.stdout + result.stderr)

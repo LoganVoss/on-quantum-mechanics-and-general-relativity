@@ -20,7 +20,7 @@ Run the full scientific verification:
 python scripts/reproduce.py --output-dir work/reproduction
 ```
 
-This entry point runs the original symbolic and nonlinear suite, the quantum-geometry and coefficient-robustness checks, and the independent numerical controls. Read the generated receipts and process exit status. A historical `PASS` file is not a substitute for a new execution.
+This entry point runs the original symbolic and nonlinear suite, the quantum-geometry and coefficient-robustness checks, and the independent numerical controls, and all eight version-2 extension programs. Read the generated receipts and process exit status. A historical `PASS` file is not a substitute for a new execution.
 
 The original suite in [`source/v2.4`](../source/v2.4/) is executed in a temporary copy. Its wrapper preserves the original scripts and reference inputs, records their hashes, and applies a 120-second timeout to each source program. Scientific outputs include:
 
@@ -30,6 +30,22 @@ The original suite in [`source/v2.4`](../source/v2.4/) is executed in a temporar
 - Compressed NumPy state arrays containing the evolved fields and, for the analytic controls, their exact counterparts.
 
 The fixed tests are intentionally bounded. The nonlinear benchmark ends at $T=0.8$; its largest grid has 1,536 intervals. The exact-solution controls use 64, 128, 256, and 512 intervals. The rational current-jet test uses a declared seed. No experimental data or fitted observational parameters are required.
+
+## Version-2 extension checks alone
+
+```bash
+python scripts/verify_extensions.py --output-dir work/extensions
+```
+
+The runner executes byte-identical copies of the frozen checkers in a temporary workspace, preserves the independently reviewed source identities, and copies receipts/data into the selected output directory. Each program has a 300-second limit. The fully quantum control is bounded to 512- and 768-dimensional regulators. Python optimization mode is rejected because the scientific scripts use assertions.
+
+For the compact equation's example, run:
+
+```bash
+python examples/energy_shape.py --fidelity 0.8
+```
+
+Outputs are dimensionless energy and source magnitude in units of the calibrated gap, plus intrinsic hyperbolic distance. The input is squared overlap and the formula applies to the centered pure Gaussian domain.
 
 ## Formal proofs
 
@@ -57,7 +73,7 @@ Then invoke the formal verifier from the repository root:
 python scripts/verify_lean.py --project formal --output work/lean
 ```
 
-The verifier rebuilds the formal project, checks all 48 expected theorem declarations and their axiom dependencies, and tests a positive and a deliberately false compiler control. **Warnings are errors**: a successful formal receipt requires a warning-free build. The dependency cache speeds up compilation; the project's theorem sources still undergo verification. The distributed [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the completed eight-module build.
+The verifier rebuilds the formal project, checks all 63 expected theorem declarations and their axiom dependencies, and tests a positive and a deliberately false compiler control. **Warnings are errors**: a successful formal receipt requires a warning-free build. The dependency cache speeds up compilation; the project's theorem sources still undergo verification. The distributed [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the completed nine-module build.
 
 After dependency setup, the combined entry point can run both scientific and formal checks:
 
@@ -80,7 +96,7 @@ The figure's receipt records input and output hashes. The $N^{-2}$ reference lin
 
 ## Reading a result correctly
 
-To rebuild the typeset paper, install [Tectonic](https://tectonic-typesetting.github.io/) and run `python scripts/build_paper.py --output-dir work/paper`. The compiler may download TeX resources on its first use. The script rejects final-pass warnings and box-layout issues; visually inspect the resulting PDF as well. The distributed paper was rendered and reviewed on all 12 pages.
+To rebuild the typeset paper, install [Tectonic](https://tectonic-typesetting.github.io/) and run `python scripts/build_paper.py --output-dir work/paper`. The compiler may download TeX resources on its first use. The script rejects final-pass warnings and box-layout issues; visually inspect the resulting PDF as well. The 12-page foundation paper was rendered and reviewed in version 1. To build the extension paper, add `--source paper/On_Quantum_Mechanics_and_General_Relativity_Dynamical_Extensions.tex`. Its final build and visual-review receipt is retained separately.
 
 Exact symbolic simplification and rational arithmetic test identities without a floating-point tolerance. Wavefunction quadrature and PDE evolution use numerical tolerances and convergence checks. Lean checks propositions with their explicit hypotheses. These evidence types answer different questions.
 
@@ -91,3 +107,7 @@ For timestep refinement, the receipt preserves the unsuccessful coarse regime al
 Small differences in floating-point diagnostics can arise across platforms. Compare against the stated tolerances and convergence behavior. Source hashes, pinned dependency versions, exact symbolic identities, and formal theorem statements supply the more precise reproducibility anchors.
 
 The [verification guide](VERIFICATION.md) maps each result to its evidence and scope. The [quantum-geometry](QUANTUM_GEOMETRY.md) and [robust-selection](ROBUST_SELECTION.md) notes give the new formulas and their assumptions. The strongest conclusions are conditional mathematical results within the declared model; the numerical runs support finite-time behavior for the recorded tests.
+
+## Extension figures
+
+After installing `requirements-figures.txt`, run `python scripts/make_extension_figures.py`. The figures evaluate the frozen analytic relation and read recorded quantum-regulator data; they do not perform a new evolution. The extension paper contains 15 visually reviewed pages and has a clean final typesetting log in `evidence/extensions/manuscript_build.log`.

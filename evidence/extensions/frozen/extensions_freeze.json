@@ -1,0 +1,38 @@
+{
+  "phase": "all_extension_solving_and_independent_review_complete_before_public_authoring",
+  "date_local": "2026-11-13",
+  "recorded_utc": "2026-11-13T19:37:37.163058+00:00",
+  "files": [
+    {
+      "name": "DYNAMICS_FROZEN.md",
+      "sha256": "e1d86dcfc9089d7c4d0d4c774e36ca10894f65a3428191d3efc12561959e2c28"
+    },
+    {
+      "name": "FROZEN_CURVATURE_FINDINGS.md",
+      "sha256": "ebef68f1d0c89e3f2b2dd9737388f0697e09ad8626fbb99da68be789ebf20df0"
+    },
+    {
+      "name": "FROZEN_ONE_KILLING_FINDINGS.md",
+      "sha256": "24123b7146807110e9e861c6f560e7d46c61f07c84f9eb4cbd5516c514db114d"
+    },
+    {
+      "name": "verify_projection.py",
+      "sha256": "7a72f0e383137d0db16d93864b3c83fb504f7bd4ad1c10f8ac5998bbf8309a39"
+    },
+    {
+      "name": "verify_rn_variation_independent.py",
+      "sha256": "a32ba89ae7eb3625179f118068d3fe6e7fa04f3c65ce3cb5e0318c8047665aaf"
+    },
+    {
+      "name": "REVIEW.md",
+      "sha256": "0463fe28cb6a9f5175e7feee9e133b88f05aad51c3e3d5d6742958e42a362d8c"
+    },
+    {
+      "name": "ExtensionCertificates.lean",
+      "sha256": "75dcdcf17525f54cc0a569d95ada687d5ff5346c3635715a5ed876c3cfe231ad"
+    }
+  ],
+  "baseline_commit": "bf67ebc131901e1542f932664b5eb5e25789216e",
+  "independent_review": "31 exact checks; bounded-observable domain correction incorporated; no unresolved algebraic discrepancy in reviewed claims",
+  "formal": "63 theorems in9modules,zero warnings/errors; algebraicscope"
+}

@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "check_count": 15,
+  "checks": [
+    {
+      "name": "generic_offshell_R4",
+      "residual": "0"
+    },
+    {
+      "name": "generic_offshell_EH_density",
+      "residual": "0"
+    },
+    {
+      "name": "master_v_variation_0",
+      "residual": "0"
+    },
+    {
+      "name": "master_v_variation_1",
+      "residual": "0"
+    },
+    {
+      "name": "master_v_variation_2",
+      "residual": "0"
+    },
+    {
+      "name": "exact_current_corrected_dual_action",
+      "residual": "0"
+    },
+    {
+      "name": "square_completed_gauge_action",
+      "residual": "0"
+    },
+    {
+      "name": "generalized_twist_relation_0",
+      "residual": "0"
+    },
+    {
+      "name": "generalized_twist_relation_1",
+      "residual": "0"
+    },
+    {
+      "name": "generalized_twist_relation_2",
+      "residual": "0"
+    },
+    {
+      "name": "zero_current_dual_limit",
+      "residual": "0"
+    },
+    {
+      "name": "quantum_shear_source_charge_identity",
+      "residual": "0"
+    },
+    {
+      "name": "mechanical_total_shift_charge",
+      "residual": "0"
+    },
+    {
+      "name": "nonzero_naive_twist_source_example",
+      "residual": "0"
+    },
+    {
+      "name": "counterexample_probe_purity",
+      "residual": "0"
+    }
+  ],
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "created_utc": "2026-11-13T19:27:00.916786+00:00",
+  "script_sha256": "1c894db095eb918c388e5021bad92080417bbc7f02ba6d0356ae922a2ba187ef",
+  "genericity": "Normal coordinates for arbitrary Lorentzian h at an arbitrary regular point; A=0 is local gauge. Independent lambda first/second jets, A first/second jets, h second jets retained.",
+  "limits": [
+    "Classical local duality with smooth current. Products of point-particle distributions are not defined without regularization.",
+    "Probe current duality modifies twist reconstruction; it does not establish a quantum spacetime continuum."
+  ]
+}

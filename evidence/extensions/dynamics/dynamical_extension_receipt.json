@@ -1,0 +1,365 @@
+{
+  "status": "PASS",
+  "source_sha256": "25beeb75cd67f717479d10233637002ab05aad082786c7de8b4e3488e1bec32a",
+  "environment": {
+    "python": "3.12.13",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "exact_check_count": 41,
+  "exact_checks": [
+    {
+      "name": "excess_energy_positive_distance_form",
+      "residual": "0"
+    },
+    {
+      "name": "calibrated_symplectic_gap",
+      "residual": "0"
+    },
+    {
+      "name": "matched_ground_stationary_covariance",
+      "residual": "0"
+    },
+    {
+      "name": "matched_ground_stationary_covariance_offdiag",
+      "residual": "0"
+    },
+    {
+      "name": "pure_force_energy_identity",
+      "residual": "0"
+    },
+    {
+      "name": "covariance_equation_00",
+      "residual": "0"
+    },
+    {
+      "name": "covariance_equation_01",
+      "residual": "0"
+    },
+    {
+      "name": "covariance_equation_10",
+      "residual": "0"
+    },
+    {
+      "name": "covariance_equation_11",
+      "residual": "0"
+    },
+    {
+      "name": "reciprocal_total_energy_conservation",
+      "residual": "0"
+    },
+    {
+      "name": "shear_Noether_charge",
+      "residual": "0"
+    },
+    {
+      "name": "general_covariance_force_identity",
+      "residual": "0"
+    },
+    {
+      "name": "force_x_at_isotropic_shape",
+      "residual": "0"
+    },
+    {
+      "name": "force_y_at_isotropic_shape",
+      "residual": "0"
+    },
+    {
+      "name": "equivariant_inverse_00",
+      "residual": "0"
+    },
+    {
+      "name": "equivariant_inverse_01",
+      "residual": "0"
+    },
+    {
+      "name": "equivariant_inverse_10",
+      "residual": "0"
+    },
+    {
+      "name": "equivariant_inverse_11",
+      "residual": "0"
+    },
+    {
+      "name": "joint_frame_energy_invariance",
+      "residual": "0"
+    },
+    {
+      "name": "isotropy_off_diagonal_constraint",
+      "residual": "0"
+    },
+    {
+      "name": "isotropy_diagonal_constraint",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_00",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_01",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_02",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_10",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_11",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_12",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_20",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_21",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_gradient_22",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_laplacian_0",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_laplacian_1",
+      "residual": "0"
+    },
+    {
+      "name": "hyperboloid_laplacian_2",
+      "residual": "0"
+    },
+    {
+      "name": "energy_hyperboloid_bilinear",
+      "residual": "0"
+    },
+    {
+      "name": "force_observable_identity_1",
+      "residual": "0"
+    },
+    {
+      "name": "force_observable_identity_2",
+      "residual": "0"
+    },
+    {
+      "name": "linear_response_characteristic",
+      "residual": "0"
+    },
+    {
+      "name": "sideband_product",
+      "residual": "0"
+    },
+    {
+      "name": "sideband_separation",
+      "residual": "0"
+    },
+    {
+      "name": "squeezed_number_mean",
+      "residual": "0"
+    },
+    {
+      "name": "squeezed_number_factorial_second_moment",
+      "residual": "0"
+    }
+  ],
+  "semiclassical_control": {
+    "rows": [
+      {
+        "rtol": 1e-09,
+        "max_energy_drift": 1.0979207126782242e-09,
+        "max_shear_charge_drift": 4.023716082546258e-10,
+        "minimum_positive_coordinate": 0.8120909379341466
+      },
+      {
+        "rtol": 1e-11,
+        "max_energy_drift": 8.56570370189047e-12,
+        "max_shear_charge_drift": 5.142164472005106e-12,
+        "minimum_positive_coordinate": 0.8120909381695647
+      }
+    ],
+    "endpoint_tolerance_difference": 9.053242600032263e-10
+  },
+  "full_quantum_regulator_controls": [
+    {
+      "oscillator_cutoff": 16,
+      "shape_grid": [
+        4,
+        8
+      ],
+      "shape_radius": 1.2,
+      "Hilbert_dimension": 512,
+      "joint_symmetry_commutator_norm": 2.4641001092611007e-13,
+      "discarded_initial_Fock_probability": 3.967965100937221e-08,
+      "initial_shape_acceleration_plus": 0.8231625226053492,
+      "initial_shape_acceleration_minus": -0.8231625226053492,
+      "times": [
+        0.0,
+        0.049999999999999996,
+        0.09999999999999999,
+        0.15,
+        0.19999999999999998,
+        0.24999999999999997,
+        0.3,
+        0.35
+      ],
+      "shape_response_plus": [
+        -9.830341859040407e-18,
+        0.0010283491384818952,
+        0.0040964748480241744,
+        0.008934631962243963,
+        0.014472130378330802,
+        0.019279792416419483,
+        0.022949350569442382,
+        0.026219364795274997
+      ],
+      "shape_response_minus": [
+        -9.830341859040407e-18,
+        -0.0010283491384819406,
+        -0.004096474848024065,
+        -0.008934631962243948,
+        -0.014472130378331052,
+        -0.019279792416419566,
+        -0.02294935056944235,
+        -0.026219364795274886
+      ],
+      "uncoupled_shape_response": [
+        -9.830341859040407e-18,
+        -1.0782933800350696e-17,
+        7.249089682550892e-17,
+        1.0779161327869136e-16,
+        1.6008364436448723e-16,
+        1.6588349409776527e-16,
+        1.7488227511936144e-16,
+        1.0516163426513392e-16
+      ],
+      "max_norm_error": 1.3322676295501878e-15,
+      "max_energy_error": 5.329070518200751e-15,
+      "shape_energy": [
+        5.954003829208512,
+        5.944938868024652,
+        5.921690982107122,
+        5.898402715916268,
+        5.8933069616423115,
+        5.913643324411091,
+        5.951398258221087,
+        5.9904481082290975
+      ],
+      "probe_energy": [
+        0.22207678952346604,
+        0.23114175070732068,
+        0.25438963662485464,
+        0.27767790281571025,
+        0.2827736570896675,
+        0.2624372943208874,
+        0.22468236051089105,
+        0.18563251050288374
+      ],
+      "final_shape_probe_entanglement_bits": 0.14902671202825576,
+      "uncoupled_entanglement_bits": 4.164454454959387e-15,
+      "scope": "Positive finite-volume/Galerkin model, no shape-grid continuum claim; exact discrete symmetry tested."
+    },
+    {
+      "oscillator_cutoff": 24,
+      "shape_grid": [
+        4,
+        8
+      ],
+      "shape_radius": 1.2,
+      "Hilbert_dimension": 768,
+      "joint_symmetry_commutator_norm": 5.809267087014241e-13,
+      "discarded_initial_Fock_probability": 1.418376527340115e-11,
+      "initial_shape_acceleration_plus": 0.8231656470474908,
+      "initial_shape_acceleration_minus": -0.8231656470474902,
+      "times": [
+        0.0,
+        0.049999999999999996,
+        0.09999999999999999,
+        0.15,
+        0.19999999999999998,
+        0.24999999999999997,
+        0.3,
+        0.35
+      ],
+      "shape_response_plus": [
+        -2.1133889516432835e-17,
+        0.0010283530146070635,
+        0.0040964900403173445,
+        0.008934664569987646,
+        0.014472181919620531,
+        0.019279854582335547,
+        0.022949400989103537,
+        0.0262193691255806
+      ],
+      "shape_response_minus": [
+        -2.1133889516432835e-17,
+        -0.0010283530146071133,
+        -0.004096490040317438,
+        -0.00893466456998777,
+        -0.014472181919620639,
+        -0.019279854582335585,
+        -0.022949400989103613,
+        -0.026219369125580608
+      ],
+      "uncoupled_shape_response": [
+        -2.1133889516432835e-17,
+        -6.175528205367678e-17,
+        -1.9929065667405806e-17,
+        9.198601108654026e-17,
+        1.8135099796787902e-16,
+        2.289144244917552e-16,
+        2.0600602209626288e-16,
+        1.244147050191257e-16
+      ],
+      "max_norm_error": 3.552713678800501e-15,
+      "max_energy_error": 1.9539925233402755e-14,
+      "shape_energy": [
+        5.954003829208501,
+        5.944938955966377,
+        5.921691342280946,
+        5.8984035753577695,
+        5.893308627295889,
+        5.913646258256035,
+        5.951403265826819,
+        5.9904564302751
+      ],
+      "probe_energy": [
+        0.2220774810143197,
+        0.2311423542564582,
+        0.254389967941887,
+        0.27767773486505853,
+        0.2827726829269377,
+        0.26243505196679057,
+        0.22467804439600478,
+        0.18562487994771928
+      ],
+      "final_shape_probe_entanglement_bits": 0.1490367367821729,
+      "uncoupled_entanglement_bits": 4.4847971053408774e-15,
+      "scope": "Positive finite-volume/Galerkin model, no shape-grid continuum claim; exact discrete symmetry tested."
+    }
+  ],
+  "Fock_cutoff_response_difference": 6.216591606419963e-08,
+  "continuum_compact_packet": {
+    "wavefunction": "C exp[-1/(1-r^2)] for r<1, zero otherwise",
+    "kappa": 0.11146598698569911,
+    "formula": "initial_acceleration_O=+/- hbar*omega*(1+kappa)*sinh(r_probe)/(2I)",
+    "observable": "O=zeta(r_shape)*X1, smooth compact radial zeta equals one on a neighborhood of initial packet support; unbounded X1 later-time moments not asserted"
+  },
+  "limits": [
+    "Selected centered quadratic no-derivative coupling with calibrated gap, not uniqueness in arbitrary interactions.",
+    "Fully quantum finite shape/probe model, not full constrained quantum gravity.",
+    "Sourced one-Killing twist reconstruction requires generalized total current; vacuum dictionary alone fails.",
+    "No laboratory measurement or worldwide novelty claim."
+  ]
+}

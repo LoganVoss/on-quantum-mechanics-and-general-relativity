@@ -41,6 +41,16 @@ def main():
         text = path.read_text()
         if sum(line.strip() == '$$' for line in text.splitlines()) % 2:
             raise ValueError(f'Unpaired display math in {path.name}')
+        math_open = False
+        for line in text.splitlines():
+            if line.strip() == '```math':
+                if math_open:
+                    raise ValueError(f'Nested unclosed math block in {path.name}')
+                math_open = True
+            elif math_open and line.strip() == '```':
+                math_open = False
+        if math_open:
+            raise ValueError(f'Unclosed math block in {path.name}')
         for target in re.findall(r'\]\(([^)]+)\)', text):
             if '://' in target or target.startswith(('#', 'mailto:')):
                 continue

@@ -1,0 +1,15 @@
+{
+  "role": "Supplied research review informed the questions and provided the two Hessian-response controls. It is not external peer review and its reported executions are distinct from this release\u2019s fresh checks. The review contents are not redistributed.",
+  "inputs": [
+    {
+      "name": "Voss_Research_Novelty_and_Impact_Review.pdf",
+      "sha256": "97634afeadbf4f127c6356bccea9d013da7f540dba661ebf5d89d9db6b15b142",
+      "bytes": 124803
+    },
+    {
+      "name": "Pasted text.txt",
+      "sha256": "1dc0e95feb73fe87b9f4e46764cb0f932070738fa8c4663bf8c4c12cfc6a9c38",
+      "bytes": 35932
+    }
+  ]
+}

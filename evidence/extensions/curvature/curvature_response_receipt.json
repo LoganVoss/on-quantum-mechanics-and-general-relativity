@@ -1,0 +1,423 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "exact_check_count": 88,
+  "checks": [
+    {
+      "name": "full_symbol_from_action_00",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_01",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_02",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_03",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_11",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_12",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_13",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_22",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_23",
+      "residual": "0"
+    },
+    {
+      "name": "full_symbol_from_action_33",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Bianchi_0",
+      "residual": "0"
+    },
+    {
+      "name": "quadratic_Bianchi_0",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Bianchi_1",
+      "residual": "0"
+    },
+    {
+      "name": "quadratic_Bianchi_1",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Bianchi_2",
+      "residual": "0"
+    },
+    {
+      "name": "quadratic_Bianchi_2",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Bianchi_3",
+      "residual": "0"
+    },
+    {
+      "name": "quadratic_Bianchi_3",
+      "residual": "0"
+    },
+    {
+      "name": "full_trace",
+      "residual": "0"
+    },
+    {
+      "name": "review_TT_R2",
+      "residual": "0"
+    },
+    {
+      "name": "review_TT_Ric2",
+      "residual": "0"
+    },
+    {
+      "name": "review_conformal_R2",
+      "residual": "0"
+    },
+    {
+      "name": "review_conformal_Ric2",
+      "residual": "0"
+    },
+    {
+      "name": "review_discriminant",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_00",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_01",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_02",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_03",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_11",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_12",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_13",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_22",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_23",
+      "residual": "0"
+    },
+    {
+      "name": "gauge_Ricci_33",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_00",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_01",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_02",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_03",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_11",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_12",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_13",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_22",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_23",
+      "residual": "0"
+    },
+    {
+      "name": "TT_transfer_33",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_00",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_01",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_02",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_03",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_11",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_12",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_13",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_22",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_23",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_transfer_33",
+      "residual": "0"
+    },
+    {
+      "name": "inverse_b",
+      "residual": "0"
+    },
+    {
+      "name": "inverse_a",
+      "residual": "0"
+    },
+    {
+      "name": "inverse_response_map_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "TT_partial_fractions",
+      "residual": "0"
+    },
+    {
+      "name": "scalar_pole",
+      "residual": "0"
+    },
+    {
+      "name": "tensor_pole",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_Phi",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_Psi",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_00",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_01",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_02",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_03",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_11",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_12",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_13",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_22",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_23",
+      "residual": "0"
+    },
+    {
+      "name": "point_source_full_equation_33",
+      "residual": "0"
+    },
+    {
+      "name": "Yukawa_e0_inverse",
+      "residual": "0"
+    },
+    {
+      "name": "Yukawa_e2_inverse",
+      "residual": "0"
+    },
+    {
+      "name": "potential_response_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_a_corner_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_b_corner_1_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_b_corner_1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_b_corner_-1_1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_a_corner_-1",
+      "residual": "0"
+    },
+    {
+      "name": "sharp_b_corner_-1_-1",
+      "residual": "0"
+    },
+    {
+      "name": "unknown_kappa_recovery",
+      "residual": "0"
+    },
+    {
+      "name": "unknown_b_recovery",
+      "residual": "0"
+    },
+    {
+      "name": "unknown_a_recovery",
+      "residual": "0"
+    },
+    {
+      "name": "unknown_calibration_rank",
+      "residual": "0"
+    },
+    {
+      "name": "fourth_response_consistency",
+      "residual": "0"
+    },
+    {
+      "name": "higher_order_single_scale_negative_control",
+      "residual": "0"
+    },
+    {
+      "name": "higher_order_detected_off_scale",
+      "residual": "0"
+    }
+  ],
+  "synthetic_inverse_trials": [
+    {
+      "a": "1/2",
+      "b": "-1/2",
+      "z": "1/4",
+      "r0": "2/3",
+      "r2": "8/9",
+      "recovered_a": "1/2",
+      "recovered_b": "-1/2"
+    },
+    {
+      "a": "2/3",
+      "b": "-1/3",
+      "z": "3/2",
+      "r0": "1/6",
+      "r2": "2/3",
+      "recovered_a": "2/3",
+      "recovered_b": "-1/3"
+    },
+    {
+      "a": "0",
+      "b": "0",
+      "z": "2",
+      "r0": "1",
+      "r2": "1",
+      "recovered_a": "0",
+      "recovered_b": "0"
+    },
+    {
+      "a": "1/5",
+      "b": "0",
+      "z": "1/3",
+      "r0": "5/7",
+      "r2": "1",
+      "recovered_a": "1/5",
+      "recovered_b": "0"
+    },
+    {
+      "a": "1/3",
+      "b": "-1",
+      "z": "3/5",
+      "r0": "1",
+      "r2": "5/8",
+      "recovered_a": "1/3",
+      "recovered_b": "-1"
+    }
+  ],
+  "action": "(2 kappa)^-1 integral sqrt(-g) [R+a R^2+b Ricci^2]+S_m",
+  "conventions": "signature(-+++),R_ab=\u2202c\u0393c_ab\u2212\u2202b\u0393c_ac+..., Fourier exp(i k.x), z=k.k, spacelike z>0",
+  "transfer_functions": {
+    "r2": "1/(-b*z + 1)",
+    "r0": "1/(z*(6*a + 2*b) + 1)"
+  },
+  "reviewer_hessian_credit": "The two curvature Hessian sectors are supplied in the November13 review; this script independently recomputes them. New work adds full operator, source transfer, robust inverse and point-source potentials.",
+  "limits": [
+    "Constant-coefficient parity-even local 4D class, modulo constant Euler density.",
+    "Fixed physical metric and minimal source identification.",
+    "No curvature-squared exclusion is inferred from Ricci-flat stationarity alone.",
+    "No observational data; no worldwide novelty claim.",
+    "Higher/nonlocal operators and EFT validity require separate analysis."
+  ],
+  "elapsed_seconds": 1.9338358340319246,
+  "source_sha256": "b34d12a8d250bd51b34163be61f7718ff213545a9ea66dd1c0629cd58f0d5afa"
+}

@@ -1,7 +1,7 @@
 {
   "schema": "voss.reproduction.v1",
   "status": "PASS",
-  "executed_utc": "2026-11-13T18:04:43.182163+00:00",
+  "executed_utc": "2026-11-13T19:54:13.435930+00:00",
   "python": "3.12.13",
   "lean_requested": false,
   "runs": [
@@ -27,7 +27,15 @@
       "script_sha256": "f949517f4c8d383d144f058adf963196fb46d852244f2b358686fad8e996689d",
       "exit_code": 0,
       "log": "numerical_controls.log",
-      "log_sha256": "07a874b6474bc482305c89f509dd5dd816b10fae6bece632624b7c0ce255c8db"
+      "log_sha256": "a3ccdcc91b5a1920f26c2f42bdbed1cde053e25761aa909052382d734bc9c45f"
+    },
+    {
+      "task": "extensions",
+      "script": "scripts/verify_extensions.py",
+      "script_sha256": "54221401fb4ea6800b373a6e09052b174b5a46fc1c2cbcbfa93cf893d622aec8",
+      "exit_code": 0,
+      "log": "extensions.log",
+      "log_sha256": "dab1ba6b850f3f2100b5e94f885ae84ef4b787ab03357dbe0739cae608a77178"
     }
   ],
   "scope": "Exact checks and bounded synthetic numerical controls; see individual assumptions and receipts."

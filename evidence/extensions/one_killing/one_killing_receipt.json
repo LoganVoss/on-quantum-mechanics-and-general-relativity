@@ -1,0 +1,1249 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-13T19:25:53.050301+00:00",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "check_count": 309,
+  "checks": [
+    {
+      "name": "helical_Ricci_00",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_01",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_02",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_10",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_11",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_12",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_20",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_21",
+      "residual": "0"
+    },
+    {
+      "name": "helical_Ricci_22",
+      "residual": "0"
+    },
+    {
+      "name": "helical_lambda_wave_map",
+      "residual": "0"
+    },
+    {
+      "name": "helical_omega_wave_map",
+      "residual": "0"
+    },
+    {
+      "name": "helical_twist",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_00",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_01",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_02",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_03",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_10",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_11",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_12",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_13",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_20",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_21",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_22",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_23",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_30",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_31",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_32",
+      "residual": "0"
+    },
+    {
+      "name": "flat_lift_component_33",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0000",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0001",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0002",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0003",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0010",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0011",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0012",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0013",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0020",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0021",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0022",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0023",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0030",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0031",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0032",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0033",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0100",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0101",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0102",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0103",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0110",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0111",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0112",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0113",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0120",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0121",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0122",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0123",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0130",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0131",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0132",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0133",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0200",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0201",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0202",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0203",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0210",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0211",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0212",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0213",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0220",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0221",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0222",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0223",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0230",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0231",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0232",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0233",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0300",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0301",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0302",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0303",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0310",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0311",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0312",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0313",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0320",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0321",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0322",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0323",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0330",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0331",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0332",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_0333",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1000",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1001",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1002",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1003",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1010",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1011",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1012",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1013",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1020",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1021",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1022",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1023",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1030",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1031",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1032",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1033",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1100",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1101",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1102",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1103",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1110",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1111",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1112",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1113",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1120",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1121",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1122",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1123",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1130",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1131",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1132",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1133",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1200",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1201",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1202",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1203",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1210",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1211",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1212",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1213",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1220",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1221",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1222",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1223",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1230",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1231",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1232",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1233",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1300",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1301",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1302",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1303",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1310",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1311",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1312",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1313",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1320",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1321",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1322",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1323",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1330",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1331",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1332",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_1333",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2000",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2001",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2002",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2003",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2010",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2011",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2012",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2013",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2020",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2021",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2022",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2023",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2030",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2031",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2032",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2033",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2100",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2101",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2102",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2103",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2110",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2111",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2112",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2113",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2120",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2121",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2122",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2123",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2130",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2131",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2132",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2133",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2200",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2201",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2202",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2203",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2210",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2211",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2212",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2213",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2220",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2221",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2222",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2223",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2230",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2231",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2232",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2233",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2300",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2301",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2302",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2303",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2310",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2311",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2312",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2313",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2320",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2321",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2322",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2323",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2330",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2331",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2332",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_2333",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3000",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3001",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3002",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3003",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3010",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3011",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3012",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3013",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3020",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3021",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3022",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3023",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3030",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3031",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3032",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3033",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3100",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3101",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3102",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3103",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3110",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3111",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3112",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3113",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3120",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3121",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3122",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3123",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3130",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3131",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3132",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3133",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3200",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3201",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3202",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3203",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3210",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3211",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3212",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3213",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3220",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3221",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3222",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3223",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3230",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3231",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3232",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3233",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3300",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3301",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3302",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3303",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3310",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3311",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3312",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3313",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3320",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3321",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3322",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3323",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3330",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3331",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3332",
+      "residual": "0"
+    },
+    {
+      "name": "flat_Riemann_3333",
+      "residual": "0"
+    },
+    {
+      "name": "metric_tt_response",
+      "residual": "0"
+    },
+    {
+      "name": "metric_rr_response",
+      "residual": "0"
+    },
+    {
+      "name": "invert_relative_weight",
+      "residual": "0"
+    },
+    {
+      "name": "invert_potential",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_00",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_01",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_02",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_10",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_11",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_12",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_20",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_21",
+      "residual": "0"
+    },
+    {
+      "name": "selected_full_metric_22",
+      "residual": "0"
+    },
+    {
+      "name": "zero_pitch_blindness_weight",
+      "residual": "0"
+    },
+    {
+      "name": "target_det",
+      "residual": "0"
+    },
+    {
+      "name": "new_target_metric_00",
+      "residual": "0"
+    },
+    {
+      "name": "new_target_metric_01",
+      "residual": "0"
+    },
+    {
+      "name": "new_target_metric_10",
+      "residual": "0"
+    },
+    {
+      "name": "new_target_metric_11",
+      "residual": "0"
+    },
+    {
+      "name": "cylindrical_gamma_T_constraint",
+      "residual": "0"
+    },
+    {
+      "name": "cylindrical_gamma_R_constraint",
+      "residual": "0"
+    },
+    {
+      "name": "cylindrical_psi_PDE",
+      "residual": "0"
+    },
+    {
+      "name": "cylindrical_chi_PDE",
+      "residual": "0"
+    },
+    {
+      "name": "sector_twist_T",
+      "residual": "0"
+    },
+    {
+      "name": "sector_twist_R",
+      "residual": "0"
+    }
+  ],
+  "script_sha256": "b4471fcadfa3b1b946a26890ea6feee402a5200cf534b7e634d4a24ae140af89",
+  "scope": "Exact tensor/algebra checks for helical calibration and further cylindrical reduction. Written classification, dualization, and theorem arguments separate; no all-solution existence or quantum continuum claim.",
+  "parameters": "real Omega!=0,r>0 for nondegenerate calibration; all components checked symbolically before specialization",
+  "source_independence": "No original project verifier imported."
+}

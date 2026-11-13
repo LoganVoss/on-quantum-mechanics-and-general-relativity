@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "method": "Independent Euler variation of the static spherical Ricci-squared density with lapse/radial metric kept independent, then RN evaluation.",
+  "H_mixed_tt": "-3*(4*r**2 - 8*r + 1)/(4*r**8)",
+  "point_r3": "-13/8748",
+  "sympy": "1.14.0",
+  "source_sha256": "a32ba89ae7eb3625179f118068d3fe6e7fa04f3c65ce3cb5e0318c8047665aaf",
+  "limits": "Checks the lapse equation at a regular exterior point. Full tensor checks are separate."
+}

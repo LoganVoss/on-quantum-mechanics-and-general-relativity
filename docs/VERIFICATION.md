@@ -9,7 +9,7 @@ The central result is a conditional selection theorem: within the stated action 
 | Layer | Fresh result | What it establishes |
 |---|---|---|
 | Analytic derivation | Explicit hypotheses, first variation, converse, and geometric dictionary | The mathematical argument and its domain |
-| Formal proofs | 48 theorem declarations across eight Lean proof modules | The original 40 statements plus eight new residual-inference lemmas, with hypotheses visible in their signatures |
+| Formal proofs | 63 theorem declarations across nine Lean proof modules | The original 40 statements, eight residual-inference lemmas, and 15 extension certificates, with hypotheses visible in their signatures |
 | Original symbolic suite | 373 exact symbolic checks and 256 exact rational current-jet cases passed | Reproducible algebraic and component checks of the written derivations |
 | Quantum geometry and coefficient robustness | 58 exact symbolic checks and five direct wavefunction quadratures passed | Exact identities, sharp pointwise residual bounds, and an independent numerical check of Gaussian fidelity |
 | Nonlinear benchmark | Seven fresh finite-domain evolutions passed | Convergence and energy/twist balance for the specified initial data through $T=0.8$ |
@@ -20,13 +20,35 @@ Check counts describe executed calculations. Several are tensor components or sp
 
 ## Formal verification and its boundary
 
-The original **40 theorems are in seven modules**, rather than 40 modules. This bundle adds a module containing **four exact residual-inversion identities and four pointwise error bounds**, for **48 theorem declarations across eight proof modules**. The integrated near-affine estimates are established by the written calculus argument; these eight new formal lemmas certify its pointwise algebraic foundation.
+The original **40 theorems are in seven modules**, rather than 40 modules. Version 1 added **four exact residual-inversion identities and four pointwise error bounds**. Version 2 adds 15 extension certificates, giving **40 + 8 + 15 = 63 theorem declarations across nine proof modules**. The integrated near-affine estimates are established by the written calculus argument; these eight new formal lemmas certify its pointwise algebraic foundation.
 
-The fresh build uses Lean 4.19.0 and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Compiler warnings are errors. The complete build finished with **zero warnings and zero errors**. All 48 theorem dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, the standard logical foundations used by these Lean proofs. The [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the execution.
+The fresh build uses Lean 4.19.0 and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Compiler warnings are errors. The complete build finished with **zero warnings and zero errors**. All 63 theorem dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, the standard logical foundations used by these Lean proofs. The [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the execution.
 
 The formal verifier also checks its own route through the compiler: a true proposition must compile, and the deliberately false proposition `example : (0 : Nat) = 1 := by decide` must be rejected. These controls increase confidence that the recorded command actually invokes a working checker. They are not a proof that the compiler or host system is uncompromised.
 
 The theorem signatures remain the authoritative statement of what Lean proves. In particular, the analytic bridge starts from explicit chart equations and genuine derivative hypotheses. The full differential-geometric variation and physical interpretation have written arguments and exact symbolic checks; they are not all formalized inside Lean.
+
+## Version-2 extension evidence
+
+Every extension was solved and independently reviewed before public authoring. The [freeze record](../evidence/extensions/frozen/extensions_freeze.json) identifies the exact derivation snapshots. The [separate review](../evidence/extensions/review/REVIEW.md) contains 31 independently implemented exact checks; it found and resolved the need for a bounded continuum response observable. This is AI-assisted independent checking, not external human peer review.
+
+| Program | Exact checks | Evidence |
+|---|---:|---|
+| Selected interaction and dynamical identities | 41 | [Receipt](../evidence/extensions/dynamics/dynamical_extension_receipt.json) |
+| Full quadratic response and inverse | 88 | [Receipt](../evidence/extensions/curvature/curvature_response_receipt.json) |
+| Dust and electrovac calibration | 73 | [Receipt](../evidence/extensions/curvature/sourced_calibration_receipt.json) |
+| One-Killing geometry, calibration, and original-sector recovery | 309 | [Receipt](../evidence/extensions/one_killing/one_killing_receipt.json) |
+| Generic off-shell reduction and corrected current duality | 15 | [Receipt](../evidence/extensions/one_killing/generic_reduction_receipt.json) |
+| Exact projected kinetic operator and leakage | 13 | [Receipt](../evidence/extensions/projection/projection_receipt.json) |
+| Independently implemented integration review | 31 | [Receipt](../evidence/extensions/review/receipt.json) |
+
+A further [independent radial-action variation](../evidence/extensions/independent_rn/independent_rn_receipt.json) reproduces the decisive charged-electrovac component without using the proposed tensor-variation formula. Counts include component identities and overlapping checks; they are not numbers of distinct discoveries.
+
+The fully quantum controls use hyperbolic finite-volume shape grids coupled to truncated oscillator spaces, with total Hilbert dimensions 512 and 768. At the larger cutoff and $t=0.35$, the two prepared states give opposite shape contrasts of magnitude approximately **0.0262193691**, while the uncoupled control gives zero. Shape–probe entropy is approximately **0.1490367 bits**. Norm and energy deviations are at most $3.55\times10^{-15}$ and $1.95\times10^{-14}$, respectively. The 16-to-24-level response difference is $6.22\times10^{-8}$ for this fixed shape grid and protocol. These finite controls do not establish a spatial continuum or general cutoff convergence theorem.
+
+The exact continuum response theorem uses a bounded smooth observable equal to the shape coordinate near the initial packet support. Its statement is about initial acceleration. The separate leakage law is an initial-time expansion with an $o(t^2)$ remainder, not a finite-time error bound. The smooth covariant state-fluid model and the linear quantum cell model are distinct; no continuum/mean-field limit connecting them is asserted.
+
+The supplied review's flat Hessian probes are explicitly credited. The sourced-calibration and response results assume a fixed physical metric, source prescription, and declared operator class. Their computations do not constitute empirical exclusion of higher-curvature terms. See [Quadratic selection](QUADRATIC_SELECTION.md), [Response tomography](RESPONSE_TOMOGRAPHY.md), [Dynamical coupling](DYNAMICAL_COUPLING.md), and [Current reconstruction](CURRENT_AND_RECONSTRUCTION.md).
 
 ## Exact symbolic evidence
 
