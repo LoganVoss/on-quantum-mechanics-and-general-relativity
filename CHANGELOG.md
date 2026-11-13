@@ -1,5 +1,9 @@
 # Research editions
 
+## 2.0.1 — November 13, 2026
+
+Packaging maintenance: pin the Ubuntu 24.04 runner and update the pinned artifact-upload action to its Node.js 24 version. This removes GitHub platform deprecation/migration notices. Scientific sources, proofs, papers, and recorded mathematical results are unchanged from edition 2.0.
+
 ## 2.0.0 — November 13, 2026
 
 Added a selected reciprocal quantum-state/shape interaction, a one-Killing action-selection theorem, and a full constant-coefficient quadratic-curvature discriminator using calibrated dust and electrovac sources.
