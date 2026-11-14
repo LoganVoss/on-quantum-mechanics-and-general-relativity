@@ -1,5 +1,13 @@
 # Research editions
 
+## 3.0.0 — November 13, 2026
+
+Added a controlled nonlinear matter-sector limit for an explicitly augmented, localized large-population regulator at fixed geometric resolution, plus a separate full smooth linearized spatial limit on an Einstein-dust background.
+
+The proof chain includes explicit operator concentration, collective-state closure, the proper Brown clock, reciprocal material quadrature, strong quantum-current/contact control, an ordered internal-cutoff result, and conservative parameter diagonals. Negative controls show why raw target-grid refinement, heavy shape alone, weak currents, and fixed occupancy do not supply the intended limit.
+
+The formal project now contains **75 theorems across ten modules**, with zero warnings and errors. Prior 63 theorem sources are preserved. The nonlinear geometric-cutoff and Einstein-constraint obligations remain open and are identified explicitly.
+
 ## 2.0.1 — November 13, 2026
 
 Packaging maintenance: pin the Ubuntu 24.04 runner and update the pinned artifact-upload action to its Node.js 24 version. This removes GitHub platform deprecation/migration notices. Scientific sources, proofs, papers, and recorded mathematical results are unchanged from edition 2.0.

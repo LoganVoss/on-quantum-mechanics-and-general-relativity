@@ -1,0 +1,64 @@
+{
+  "phase": "continuum_research_derivations_controls_and_independent_review_frozen_before_public_authoring",
+  "recorded_utc": "2026-11-14T04:35:56.288457+00:00",
+  "date_local": "2026-11-13",
+  "baseline_commit": "bc1a63feffc206dbb682dd78f44f977025b0c2ba",
+  "files": [
+    {
+      "name": "MEANFIELD_FINDINGS.md",
+      "sha256": "0e40fcac388f5f2ad99a21b053786d550835f74c59c6b10acdd0e1dfd828a706"
+    },
+    {
+      "name": "verify_meanfield_bridge.py",
+      "sha256": "0e51aba7d824d67a9def6b09a346e4ee6add482cae4a8944935964abda99d14e"
+    },
+    {
+      "name": "FROZEN_FIELD_FINDINGS.md",
+      "sha256": "0375a320d7a5fa01ea204eb943fe6841b96801a4f363ee601632c2e70d9d9330"
+    },
+    {
+      "name": "verify_field_continuum.py",
+      "sha256": "88173e8d7eb44cb49b7d0a51c3792b1eba854465ce1b59c0b29d89aca2027e22"
+    },
+    {
+      "name": "FROZEN_OBSTRUCTIONS.md",
+      "sha256": "a7c44ad4516cec70698dc1ad710f5d7edac8b8e3c8866adb77c67ca2bc75be21"
+    },
+    {
+      "name": "verify_obstructions.py",
+      "sha256": "d3bc3fc36ad26cdf01250a19a833cf9e86baed4e48b3bff7d31de1128136b4d6"
+    },
+    {
+      "name": "SYNTHESIS.md",
+      "sha256": "fb1ffbe765e821ec87751eb121036def62ba7a078c5fda03055535b471d27a9b"
+    },
+    {
+      "name": "verify_synthesis.py",
+      "sha256": "c7732a76069ad535762b3b1672bdc103b86186f0b85f562878e7109b3a097cab"
+    },
+    {
+      "name": "verify_moving_parcels.py",
+      "sha256": "175fc5d84fd4af920cfc139225cf2cd63e304d27151a42cc9fa58c77073351e5"
+    },
+    {
+      "name": "REVIEW.md",
+      "sha256": "4dcb84aac87bc735b522d8c6230aa48368b9d46a789e4b2166bdf63b5d760159"
+    },
+    {
+      "name": "review_positive_bridge.py",
+      "sha256": "ec675a390f98d65a93d3df428776c6a75398e6b07a26fcf98bef8a48a17ea647"
+    },
+    {
+      "name": "ContinuumCertificates.lean",
+      "sha256": "0108b8f3a3521c3e2221d15a8b4785e86665a9adbe4f1fa63a24e6d9b1728e58"
+    }
+  ],
+  "main_endpoint": "Augmented localized large-population nonlinear matter continuum at fixed geometric/internal cutoffs, prescribed background, beforecaustics; conditional ordered oscillator removal.",
+  "separate_positive_result": "Full smooth spatial continuum of the quantized quadratic/linearized system on an Einstein-dust background.",
+  "not_established": [
+    "Unchanged fixed-occupancy regulator to fluid by raw grid refinement",
+    "Nonlinear removal of geometric Galerkin cutoff",
+    "Quantization of Einstein constraints",
+    "A full unregulated constrained quantum-gravity continuum"
+  ]
+}

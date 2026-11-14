@@ -2,9 +2,9 @@
   "schema": "voss.research-claims.v1",
   "title": "On Quantum Mechanics and General Relativity",
   "author": "Logan Voss",
-  "edition": "2.0",
+  "edition": "3.0",
   "date": "2026-11-13",
-  "scope": "Foundational conditional quantum-state geometry and reduced gravity, plus selected reciprocal probe dynamics, one-Killing extension and source-conditioned full-4D quadratic-curvature discrimination.",
+  "scope": "Foundations and edition-2 extensions retained; edition 3.0 adds a controlled augmented large-population nonlinear matter continuum at fixed geometric/internal cutoffs on prescribed h3 before caustics, conditional ordered oscillator removal, and a separate linearized spatial continuum.",
   "novelty_status": "Worldwide novelty and priority are not established by the bounded literature comparison. Known Gaussian geometry, dimensional reduction and integrability precedents are credited.",
   "observation_status": "No physical measurements are supplied; empirical applicability of the calibrated geometric dictionary remains an open obligation.",
   "evidence_distinctions": {
@@ -18,11 +18,12 @@
   "verification_summary": {
     "formal": {
       "status": "passed",
-      "modules": 9,
-      "theorems": 63,
+      "modules": 10,
+      "theorems": 75,
       "foundation_theorems": 48,
       "foundation_residual_extension_theorems": 8,
       "edition_2_extension_theorems": 15,
+      "edition_3_continuum_certificates": 12,
       "warnings": 0,
       "errors": 0,
       "allowed_axioms": [
@@ -31,7 +32,8 @@
         "propext"
       ],
       "receipt": "evidence/lean/receipt.json",
-      "preserved_edition_1_receipt": "evidence/baseline_v1/lean/receipt.json"
+      "preserved_edition_1_receipt": "evidence/baseline_v1/lean/receipt.json",
+      "preserved_edition_2_receipt": "evidence/baseline_v2/lean/receipt.json"
     },
     "source_symbolic": {
       "exact_checks": 373,
@@ -85,6 +87,32 @@
       "independent_raw_action_variation": {
         "scope": "Ricci-squared lapse variation on charged electrovac, then evaluation at a regular exterior point.",
         "receipt": "evidence/extensions/independent_rn/independent_rn_receipt.json"
+      }
+    },
+    "edition_3_continuum": {
+      "meanfield": {
+        "exact_checks": 164,
+        "receipt": "evidence/continuum/meanfield/meanfield_receipt.json"
+      },
+      "field_and_material": {
+        "exact_checks": 92,
+        "receipt": "evidence/continuum/field/field_continuum_receipt.json"
+      },
+      "obstructions": {
+        "exact_checks": 28,
+        "receipt": "evidence/continuum/obstructions/obstruction_receipt.json"
+      },
+      "synthesis": {
+        "exact_checks": 10,
+        "receipt": "evidence/continuum/synthesis/synthesis_receipt.json"
+      },
+      "moving_parcels": {
+        "receipt": "evidence/continuum/moving_parcels/moving_parcels_receipt.json"
+      },
+      "independent_review": {
+        "exact_checks": 12,
+        "bounded_controls": 12,
+        "receipt": "evidence/continuum/review/review_receipt.json"
       }
     }
   },
@@ -259,7 +287,7 @@
       ],
       "proof_status": {
         "analytic": "four exact inversions and triangle-inequality bounds proved; constants individually sharp for the pointwise algebraic inference problem",
-        "formal": "8 edition-1.0 Lean theorems certify 4 inversions and 4 scaled inequalities in ResidualInversion; retained in the current 63-theorem, 9-module build."
+        "formal": "8 edition-1.0 Lean theorems certify 4 inversions and 4 scaled inequalities in ResidualInversion; retained in the current 75-theorem, 10-module build."
       },
       "execution_status": "Clean Lean build passed; exact symbolic inversion and feasible sharpness witnesses passed.",
       "evidence": [
@@ -620,14 +648,15 @@
       "limits": [
         "The vacuum twist map is generically nonclosed after sourcing and cannot be retained unchanged.",
         "Delta-function worldline current squared is undefined without regularization; smooth-fluid caustics are not solved.",
-        "No controlled derivation from the fully quantum cell to this variational state-fluid continuum is supplied.",
+        "The unchanged one-probe cell is not a direct regulator for this fluid. Edition 3.0 supplies a separately augmented large-population bridge at fixed geometric/internal cutoffs; nonlinear geometric-cutoff removal remains open.",
         "No ordinary minimally coupled four-dimensional matter uplift is established; a fixed 4D proper-time gap would become lambda-dependent in the 3D clock."
       ],
       "formulas": {
         "total_current": "C=f lambda^(-2)dchi+J; F=-star C/f; dF=0",
         "reconstruction": "dchi=lambda^2(star F-J/f)",
         "dual": "Ldual=-f lambda^2 F^2/4-lambda^2 J.star F+lambda^2 J^2/(2f)"
-      }
+      },
+      "refined_in": "3.0: see CONTINUUM.MATERIAL_RECIPROCAL_LIMIT and CONTINUUM.ORDERED_OSCILLATOR_REMOVAL."
     },
     {
       "id": "DYNAMICS.VARIATIONAL_CELL",
@@ -713,6 +742,267 @@
         "No-extra-pole inference applies to an exact finite polynomial model and is not automatic for poles beyond an EFT validity range."
       ],
       "inverse": "y2=(r2^(-1)-1)/z; y0=(r0^(-1)-1)/z; beta=-y2; alpha=(y0+2y2)/6"
+    },
+    {
+      "id": "CONTINUUM.AUGMENTED_POPULATION",
+      "introduced_in": "3.0",
+      "statement": "An explicitly augmented localized many-probe family has quantitative finite-time concentration and fixed-order pure marginal convergence at fixed regulator cutoffs.",
+      "assumptions": [
+        "Add physical parcel positions/momenta and symmetric internal probes; do not reinterpret the old target configuration grid as physical space.",
+        "At each fixed spatial, internal, Fourier and localization cutoff, bounded self-adjoint generators and bounded classical coordinates satisfy the declared ordered polynomial commutator remainder bounds.",
+        "Self-adjoint normalized Hamiltonian K_N is a finite polynomial plus real-weighted positive square roots with strictly positive mass gaps; physical evolution is i hbar partial_t Psi_N=N K_N Psi_N.",
+        "Well-prepared canonical packets and symmetric product probes give initial squared deviation O(1/N); classical trajectory stays in the declared regular interior patch on a common interval.",
+        "Physical cell occupancy is proportional to N n v and geometric inertia to N f v; normalized action/energy are divided by N. Cutoff/density/observable constants remain explicit."
+      ],
+      "proof_status": {
+        "analytic": "Ordered telescoping, resolvent commutator/Frechet estimates, exact deviation differentiation and symmetric-sector Casimir relation prove concentration and fixed-k marginal control.",
+        "formal": "ContinuumCertificates proves scalar Young/Gronwall consequences with genuine derivative hypotheses and composition of supplied Casimir/marginal inequalities; operator algebra and density-matrix statements are not formalized."
+      },
+      "execution_status": "164 exact mean-field checks plus clock, preparation, noncommuting root/source and direct partial-trace controls passed; independent review passed 12 exact identities and 12 bounded controls.",
+      "evidence": [
+        "docs/QUANTUM_TO_PARCELS.md",
+        "formal/ContinuumCertificates.lean",
+        "scripts/continuum_checks/verify_meanfield_bridge.py",
+        "evidence/continuum/meanfield/meanfield_receipt.json",
+        "evidence/continuum/review/review_receipt.json",
+        "evidence/lean/receipt.json"
+      ],
+      "limits": [
+        "Constants depend on fixed cutoffs and can require very large populations; no efficiency or cutoff-uniform rate is asserted.",
+        "Fixed-k propagation of chaos does not make the entire many-body state norm-close to a product.",
+        "This is a collective weak-coupling/classicalization family, not fixed-Newton-constant ultraviolet refinement."
+      ],
+      "bounds": {
+        "deviation": "D_N(t)<=exp(C t)[D_N(0)+b^2 t/N^2]",
+        "casimir": "S_N=2 beta_N+(d-1)/N",
+        "marginal": "norm1(rho_N^(k)-rho^tensor_k)<=2sqrt(k beta_N)<=sqrt(2k S_N)"
+      }
+    },
+    {
+      "id": "CONTINUUM.COLLECTIVE_MASS_CLOCK",
+      "introduced_in": "3.0",
+      "statement": "The collective relativistic parcel Hamiltonian converges to the mean-energy mass law with the proper-flow Schrodinger clock; its actual target/background variations converge to the corresponding source/stress variations.",
+      "assumptions": [
+        "Augmented composite parcel with positive rest mass m0, positive internal operator and collective internal energy A_N(h).",
+        "Quantum generator N sqrt(P_N^2+[m0+A_N(h(q(X_N)))]^2), or specified positive ADM lapse ordering sqrt(L_poly B L_poly) with positive lapse.",
+        "Use the bounded-algebra concentration/resolvent estimates, localized phase-space preparation and fixed regulator constants; prescribe a smooth background h3.",
+        "Symmetrically ordered shift terms are self-adjoint; total coordinate-time energy need not be nonnegative for arbitrary ADM shift."
+      ],
+      "proof_status": {
+        "analytic": "Positive functional calculus, Frechet differentiation and the relativistic Legendre identity give the limiting parcel equations and worldline/state action.",
+        "formal": "Positive_mass_clock certifies the scalar clock denominator and Legendre identity; operator limit and source variations are analytic rather than fully formalized."
+      },
+      "execution_status": "Noncommuting square-root and source controls, exact binomial coherence tests, direct partial traces and moving-parcel controls passed.",
+      "evidence": [
+        "docs/QUANTUM_TO_PARCELS.md",
+        "docs/MATTER_CONTINUUM.md",
+        "formal/ContinuumCertificates.lean",
+        "evidence/continuum/meanfield/meanfield_receipt.json",
+        "evidence/continuum/moving_parcels/moving_parcels_receipt.json"
+      ],
+      "limits": [
+        "The single-probe expectation of a square root generally differs from the square root of mean internal energy; collective preparation is essential.",
+        "The microscopic transport architecture is added structure, not selected by the earlier oscillator Hamiltonian alone.",
+        "This uses the h3 flow clock and does not establish ordinary minimally coupled four-dimensional matter."
+      ],
+      "formulas": {
+        "classical_energy": "E=sqrt(p^2+epsilon^2), epsilon=m0+Tr(rho h)",
+        "proper_clock": "d tau/dt=epsilon/E in a local zero-shift orthonormal frame; ADM factor L epsilon/sqrt(gamma^ij p_i p_j+epsilon^2)",
+        "internal_equation": "i hbar d psi/d tau=h psi up to state phase"
+      }
+    },
+    {
+      "id": "CONTINUUM.MATERIAL_RECIPROCAL_LIMIT",
+      "introduced_in": "3.0",
+      "statement": "At fixed finite geometric Galerkin dimension and internal cutoff, the augmented large-population family reaches a nonlinear covariant matter continuum with reciprocal projected shape response on prescribed h3 before caustics.",
+      "assumptions": [
+        "Compact smooth material-label domain and positive smooth weights; monokinetic future-timelike flow with a common positive Jacobian and proper-clock margin.",
+        "Keep a finite smooth geometric field basis, including the constant twist-shift mode; its positive kinetic matrix and reciprocal parcel/shape vector field remain regular.",
+        "Keep finite internal cutoff and localization/Fourier controls for the main endpoint; forces and parcel dynamics are variations of the same Hamiltonian.",
+        "Midpoint quadrature, material derivatives and Lipschitz constants are bounded on the common interval; number rounding and induced trajectory errors are included.",
+        "Choose positive coefficient-approximation accuracy and population using actual cutoff-dependent constants; geometric coefficient and population scale extensively and action is normalized by N."
+      ],
+      "proof_status": {
+        "analytic": "Quantum concentration composes with nonlinear reciprocal material quadrature; precaustic change of variables gives the Brown-type covariant state-fluid action with projected shape equations.",
+        "formal": "Scalar Gronwall and diagonal bookkeeping are certified; full material-flow/action equivalence and nonlinear continuum argument are not formalized in Lean."
+      },
+      "execution_status": "92 field/material exact checks, nonlinear reciprocal material-grid convergence, moving parcels and 10 synthesis identities passed; independent chain review completed before authoring.",
+      "evidence": [
+        "docs/QUANTUM_TO_PARCELS.md",
+        "docs/MATTER_CONTINUUM.md",
+        "evidence/continuum/frozen/SYNTHESIS.md",
+        "evidence/continuum/field/field_continuum_receipt.json",
+        "evidence/continuum/moving_parcels/moving_parcels_receipt.json",
+        "evidence/continuum/synthesis/synthesis_receipt.json",
+        "evidence/continuum/review/REVIEW.md"
+      ],
+      "limits": [
+        "Main endpoint holds at fixed geometric and internal cutoffs on prescribed h3; it does not remove the nonlinear geometric cutoff or solve Einstein constraints.",
+        "Only retained-mode/projected twist closure follows at fixed geometric basis; pointwise F=dA reconstruction is not established by that alone.",
+        "Pressureless single-flow closure is restricted to prepared data before caustics."
+      ],
+      "classical_bound": "E_h(t)<=exp(Ct)E_h(0)+Q_T h^2[exp(Ct)-1]/C, with t replacing the last quotient when C=0"
+    },
+    {
+      "id": "CONTINUUM.STRONG_QUANTUM_CURRENT_CONTACT",
+      "introduced_in": "3.0",
+      "statement": "A specified symmetrized collective-current observable converges strongly enough to control its ordered quadratic contact functional, without assuming independent parcels.",
+      "assumptions": [
+        "Smooth normalized even mollifier with square-integrable derivatives through order two; controlled smoothing bias and material midpoint errors.",
+        "Commuting parcel position components, bounded self-adjoint amplitudes using collective internal charge, and RMS concentration of position, velocity, charge and target fields.",
+        "Current ordering is half the anticommutator of the position kernel and amplitude; contact ordering is h^ab(lambda_hat Jhat_a)^dagger(lambda_hat Jhat_b).",
+        "Prescribed bounded metric/inverse metric; fixed geometric/internal cutoff constants retained; all rounding, coefficient-approximation and induced path/amplitude errors included."
+      ],
+      "proof_status": {
+        "analytic": "Spectral calculus, ordered product telescoping and L2 bounds yield contact-functional convergence; a sufficient fixed-cutoff d=2 diagonal is explicit.",
+        "formal": "ContinuumCertificates verifies scalar and real-Hilbert quadratic-error consequences plus population/kernel/rounding balances, not the preceding quantum kernel estimate."
+      },
+      "execution_status": "Strong current/contact controls, synthesis identities and an independent noncommuting-current control passed.",
+      "evidence": [
+        "docs/MATTER_CONTINUUM.md",
+        "docs/CONTINUUM_OBSTRUCTIONS.md",
+        "formal/ContinuumCertificates.lean",
+        "evidence/continuum/field/field_continuum_receipt.json",
+        "evidence/continuum/synthesis/synthesis_receipt.json",
+        "evidence/continuum/review/review_receipt.json"
+      ],
+      "limits": [
+        "Weak convergence alone cannot determine J^2.",
+        "This is convergence of a declared ordered observable, not exact scalar/connection dualization of the finite-population quantum theory.",
+        "Finite Fock projection is not exactly shear covariant, and finite geometric modes do not give full local twist closure."
+      ],
+      "diagonal": {
+        "parameters": "h=s^5, eta=s^2, N>=A^2 s^(-26), 0<s<=1; A retains the fixed-cutoff physical-observable constants.",
+        "rate": "O(h^(4/5)) current/contact control at fixed cutoffs; no D-uniform or nonlinear geometric-cutoff rate."
+      }
+    },
+    {
+      "id": "CONTINUUM.ORDERED_OSCILLATOR_REMOVAL",
+      "introduced_in": "3.0",
+      "statement": "The limiting classical parcel/state system admits conditional ordered removal of the internal oscillator cutoff while the geometric basis remains fixed.",
+      "assumptions": [
+        "One common smooth time interval with strict compact target, proper-clock and precaustic Jacobian margins.",
+        "Uniform higher number moments and the label-weighted regularity required by current/source derivatives; smooth Gaussian preparations supply all initial number moments.",
+        "Quadratic internal dynamics; weighted Duhamel and neighboring-level moment bounds uniform in cutoff on the regular region.",
+        "Tolerance order retains all constants: choose smoothing width, then internal cutoff, then material spacing, then positive polynomial accuracy, then population; no fixed error is subsequently multiplied by an uncontrolled kernel divergence."
+      ],
+      "proof_status": {
+        "analytic": "Weighted moment/Duhamel estimates and reciprocal finite-basis Gronwall give ordered internal removal; Gaussian data have exponential tail controls.",
+        "formal": "Weighted oscillator/domain and ordered-limit arguments are not formalized in Lean."
+      },
+      "execution_status": "Fock comparison and exact shear-boundary-defect controls passed; analytic weighted estimates and limit ordering reviewed independently.",
+      "evidence": [
+        "docs/MATTER_CONTINUUM.md",
+        "docs/QUANTUM_TO_PARCELS.md",
+        "evidence/continuum/frozen/SYNTHESIS.md",
+        "evidence/continuum/field/field_continuum_receipt.json",
+        "evidence/continuum/review/REVIEW.md"
+      ],
+      "limits": [
+        "This is a conditional ordered corollary, not a cutoff-uniform assertion for arbitrary finite-population entangled states.",
+        "No D-uniform h^(4/5) rate or nonlinear geometric-cutoff removal follows.",
+        "Hard Fock projection has a retained shear boundary defect; its expectation vanishes only with sufficient uniform higher moments."
+      ]
+    },
+    {
+      "id": "CONTINUUM.LINEARIZED_SPATIAL_LIMIT",
+      "introduced_in": "3.0",
+      "statement": "The reciprocal quadratic/linearized sector has a controlled full smooth spatial continuum on the specified Einstein-dust background, with a separate quantum fluctuation term.",
+      "assumptions": [
+        "h3=-dt^2+t^2(dx^2+dy^2), n=n0/t^2, n0 m0=2f, matched ground target/probe and t>=t0>0.",
+        "First-order shape/internal perturbations; metric, velocity and density perturbations may vanish at this order. The quadratic quantum regulator has exact classical first-moment equations.",
+        "Periodic spatial domain, centered lattice symbol and spectral-projection initial data; Q^2=sum_k |k|^6 H_k(t0)<infinity.",
+        "Initial quantum centered fluctuation energy in the lattice Hamiltonian is <=delta_initial^2; common constant zero mode is separately localized when coordinate observables are required."
+      ],
+      "proof_status": {
+        "analytic": "Mode-energy work identity, lattice-symbol bound, smooth Fourier tail and covariance-energy conversion prove the whole-field energy-norm estimate.",
+        "formal": "The spatial field estimate and background equations are analytic/symbolic rather than formalized by the scalar continuum certificates."
+      },
+      "execution_status": "Exact background, Hamiltonian and corrected-current controls passed; four grids have endpoint mode convergence orders 2.0105,2.0028,2.0007 below the analytic bounds.",
+      "evidence": [
+        "docs/LINEARIZED_SPATIAL_LIMIT.md",
+        "scripts/continuum_checks/verify_field_continuum.py",
+        "evidence/continuum/field/field_continuum_receipt.json",
+        "evidence/continuum/review/REVIEW.md"
+      ],
+      "limits": [
+        "A tangent-sector theorem does not remove the full nonlinear geometric cutoff or quantize Einstein constraints.",
+        "Energy is a seminorm on the common constant configuration; it does not control absolute zero-mode variance without extra localization.",
+        "Background corrected twist flux is generally nonzero; global bundle/flux data are required beyond local reconstruction."
+      ],
+      "bound": "sqrt(E_RMS(T))<=(pi/2)delta_initial+(pi/24)h^2 log(T/t0)Q+(h/pi)^3 Q",
+      "normalization_note": "The pi/2 factor converts lattice fluctuation energy to continuum energy and cannot be omitted."
+    },
+    {
+      "id": "CONTINUUM.RAW_REFINEMENT_OBSTRUCTION",
+      "introduced_in": "3.0",
+      "statement": "The old target grid does not create physical transport, and unsubtracted fixed-occupancy physical-cell refinement with I_cell=f v_cell has a divergent total-energy lower bound.",
+      "assumptions": [
+        "Original grid discretizes hyperbolic shape configuration space and oscillator Fock space; it has no physical parcel positions, density or spacetime-current observables.",
+        "For the energy bound, compact-support hyperbolic kinetic form/Friedrichs extension gives -Delta_G>=1/4.",
+        "Physical cells of volume v_cell=h^d cover V, inertia is f v_cell with fixed hbar,f>0, and oscillator excitation/intercell gradient contributions are nonnegative."
+      ],
+      "proof_status": {
+        "analytic": "Hardy completion proves the target spectral floor; summing per-cell lower bounds applies even to correlated states.",
+        "formal": "The Hardy spectral inequality and operator lower bound are not formalized in Lean."
+      },
+      "execution_status": "Exact obstruction checks passed.",
+      "evidence": [
+        "docs/CONTINUUM_OBSTRUCTIONS.md",
+        "scripts/continuum_checks/verify_obstructions.py",
+        "evidence/continuum/obstructions/obstruction_receipt.json"
+      ],
+      "limits": [
+        "This rejects the stated unsubtracted fixed-parameter refinement, not all possible renormalizations or alternative scalings.",
+        "The augmented family changes inertia/population and normalizes energy, suppressing this particular floor when N v_cell grows."
+      ],
+      "lower_bound": "H_total>=hbar^2 V/(8 f v_cell^2)=hbar^2 V/(8 f h^(2d))"
+    },
+    {
+      "id": "CONTINUUM.FROZEN_BRANCH_PURITY_OBSTRUCTION",
+      "introduced_in": "3.0",
+      "statement": "Infinite shape inertia alone does not produce a pure local probe: the exact selected frozen-branch example has reduced purity 25/34.",
+      "assumptions": [
+        "Equal coherent superposition of orthogonal frozen shape branches M_plus=diag(exp(r),exp(-r)) and its swap; initial probe oscillator vacuum.",
+        "Selected quadratic branch Hamiltonians and zero shape kinetic term; r=log(2), t=pi/(2omega)."
+      ],
+      "proof_status": {
+        "analytic": "Exact conditional symplectic evolution and Gaussian overlap give purity (1+F)/2 with F=8/17 at the stated point.",
+        "formal": "Not formalized in Lean."
+      },
+      "execution_status": "28-check obstruction suite includes the identities; Fock cutoffs 32,48,64 approach the purity with errors approximately 1.95e-8,1.63e-11,1.40e-14.",
+      "evidence": [
+        "docs/CONTINUUM_OBSTRUCTIONS.md",
+        "evidence/continuum/obstructions/obstruction_receipt.json"
+      ],
+      "limits": [
+        "The full state remains pure and unitary; the reduced state is mixed through correlations.",
+        "The positive population theorem requires concentrated well-prepared data and fixed-order marginal convergence; it does not claim whole-state product closure."
+      ]
+    },
+    {
+      "id": "CONTINUUM.WEAK_CURRENT_DEFECT",
+      "introduced_in": "3.0",
+      "statement": "Weak convergence of smooth timelike currents can leave a nonzero quadratic contact defect, so a weak current limit alone is insufficient.",
+      "assumptions": [
+        "On a periodic coordinate J_n^0=j0+a sin(nx), J_n^i=0 and j0>|a|; fixed Lorentzian contraction.",
+        "Weak convergence tested against smooth functions."
+      ],
+      "proof_status": {
+        "analytic": "Oscillatory integration gives J_n weakly approaching (j0,0) while J_n.J_n weakly approaches -j0^2-a^2/2.",
+        "formal": "The counterexample is analytic/symbolic; later quadratic-error consequences from strong norms are formally certified separately."
+      },
+      "execution_status": "Exact weak-defect and kernel controls passed in the obstruction suite.",
+      "evidence": [
+        "docs/CONTINUUM_OBSTRUCTIONS.md",
+        "docs/MATTER_CONTINUUM.md",
+        "evidence/continuum/obstructions/obstruction_receipt.json",
+        "formal/ContinuumCertificates.lean"
+      ],
+      "limits": [
+        "Strong L2 control or another justified product-compactness argument is needed for the contact term.",
+        "No unregulated square of a delta-function current is defined."
+      ]
     }
   ],
   "further_context": [
@@ -727,14 +1017,23 @@
     "docs/CURRENT_AND_RECONSTRUCTION.md",
     "docs/QUADRATIC_SELECTION.md",
     "docs/RESPONSE_TOMOGRAPHY.md",
-    "evidence/extensions/frozen/extensions_freeze.json"
+    "evidence/extensions/frozen/extensions_freeze.json",
+    "docs/QUANTUM_TO_PARCELS.md",
+    "docs/MATTER_CONTINUUM.md",
+    "docs/LINEARIZED_SPATIAL_LIMIT.md",
+    "docs/CONTINUUM_OBSTRUCTIONS.md",
+    "evidence/continuum/frozen/continuum_global_freeze.json",
+    "evidence/continuum/frozen/SYNTHESIS.md",
+    "docs/CONTINUUM_CONTRACT.md"
   ],
   "extension_relationships": [
-    "The original two-orbit shape matrix and the new Killing norm/twist matrix parameterize the same type of hyperbolic target but are different geometric dictionaries.",
-    "The original cylindrical vacuum equations are an explicitly checked further symmetry-restricted sector of the selected one-Killing action.",
-    "The positive fully quantum cell and covariant variational state-fluid are distinct constructions; no controlled cell-to-fluid continuum or mean-field limit is derived.",
-    "The sourced reconstructed four-metric is not proved to arise from ordinary minimally coupled four-dimensional matter; the constant gap uses the three-dimensional Einstein-frame clock.",
-    "The full-4D quadratic discriminator uses extra fixed-source calibrations and a separate finite action class; it is not derived from the Gaussian state dictionary alone."
+    "The original two-orbit shape matrix and the new Killing norm/twist matrix share a hyperbolic target type but have distinct geometric dictionaries.",
+    "Original cylindrical vacuum equations are an explicitly checked further symmetry-restricted sector of the selected one-Killing action.",
+    "Edition 3.0 supplies a controlled bridge from an explicitly augmented localized large-population family to the nonlinear matter action with projected shape response, at fixed geometric/internal cutoffs on prescribed h3 before caustics.",
+    "The unchanged single-probe target-grid regulator is not that augmented family; fixed-occupancy grid refinement does not suppress its correlations or produce physical transport.",
+    "Ordered full-oscillator removal needs a common regular interval and higher moments; a separate quadratic tangent theorem removes spatial discretization only in its linearized sector.",
+    "The nonlinear geometric cutoff and Einstein constraints remain open. The sourced four-metric is not proved to be ordinary minimally coupled four-dimensional matter; the clock calibration remains three-dimensional.",
+    "The full-4D quadratic discriminator retains its own fixed-source premises and finite action class; the continuum construction does not remove those conditions."
   ],
   "provenance": {
     "original_release": "https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v1.0.0",
@@ -743,6 +1042,24 @@
     "extension_freeze": "evidence/extensions/frozen/extensions_freeze.json",
     "extension_independent_review": "evidence/extensions/review/REVIEW.md",
     "motivating_review_manifest": "evidence/extensions/review_input_manifest.json",
-    "motivating_review_raw_contents_redistributed": false
+    "motivating_review_raw_contents_redistributed": false,
+    "edition_2_release": "https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v2.0.1",
+    "edition_2_formal_receipt": "evidence/baseline_v2/lean/receipt.json",
+    "continuum_freeze": "evidence/continuum/frozen/continuum_global_freeze.json",
+    "continuum_independent_review": "evidence/continuum/review/REVIEW.md",
+    "edition_2_patch_note": "v2.0.1 preserves the edition-2 package with a CI-only patch; baseline bc1a63feffc206dbb682dd78f44f977025b0c2ba."
+  },
+  "main_endpoint": {
+    "status": "proved_conditional_fixed_cutoff_matter_continuum",
+    "microscopic_family": "Explicitly augmented localized large-population weak-coupling family with physical transport and collective internal masses.",
+    "retained": "Finite geometric Galerkin dimension and internal cutoff for the main theorem; prescribed h3; smooth precaustic interval.",
+    "ordered_corollary": "Full oscillator removal conditional on a common regular interval and required uniform higher number/label moments.",
+    "open": [
+      "Nonlinear geometric Galerkin cutoff removal",
+      "Pointwise twist closure from the fixed geometric basis alone",
+      "Einstein constraint limit and full constrained quantum-gravity continuum",
+      "Ordinary minimally coupled four-dimensional matter uplift",
+      "Experimental applicability"
+    ]
   }
 }

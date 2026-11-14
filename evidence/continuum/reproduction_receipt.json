@@ -1,0 +1,63 @@
+{
+  "schema": "voss.controlled-continuum-reproduction.v1",
+  "status": "PASS",
+  "executed_utc": "2026-11-14T05:09:33.393859+00:00",
+  "python": "3.12.13",
+  "runs": [
+    {
+      "task": "meanfield",
+      "script": "scripts/continuum_checks/verify_meanfield_bridge.py",
+      "source_sha256": "0e51aba7d824d67a9def6b09a346e4ee6add482cae4a8944935964abda99d14e",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "meanfield/meanfield_receipt.json",
+      "exact_check_count": 164
+    },
+    {
+      "task": "field",
+      "script": "scripts/continuum_checks/verify_field_continuum.py",
+      "source_sha256": "88173e8d7eb44cb49b7d0a51c3792b1eba854465ce1b59c0b29d89aca2027e22",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "field/field_continuum_receipt.json",
+      "exact_check_count": 92
+    },
+    {
+      "task": "obstructions",
+      "script": "scripts/continuum_checks/verify_obstructions.py",
+      "source_sha256": "d3bc3fc36ad26cdf01250a19a833cf9e86baed4e48b3bff7d31de1128136b4d6",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "obstructions/obstruction_receipt.json",
+      "exact_check_count": 28
+    },
+    {
+      "task": "synthesis",
+      "script": "scripts/continuum_checks/verify_synthesis.py",
+      "source_sha256": "c7732a76069ad535762b3b1672bdc103b86186f0b85f562878e7109b3a097cab",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "synthesis/synthesis_receipt.json",
+      "exact_check_count": 10
+    },
+    {
+      "task": "moving_parcels",
+      "script": "scripts/continuum_checks/verify_moving_parcels.py",
+      "source_sha256": "175fc5d84fd4af920cfc139225cf2cd63e304d27151a42cc9fa58c77073351e5",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "moving_parcels/moving_parcels_receipt.json",
+      "exact_check_count": null
+    },
+    {
+      "task": "independent_review",
+      "script": "scripts/continuum_checks/review_positive_bridge.py",
+      "source_sha256": "ec675a390f98d65a93d3df428776c6a75398e6b07a26fcf98bef8a48a17ea647",
+      "exit_code": 0,
+      "status": "PASS",
+      "receipt": "independent_review/review_receipt.json",
+      "exact_check_count": 12
+    }
+  ],
+  "scope": "Controlled augmented matter-sector limit at fixed geometric cutoffs, separate linearized spatial limit, and explicit obstruction controls. No full nonlinear geometric/Einstein-constraint continuum is asserted."
+}

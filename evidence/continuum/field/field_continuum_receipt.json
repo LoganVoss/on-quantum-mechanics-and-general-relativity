@@ -1,0 +1,586 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "source_sha256": "88173e8d7eb44cb49b7d0a51c3792b1eba854465ce1b59c0b29d89aca2027e22",
+  "exact_check_count": 92,
+  "checks": [
+    {
+      "name": "dust_Einstein_00",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_01",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_02",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_10",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_11",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_12",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_20",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_21",
+      "residual": "0"
+    },
+    {
+      "name": "dust_Einstein_22",
+      "residual": "0"
+    },
+    {
+      "name": "dust_number_conservation",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_00",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_00",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_01",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_01",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_02",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_02",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_03",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_03",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_04",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_04",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_05",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_05",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_10",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_10",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_11",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_11",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_12",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_12",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_13",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_13",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_14",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_14",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_15",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_15",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_20",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_20",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_21",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_21",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_22",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_22",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_23",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_23",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_24",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_24",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_25",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_25",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_30",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_30",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_31",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_31",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_32",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_32",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_33",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_33",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_34",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_34",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_35",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_35",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_40",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_40",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_41",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_41",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_42",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_42",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_43",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_43",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_44",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_44",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_45",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_45",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_50",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_50",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_51",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_51",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_52",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_52",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_53",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_53",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_54",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_54",
+      "residual": "0"
+    },
+    {
+      "name": "linear_Hamiltonian_generator_55",
+      "residual": "0"
+    },
+    {
+      "name": "linear_energy_exchange_55",
+      "residual": "0"
+    },
+    {
+      "name": "explicit_cosmological_work",
+      "residual": "0"
+    },
+    {
+      "name": "linear_total_twist_current_closure",
+      "residual": "0"
+    },
+    {
+      "name": "background_twist_flux_closed",
+      "residual": "0"
+    },
+    {
+      "name": "background_shifted_curvature_zero",
+      "residual": "0"
+    },
+    {
+      "name": "background_total_current_density_constant",
+      "residual": "0"
+    },
+    {
+      "name": "current_bias_order",
+      "residual": "0"
+    },
+    {
+      "name": "midpoint_current_order",
+      "residual": "0"
+    },
+    {
+      "name": "quantum_position_order",
+      "residual": "0"
+    },
+    {
+      "name": "population_exponent",
+      "residual": "0"
+    },
+    {
+      "name": "finite_Fock_shear_defect_vanishes_below_boundary",
+      "residual": "0"
+    }
+  ],
+  "linearized_covariant_spatial_limit": {
+    "background": "2+1Einstein dust: a=t,n=n0/t\u00b2,n0*m0=2f; shape/probe matched ground. First-order density/velocity/metric perturbations zero.",
+    "parameters": {
+      "f": 1,
+      "n0": 2,
+      "m0": 1,
+      "hbar": 1,
+      "omega": 1,
+      "mode": [
+        1,
+        2
+      ],
+      "time": [
+        1.0,
+        2.0
+      ]
+    },
+    "rows": [
+      {
+        "grid_per_direction": 16,
+        "h": 0.39269908169872414,
+        "symbol_error": 0.21422035502620673,
+        "symbol_bound": 0.21846780575328006,
+        "endpoint_error": 0.05958655399003008,
+        "rigorous_Duhamel_bound": 5.689230528576495,
+        "energy_error": 0.04079879233952801,
+        "sharp_energy_estimate": 0.1040429908105283,
+        "smooth_mode_bound": 0.24348418780871364
+      },
+      {
+        "grid_per_direction": 32,
+        "h": 0.19634954084936207,
+        "symbol_error": 0.05434931288840694,
+        "symbol_bound": 0.054616951438320016,
+        "endpoint_error": 0.014788186632722156,
+        "rigorous_Duhamel_bound": 1.4223076321441237,
+        "energy_error": 0.010234362484692701,
+        "sharp_energy_estimate": 0.02626497242549465,
+        "smooth_mode_bound": 0.06087104695217841,
+        "observed_order": 2.0105416597846344
+      },
+      {
+        "grid_per_direction": 64,
+        "h": 0.09817477042468103,
+        "symbol_error": 0.013637476280925043,
+        "symbol_bound": 0.013654237859580004,
+        "endpoint_error": 0.0036898392723766706,
+        "rigorous_Duhamel_bound": 0.3555769080360309,
+        "energy_error": 0.0025606481159440417,
+        "sharp_energy_estimate": 0.0065823869992146875,
+        "smooth_mode_bound": 0.015217761738044603,
+        "observed_order": 2.0028152764654514
+      },
+      {
+        "grid_per_direction": 128,
+        "h": 0.04908738521234052,
+        "symbol_error": 0.0034125113314775746,
+        "symbol_bound": 0.003413559464895001,
+        "endpoint_error": 0.0009220026131699572,
+        "rigorous_Duhamel_bound": 0.08889422700900773,
+        "energy_error": 0.0006402889007880566,
+        "sharp_energy_estimate": 0.0016466097422831382,
+        "smooth_mode_bound": 0.0038044404345111507,
+        "observed_order": 2.0007152298460054
+      }
+    ],
+    "local_reconstruction": "Ground-state shear current J0=n0*hbar/(4t\u00b2) gives F12=-n0*hbar/(4f), a closed nonzero flux. Global torus exactness/flux quantization is not assumed.",
+    "global_field_bound": "For Q\u00b2=sum|k|^6 H_k(t0)<infinity and spectralprojectioninitialdata: sqrt(continuum_errorenergy)<=(pi/2)*delta_initial+(pi/24)h\u00b2log(T/t0)Q+(h/pi)^3Q. delta_initial\u00b2 bounds initial lattice quantum fluctuation energy; H_k<=pi\u00b2*H_h/4 on resolved modes. This is the quadratic linearized theory.",
+    "zero_mode_caveat": "The energy seminorm does not control the common constant configuration variance. Localization and separate finite-dimensional covariance propagation of that mode are additionally required for configuration-observable claims."
+  },
+  "nonlinear_reciprocal_label_limit": {
+    "fixed_background": "a=t; one retained homogeneous shape mode; continuumGaussianinternalprobes",
+    "time": [
+      1,
+      1.5
+    ],
+    "gauss_reference_difference": 1.2682020582487941e-14,
+    "rows": [
+      {
+        "material_grid_per_direction": 4,
+        "h": 0.25,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 0.0001590470572875759,
+        "minimum_probe_height": 0.8963184958642737
+      },
+      {
+        "material_grid_per_direction": 8,
+        "h": 0.125,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 3.979469973935065e-05,
+        "minimum_probe_height": 0.8778494621079526,
+        "observed_order": 1.9988054832071902
+      },
+      {
+        "material_grid_per_direction": 16,
+        "h": 0.0625,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 9.95073985962143e-06,
+        "minimum_probe_height": 0.8684944656029078,
+        "observed_order": 1.9997005885060628
+      },
+      {
+        "material_grid_per_direction": 32,
+        "h": 0.03125,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 2.487814112282389e-06,
+        "minimum_probe_height": 0.8637912270811272,
+        "observed_order": 1.9999251048879567
+      }
+    ]
+  },
+  "strong_current_and_contact_control": {
+    "profile": "J0=2+0.3cos x cos y on torus; spatialcurrentzero",
+    "rows": [
+      {
+        "material_grid_per_direction": 16,
+        "h": 0.39269908169872414,
+        "eta": 0.6880562660576856,
+        "current_L2_error": 0.35543898504460353,
+        "contact_mean_error": 0.013770811076778244,
+        "rate_normalized_L2": 0.7507877043132646
+      },
+      {
+        "material_grid_per_direction": 32,
+        "h": 0.19634954084936207,
+        "eta": 0.5214491405774601,
+        "current_L2_error": 0.22438187546193597,
+        "contact_mean_error": 0.00943813525223458,
+        "rate_normalized_L2": 0.8252088209528687
+      },
+      {
+        "material_grid_per_direction": 64,
+        "h": 0.09817477042468103,
+        "eta": 0.39518455048293283,
+        "current_L2_error": 0.13626999131197964,
+        "contact_mean_error": 0.006036041617023535,
+        "rate_normalized_L2": 0.872570071098149
+      }
+    ]
+  },
+  "Gaussian_internal_cutoff": {
+    "constant_shape": [
+      [
+        0.8333333333333334,
+        0.25
+      ],
+      [
+        0.25,
+        1.2750000000000001
+      ]
+    ],
+    "time": 1.6,
+    "uniform_tail_theta": 0.3164277875039595,
+    "rows": [
+      {
+        "cutoff": 8,
+        "ray_error": 0.006223936173896227,
+        "rigorous_uniform_tail_Duhamel_bound": 0.04448357025560708,
+        "covariance_error": 0.0030281602873529767
+      },
+      {
+        "cutoff": 12,
+        "ray_error": 0.00055944702700519,
+        "rigorous_uniform_tail_Duhamel_bound": 0.005749939510038283,
+        "covariance_error": 4.171378221506927e-05
+      },
+      {
+        "cutoff": 16,
+        "ray_error": 5.169419643328231e-05,
+        "rigorous_uniform_tail_Duhamel_bound": 0.0007054809038533177,
+        "covariance_error": 5.327628254114813e-07
+      },
+      {
+        "cutoff": 24,
+        "ray_error": 4.6049169124252926e-07,
+        "rigorous_uniform_tail_Duhamel_bound": 9.67443417754324e-06,
+        "covariance_error": 7.65814078818039e-11
+      },
+      {
+        "cutoff": 32,
+        "ray_error": 0.0,
+        "rigorous_uniform_tail_Duhamel_bound": 1.2307282447787857e-07,
+        "covariance_error": 9.992007221626409e-15
+      }
+    ]
+  },
+  "finite_Fock_shear_boundary_defect": {
+    "cutoff": 6,
+    "chi": "1/3",
+    "lambda": 2,
+    "defect_diagonal": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "5/4",
+      "7/4"
+    ],
+    "frobenius_squared": "37/8",
+    "scope": "P_D h P_D and the compressed Q\u00b2 generator do not satisfy the full shear Noether identity. Full selected Gaussian/current identities are recovered in the ordered D\u2192infinity limit with weighted tail control, not exactly at finite D."
+  },
+  "limits": [
+    "No nonlinear spatial Galerkin cutoff removal is proved.",
+    "The material positions/current architecture and gradient couplings are additions to the shipped single-cell quantum regulator.",
+    "Finite-time linearized spatial theorem and nonlinear fixed-mode material theorem have distinct scopes.",
+    "Strong-current/contact result uses smoothing; unsmoothed point-current squares are undefined."
+  ]
+}

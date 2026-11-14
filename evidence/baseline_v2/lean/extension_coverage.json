@@ -1,0 +1,110 @@
+{
+  "schema": "voss.extension-formal-coverage.v1",
+  "status": "fresh_build_passed",
+  "scope": "Algebraic consequences of explicit scalar residual, transfer, energy and force formulas; external derivations supply their physical interpretation.",
+  "module": "ExtensionCertificates.lean",
+  "new_theorem_count": 15,
+  "total_theorem_count": 63,
+  "total_proof_module_count": 9,
+  "public_repository_changed": false,
+  "prior_proof_sources_unchanged": {
+    "Integrability.lean": true,
+    "ThmA.lean": true,
+    "LaxCertificates.lean": true,
+    "PremiseObstructions.lean": true,
+    "ResidualInversion.lean": true,
+    "AnalyticBridge.lean": true,
+    "ChartGeometry.lean": true,
+    "ThmABridge.lean": true
+  },
+  "frozen_source_sha256": {
+    "work/extension_curvature/FROZEN_CURVATURE_FINDINGS.md": "ebef68f1d0c89e3f2b2dd9737388f0697e09ad8626fbb99da68be789ebf20df0",
+    "work/extension_dynamics/DYNAMICS_FROZEN.md": "e1d86dcfc9089d7c4d0d4c774e36ca10894f65a3428191d3efc12561959e2c28",
+    "work/extension_symmetry/FROZEN_ONE_KILLING_FINDINGS.md": "24123b7146807110e9e861c6f560e7d46c61f07c84f9eb4cbd5516c514db114d"
+  },
+  "coverage": [
+    {
+      "theorems": [
+        "helical_inverse",
+        "helical_selection"
+      ],
+      "certifies": "Invert the specified TT/RR scalar residuals and prove their simultaneous zero iff f=w and V=0.",
+      "assumptions": "Nonzero pitch and norm. The physical norm is positive, a narrower domain. Tensor/residual derivation is external."
+    },
+    {
+      "theorems": [
+        "helical_error_bounds"
+      ],
+      "certifies": "|f-w|≤norm*epsilon/pitch² and |V|≤2epsilon/norm.",
+      "assumptions": "Nonzero pitch, positive norm, bounds on both specified residuals."
+    },
+    {
+      "theorems": [
+        "zero_pitch_counterexample"
+      ],
+      "certifies": "At zero pitch and zero potential both scalar residuals vanish for arbitrary f,w.",
+      "assumptions": "None beyond real inputs; physical application uses positive norm."
+    },
+    {
+      "theorems": [
+        "sourced_inverse",
+        "sourced_selection",
+        "sourced_error_bounds"
+      ],
+      "certifies": "Invert yD=-16alpha-(16/3)beta, yR=-(13/8748)beta, zero-selector, and two sharp-form coefficient bounds.",
+      "assumptions": "These dimensionless dust/electrovac residual formulas are definitions here, not derived tensor statements. Sharpness itself is not formalized."
+    },
+    {
+      "theorems": [
+        "two_channel_response_inverse"
+      ],
+      "certifies": "Responses are nonzero and alpha,beta recovered from inverse response residuals of r2=1/(1-beta*z), r0=1/(1+(6alpha+2beta)*z).",
+      "assumptions": "Nonzero z and both denominators. The field-equation/Green-function derivation and physical measurement protocol are external."
+    },
+    {
+      "theorems": [
+        "response_error_bounds"
+      ],
+      "certifies": "Absolute errors of affine inverse: |(delta0+2delta2)/6|≤(epsilon0+2epsilon2)/6, |-delta2|≤epsilon2.",
+      "assumptions": "Two absolute inverse-response error envelopes."
+    },
+    {
+      "theorems": [
+        "mismatch_energy_nonnegative",
+        "mismatch_energy_zero_iff"
+      ],
+      "certifies": "Coordinate mismatch E=h*((x-u)²+(y-v)²)/(4*y*v) is nonnegative, and for h>0 vanishes iff x=u and y=v.",
+      "assumptions": "Positive upper-half-plane heights y,v; nonnegative h for positivity, positive h for equality. h denotes hbar*omega."
+    },
+    {
+      "theorems": [
+        "pure_energy_force_identity"
+      ],
+      "certifies": "y²[(listed x-derivative expression)²+(listed y-derivative expression)²]=E(E+h).",
+      "assumptions": "Nonzero y,v. Calculus identifying the rational expressions as derivatives, and the covariance/quantum interpretation, are external."
+    },
+    {
+      "theorems": [
+        "covariance_energy_force_identity",
+        "shifted_energy_force_identity"
+      ],
+      "certifies": "General covariance force²=E(E+h)-h²(det N-1)/4=(E+h/2)²-h²det N/4.",
+      "assumptions": "Nonzero y. Covariance entries are real scalars; positivity and quantum-state reconstruction are not claimed."
+    },
+    {
+      "theorems": [
+        "covariance_force_bound_and_equality"
+      ],
+      "certifies": "For det N≥1 and h>0, force²≤E(E+h), with equality iff det N=1.",
+      "assumptions": "Nonzero y, determinant lower bound, positive h. Does not formalize the Robertson-Schrodinger inequality or prove density-operator purity."
+    }
+  ],
+  "not_formalized": [
+    "Variational action classification or full one-Killing stationarity theorem",
+    "Helical curvature, dust/Maxwell tensors, curvature-squared response derivation",
+    "Quantum operator self-adjointness, spectral equality, ground-band leakage or evolution",
+    "Fidelity/energy analytic relationship or derivative identifications beyond the defined rational expressions",
+    "Sharpness witnesses, global PDE existence, gravitational constraints or interacting quantum continuum",
+    "Empirical applicability, physical calibration or novelty"
+  ]
+}

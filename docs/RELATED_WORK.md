@@ -35,3 +35,16 @@ The added theorems use established mechanisms with a newly explicit selection an
 | [Buoninfante et al., Dust collapse and horizon formation in Quadratic Gravity (2025)](https://arxiv.org/abs/2410.05941) | Related sourced FLRW precedent. The second, charged calibration supplies the independent coefficient channel in the present selector. |
 
 The supplied research review contributed the flat Hessian-probe comparison and identified the three extension questions. Its inputs are identified by hashes in the provenance record; its prose is not redistributed. The nonlinear dust–electrovac selector, explicit reciprocal-coupling chain, helical inverse calibration, and exact ground-band calculation are documented as derivations performed for this edition. Worldwide originality remains unestablished by the bounded comparison.
+
+## Controlled matter limits in edition 3
+
+Quantitative quantum-to-classical and quantum-to-fluid limits are established research areas. The contribution of this edition is the explicit construction and error bookkeeping for the selected interaction and its added collective-parcel architecture. The cited results provide context and methods; they do not automatically prove the limit for this regulator.
+
+| Primary source | Relationship to the controlled construction |
+|---|---|
+| [Golse, Mouhot & Paul, *On the Mean Field and Classical Limits of Quantum Mechanics* (2016)](https://arxiv.org/abs/1502.06143v4) | Quantitative many-body/Hartree comparison uniform in a classical limit, under its interaction assumptions. The present bounded-observable argument separately handles the positive relativistic square root and its source derivative. |
+| [Chen, Shen & Zhang, *On the mean-field and semiclassical limit from quantum N-body dynamics* (2025)](https://arxiv.org/abs/2304.03447v1) | Quantitative strong convergence of quantum mass and momentum densities to Euler–Poisson dynamics before blow-up, for their specified interactions. This is precedent for a controlled fluid limit, not a theorem about the matter architecture here. |
+| [Lions & Paul, *Sur les mesures de Wigner* (1993)](https://ems.press/journals/rmi/articles/5283) | Semiclassical measures and transport equations. A kinetic limit need not be a single-velocity dust closure; this bundle states and tests the additional preparation assumptions. |
+| [Berchio, Ganguly & Grillo, *Sharp Poincaré-Hardy and Poincaré-Rellich inequalities on the hyperbolic space* (2016 revision)](https://arxiv.org/abs/1507.02550v4) | The hyperbolic spectral floor is established mathematics. The obstruction note derives its consequence for the particular cell-inertia scaling used here. |
+
+Brown's fluid action, cited above, supplies the covariant variational framework. The new limit is restricted to a prescribed smooth background, fixed geometric resolution, and a regular interval before caustics. The separate linearized spatial theorem does not remove those restrictions from the nonlinear result.

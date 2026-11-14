@@ -1,7 +1,7 @@
 {
   "schema": "voss.reproduction.v1",
   "status": "PASS",
-  "executed_utc": "2026-11-13T19:54:13.435930+00:00",
+  "executed_utc": "2026-11-14T05:09:33.427994+00:00",
   "python": "3.12.13",
   "lean_requested": false,
   "runs": [
@@ -27,7 +27,7 @@
       "script_sha256": "f949517f4c8d383d144f058adf963196fb46d852244f2b358686fad8e996689d",
       "exit_code": 0,
       "log": "numerical_controls.log",
-      "log_sha256": "a3ccdcc91b5a1920f26c2f42bdbed1cde053e25761aa909052382d734bc9c45f"
+      "log_sha256": "1b9d08f5c5aab0f6d8de247ab5d0a346b57e6f439b30f20409a4346ce1378328"
     },
     {
       "task": "extensions",
@@ -36,6 +36,14 @@
       "exit_code": 0,
       "log": "extensions.log",
       "log_sha256": "dab1ba6b850f3f2100b5e94f885ae84ef4b787ab03357dbe0739cae608a77178"
+    },
+    {
+      "task": "continuum",
+      "script": "scripts/verify_continuum.py",
+      "script_sha256": "f1cdd1a49fda82792975d47e4fee93413b29f27ce18104057c2305540ceded60",
+      "exit_code": 0,
+      "log": "continuum.log",
+      "log_sha256": "5621d12aa3b0d8e3c06b9e48a5ad78bc19e90b0d0b5164f7d4dd371c3d17bacc"
     }
   ],
   "scope": "Exact checks and bounded synthetic numerical controls; see individual assumptions and receipts."

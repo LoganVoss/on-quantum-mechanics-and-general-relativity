@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "exact_check_count": 28,
+  "checks": [
+    {
+      "name": "conditional_mean_covariance_00",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_mean_covariance_01",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_mean_covariance_10",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_mean_covariance_11",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_covariance_determinant_plus",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_covariance_determinant_minus",
+      "residual": "0"
+    },
+    {
+      "name": "average_covariance_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "conditional_overlap_denominator",
+      "residual": "0"
+    },
+    {
+      "name": "quarter_period_exact_purity",
+      "residual": "0"
+    },
+    {
+      "name": "quarter_period_exact_linear_entropy",
+      "residual": "0"
+    },
+    {
+      "name": "initial_purity_loss_coefficient",
+      "residual": "0"
+    },
+    {
+      "name": "Hardy_identity_with_total_derivative",
+      "residual": "0"
+    },
+    {
+      "name": "raw_spatial_refinement_energy_floor",
+      "residual": "0"
+    },
+    {
+      "name": "large_N_per_copy_energy_floor",
+      "residual": "0"
+    },
+    {
+      "name": "two_spatial_dimensions_raw_h_minus_four",
+      "residual": "0"
+    },
+    {
+      "name": "two_stream_stress_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "single_stream_dust_rank_one",
+      "residual": "0"
+    },
+    {
+      "name": "two_stream_finite_example_determinant",
+      "residual": "0"
+    },
+    {
+      "name": "transport_Jacobian",
+      "residual": "0"
+    },
+    {
+      "name": "first_caustic_at_label_zero",
+      "residual": "0"
+    },
+    {
+      "name": "oscillatory_current_mean",
+      "residual": "0"
+    },
+    {
+      "name": "oscillatory_current_contact_defect",
+      "residual": "0"
+    },
+    {
+      "name": "two_dimensional_mollifier_squared_norm",
+      "residual": "0"
+    },
+    {
+      "name": "relativistic_proper_clock_derivative",
+      "residual": "0"
+    },
+    {
+      "name": "relativistic_convexity",
+      "residual": "0"
+    },
+    {
+      "name": "relativistic_third_derivative",
+      "residual": "0"
+    },
+    {
+      "name": "curvature_bound_first_step",
+      "residual": "0"
+    },
+    {
+      "name": "one_probe_Jensen_gap_squared",
+      "residual": "0"
+    }
+  ],
+  "selected_coupling_purity_control": [
+    {
+      "Fock_cutoff": 32,
+      "time": 1.5707963267948966,
+      "purity": 0.7352941371712659,
+      "branch_squared_overlap": 0.47058827434253575,
+      "absolute_purity_error": 1.952420702888702e-08,
+      "trace_error": 1.887379141862766e-15,
+      "distance_to_nearest_pure_state": 0.1570028154843932
+    },
+    {
+      "Fock_cutoff": 48,
+      "time": 1.5707963267948966,
+      "purity": 0.735294117663342,
+      "branch_squared_overlap": 0.4705882353266878,
+      "absolute_purity_error": 1.628308599066486e-11,
+      "trace_error": 1.6653345369377348e-15,
+      "distance_to_nearest_pure_state": 0.15700282970311363
+    },
+    {
+      "Fock_cutoff": 64,
+      "time": 1.5707963267948966,
+      "purity": 0.7352941176470729,
+      "branch_squared_overlap": 0.4705882352941355,
+      "absolute_purity_error": 1.3988810110276972e-14,
+      "trace_error": 4.884981308350689e-15,
+      "distance_to_nearest_pure_state": 0.15700282971497326
+    }
+  ],
+  "relativistic_parcel_controls": [
+    {
+      "copies": 1,
+      "energy_Jensen_gap": 0.052177633770947196,
+      "energy_bound": 0.5,
+      "proper_clock_bias": 0.06653215138138535,
+      "clock_bias_bound": 1.5,
+      "mean_absolute_clock_fluctuation": 0.12078825843198314,
+      "clock_fluctuation_bound": 1.0
+    },
+    {
+      "copies": 4,
+      "energy_Jensen_gap": 0.012327725796285272,
+      "energy_bound": 0.125,
+      "proper_clock_bias": 0.015398368116855132,
+      "clock_bias_bound": 0.375,
+      "mean_absolute_clock_fluctuation": 0.03920513144085182,
+      "clock_fluctuation_bound": 0.5
+    },
+    {
+      "copies": 16,
+      "energy_Jensen_gap": 0.0028727894845257396,
+      "energy_bound": 0.03125,
+      "proper_clock_bias": 0.00348888891232102,
+      "clock_bias_bound": 0.09375,
+      "mean_absolute_clock_fluctuation": 0.01824894397726329,
+      "clock_fluctuation_bound": 0.25
+    },
+    {
+      "copies": 64,
+      "energy_Jensen_gap": 0.0007036736557988199,
+      "energy_bound": 0.0078125,
+      "proper_clock_bias": 0.0008470264285370677,
+      "clock_bias_bound": 0.0234375,
+      "mean_absolute_clock_fluctuation": 0.008969983264408675,
+      "clock_fluctuation_bound": 0.125
+    },
+    {
+      "copies": 256,
+      "energy_Jensen_gap": 0.00017499973174173178,
+      "energy_bound": 0.001953125,
+      "proper_clock_bias": 0.0002101634306131972,
+      "clock_bias_bound": 0.005859375,
+      "mean_absolute_clock_fluctuation": 0.004466426673045551,
+      "clock_fluctuation_bound": 0.0625
+    }
+  ],
+  "conditional_collective_mass_bounds": {
+    "energy": "0<=E F(m0+A_N)-F(m0+mean h)<=Var(h)/(2 m0 N)",
+    "clock_mean_absolute": "E|Fprime(m0+A_N)-Fprime(m0+mean h)|<=sqrt(Var(h))/(m0 sqrtN)",
+    "clock_bias": "0<=Fprime(m0+mean h)-E Fprime(m0+A_N)<=3 Var(h)/(2 m0\u00b2 N)",
+    "domain": "Fixed classical momentum and geometry; nonnegative independent identical internal Hamiltonians, product preparation, m0>0 and finite variance. These are expectation bounds, not dynamical convergence."
+  },
+  "continuum_purity": "25/34 at shape branch r=ln2 and t=pi/(2omega)",
+  "raw_energy_floor": "hbar\u00b2 V/(8 f h^(2d)); d=2 gives h^-4",
+  "large_N_energy_floor_per_copy": "hbar\u00b2 V/(8 f N\u00b2 h^(2d))",
+  "current_contact_negative_control": "J_n^0=j0+a sin(nx),j0>|a|, converges weakly but J_n.J_n has defect -a\u00b2/2",
+  "mollified_current_variance_bound": "For independent weighted particles with finite E|a|\u00b2: integrated Euclidean variance <= E|a|\u00b2/(4*pi*N*eta\u00b2) in two spatial dimensions.",
+  "source_sha256": "d3bc3fc36ad26cdf01250a19a833cf9e86baed4e48b3bff7d31de1128136b4d6",
+  "inspected_regulator_sha256": "25beeb75cd67f717479d10233637002ab05aad082786c7de8b4e3488e1bec32a",
+  "elapsed_seconds": 0.2506756669608876,
+  "limits": [
+    "The frozen two-branch shape control tests failure of deterministic pure-state closure without concentration; it is not a no-go theorem for well-prepared limits.",
+    "The Hardy bound concerns the unsubtracted nonnegative model; renormalization/counterterms are not excluded.",
+    "The multistream test shows pressureless closure is extra structure; the original cell contains no particle transport coordinates.",
+    "No continuum dynamics or quantum gravitational constraints are proved by these controls."
+  ]
+}

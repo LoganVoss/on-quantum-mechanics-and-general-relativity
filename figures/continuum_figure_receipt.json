@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "matplotlib": "3.10.7",
+  "numpy": "2.3.5",
+  "plot_script_sha256": "410b584ed62c28e5f48913f0b078ecfd4c50831fa8d0989f31ca30d9d717baf7",
+  "inputs": {
+    "evidence/continuum/meanfield/meanfield_receipt.json": "69b1a9a684ddbcc29ce25c13427081511b2b7d84802350eefd27912c75ee72dd",
+    "evidence/continuum/field/field_continuum_receipt.json": "d926426722167af916a2aee6729cbd86efdc257231656dd420d0da4dfa38dda6"
+  },
+  "outputs": {
+    "continuum.png": "09d7f9c736fc14e1cb5e59c1d96ec827da9b2026e29afe99f65bde9a7d2c25ae",
+    "continuum.pdf": "5ee6aa2213f4c85f28062ae319e6e3f8572bc6b86644df972d5de91e6bc41e4e"
+  },
+  "dimensions_inches": [
+    11.6,
+    4.9
+  ],
+  "png_dpi": 300,
+  "panel_A": {
+    "parameters": {
+      "m0": 1.0,
+      "momentum": 0.7,
+      "time": 0.8,
+      "limiting_internal_frequency": 0.9061831399952655,
+      "max_second_derivative": 0.2694118396337784,
+      "coherence_convention": "rho_10; rho_01 is its conjugate"
+    },
+    "primitive_series": [
+      {
+        "population": 1,
+        "trace_norm_error": 0.006301342796206444,
+        "analytic_trace_bound": 0.21552947170702275
+      },
+      {
+        "population": 2,
+        "trace_norm_error": 0.006306260282001004,
+        "analytic_trace_bound": 0.16164710378026706
+      },
+      {
+        "population": 4,
+        "trace_norm_error": 0.0039059448037969866,
+        "analytic_trace_bound": 0.10054586736738597
+      },
+      {
+        "population": 8,
+        "trace_norm_error": 0.002104247744589851,
+        "analytic_trace_bound": 0.06258102035974747
+      },
+      {
+        "population": 16,
+        "trace_norm_error": 0.0010835929083200266,
+        "analytic_trace_bound": 0.039556281186007104
+      },
+      {
+        "population": 32,
+        "trace_norm_error": 0.0005488090619693876,
+        "analytic_trace_bound": 0.025485566486312314
+      },
+      {
+        "population": 64,
+        "trace_norm_error": 0.000276049160819955,
+        "analytic_trace_bound": 0.016732586644060844
+      },
+      {
+        "population": 128,
+        "trace_norm_error": 0.00013842214203852647,
+        "analytic_trace_bound": 0.01117169037296925
+      },
+      {
+        "population": 256,
+        "trace_norm_error": 6.930876244725629e-05,
+        "analytic_trace_bound": 0.007564040243007943
+      },
+      {
+        "population": 512,
+        "trace_norm_error": 3.467859181458923e-05,
+        "analytic_trace_bound": 0.005178876244007249
+      }
+    ],
+    "scope": "Algebraic controls and a solvable finite-internal-cutoff nonlinear collective parcel. Not a full field simulation or proof of unregularized quantum gravity."
+  },
+  "panel_B": {
+    "fixed_background": "a=t; one retained homogeneous shape mode; continuumGaussianinternalprobes",
+    "time": [
+      1,
+      1.5
+    ],
+    "reference_crosscheck_difference": 1.2682020582487941e-14,
+    "primitive_series": [
+      {
+        "material_grid_per_direction": 32,
+        "h": 0.03125,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 2.487814112282389e-06,
+        "minimum_probe_height": 0.8637912270811272,
+        "observed_order": 1.9999251048879567
+      },
+      {
+        "material_grid_per_direction": 16,
+        "h": 0.0625,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 9.95073985962143e-06,
+        "minimum_probe_height": 0.8684944656029078,
+        "observed_order": 1.9997005885060628
+      },
+      {
+        "material_grid_per_direction": 8,
+        "h": 0.125,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 3.979469973935065e-05,
+        "minimum_probe_height": 0.8778494621079526,
+        "observed_order": 1.9988054832071902
+      },
+      {
+        "material_grid_per_direction": 4,
+        "h": 0.25,
+        "retained_shape_modes": 1,
+        "geometry_endpoint_error": 0.0001590470572875759,
+        "minimum_probe_height": 0.8963184958642737
+      }
+    ],
+    "scope": "Nonlinear reciprocal material-label quadrature with one fixed homogeneous shape mode; no nonlinear spatial Galerkin cutoff removal."
+  },
+  "rendering": "Straight joins between recorded samples; no new evolution, integration, regression, or extrapolation."
+}

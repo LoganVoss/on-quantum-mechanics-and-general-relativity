@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "python": "3.12.13",
+  "sympy": "1.14.0",
+  "exact_check_count": 12,
+  "checks": [
+    {
+      "name": "ordered_noncommuting_telescoping",
+      "residual": "0"
+    },
+    {
+      "name": "resolvent_integral_second_power",
+      "residual": "0"
+    },
+    {
+      "name": "resolvent_integral_third_power",
+      "residual": "0"
+    },
+    {
+      "name": "qutrit_HS_basis",
+      "residual": "0"
+    },
+    {
+      "name": "qutrit_swap_completeness",
+      "residual": "0"
+    },
+    {
+      "name": "qutrit_two_copy_Casimir",
+      "residual": "0"
+    },
+    {
+      "name": "qutrit_variance_bad_particle_identity",
+      "residual": "0"
+    },
+    {
+      "name": "ADM_clock_derivative",
+      "residual": "0"
+    },
+    {
+      "name": "ADM_worldline_Legendre_identity",
+      "residual": "0"
+    },
+    {
+      "name": "moving_reciprocal_parcel_energy_identity",
+      "residual": "0"
+    },
+    {
+      "name": "continuum_minus_lattice_energy",
+      "residual": "0"
+    },
+    {
+      "name": "energy_equivalence_remainder",
+      "residual": "0"
+    }
+  ],
+  "proper_clock_orientation_controls": [
+    {
+      "population": 1,
+      "correct_density_error": 1.2412670766236366e-16,
+      "conjugated_orientation_error": 0.6583654897063833
+    },
+    {
+      "population": 2,
+      "correct_density_error": 5.551115123125783e-17,
+      "conjugated_orientation_error": 0.6581879699418611
+    },
+    {
+      "population": 3,
+      "correct_density_error": 1.2412670766236366e-16,
+      "conjugated_orientation_error": 0.6592604299720527
+    },
+    {
+      "population": 4,
+      "correct_density_error": 5.551115123125783e-17,
+      "conjugated_orientation_error": 0.6600312701738109
+    },
+    {
+      "population": 5,
+      "correct_density_error": 1.2412670766236366e-16,
+      "conjugated_orientation_error": 0.6605625325866862
+    },
+    {
+      "population": 6,
+      "correct_density_error": 1.5700924586837752e-16,
+      "conjugated_orientation_error": 0.6609427774035112
+    }
+  ],
+  "square_root_controls": [
+    {
+      "trial": 0,
+      "lhs": 2.02894847035773,
+      "bound": 4.494657997225168
+    },
+    {
+      "trial": 1,
+      "lhs": 3.0251057564029256,
+      "bound": 6.690186970123069
+    },
+    {
+      "trial": 2,
+      "lhs": 1.5135389265489776,
+      "bound": 2.8238735918863895
+    },
+    {
+      "trial": 3,
+      "lhs": 1.5613391711953613,
+      "bound": 2.6790896175185255
+    },
+    {
+      "trial": 4,
+      "lhs": 2.205903244598969,
+      "bound": 6.595895084872689
+    }
+  ],
+  "noncommuting_current_control": {
+    "lhs": 0.7133405652606764,
+    "bound": 0.9540151417169295,
+    "commutator_norm": 0.9899494936611665
+  },
+  "scope": "Independent selected algebra and finite controls; analytic proof/domain review is separate. No proposed verifier imported.",
+  "script_sha256": "ec675a390f98d65a93d3df428776c6a75398e6b07a26fcf98bef8a48a17ea647",
+  "reviewed_source_sha256": {
+    "work/continuum_meanfield/MEANFIELD_FINDINGS.md": "0e40fcac388f5f2ad99a21b053786d550835f74c59c6b10acdd0e1dfd828a706",
+    "work/continuum_meanfield/verify_meanfield_bridge.py": "0e51aba7d824d67a9def6b09a346e4ee6add482cae4a8944935964abda99d14e",
+    "work/continuum_field/FROZEN_FIELD_FINDINGS.md": "0375a320d7a5fa01ea204eb943fe6841b96801a4f363ee601632c2e70d9d9330",
+    "work/continuum_field/verify_field_continuum.py": "88173e8d7eb44cb49b7d0a51c3792b1eba854465ce1b59c0b29d89aca2027e22",
+    "work/continuum_synthesis/SYNTHESIS.md": "fb1ffbe765e821ec87751eb121036def62ba7a078c5fda03055535b471d27a9b",
+    "work/continuum_synthesis/verify_synthesis.py": "c7732a76069ad535762b3b1672bdc103b86186f0b85f562878e7109b3a097cab",
+    "work/continuum_synthesis/verify_moving_parcels.py": "175fc5d84fd4af920cfc139225cf2cd63e304d27151a42cc9fa58c77073351e5"
+  },
+  "review_status": "Passed at the explicitly qualified main endpoint after the recorded corrections; full nonlinear geometric UV/Einstein constraints remain open."
+}

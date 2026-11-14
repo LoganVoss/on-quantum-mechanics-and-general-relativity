@@ -20,7 +20,7 @@ Run the full scientific verification:
 python scripts/reproduce.py --output-dir work/reproduction
 ```
 
-This entry point runs the original symbolic and nonlinear suite, the quantum-geometry and coefficient-robustness checks, and the independent numerical controls, and all eight version-2 extension programs. Read the generated receipts and process exit status. A historical `PASS` file is not a substitute for a new execution.
+This entry point runs the original symbolic and nonlinear suite, the quantum-geometry and coefficient-robustness checks, and the independent numerical controls, all eight version-2 extension programs, and the six version-3 continuum programs. Read the generated receipts and process exit status. A historical `PASS` file is not a substitute for a new execution.
 
 The original suite in [`source/v2.4`](../source/v2.4/) is executed in a temporary copy. Its wrapper preserves the original scripts and reference inputs, records their hashes, and applies a 120-second timeout to each source program. Scientific outputs include:
 
@@ -46,6 +46,24 @@ python examples/energy_shape.py --fidelity 0.8
 ```
 
 Outputs are dimensionless energy and source magnitude in units of the calibrated gap, plus intrinsic hyperbolic distance. The input is squared overlap and the formula applies to the centered pure Gaussian domain.
+
+## Version-3 continuum checks alone
+
+```bash
+python scripts/verify_continuum.py --output-dir work/continuum
+```
+
+The runner uses temporary byte-identical copies of the six frozen programs. Each has a 300-second limit; all receipts and bounded controls are retained separately from archived evidence. No new model fitting or unrestricted simulation is started by this command.
+
+The main estimates assume the regulator and preparation contract in [Controlled continuum](CONTINUUM_CONTRACT.md). In particular, this is an augmented collective weak-coupling family and a fixed-geometric-resolution matter limit, not raw refinement of the old single cell at fixed physical constants.
+
+To rebuild the new paper:
+
+```bash
+python scripts/build_paper.py --source paper/On_Quantum_Mechanics_and_General_Relativity_Controlled_Matter_Limits.tex --output-dir work/continuum-paper
+```
+
+After installing the plotting requirements, run python scripts/make_continuum_figures.py to reproduce the two panels from frozen receipts. This does not rerun a quantum evolution.
 
 ## Formal proofs
 
@@ -73,7 +91,7 @@ Then invoke the formal verifier from the repository root:
 python scripts/verify_lean.py --project formal --output work/lean
 ```
 
-The verifier rebuilds the formal project, checks all 63 expected theorem declarations and their axiom dependencies, and tests a positive and a deliberately false compiler control. **Warnings are errors**: a successful formal receipt requires a warning-free build. The dependency cache speeds up compilation; the project's theorem sources still undergo verification. The distributed [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the completed nine-module build.
+The verifier rebuilds the formal project, checks all 75 expected theorem declarations and their axiom dependencies, and tests a positive and a deliberately false compiler control. **Warnings are errors**: a successful formal receipt requires a warning-free build. The dependency cache speeds up compilation; the project's theorem sources still undergo verification. The distributed [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the completed ten-module build.
 
 After dependency setup, the combined entry point can run both scientific and formal checks:
 

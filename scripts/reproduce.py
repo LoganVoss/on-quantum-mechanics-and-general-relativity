@@ -32,6 +32,7 @@ def main():
         ('quantum_geometry', 'verify_quantum_geometry.py', ['--output-dir', str(out / 'quantum_geometry')]),
         ('numerical_controls', 'verify_numerical_controls.py', ['--source-root', str(source), '--output-dir', str(out / 'numerical_controls')]),
         ('extensions', 'verify_extensions.py', ['--output-dir', str(out / 'extensions')]),
+        ('continuum', 'verify_continuum.py', ['--output-dir', str(out / 'continuum')]),
     ]
     if args.lean:
         jobs.append(('lean', 'verify_lean.py', ['--project', str(ROOT / 'formal'), '--output', str(out / 'lean')]))

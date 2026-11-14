@@ -1,6 +1,6 @@
 # Provenance and version boundaries
 
-This is **On Quantum Mechanics and General Relativity**, research edition 2.0, November 13, 2026, by Logan Voss. The [version 1.0 release](https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v1.0.0) preserves the foundation unchanged. Edition 2.0 adds the selected reciprocal interaction, one-Killing inverse calibration, current-corrected matter construction, and source-conditioned quadratic-curvature discrimination.
+This is **On Quantum Mechanics and General Relativity**, research edition 3.0, November 13, 2026, by Logan Voss. The [version 1.0 release](https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v1.0.0) preserves the foundation unchanged. The latest preserved edition-2 package is [v2.0.1](https://github.com/LoganVoss/on-quantum-mechanics-and-general-relativity/releases/tag/v2.0.1), which adds a CI-only patch to v2.0.0. Edition 2.0 added the selected reciprocal interaction, one-Killing inverse calibration, current-corrected matter construction, and source-conditioned quadratic-curvature discrimination. Edition 3.0 adds a controlled matter-sector continuum for an explicitly augmented large-population family, plus a separate linearized spatial-continuum theorem. The nonlinear geometric cutoff and Einstein constraints remain open.
 
 ## Preserved foundation
 
@@ -35,12 +35,12 @@ That review identified an observable-domain gap in the proposed continuum direct
 
 The independent pass was AI-assisted work assigned separately within this research workflow. It is not external replication, external peer review, or a certification of worldwide priority.
 
-## Current proof and computation map
+## Edition-2.0 extension evidence retained
 
-| Location | Edition-2.0 evidence |
+| Location | Retained extension evidence |
 | --- | --- |
-| [Formal sources](../formal/) | Seven unchanged original proof modules, `ResidualInversion.lean` from edition 1.0, and the new `ExtensionCertificates.lean`: **63 theorems across nine modules**. |
-| [Current Lean receipt](../evidence/lean/receipt.json) | Clean 63-theorem build with zero warnings and errors, axiom reports, pinned dependencies, and separate true/false proposition controls. |
+| [Edition-2.0 formal receipt](../evidence/baseline_v2/lean/receipt.json) | The 63-theorem, nine-module build is preserved separately. Its proof sources are retained in the enlarged current project. |
+| [Current Lean receipt](../evidence/lean/receipt.json) | Enlarged clean 75-theorem build with zero warnings and errors, axiom reports, pinned dependencies, and separate true/false proposition controls. |
 | [Extension formal module](../formal/ExtensionCertificates.lean) | Fifteen algebraic certificates for helical residuals, sourced coefficient inverses, transfer-response inverses, and energy/force identities and bounds. |
 | [Dynamics receipt](../evidence/extensions/dynamics/dynamical_extension_receipt.json) | 41 exact checks, positive 512-/768-dimensional quantum regulators, Fock-cutoff comparison, and a separate reciprocal variational-cell evolution. |
 | [One-Killing receipt](../evidence/extensions/one_killing/one_killing_receipt.json) | 309 exact checks of the helical calibration, flat lift, response inverse and old cylindrical sector. |
@@ -51,13 +51,37 @@ The independent pass was AI-assisted work assigned separately within this resear
 | [Ground-band receipt](../evidence/extensions/projection/projection_receipt.json) | Thirteen exact projection, factorization, packet and initial-leakage checks. |
 | [Portable extension sources](../scripts/extension_checks/) | Inspectable calculation programs rerun by the [extension runner](../scripts/verify_extensions.py). |
 
-Counts refer to declarations or checked identities/components, not independent physical discoveries. The original formal package contained 40 theorems in seven modules; edition 1.0 contained 48 in eight; edition 2.0 contains 63 in nine. The added Lean statements certify their explicit algebraic assumptions. Full tensor variations, Gaussian reconstruction, closed-operator arguments, fluid variations and continuum interpretations retain separate analytic or computational status.
+Counts refer to declarations or checked identities/components, not independent physical discoveries. The original formal package contained 40 theorems in seven modules; edition 1.0 contained 48 in eight; edition 2.0 contained 63 in nine; edition 3.0 contains 75 in ten. The added Lean statements certify their explicit algebraic assumptions. Full tensor variations, Gaussian reconstruction, closed-operator arguments, fluid variations and continuum interpretations retain separate analytic or computational status.
 
-## Boundaries preserved across the extension
+## Edition-3.0 continuum freeze and evidence
+
+The [global continuum freeze](../evidence/continuum/frozen/continuum_global_freeze.json) records completion of the new derivations, controls and independent review before public continuum authoring. Its local date is November 13, 2026; the UTC timestamp falls on November 14. It identifies the unchanged edition-2.0 baseline commit `bc1a63feffc206dbb682dd78f44f977025b0c2ba`, frozen source hashes, the main endpoint and the outstanding obligations.
+
+The [frozen synthesis](../evidence/continuum/frozen/SYNTHESIS.md) combines the population, material, current and ordered-cutoff arguments. The main endpoint keeps finite geometric and internal cutoffs, prescribes a smooth $h_3$, and works before caustics. Full oscillator removal is an ordered corollary with a common regular interval and higher-moment assumptions. The separate spatial theorem concerns the quadratic/linearized sector on an exact Einstein-dust background.
+
+| Location | Edition-3.0 evidence and scope |
+| --- | --- |
+| [Continuum certificates](../formal/ContinuumCertificates.lean) | Twelve added theorems for scalar differential comparison, Casimir-bound composition, quadratic-current error and explicit diagonal bookkeeping. They do not formalize the full operator or continuum construction. |
+| [Mean-field receipt](../evidence/continuum/meanfield/meanfield_receipt.json) | 164 exact checks and finite clock, preparation, root/source, coherence and partial-trace controls. |
+| [Field/material receipt](../evidence/continuum/field/field_continuum_receipt.json) | 92 exact checks, reciprocal material quadrature, strong current/contact controls, internal cutoff and linearized spatial controls. |
+| [Moving-parcel receipt](../evidence/continuum/moving_parcels/moving_parcels_receipt.json) | Bounded coupled transport calculations with reference and tolerance comparisons. |
+| [Obstruction receipt](../evidence/continuum/obstructions/obstruction_receipt.json) | 28 exact checks, three Fock controls and five collective-mass controls. |
+| [Synthesis receipt](../evidence/continuum/synthesis/synthesis_receipt.json) | Ten exact identities checking the stated parameter balances. |
+| [Independent continuum review](../evidence/continuum/review/REVIEW.md) | Separately tasked examination of the positive argument and its limit ordering. |
+| [Independent review receipt](../evidence/continuum/review/review_receipt.json) | Twelve exact identities and twelve bounded controls, with reviewed source hashes. |
+| [Portable continuum sources](../scripts/continuum_checks/) | Inspectable programs for the separate stages; numerical executions retain their own scopes. |
+
+The continuum review corrected or clarified the proper-clock orientation, full Hamilton–Jacobi domain, lattice-to-continuum fluctuation normalization, quantum-current ordering and cutoff-dependent error bookkeeping before the freeze. In particular, the linearized RMS estimate retains its $\pi/2$ fluctuation factor and its zero-mode qualification. This review was AI-assisted work assigned separately, not external human peer review or experimental replication.
+
+The current formal project retains all 63 preceding theorems and adds twelve in one module: **75 theorems across ten modules**. The new Grönwall certificate uses actual scalar derivative hypotheses; the operator commutator estimate that supplies those hypotheses remains an analytic proof. The Casimir and marginal certificates likewise consume explicit scalar relations rather than formalize density matrices. [Formal inventory](FORMAL_PROOFS.md).
+
+## Boundaries preserved across editions
 
 The original two-orbit shape matrix and the new Killing norm/twist matrix are distinct geometric dictionaries. Their targets share a hyperbolic metric, and the old cylindrical equations are recovered by a checked further reduction. This does not identify all physical observables between the formulations.
 
-The fully quantum cell and the covariant variational state-fluid are also distinct constructions. A controlled cell-to-fluid continuum or mean-field limit has not been derived. The constant oscillator gap uses the three-dimensional Einstein-frame clock; an ordinary minimally coupled four-dimensional matter uplift remains open. The corrected twist action includes the compulsory current cross term and contact term, with a smooth-current or regulated-source contract.
+The unchanged one-probe quantum cell is not a spatial matter regulator. Edition 3.0 supplies the missing transport and preparation architecture through an explicitly augmented, localized, large-population weak-coupling family. Its controlled endpoint is the nonlinear matter action with reciprocal projected shape equations at fixed geometric/internal cutoffs, on prescribed $h_3$ before caustics. Conditional ordered oscillator removal retains a common regular interval and higher moments. Nonlinear geometric-cutoff removal, full pointwise twist closure and Einstein constraints are not supplied by the fixed-basis theorem.
+
+The constant oscillator gap still uses the three-dimensional Einstein-frame clock; an ordinary minimally coupled four-dimensional matter uplift remains open. Strong current convergence justifies a specified ordered contact functional, not exact finite-population quantum scalar/connection dualization. The Hardy floor, frozen-branch purity and weak-current defect remain counterexamples to raw-refinement shortcuts; the augmented theorem does not erase them.
 
 The four-dimensional quadratic-curvature selector introduces its own fixed-source calibration premises and finite operator class. Those premises do not follow from the original flat-vacuum selector or the Gaussian dictionary alone. First-variation stationarity, positive energy, finite simulation convergence and laboratory observation remain separate evidence categories. No physical measurements are supplied.
 

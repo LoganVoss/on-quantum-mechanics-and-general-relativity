@@ -1,75 +1,75 @@
 # Next tests that can change the conclusion
 
-Research edition 2.0 completes three scoped advances: a selected reciprocal probe interaction, a sourced discriminator for the constant quadratic-curvature class, and an inverse calibration in a one-Killing theory. Their proofs narrow the remaining questions; they do not remove the assumptions that define each construction.
+Research edition 3.0 establishes a controlled matter bridge for an **explicitly augmented, localized large-population family**. At fixed finite geometric modes and internal cutoff, it reaches a nonlinear covariant matter continuum with reciprocal projected shape response, on a prescribed smooth three-dimensional background before caustics. An ordered full-oscillator corollary requires a common regular interval and higher-moment control. A separate theorem removes the spatial lattice in a reciprocal linearized sector.
 
-| Completed advance | What remains to establish |
+This advances the edition-2 constructions without claiming that the full quantum-gravity continuum problem is closed.
+
+| Completed result | Boundary that remains |
 | --- | --- |
-| A target-equivariant quadratic interaction, positive joint quantum cell, and exact energy–force relations | Controlled field/continuum limits, gravitational constraints, and an operational identification with spacetime response |
-| Full four-dimensional dust/electrovac selection and two-channel inversion in the constant quadratic class | Physical source and response calibration; discrimination of enlarged operator classes and EFT effects |
-| One-Killing inverse calibration, off-shell reduction, and exact recovery of the cylindrical sector | Broader solution families, global reconstruction, and a specified four-dimensional matter uplift |
+| Quantum concentration, fixed-order internal-state convergence, and the proper relativistic parcel clock | The family adds physical transport and collective masses; it is not raw refinement of the old one-probe target grid |
+| Nonlinear material-label continuum and reciprocal shape feedback | Geometric Galerkin dimension remains fixed; the background metric is prescribed |
+| Strong ordered current/contact convergence | Finite-cutoff operator ordering, population constants, and geometric projection remain explicit |
+| Conditional ordered internal oscillator removal | A common precaustic interval and uniform higher number/label moments are required |
+| Full smooth spatial limit of the quadratic tangent sector | Nonlinear geometric-cutoff removal and Einstein constraints remain open; energy does not control the common zero mode |
 
-The original two-orbit shape matrix and the new Killing norm/twist matrix have different geometric meanings. The shared hyperbolic target allows precise mathematical correspondences; it does not make every observable or clock in the two formulations identical.
+The earlier action selectors, Gaussian geometry, reciprocal coupling, and sourced quadratic-curvature discriminator remain valid within their own contracts. The original two-orbit shape matrix and new norm/twist matrix retain distinct geometric meanings.
 
-## 1. Converge the joint quantum calculation in all regulator directions
+## 1. Remove the nonlinear geometric cutoff
 
-The current positive regulators check two Fock cutoffs at one shape grid. Next, refine the radial and angular shape grid, enlarge the finite target domain, and increase the oscillator cutoff separately. Use the same normalized initial packet and the same bounded directional observable across refinements. Include an independently implemented discretization and the uncoupled control.
+The main new theorem retains finitely many spatial shape modes. The next substantial step is a bound that remains controlled as that geometric basis grows. It must cover the nonlinear geometric energy, parcel force and its derivatives, material Jacobian, internal-state moments, and the reconstructed current on one common time interval.
 
-A useful success condition is a converged error interval for directional response, energy transfer, and shape–probe entanglement through a declared finite time. Preserved norm and total energy are necessary checks, but alone do not establish convergence to the continuum Hamiltonian. [Current quantum controls](DYNAMICAL_COUPLING.md).
+A useful success condition is convergence of the full geometric residual against arbitrary smooth test fields, together with enough strong current control for the contact term. Retained-mode shift conservation is insufficient: pointwise total-current closure, and hence local $F=dA$ reconstruction, require the unprojected equation. [Current fixed-basis theorem](MATTER_CONTINUUM.md).
 
-The exact ground-band result supplies a second test. Prepare a normalized packet in the local Gaussian ground band and compare its initial off-band probability to
+This limit must retain the actual cutoff dependence of every constant. A fixed-cutoff population bound or numerical second-order curve cannot be promoted to a uniform nonlinear geometric estimate by dropping those constants.
 
-```math
-P_{\perp}(t)=\frac{E}{4I}t^2+o(t^2).
-```
+## 2. Put the Einstein constraints into the limit
 
-Resolve the small-time coefficient separately from shape-grid and Fock-cutoff errors. This checks the initial leakage law, not an exact autonomous ground-band evolution or a finite-time upper bound.
+The nonlinear matter theorem prescribes $h_3$. Its reciprocal shape equations therefore do not constitute the full Einstein–matter evolution. Extending it requires a specified gravitational gauge, constraint-satisfying initial data, a regulator for the metric/constraint variables, and estimates showing that constraints and the diffeomorphism identities survive the limit.
 
-## 2. Derive, rather than assume, a bridge to the state-fluid description
+The exact Einstein-dust background in the [linearized spatial theorem](LINEARIZED_SPATIAL_LIMIT.md) is a useful controlled starting point. It already gives a covariant background, reciprocal tangent equations and a whole-field energy bound. The next theorem must distinguish a classical coupled Einstein–matter limit from a quantization of the Einstein constraint algebra; neither follows solely from positive finite quantum Hamiltonians.
 
-The fully quantum cell and the covariant variational state-fluid are distinct constructions. A controlled connection would need an explicit family of many-cell states, a scaling or mean-field parameter, and estimates showing when the reduced state/current equations approximate the joint quantum evolution. Derive the stress tensor and twist current from that same limit, and bound the correlations or entanglement discarded by the approximation.
+## 3. Verify the common interval in the ordered oscillator limit
 
-Success would be a stated regime and error estimate for both observables and reciprocal source equations. Until then, each model keeps its own assumptions. A positive finite Hamiltonian does not itself establish a constrained interacting quantum-gravity continuum. Reduced-gravity renormalization programs provide relevant precedent, not a replacement for a limit proof here. [Niedermaier, *Dimensionally reduced gravity theories are asymptotically safe*](https://arxiv.org/abs/hep-th/0304117v1).
+Ordered removal of the Fock cutoff is now supported by weighted moment and Duhamel estimates at fixed geometric basis. For broader initial-data families, establish the required uniform higher number moments, label derivatives, target compactness, proper-clock margin and material Jacobian margin on the same interval.
 
-## 3. Construct the four-dimensional matter uplift and calibrate its clock
+Keep the order of choices explicit. Select the current smoothing scale from its bias, then the internal cutoff from weighted state/source errors, then material spacing, coefficient-approximation accuracy, and finally the population using the actual observable constants. A previously fixed approximation error must not later be amplified by an uncontrolled shrinking kernel.
 
-The smooth-current action has consistent local field equations and current-corrected twist reconstruction. The next obligation is an explicit four-dimensional covariant matter action whose reduction yields those sources, the cross interaction, and the current-squared contact term.
+A successful extension would provide verifiable hypotheses and constants for a larger class of data. It would not turn the fixed-cutoff $O(h^{4/5})$ current estimate into a cutoff-uniform rate. The finite-Fock shear boundary defect must remain in the calculation until its expectation is shown to vanish. [Internal-cutoff proof and retained defect](MATTER_CONTINUUM.md).
 
-Clock normalization is a decisive part of this test. The selected constant oscillator gap uses the three-dimensional Einstein-frame proper time. For a horizontal trajectory,
+## 4. Exercise the full positive chain computationally
+
+The bundle separately checks the quantum clock, moving parcels, nonlinear reciprocal material quadrature, strong currents, and internal cutoff. A next benchmark should combine these stages with the same preparation and declared observation map, vary the limits in the prescribed order, and compare the observed errors with the sum of the proved bounds.
+
+Track current amplitudes as well as positions: velocity, internal charge, metric-volume factors and count rounding all affect the contact observable. Include the rounding-induced change in reciprocal trajectories. Use an independently implemented regulator or integrator as a control.
+
+For the linearized spatial result, retain the factor $\pi/2$ converting lattice fluctuation energy to continuum energy. Localize and propagate the common zero mode separately when testing shape-coordinate observables. Small energy error alone does not imply small variance of that mode or a pointwise field bound. [Linearized error contract](LINEARIZED_SPATIAL_LIMIT.md).
+
+The original exact nonlinear Bessel/geodesic oracle and finite-time nonlinear benchmark remain useful regression tests. They do not replace tests of the new transport and population scaling.
+
+## 5. Study the boundary of pure, single-velocity matter closure
+
+The positive result uses concentrated internal states and a single-valued material flow before caustics. The exact frozen-branch example reaches reduced probe purity $25/34$ despite infinite shape inertia. A two-stream stress also has rank incompatible with one pressureless velocity. These controls identify substantive preparation restrictions.
+
+A next extension should formulate a mixed internal density-matrix or kinetic multi-stream limit and show how its stress, quantum clock and current differ from the pure state-fluid. It should describe what happens when the material Jacobian approaches zero, rather than continue the pressureless formula through a caustic.
+
+The Hardy floor and weak-current defect provide additional checks: raw fixed-occupancy refinement has a divergent unsubtracted energy floor, and weak $J$ convergence alone does not determine $J^2$. Alternative renormalizations or scalings must state how their action, stress and product observables change. [Exact obstruction controls](CONTINUUM_OBSTRUCTIONS.md).
+
+## 6. Construct a four-dimensional matter uplift with its clock
+
+The controlled bridge now supports the declared three-dimensional matter action. A separate obligation remains: exhibit a four-dimensional covariant matter action whose reduction yields the same oscillator coupling, cross term, current-squared contact term, and variational sources.
+
+For a horizontal trajectory the dictionary gives
 
 ```math
 d\tau_4=\lambda^{-1/2}ds_3.
 ```
 
-A constant four-dimensional proper-time gap therefore has a different reduced dependence. A proposed uplift must account for this factor and reproduce the complete reduced variational equations, including metric dependence of the current. If that cannot be established within a chosen matter class, the three-dimensional model remains a useful construction with its stated clock calibration. [Current action and reconstruction](CURRENT_AND_RECONSTRUCTION.md).
+A constant four-dimensional proper-time gap therefore differs from the constant gap calibrated in the Einstein-frame three-dimensional clock. A proposed uplift must account for this factor and the current's metric dependence. The augmented population theorem does not by itself supply that uplift or a global bundle sector. [Matter action and reconstruction](CURRENT_AND_RECONSTRUCTION.md).
 
-For localized sources, define a finite-width current or regulator before using the contact term. Demonstrate a controlled limit or retain a finite source scale; a squared delta-function current is not an unregulated matter model.
+## 7. Test physical observation maps and enlarged action classes
 
-## 4. Test the sourced response class at additional scales
+The quantum-state formulas suggest independently calibrated tests of overlap, geometric phase, excitation energy and reciprocal directional response. The new parcel theorem adds a proper-clock prediction for the specified collective mass architecture. Characterize displacement, purity, phase references, loss and internal leakage, and compare held-out times or preparations without refitting. These tests concern prepared quantum systems; identifying the target with a spacetime orbit or Killing norm/twist requires an additional observation map.
 
-The dust and charged calibrations now distinguish the two constant quadratic coefficients under the fixed-source contract. The response inverse adds an error-aware route to the same parameters. The next step is to specify how each source amplitude and curvature channel would be independently prepared or inferred, including normalization, boundary conditions, and nonlinear corrections.
+The sourced quadratic-curvature inverse likewise needs independently inferred source amplitudes, curvature channels and boundary conditions. Use additional scales to test the shared-intercept model and estimate the leading normalization, rather than only fitting two coefficients. One-scale agreement cannot reject arbitrary higher operators; the supplied higher-derivative negative control shows this exactly. [Response construction](RESPONSE_TOMOGRAPHY.md).
 
-Use two tensor-channel scales and one scalar-channel observation to estimate the coefficients and leading normalization. Hold out a fourth observation to test the shared-intercept prediction. A successful test produces simultaneous parameter intervals and an independently predicted held-out response. Agreement at finitely many scales does not establish the operator class at every scale. [Response construction and intervals](RESPONSE_TOMOGRAPHY.md).
-
-To enlarge the action class, list the added operators and construct enough independent response channels to distinguish them. The supplied higher-derivative counterexample already shows why one-scale agreement cannot exclude arbitrary additional terms. Interpret poles only within the declared theory's validity range; an exact polynomial model and a low-energy EFT truncation support different conclusions. [Quadratic selector and its limits](QUADRATIC_SELECTION.md).
-
-## 5. Exercise the genuinely larger one-Killing solution space
-
-The one-Killing action permits dependence on two quotient spatial coordinates. A useful next calculation would solve its constraints for initial data with explicit angular dependence, then evolve a bounded nonlinear example that is not confined to the cylindrical sector. Verify the full three-dimensional Einstein/wave-map equations and the local four-dimensional reconstruction, with separate spatial, temporal, and boundary controls.
-
-The success condition is a resolved example in the enlarged field space. It would complement the action-selection theorem; it would not alone prove generic global existence or stability. Global reconstruction additionally needs the twist periods and bundle data. [One-Killing model and old-sector recovery](ONE_KILLING_EXTENSION.md).
-
-Retain the exact nonlinear Bessel/geodesic oracle and the original independent-profile benchmark as regression controls. Longer evolutions should preserve the distinction between finite numerical evidence and a PDE theorem.
-
-## 6. Test the calibrated quantum observation chain
-
-Prepare centered one-mode states with independently characterized covariance, displacement, purity, and phase reference. Compare measured transition probabilities to $\operatorname{sech}(d_G/2)$ and closed-path geometric phases to minus one quarter of the oriented hyperbolic area. Then, for the specified oscillator interaction, test the energy–overlap relation and the opposite directional responses of symmetry-related preparations.
-
-Keep the negative controls visible: the vacuum and first excited state share normalized covariance shape but are orthogonal; an isotropic mixed covariance can have positive energy and zero directional source; an uncoupled model does not produce the selected reciprocal response. Account for loss, leakage and uncertainty before drawing conclusions. [Quantum geometry](QUANTUM_GEOMETRY.md) and [energy–shape relations](ENERGY_SHAPE_RELATION.md).
-
-These tests concern the prepared quantum systems and calibrated interaction. Demonstrating that the target represents a physical spacetime orbit or Killing norm/twist requires an additional geometric observation map. No such laboratory identification is claimed by the present calculations.
-
-## 7. Turn approximate calibration into justified coefficient intervals
-
-The original five-residual inverse and the new helical and sourced inverses provide explicit uncertainty maps. Apply them only to the equations, units, and source prescriptions they were derived for. Establish a simultaneous residual envelope over the required domain before using integrated coefficient bounds; a few sampled area values do not prove a uniform interval premise.
-
-A useful outcome is a reproducible interval for each coefficient, supported by a measurement-to-residual model or independently controlled computation. Re-evaluating an action already selected by the theorem cannot supply independent empirical evidence for its calibration assumptions. [Original robustness theorem](ROBUST_SELECTION.md) and [machine-readable claim ledger](../CLAIMS.json).
+For the original and new inverse calibrations, apply error bounds to the actual residual normalization and a justified simultaneous envelope. The quantum-to-matter limit adds no physical measurements to those premises. [Claim ledger](../CLAIMS.json), [quantum-to-parcel theorem](QUANTUM_TO_PARCELS.md), and [provenance](PROVENANCE.md) keep the proof, computation, and observation boundaries inspectable.

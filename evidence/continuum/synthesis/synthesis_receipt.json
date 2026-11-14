@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "exact_check_count": 10,
+  "scaling_residuals": {
+    "population_diagonal_rms": "0",
+    "mollifier_bias": "0",
+    "midpoint_current_term": "0",
+    "quantum_position_current_term": "0",
+    "rounding_path_current_term": "0",
+    "rounding_weight_current_term": "0",
+    "classical_path_current_term": "0",
+    "classical_amplitude_current_term": "0"
+  },
+  "scope": "Checks the integrated parameter exponents and functional-calculus constants. Analytic stage hypotheses and full proofs are separate.",
+  "source_sha256": "c7732a76069ad535762b3b1672bdc103b86186f0b85f562878e7109b3a097cab"
+}

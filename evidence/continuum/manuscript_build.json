@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "final_pass_issue_count": 0,
+  "source_sha256": "21ba92142660407b0b09e3b12ece19f2d26a2c5987060b10b7a3a1d125bd44cd",
+  "pdf_sha256": "5874b4d9750c606a0df10beb0319db4e8b8b015e9b9114d414e049a4fe95b0ea",
+  "log_sha256": "ea9c077540af9223757bde8a42cb99fc1714204b030bfa9cca35705a45e069a4",
+  "visual_review": "PASS: all 17 rendered pages inspected after the final precision corrections; equations, tables, figure, references, margins, and pagination checked.",
+  "page_count": 17
+}

@@ -1,8 +1,8 @@
 # What Lean proves
 
-The release contains **63 machine-checked theorem statements in nine Lean modules**: the 40 original theorems, eight version-1 residual theorems, and 15 version-2 extension certificates. A fresh build on November 13, 2026 completed with **zero warnings and zero errors**.
+The release contains **75 machine-checked theorem statements in ten Lean modules**: the 40 original theorems, eight version-1 residual theorems, 15 version-2 extension certificates, and 12 version-3 continuum-estimate certificates. A fresh build on November 13, 2026 completed with **zero warnings and zero errors**. The previous 63 theorem sources remain unchanged.
 
-The full [execution receipt](../evidence/lean/receipt.json) records the source hashes, exact dependency revisions, compiled-object hashes, commands, and all 63 theorem names and axiom reports. The [build log](../evidence/lean/build.log) is retained.
+The full [execution receipt](../evidence/lean/receipt.json) records the source hashes, exact dependency revisions, compiled-object hashes, commands, and all 75 theorem names and axiom reports. The [build log](../evidence/lean/build.log) is retained.
 
 ## The central selection theorem
 
@@ -37,7 +37,8 @@ The derivation of the chart equations from the action is supplied as a written v
 | [LaxCertificates](../formal/LaxCertificates.lean) | 5 | Scalar/matrix curvature identities, EOM equivalence, spectral-curve derivative and coefficients |
 | [ResidualInversion](../formal/ResidualInversion.lean) | 8 | Four exact division-residual inversions and four pointwise error bounds; added in version 1.0 |
 | [ExtensionCertificates](../formal/ExtensionCertificates.lean) | 15 | Helical and sourced selectors; response inverse; energy positivity, force identities, uncertainty bound |
-| **Total** | **63** | **Nine modules** |
+| [ContinuumCertificates](../formal/ContinuumCertificates.lean) | 12 | Genuine-derivative Gronwall; scalar Casimir implications; quadratic-current bounds; population/kernel diagonal; positive-mass clock algebra |
+| **Total** | **75** | **Ten modules** |
 
 ## Version-1 quantitative certificates
 
@@ -58,7 +59,7 @@ These are exact finite algebraic implications. Interpreting $F_1,F_2$ as derivat
 
 ## Version-2 certificates
 
-The new [extension module](../formal/ExtensionCertificates.lean) certifies 15 statements from the frozen extension formulas:
+The version-2 [extension module](../formal/ExtensionCertificates.lean) certifies 15 statements from the frozen extension formulas:
 
 - Three helical inverse/selection/error results and a zero-pitch counterexample.
 - Three dust–electrovac inverse/selection/error results.
@@ -70,6 +71,61 @@ The [exact coverage ledger](../evidence/lean/extension_coverage.json) maps every
 
 In particular, the band-leakage theorem, positive operator extension, conserved-current duality, full matter Ward identity, and field-reduction geometry remain analytic/symbolic results. No new mathematical axioms were introduced to represent them.
 
+## Version-3 continuum-estimate certificates
+
+The [continuum module](../formal/ContinuumCertificates.lean) adds 12 mathematical certificates. The [coverage ledger](../evidence/lean/continuum_coverage.json) records their exact assumptions and the preceding results that remain outside Lean.
+
+**Three differential-comparison certificates.** Young's inequality closes the specified squared-deviation estimate. A genuine right-derivative Gronwall theorem then proves
+
+```math
+D'(t)\le CD(t)+\frac{B}{N^2}
+\quad\Longrightarrow\quad
+D(t)\le e^{Ct}\left[D(0)+\frac{Bt}{N^2}\right]
+\qquad(0\le t\le T).
+```
+
+The signature requires $C,B\ge0$, $N>0$, continuity on $[0,T]$, and the stated right derivatives and inequality on $[0,T)$. This is an analytic comparison using Mathlib's Gronwall theorem. Deriving the differential inequality from quantum operators remains a separate written proof. The signature also does not replace the upper-Dini-derivative argument for the material maximum error.
+
+**Two scalar consequences of the Casimir relation.** Given
+
+```math
+S=2\beta+\frac{d-1}{N},\qquad
+\beta\ge0,\quad d\ge1,\quad N>0,
+```
+
+Lean proves $\beta\le S/2$ and combines a supplied marginal-error estimate $e\le2\sqrt{k\beta}$ with $k\ge0$ to give $e\le\sqrt{2kS}$. The symmetric-sector operator identity, density matrices, and pure-target trace-distance estimate are not represented by these scalar theorems. Their physical marginal application also requires $k\le N$ in the external density-operator argument.
+
+**Two quadratic-current error bounds.** Alongside the scalar-square estimate, a theorem on a real inner-product space proves, for any bounded real linear map $A$,
+
+```math
+\|x-y\|\le\delta,\quad\delta\ge0
+\quad\Longrightarrow\quad
+|\langle x,Ax\rangle-\langle y,Ay\rangle|
+\le\|A\|\,\delta(2\|y\|+\delta).
+```
+
+This includes bounded indefinite metric contractions; $A$ need not be positive. The result applies in particular to real Hilbert spaces. Establishing the preceding operator-current/kernel RMS estimate and identifying the physical contact observable remain external obligations.
+
+**Four explicit diagonal certificates.** With $0<s\le1$, $h=s^5$, $\eta=s^2$, and positive $N$, the condition $N\ge A^2/s^{26}$ gives
+
+```math
+\delta\le\frac{A}{\sqrt{Nh^2}}
+\quad\Longrightarrow\quad\delta\le s^8
+\qquad(A\ge0).
+```
+
+Exact power identities then bound the sum of the normalized bias, quadrature, path, and amplitude terms by $4s^4$. The rounding estimate is
+
+```math
+\frac1{Nh^2\eta}\le s^{14}\le s^4,
+```
+
+with the additional explicit condition $A\ge1$. Kernel, material, cutoff, and time-dependent constants multiply these scalar estimates separately. These certificates do not assert that such constants remain uniform when cutoffs are removed.
+
+**One positive-mass clock certificate.** For $m_0>0$, nonnegative internal energy $e$, and nonnegative squared momentum $p^2$, Lean proves positivity of $E=\sqrt{p^2+(m_0+e)^2}$, the clock bound $0<(m_0+e)/E\le1$, and the corresponding scalar Legendre identity. Quantum mass averaging and the worldline-to-fluid variational equivalence are separate derivations.
+
+These twelve results provide checked links in the controlled-limit argument. They do not formalize the bounded-operator square-root theorem, the nonlinear material quadrature theorem, oscillator-cutoff removal, spatial field estimates, or Einstein constraints. In particular, they do not prove removal of the full nonlinear geometric cutoff or a fixed-coupling quantum-gravity continuum.
+
 ## Integrability: the precise formal boundary
 
 Lean verifies the rational curvature and Frobenius identities, their nondegenerate algebraic consequences, and the real-calculus passage from a zero second derivative to an affine coefficient. The matrix curvature theorem is entrywise and allows an arbitrary matrix in the commutator position; it does not assume that the currents commute.
@@ -79,7 +135,7 @@ The local construction of the spectral parameter, the geometric interpretation o
 ## Reproduction and trust
 
 The project pins Lean **4.19.0** and Mathlib commit
-`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The fresh run used the published Mathlib dependency cache, then compiled all nine project modules from source. No historical project `.olean` objects were reused. The original seven proof-source files remain byte-identical to the supplied v2.4 files.
+`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The fresh run used the published Mathlib dependency cache, then compiled all ten project modules from source. No historical project `.olean` objects were reused. The original seven proof-source files remain byte-identical to the supplied v2.4 files.
 
 After preparing the pinned dependencies as described in [Reproducibility](REPRODUCIBILITY.md), run from the repository root:
 

@@ -1,0 +1,106 @@
+{
+  "schema": "voss.continuum-formal-coverage.v1",
+  "status": "fresh_build_passed",
+  "new_module": "ContinuumCertificates.lean",
+  "new_theorem_count": 12,
+  "total_theorem_count": 75,
+  "total_proof_module_count": 10,
+  "public_repository_changed": false,
+  "prior_proof_sources_unchanged": {
+    "Integrability.lean": true,
+    "ThmA.lean": true,
+    "LaxCertificates.lean": true,
+    "PremiseObstructions.lean": true,
+    "ResidualInversion.lean": true,
+    "AnalyticBridge.lean": true,
+    "ChartGeometry.lean": true,
+    "ThmABridge.lean": true,
+    "ExtensionCertificates.lean": true
+  },
+  "source_sha256": "0108b8f3a3521c3e2221d15a8b4785e86665a9adbe4f1fa63a24e6d9b1728e58",
+  "research_input_sha256": {
+    "work/continuum_meanfield/MEANFIELD_FINDINGS.md": "0e40fcac388f5f2ad99a21b053786d550835f74c59c6b10acdd0e1dfd828a706",
+    "work/continuum_field/FROZEN_FIELD_FINDINGS.md": "84d2b7e6db996ac97ec146f858feee3231efe2ed10f702cabbcf7843ca072fd3"
+  },
+  "coverage": [
+    {
+      "theorems": [
+        "population_young_bound"
+      ],
+      "statement": "2 sqrt(D)(a sqrt(D)+b/N) ≤ (2a+1)D+b²/N².",
+      "hypotheses": "D≥0; no operator statement or derivation of the prior differential inequality is asserted."
+    },
+    {
+      "theorems": [
+        "gronwall_bound_le_exponential",
+        "population_gronwall"
+      ],
+      "statement": "D(t)≤exp(Ct)(D(0)+Bt/N²) on [0,T].",
+      "hypotheses": "C,B≥0; N>0; D continuous on [0,T]; genuine right derivatives Dprime on [0,T); Dprime≤CD+B/N². Mathlib Gronwall supplies the analytic comparison. This specialization does not formalize the separate material upper-Dini-derivative argument."
+    },
+    {
+      "theorems": [
+        "casimir_depletion_bounds",
+        "casimir_marginal_bound"
+      ],
+      "statement": "S=2beta+(d−1)/N implies 0≤S, beta≤S/2; a supplied error≤2sqrt(k beta) then implies error≤sqrt(2kS).",
+      "hypotheses": "beta≥0,d≥1,N>0,k≥0 and the stated scalar Casimir relation and marginal-error bound. The density matrices, symmetric-sector operator identity, and trace-distance inequality are external; for their physical use k≤N is part of those external hypotheses."
+    },
+    {
+      "theorems": [
+        "quadratic_current_difference"
+      ],
+      "statement": "|x²−y²|≤delta(2|y|+delta).",
+      "hypotheses": "delta≥0, |x−y|≤delta."
+    },
+    {
+      "theorems": [
+        "bounded_quadratic_current_difference"
+      ],
+      "statement": "|<x,Ax>−<y,Ay>|≤||A|| delta(2||y||+delta).",
+      "hypotheses": "A is a bounded real linear map on a real inner-product space; delta≥0; ||x−y||≤delta. It allows indefinite metric contractions. The operator-current/kernel RMS estimate supplying delta and the identification of the physical quadratic functional are external."
+    },
+    {
+      "theorems": [
+        "diagonal_population_rms"
+      ],
+      "statement": "N≥A²/s^26 and delta≤A/sqrt(N(s^5)²) imply delta≤s^8.",
+      "hypotheses": "s>0,A≥0,N>0. Population can be a real scalar; integer populations are a subcase. A may depend on the actual cutoff/time parameters."
+    },
+    {
+      "theorems": [
+        "diagonal_kernel_identities",
+        "diagonal_current_rate"
+      ],
+      "statement": "With h=s^5, eta=s², the bias eta², quadrature h²/eta³, path delta_path/eta² and amplitude delta_amp/eta sum to ≤4s^4.",
+      "hypotheses": "0<s≤1 and both RMS errors≤s^8. External kernel/material constants multiply this estimate. Exact identities also show amplitude=s^6 at its envelope."
+    },
+    {
+      "theorems": [
+        "diagonal_rounding_rate"
+      ],
+      "statement": "1/[N(s^5)²s²]≤s^14≤s^4.",
+      "hypotheses": "0<s≤1,A≥1,N>0,N≥A²/s^26. The A≥1 condition is necessary for this stated coefficient-one rounding bound; no implicit normalization is dropped."
+    },
+    {
+      "theorems": [
+        "positive_mass_clock"
+      ],
+      "statement": "energy=sqrt(kinetic+(m0+internal)²)>0, 0<mass/energy≤1, and kinetic/energy−energy=−mass*(mass/energy).",
+      "hypotheses": "m0>0, internal≥0, kinetic≥0. It proves scalar denominator and Legendre algebra; no relativistic quantum limit or matter-action equivalence is formalized."
+    }
+  ],
+  "not_formalized": [
+    "Bounded operator polynomial/square-root estimates and source variations",
+    "The Casimir operator identity, density matrices, trace norm or propagation of chaos",
+    "Material midpoint quadrature or nonlinear material ODE convergence",
+    "Strong operator-current mollification/RMS estimate or physical duality at finite population",
+    "Oscillator-cutoff removal, spatial field estimates, Einstein constraints or four-dimensional matter uplift",
+    "Uniform-in-cutoff estimates, computational efficiency or fixed-Newton-constant quantum ultraviolet limit"
+  ],
+  "additional_imports": [
+    "Mathlib.Analysis.ODE.Gronwall",
+    "Mathlib.Analysis.InnerProductSpace.Basic"
+  ],
+  "reproduction": "python3 work/continuum_formal/verify_lean.py --project work/continuum_formal/project --output work/continuum_formal/evidence --timeout 300"
+}

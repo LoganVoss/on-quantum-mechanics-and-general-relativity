@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "source_sha256": "175fc5d84fd4af920cfc139225cf2cd63e304d27151a42cc9fa58c77073351e5",
+  "model": "H=(pc\u00b2+c\u00b2)/2 + integral sqrt(px\u00b2+py\u00b2+[1+E(c sinX,1;u,v)]\u00b2) over two-dimensional material labels; properclock multiplies Gaussian Schrodinger flow.",
+  "geometry": "one retained chi mode on flat prescribed 2+1 background; lambda held1 in this Galerkin subspace",
+  "time": [
+    0,
+    0.55
+  ],
+  "initial_shape": [
+    0.15,
+    0.04
+  ],
+  "Gauss_reference_difference": 3.3905441388509816e-15,
+  "tolerance_refinement_difference": 1.554312234475219e-14,
+  "rows": [
+    {
+      "material_grid_per_direction": 4,
+      "parcel_count": 16,
+      "observable_max_error": 7.2745339594060265e-06,
+      "energy_drift": 8.01581023779363e-14,
+      "minimum_probe_height": 0.9876529037298029,
+      "mean_x_displacement": 0.1555522710842645,
+      "mean_y_displacement": -1.3850104979562516e-08
+    },
+    {
+      "material_grid_per_direction": 8,
+      "parcel_count": 64,
+      "observable_max_error": 2.1732976529520442e-11,
+      "energy_drift": 5.3734794391857577e-14,
+      "minimum_probe_height": 0.9781287739183381,
+      "mean_x_displacement": 0.15555284893330312,
+      "mean_y_displacement": -1.388355012899023e-08
+    },
+    {
+      "material_grid_per_direction": 12,
+      "parcel_count": 144,
+      "observable_max_error": 4.135580766728708e-15,
+      "energy_drift": 5.1514348342607263e-14,
+      "minimum_probe_height": 0.9774057191816881,
+      "mean_x_displacement": 0.15555284893438856,
+      "mean_y_displacement": -1.3883550822283309e-08
+    },
+    {
+      "material_grid_per_direction": 16,
+      "parcel_count": 256,
+      "observable_max_error": 3.3584246494910985e-15,
+      "energy_drift": 4.574118861455645e-14,
+      "minimum_probe_height": 0.9759473936895842,
+      "mean_x_displacement": 0.15555284893438848,
+      "mean_y_displacement": -1.3883550920999917e-08
+    }
+  ],
+  "limits": [
+    "This is a reciprocal fixed-mode material-quadrature control, not a fullquantum many-body evolution or nonlinear geometric UV proof.",
+    "Periodic smooth data may converge faster than the general second-order bound; no universal order inferred from these samples."
+  ]
+}

@@ -1,15 +1,38 @@
 # What has been verified
 
-The central result is a conditional selection theorem: within the stated action class and geometric dictionary, independent first variation on the calibration chart selects the coefficient family. The quantum connection identifies an exact common geometry for a specified class of Gaussian states and the gravitational shape field. Each part has evidence matched to the claim it supports.
+The foundation result is a conditional selection theorem: within the stated action class and geometric dictionary, independent first variation on the calibration chart selects the coefficient family. The quantum connection identifies an exact common geometry for a specified class of Gaussian states and the gravitational shape field. Each part has evidence matched to the claim it supports.
 
 “Stationary” means that the first variation vanishes. It does not by itself mean a positive second variation, stability under every perturbation, or global existence of the evolution.
+
+## Version-3 controlled continuum evidence
+
+The main result is a nonlinear **matter-sector** limit for an explicitly augmented, localized large-population regulator, on a prescribed background and at fixed geometric/internal cutoffs, before caustics. Full oscillator removal is an ordered conditional corollary. Nonlinear geometric-cutoff removal and Einstein-constraint quantization are not proved. The separate linearized spatial theorem has a different, explicitly stated scope. [Exact contract](CONTINUUM_CONTRACT.md).
+
+All derivations, controls, and the bounded review were completed before public authoring. The [global freeze](../evidence/continuum/frozen/continuum_global_freeze.json) identifies the source snapshots. The [review](../evidence/continuum/review/REVIEW.md) found and verified corrections to the coherence orientation, HJ domain, lattice-to-continuum norm factor, collective current definition, and diagonal ordering.
+
+| Verification | Executed result | Evidence |
+|---|---|---|
+| Quantum mean-field/operator bridge | 164 exact checks; ten nonlinear parcel cases; clock, preparation, root, direct partial-trace and source/lapse controls | [Receipt](../evidence/continuum/meanfield/meanfield_receipt.json) |
+| Reciprocal material and linearized spatial sectors | 92 exact checks; material-grid, spatial-grid, current/contact and Fock-cutoff controls | [Receipt](../evidence/continuum/field/field_continuum_receipt.json) |
+| Obstructions | 28 exact checks; three selected-coupling purity controls and five collective-mass controls | [Receipt](../evidence/continuum/obstructions/obstruction_receipt.json) |
+| Combined parameter choice | Ten exact exponent/integral checks | [Receipt](../evidence/continuum/synthesis/synthesis_receipt.json) |
+| Moving material parcels | Proper-clock nonlinear transport with reciprocal shape response and energy/tolerance controls | [Receipt](../evidence/continuum/moving_parcels/moving_parcels_receipt.json) |
+| Independent review | Twelve exact identities and twelve bounded controls; no proposed verifier imported | [Receipt](../evidence/continuum/review/review_receipt.json) |
+
+The counts include component identities and repeated independent controls, not independent discoveries. The analytic operator inequalities, material-flow existence/stability, topology of convergence, and assumptions are stated in the proof notes; passing finite examples alone does not prove a limit.
+
+At population $N=512$, the solvable nonlinear parcel has one-probe trace error $3.47\times10^{-5}$, below the proved bound $0.00518$. This tests the derived proper-time quantum clock, not an entire many-body fluid simulation. The exact pure-state-closure counterexample retains purity $25/34$ without the required concentration assumptions.
+
+The reciprocal material-grid errors exhibit orders 1.9988–1.99993. The separate linearized physical-grid orders approach two. The strong-current control tracks the contact functional as the kernel is removed. The insufficient Fock cutoff-24 accuracy remains visible; the cutoff-32 covariance error in that declared test is $9.99\times10^{-15}$.
+
+The additional moving-parcel check evolves physical positions and a retained shape mode through time 0.55 on a prescribed flat background. Mean horizontal displacement is approximately 0.15555; the largest reported energy drift is $8.02\times10^{-14}$. Its 24-versus-32-point Gauss reference difference is $3.39\times10^{-15}$, while the temporal-tolerance comparison is $1.56\times10^{-14}$. The finest midpoint comparison is therefore limited by integration/roundoff, not evidence of physical precision at fifteen digits. These are fixed-mode material checks.
 
 ## Evidence at a glance
 
 | Layer | Fresh result | What it establishes |
 |---|---|---|
 | Analytic derivation | Explicit hypotheses, first variation, converse, and geometric dictionary | The mathematical argument and its domain |
-| Formal proofs | 63 theorem declarations across nine Lean proof modules | The original 40 statements, eight residual-inference lemmas, and 15 extension certificates, with hypotheses visible in their signatures |
+| Formal proofs | 75 theorem declarations across ten Lean proof modules | The original 40 statements, eight residual-inference lemmas, 15 extension certificates, and 12 continuum certificates, with hypotheses visible in their signatures |
 | Original symbolic suite | 373 exact symbolic checks and 256 exact rational current-jet cases passed | Reproducible algebraic and component checks of the written derivations |
 | Quantum geometry and coefficient robustness | 58 exact symbolic checks and five direct wavefunction quadratures passed | Exact identities, sharp pointwise residual bounds, and an independent numerical check of Gaussian fidelity |
 | Nonlinear benchmark | Seven fresh finite-domain evolutions passed | Convergence and energy/twist balance for the specified initial data through $T=0.8$ |
@@ -20,9 +43,9 @@ Check counts describe executed calculations. Several are tensor components or sp
 
 ## Formal verification and its boundary
 
-The original **40 theorems are in seven modules**, rather than 40 modules. Version 1 added **four exact residual-inversion identities and four pointwise error bounds**. Version 2 adds 15 extension certificates, giving **40 + 8 + 15 = 63 theorem declarations across nine proof modules**. The integrated near-affine estimates are established by the written calculus argument; these eight new formal lemmas certify its pointwise algebraic foundation.
+The original **40 theorems are in seven modules**, rather than 40 modules. Version 1 added **four exact residual-inversion identities and four pointwise error bounds**. Version 2 added 15 extension certificates; Version 3 adds 12 continuum certificates, giving **40 + 8 + 15 + 12 = 75 theorem declarations across ten proof modules**. The integrated near-affine estimates are established by the written calculus argument; the eight residual lemmas certify its pointwise algebraic foundation.
 
-The fresh build uses Lean 4.19.0 and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Compiler warnings are errors. The complete build finished with **zero warnings and zero errors**. All 63 theorem dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, the standard logical foundations used by these Lean proofs. The [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the execution.
+The fresh build uses Lean 4.19.0 and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Compiler warnings are errors. The complete build finished with **zero warnings and zero errors**. All 75 theorem dependency reports contain only `propext`, `Classical.choice`, and `Quot.sound`, the standard logical foundations used by these Lean proofs. The [formal receipt](../evidence/lean/receipt.json) and [build log](../evidence/lean/build.log) record the execution.
 
 The formal verifier also checks its own route through the compiler: a true proposition must compile, and the deliberately false proposition `example : (0 : Nat) = 1 := by decide` must be rejected. These controls increase confidence that the recorded command actually invokes a working checker. They are not a proof that the compiler or host system is uncompromised.
 
@@ -46,7 +69,7 @@ A further [independent radial-action variation](../evidence/extensions/independe
 
 The fully quantum controls use hyperbolic finite-volume shape grids coupled to truncated oscillator spaces, with total Hilbert dimensions 512 and 768. At the larger cutoff and $t=0.35$, the two prepared states give opposite shape contrasts of magnitude approximately **0.0262193691**, while the uncoupled control gives zero. Shape–probe entropy is approximately **0.1490367 bits**. Norm and energy deviations are at most $3.55\times10^{-15}$ and $1.95\times10^{-14}$, respectively. The 16-to-24-level response difference is $6.22\times10^{-8}$ for this fixed shape grid and protocol. These finite controls do not establish a spatial continuum or general cutoff convergence theorem.
 
-The exact continuum response theorem uses a bounded smooth observable equal to the shape coordinate near the initial packet support. Its statement is about initial acceleration. The separate leakage law is an initial-time expansion with an $o(t^2)$ remainder, not a finite-time error bound. The smooth covariant state-fluid model and the linear quantum cell model are distinct; no continuum/mean-field limit connecting them is asserted.
+The exact continuum response theorem uses a bounded smooth observable equal to the shape coordinate near the initial packet support. Its statement is about initial acceleration. The separate leakage law is an initial-time expansion with an $o(t^2)$ remainder, not a finite-time error bound. Edition 2 treated the smooth covariant state-fluid model and the linear quantum cell model separately. Edition 3 supplies the restricted connection through the explicitly augmented regulator in the [continuum contract](CONTINUUM_CONTRACT.md); these earlier finite controls alone do not establish it.
 
 The supplied review's flat Hessian probes are explicitly credited. The sourced-calibration and response results assume a fixed physical metric, source prescription, and declared operator class. Their computations do not constitute empirical exclusion of higher-curvature terms. See [Quadratic selection](QUADRATIC_SELECTION.md), [Response tomography](RESPONSE_TOMOGRAPHY.md), [Dynamical coupling](DYNAMICAL_COUPLING.md), and [Current reconstruction](CURRENT_AND_RECONSTRUCTION.md).
 
