@@ -102,7 +102,7 @@ The common constant zero mode needs separate localization. This is a theorem for
 The negative controls are part of the result:
 
 - The original grid resolves **shape configuration space**, not physical positions or fluid transport.
-- Raw fixed-$\hbar$ spatial refinement with the stated inertia scaling has a divergent unsubtracted kinetic-energy floor.
+- Raw fixed $\hbar$ spatial refinement with the stated inertia scaling has a divergent unsubtracted kinetic-energy floor.
 - Heavy shape alone does not force a pure local matter state: an exact preparation retains reduced-probe purity $25/34$.
 - Multiple streams do not have the rank-one stress of pressureless matter.
 - Weak current convergence can retain a nonzero $J^2$ defect.

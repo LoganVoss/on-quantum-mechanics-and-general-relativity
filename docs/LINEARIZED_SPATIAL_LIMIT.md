@@ -22,7 +22,7 @@ Set the background target to $(\chi,\lambda)=(0,1)$ and the probe to its matched
 \qquad
 \mathrm{Einstein}_{ij}=0,
 ```
-so $2f\,\mathrm{Einstein}_{ab}=T^{\mathrm m}_{ab}$ holds.
+so $2f\mathrm{Einstein}_{ab}=T^{\mathrm m}_{ab}$ holds.
 
 Let
 ```math

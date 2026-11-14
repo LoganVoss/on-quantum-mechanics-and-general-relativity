@@ -85,7 +85,7 @@ K_{\min}\ge c_0N\ell^2
 
 once the population is sufficiently large. Rounding changes both weights and subsequent trajectories.
 
-This is a collective, large-population weak-coupling family. It is **not** a fixed-$\hbar$, fixed-Newton-constant ultraviolet limit. The kinetic-floor and purity controls show why those operations cannot be interchanged without additional work.
+This is a collective, large-population weak-coupling family. It is **not** a fixed $\hbar$, fixed-Newton-constant ultraviolet limit. The kinetic-floor and purity controls show why those operations cannot be interchanged without additional work.
 
 ## 2. Parcels to the covariant matter action
 

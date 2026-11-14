@@ -442,7 +442,18 @@ S_{\mathrm{int}}'&\le\ell(A+S_{\mathrm{int}}),
 \end{aligned}
 ```
 
-where $C_U=\sup\|g^{-1/2}Cg^{-1/2}\|$, $B_U=\sup|\mathrm{div}(g\nabla\mathrm{div}U)|/(4I)$, $B^2=\sup g^{ab}\mathrm{Tr}(\partial_ah\partial_bh)$, and $\ell=2\mathrm{Lip}_{\mathrm{op}}(h)/\hbar$. Internal adjoint rotation is antisymmetric, so its contribution to $S_{\mathrm{int}}'$ cancels exactly.
+The constants are
+
+```math
+\begin{aligned}
+C_U&=\sup\|g^{-1/2}Cg^{-1/2}\|,\\
+B_U&=\sup|\mathrm{div}(g\nabla\mathrm{div}U)|/(4I),\\
+B^2&=\sup g^{ab}\mathrm{Tr}(\partial_ah\partial_bh),\\
+\ell&=2\mathrm{Lip}_{\mathrm{op}}(h)/\hbar.
+\end{aligned}
+```
+
+Internal adjoint rotation is antisymmetric, so its contribution to the derivative of the internal variance cancels exactly.
 
 A phase valid only near the classical trajectory is insufficient because quantum tails can leave that neighborhood. Nonempty short-time global examples follow from globally smooth bounded coefficients with bounded derivatives through fourth order and affine initial phase: the characteristic graph projection remains globally bi-Lipschitz while its derivative is $I+O(t)$. The Hamilton action supplies the global phase until the first graph caustic. Without that hypothesis, explicit HJ-residual/localization terms would be needed.
 
@@ -485,7 +496,7 @@ Z(t)+\eta(t)\le C_T'
 \left[Z(0)+\eta(0)+(K-2)^{-s_0+3/2}\right].
 ```
 
-The constants depend on coefficient bounds, the smooth time interval, $m_0$, and finite number-moment bounds, but not $K$. Gaussian initial data have all required moments. This is a separate consistency estimate for the limiting state/parcel equations. It does not say the finite-$N$ quantum bound is uniform in the oscillator cutoff. The cutoff is chosen first, then its actual constants enter the population diagonal.
+The constants depend on coefficient bounds, the smooth time interval, $m_0$, and finite number-moment bounds, but not $K$. Gaussian initial data have all required moments. This is a separate consistency estimate for the limiting state/parcel equations. It does not say the finite $N$ quantum bound is uniform in the oscillator cutoff. The cutoff is chosen first, then its actual constants enter the population diagonal.
 
 ## Verification and scientific scope
 

@@ -2,7 +2,7 @@
 
 A material continuum can be derived with quantitative error control **while a finite geometric field basis is retained**. The limit contains transported positions, internal quantum states, number current, stress, and reciprocal response of the retained shape coefficients. It is a stronger statement than sampling probes in a prescribed shape trajectory.
 
-The microscopic family must include those transported parcels. Refining the shipped single-cell target grid or oscillator cutoff alone cannot create a spacetime current. The collective construction also scales the geometric coefficient and population extensively, $f_N=Nf$ and population $Nn_0$, and divides action and energy by $N$. This is a specified large-population, weak-gravity scaling, not a fixed-$\hbar$, fixed-Newton-constant ultraviolet limit.
+The microscopic family must include those transported parcels. Refining the shipped single-cell target grid or oscillator cutoff alone cannot create a spacetime current. The collective construction also scales the geometric coefficient and population extensively, $f_N=Nf$ and population $Nn_0$, and divides action and energy by $N$. This is a specified large-population, weak-gravity scaling, not a fixed $\hbar$, fixed-Newton-constant ultraviolet limit.
 
 The fully nonlinear removal of the **geometric spatial cutoff** remains open. A separate [linearized spatial theorem](LINEARIZED_SPATIAL_LIMIT.md) removes that cutoff in a controlled tangent sector.
 
@@ -255,7 +255,7 @@ This is a sufficient controlled scaling, not a claim of an efficient or cutoff-u
 
 ## 5. Ordered removal of the internal Fock cutoff
 
-On a compact classical target path with bounded proper-clock factor, a quadratic Hamiltonian preserves centered Gaussianity. If the squeezing magnitude obeys $r(t)\le r_*<\infty$, put $\theta=\tanh r_*<1$. In the reference Fock basis,
+On a compact classical target path with bounded proper-clock factor, a quadratic Hamiltonian preserves centered Gaussianity. If the squeezing magnitude obeys $r(t)\le r_{\ast}<\infty$, put $\theta=\tanh r_{\ast}<1$. In the reference Fock basis,
 ```math
 |c_n(t)|\le\theta^{n/2},
 \qquad
@@ -278,7 +278,7 @@ For the following explicit bound, both states use the same prescribed time-depen
 \frac{\theta^{D/2}}{\sqrt{1-\theta}}.}
 ```
 
-For vacuum initial data, the initial projection error is zero and the leading 3 can be replaced by 1. Quadratic source and current expectations have a corresponding polynomial-in-$D$ times exponential-tail bound.
+For vacuum initial data, the initial projection error is zero and the leading 3 can be replaced by 1. Quadratic source and current expectations have a corresponding polynomial in $D$ times exponential-tail bound.
 
 For reciprocal finite-basis feedback, use the weighted error with
 $\widehat{\mathcal N}=a^\dagger a+1$. Neighboring Fock-level differences yield
@@ -306,7 +306,7 @@ These boundary terms are supported on the last two retained levels and can have 
 and squared Frobenius norm $37/8$.
 
 Their expectation is bounded by
-$C D^{2-2s}\|\widehat{\mathcal N}^{s}\psi_D\|^2$, which tends to zero for a uniform moment bound with $s>1$. Thus the full shear/current identity is recovered in the ordered $D\to\infty$ limit. A finite-$D$ current observable is not automatically an exactly conserved Noether current. Even after this removal, a fixed geometric basis supplies only projected twist closure.
+$C D^{2-2s}\|\widehat{\mathcal N}^{s}\psi_D\|^2$, which tends to zero for a uniform moment bound with $s>1$. Thus the full shear/current identity is recovered in the ordered $D\to\infty$ limit. A finite $D$ current observable is not automatically an exactly conserved Noether current. Even after this removal, a fixed geometric basis supplies only projected twist closure.
 
 ## Verification and remaining obligation
 
